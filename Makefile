@@ -70,17 +70,17 @@ clean:
 chm/de/Output.hhp chm/de/Output.hhk chm/en/Output.hhc chm/en/Output.hhp chm/en/Output.hhk: chm/de/Output.hhc
 #update timestamp
 	touch $@
-chm/de/Output.hhc: $(xmlfiles) chm/de/. chm/en/. build_chm_files.py experimental.py \
+chm/de/Output.hhc: $(xmlfiles) chm/de/. chm/en/. developer/build_chm_files.py developer/experimental.py \
   Template.hhc Template.en.hhc Template.hhk Template.en.hhk Template.hhp Template.en.hhp en.mo
 	@echo generate chm files
-	@python build_chm_files.py $(xmlfiles)
+	@python developer/build_chm_files.py $(xmlfiles)
 
-online/de/content.html: chm/de/Output.hhc build_contents.pl
+online/de/content.html: chm/de/Output.hhc developer/build_contents.pl
 	@echo generate $@
-	@perl build_contents.pl $< > $@
-online/en/content.html: chm/en/Output.hhc build_contents.pl
+	@perl developer/build_contents.pl $< > $@
+online/en/content.html: chm/en/Output.hhc developer/build_contents.pl
 	@echo generate $@
-	@perl build_contents.pl $< > $@
+	@perl developer/build_contents.pl $< > $@
 
 $(sdk-dirs-en) $(online-dirs) $(chm-dirs):
 	mkdir -p $@
