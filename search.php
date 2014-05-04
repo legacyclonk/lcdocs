@@ -63,7 +63,7 @@ echo '> ';
 echo '<input type="submit" value="' . ($lang == 'de' ? 'Suchen' : 'Search') . '">';
 ?>
 </form>
-<?
+<?php
 
 //parameters: $_GET('func')
 
