@@ -12,6 +12,7 @@ HHC = hhc.exe
 MKDIR_P = mkdir -p
 CP = cp
 CP_R = cp -r
+PYTHON = $(or $(shell which python2 2> /dev/null), python)
 
 stylesheet = clonk.xsl
 
@@ -73,7 +74,7 @@ chm/de/Output.hhp chm/de/Output.hhk chm/en/Output.hhc chm/en/Output.hhp chm/en/O
 chm/de/Output.hhc: $(xmlfiles) chm/de/. chm/en/. developer/build_chm_files.py developer/experimental.py \
   Template.hhc Template.en.hhc Template.hhk Template.en.hhk Template.hhp Template.en.hhp en.mo
 	@echo generate chm files
-	@python developer/build_chm_files.py $(xmlfiles)
+	@$(PYTHON) developer/build_chm_files.py $(xmlfiles)
 
 online/de/content.html: chm/de/Output.hhc developer/build_contents.pl
 	@echo generate $@
@@ -87,7 +88,7 @@ $(sdk-dirs-en) $(online-dirs) $(chm-dirs):
 
 doku.pot: $(xmlfiles) extra-strings.xml xml2po.py clonk.py
 	@echo extract strings to $@
-	@python xml2po.py -e -m clonk -o $@ $(xmlfiles) extra-strings.xml
+	@$(PYTHON) xml2po.py -e -m clonk -o $@ $(xmlfiles) extra-strings.xml
 
 %.po: doku.pot
 	@echo update $@
@@ -99,7 +100,7 @@ doku.pot: $(xmlfiles) extra-strings.xml xml2po.py clonk.py
 
 sdk-en/%.xml: sdk/%.xml en.mo xml2po.py clonk.py
 	@echo generate $@
-	@python xml2po.py -e -m clonk -t en.mo -o $@ $<
+	@$(PYTHON) xml2po.py -e -m clonk -t en.mo -o $@ $<
 
 define run-xslt
 @echo generate $@
