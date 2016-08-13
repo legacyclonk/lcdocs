@@ -543,6 +543,10 @@ global func FxExplodeOnDeathCurseStop(pTarget, iEffectNumber, iReason)
 		
 		<text>Allgemein kann der Ausdruck "iCause &amp; 32" verwendet werden, um festzustellen, ob Energie oder Schadenswert verändert wurden. Werte für die Energie sind dabei exakt, das heißt 100.000 entspricht der vollen Energie eines normalen Clonks mit Rang 10 (C4MaxPhysical).</text>
 		<text>Über diesen Callback kann zum Beispiel Schaden an einem Objekt verhindert, abgeschwächt oder verstärkt werden; man kann Lebensschaden zunächst nur von der Zauberenergie abziehen, gleichmäßig auf verbundene Clonks verteilen und so weiter.</text>
+		
+		<h>Fx*Info</h>
+		<text><code>int Fx*Info(object pTarget, int iEffectNumber)</code>
+		<text>Wird aufgerufen, wenn via Kontextmenü die Infos eines Objektes, das das Ziel dieses Effektes sit, abgefragt werden.</text>
 	</part>
 	
 	<h id="FnRef">Funktions-Referenz</h>

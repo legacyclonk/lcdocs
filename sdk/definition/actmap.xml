@@ -63,6 +63,11 @@ oben gezählt (siehe Banner im Ritterpack).</col>
     <col>Wartezeit in Frames (Ticks) zwischen zwei Animationsphasen.</col>
   </row>
   <row>
+    <col>Step</col>
+	<col>Integer</col>
+	<col>Legt die Schritte zwischen den Aktionsphasen fest. Beispiel: Bei 2 wird eine Aktionsphase übersprungen, bei 3 zwei Animationsphasen usw. Standardwert 1.</col>
+  </row>
+  <row>
     <col>Attach</col>
     <col>Integer</col>
     <col>Festhalten an Oberflächen: <emlink href="definition/cnat.html">CNAT-Wert</emlink>,
@@ -93,6 +98,11 @@ oben gezählt (siehe Banner im Ritterpack).</col>
     <col>NextAction</col>
     <col>Zeichenfolge (max. 30)</col>
     <col>Nächste Aktivität nach Ablauf der Animationsphasen.</col>
+  </row>
+  <row>
+    <col>TurnAction</col>
+	<col>Zeichenfolge (max. 30)</col>
+	<col>Aktivität, die bei Änderung der Richting gesetzt wird.</col>
   </row>
   <row>
     <col>NoOtherAction</col>

@@ -24,7 +24,7 @@
 			</example>
 		</examples>
 		<related>
-			<funclink>CastObjects</funclink>
+			<funclink>CastObjects</funclink><funclink>CastObjectsX</funclink>
 		</related>
 	</func>
 	<author>jwk</author><date>April 2002</date>

@@ -17,7 +17,7 @@
 			<example>
 
 <code>var vis=<funclink>GetVisibility</funclink>();
-if (vis &amp;&amp; ~vis &amp; <funclink>VIS_Owner</funclink>()) <funclink>SetVisibility</funclink>(vis | <funclink>VIS_Owner</funclink>());</code>
+if (vis &amp;&amp; ~vis &amp; <funclink>VIS_Owner</funclink>) <funclink>SetVisibility</funclink>(vis | <funclink>VIS_Owner</funclink>);</code>
 
 				<text>Wenn das aufrufende Objekt nicht für den Besitzer sichtbar war, wird es für ihn sichtbar gemacht.</text>
 			</example>
@@ -31,6 +31,8 @@ if (vis &amp;&amp; ~vis &amp; <funclink>VIS_Owner</funclink>()) <funclink>SetVis
 			<funclink>VIS_Enemies</funclink>
 			<funclink>VIS_God</funclink>
 			<funclink>VIS_Local</funclink>
+			<funclink>VIS_LayerToggle</funclink>
+			<funclink>VIS_OverlayOnly</funclink>
 		</related>
 	</func>
 	<author>Sven2</author><date>November 2001</date>

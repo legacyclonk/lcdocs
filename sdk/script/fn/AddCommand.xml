@@ -110,6 +110,7 @@ Mithilfe dieses Script kann man einem Clonk z.B. beibringen, an einer bestimmten
       <funclink>GetCommand</funclink>
       <funclink>AppendCommand</funclink>
       <funclink>FinishCommand</funclink>
+	  <funclink>PlayerObjectCommand</funclink>
     </related>
   </func>
   <author>PeterW</author><date>November 2001</date>

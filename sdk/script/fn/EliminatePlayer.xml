@@ -10,6 +10,7 @@
 			<rtype>bool</rtype>
 			<params>
 				<param><type>int</type><name>iPlr</name><desc>Spielernummer des zu eliminierenden Spielers</desc></param>
+				<param><type>bool</type><name>fQuiet</name><desc>Wenn true, wird keine Nachricht und kein Sound ausgegeben. Weiterhin wird die Spielerdatei nicht abgespeichert, analog zu einem Verbindungsabbruch bei einem Netzwerkspiel. Außerdem wird die übliche Wartezeit zwischen Aufruf und endgültigem Entfernen übersprungen.</desc></param>
 			</params>
 		</syntax>
 		<desc>Eliminiert einen Spieler. Die Runde gilt für diesen Spieler als verloren.</desc>

@@ -197,9 +197,10 @@ Aufnahme des anderen Objekts verhindert werden.</col></row>
 <row id="RejectEntrance"><col>RejectEntrance</col><col>object pIntoObj</col>
   <col>Wird vor Entrance aufgerufen. Wenn RejectEntrance TRUE zurückgibt, kann damit das
 Hineinversetzen in das andere Objekt verhindert werden.</col></row>
-<row id="InitializePlayer"><col>InitializePlayer</col><col>int iPlr</col>
+<row id="InitializePlayer"><col>InitializePlayer</col><col>int iPlr, int iX, int iY, object pBase, int iTeam, id idExtra</col>
   <col>Aufruf in Spielziel, -regel und Umweltobjekten nach der Platzierung eines beitretenden
-Spielers, und vor dem entsprechenden Aufruf im Szenarioscript.</col></row>
+Spielers, und vor dem entsprechenden Aufruf im Szenarioscript. Durch Angabe einer ID lassen sich Scriptspieler-Typen unterscheiden. 
+Beispielsweise könnte ein Szenario dynamisch Alien- oder Clonkgegner anbieten.</col></row>
 <row id="SellTo"><col>SellTo</col><col>int iByPlr</col>
   <col>Wenn das Objekt verkauft wird. Rückgabewert 0 oder die ID des Objekts, welches dem
 Heimatbasismaterial hinzugefügt wird.</col></row>
@@ -211,8 +212,28 @@ Heimatbasismaterial hinzugefügt wird.</col></row>
   <col>Wenn das Objekt der Crew eines Spielers hinzugefügt wird. Ab CE 4.95.2.</col></row>
 <row id="RejectTeamSwitch"><col>RejectTeamSwitch</col><col>int iPlr, int iNewTeam</col>
   <col>Aufruf in Spielziel, -regel und Umweltobjekten und dem Szenarioscript. Wenn RejectTeamSwitch TRUE zurückgibt, kann der Teamwechsel eines Spielers (durch <funclink>SetPlayerTeam</funclink>) verhindert werden. Ab 4.9.6.0 CR.</col></row>
-<row id="OnTeamSwitch"><col>OnTeamSwitch</col><col>int iPlr, int iNewTeam, int iOldTeam</col>
-  <col>Aufruf in Spielziel, -regel und Umweltobjekten und dem Szenarioscript. Wenn ein Spieler erfolgreich von iOldTeam zu iNewTeam transferiert wurde (durch <funclink>SetPlayerTeam</funclink>). Ab 4.9.6.0 CR.</col></row>
+<row id="ContentsDestruction"><col>ContentsDestruction</col><col>object pObj</col>
+  <col>Die Funktion wird im Container von pObj aufgerufen, wenn dieses gelöscht wird.</col></row>
+<row id="DoMagicEnergy"><col>DoMagicEnergy</col><col>int iChange, object pObj, bool fAllowPartial</col>
+  <col>Wird bei jeder Veränderung der Mana aufgerufen.</col></row>
+<row id="GetCustomComponents"><col>array GetCustomComponents</col><col>object pBuilder</col>
+  <col>Callback um Komponenten eines Objektes zu setzen. Wird in jedem Menü aufgerufen, dass das Objekt bzw. ID hat. Wird auch beim Bauen eines Objektes aufgerufen. pBuilder ist das Menü-aufrufende-Objekt bzw. der Erbauer. Rückgabewert muss ein Array mit ID/IDs sein. Siehe auch GetComponent, SetComponent, Split2Components.</col></row>
+<row id="Hit*"><col>Hit / Hit2 / Hit 3</col><col>int xdir, int ydir</col>
+  <col>Wird aufgerufen, wenn das Objekt auf etwas Solides aufschlägt. Die Parameter werden bei Collection nicht übergeben.</col></row>
+<row id="IsFullfilledforPlr"><col>IsFullfilledforPlr</col><col>int iPlr</col>
+  <col>Wenn die Regel "Wettstreit" (EN=Rivalry; ID=RVLR) aktiviert ist, wird IsFulfilledforPlr aufgerufen, ansonsten IsFulfilled. Nur bei Spielziel-Objekten. Bei Rückgabewert TRUE ist das Spielziel für ir erfüllt.</col></row>
+<row id="MouseSelection"><col>MouseSelection</col><col>int iPlr</col>
+  <col>Wenn das Objekt per Maus angeklickt wurde. Objekt muss die Category C4D_MouseSelect haben.</col></row>
+<row id="OnActionJump"><col>OnActionJump</col><col>int iXDir100, int iYDir100, bool fByCom</col>
+  <col>Wird immer aufgerufen wenn das Objekt in die Aktion "Jump" wechselt. Als iXDir100 und iYDir100 werden die X- bzw. Y-Geschwindigkeit mit einer Präzision von 100 übergeben.
+fByCom ist true bei echtem Sprung; also wenn man per Sprungtaste, per Command (Maus oder Script-Commands) oder per Jump() springt; oder wenn man beim Hangeln/Klettern loslässt; ansonsten false.
+Wenn OnActionJump true zurückgibt, wird der Engine-Sprung unterbunden.</col></row>
+<row id="OnOwnerChanged"><col>OnOwnerChanged</col><col>int iNewOwner, int iOldOwner</col>
+  <col>Wird aufgerufen, wenn das Objekt seinen Besitzer wechselt.</col></row>
+<row id="RejectContents"><col>RejectContens</col><col></col>
+  <col>Wenn true zurückgegeben wird, lässt sich kein Inhaltsmenü öffnen. </col></row>
+<row id="RejectFight"><col>RejectFight</col><col>object pEnemy</col>
+  <col>Wird vor jedem Kampf aufgerufen. Wenn true zurückgegeben wird, findet kein Kampf statt. </col></row>  
 </table></text>
 
 <h id="Control-Funktionen">Control-Funktionen</h>

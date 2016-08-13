@@ -12,13 +12,14 @@
         <param><type>int</type><name>iX</name><desc>X-Position der Rauchwolke. Offset bei lokalem Aufruf.</desc></param>
         <param><type>int</type><name>iY</name><desc>Y-Position der Rauchwolke. Offset bei lokalem Aufruf.</desc></param>
         <param><type>int</type><name>iLevel</name><desc>Größe des Rauchs</desc></param>
+		<param><type>int</type><name>dwClr</name><desc>Farbe des Rauchs</desc></param>
       </params>
     </syntax>
-    <desc>Erzeugt eine Rauchwolke an der angegebenen Position.</desc>
+    <desc>Erzeugt eine Rauchwolke an der angegebenen Position mit angegebener Farbe.</desc>
     <examples>
       <example>
-        <code>Smoke(0,0,50);</code>
-        <text>Objektscript: Das Objekt stößt eine Rauchwolke aus.</text>
+        <code>Smoke(0,0,50, <funclink>RGB</funclink>(255,0,0));</code>
+        <text>Objektscript: Das Objekt stößt eine rote Rauchwolke aus.</text>
       </example>
     </examples>
   </func>

@@ -18,11 +18,22 @@
 				<param><type>id</type><name>deco</name><desc>ID der Objektdefinition, die für Dekoration der Nachricht verwendet wird. Wenn angegeben, wird die Nachricht von einem Rahmen umgeben. Nur gültig bei angegebenem Portrait.</desc><optional /></param>
 				<param><type>string</type><name>portrait</name><desc>Bildspezifikation für ein Bild links neben der Nachricht im Dekorationsrahmen.</desc><optional /></param>
 				<param><type>int</type><name>flags</name><desc>Bitmaske zusätzlicher Optionen. Mögliche Werte:
-          <table><rowh><col>Bit</col><col>Konstante</col><col>Beschreibung</col></rowh>
+			<table>
+				<rowh><col>Bit</col><col>Konstante</col><col>Beschreibung</col></rowh>
 				  <row><col>0</col><col>MSG_NoBreak</col><col>Wenn gesetzt, werden keine automatischen Zeilenumbruch bei langen Nachrichten eingefügt.</col></row>
 				  <row><col>1</col><col>MSG_Bottom</col><col>Nur globale Nachrichten. Für Portraitnachrichten mit Dekorationsrahmen: Das Nachrichtenoffset gibt die Verschiebung zur unteren Bildschirmkante anstatt zur oberen Bildschirmkante an. Für nicht-Portraitnachrichten setzt das Flag die Nachricht etwas tiefer.</col></row>
 				  <row><col>2</col><col>MSG_Multiple</col><col>Wenn gesetzt, werden vorherige Nachrichten des gleichen Typs nicht gelöscht.</col></row>
-				  </table></desc><optional /></param>
+				  <row><col>3</col><col>MSG_Top</col><col>Nur globale Nachrichten. Für Portraitnachrichten mit Dekorationsrahmen: Das Nachrichtenoffset gibt die Verschiebung zur oberen Bildschirmkante an. Für nicht-Portraitnachrichten setzt das Flag die Nachricht etwas höher.</col></row>
+				  <row><col>4</col><col>MSG_Left</col><col>Nur globale Nachrichten. Für Portraitnachrichten mit Dekorationsrahmen: Das Nachrichtenoffset gibt die Verschiebung zur linken Bildschirmkante an. Für nicht-Portraitnachrichten setzt das Flag die Nachricht etwas mehr nach links.</col></row>
+				  <row><col>5</col><col>MSG_Right</col><col>Nur globale Nachrichten. Für Portraitnachrichten mit Dekorationsrahmen: Das Nachrichtenoffset gibt die Verschiebung zur rechten Bildschirmkante an. Für nicht-Portraitnachrichten setzt das Flag die Nachricht etwas mehr nach rechts.</col></row>
+				  <row><col>6</col><col>MSG_HCenter</col><col>Nur globale Nachrichten. Die Nachricht wird auf mittlerer Bildschirmbreite angezeigt.</col></row>
+				  <row><col>7</col><col>MSG_VCenter</col><col>Nur globale Nachrichten. Die Nachricht wird auf mittlerer Bildschirmhöhe angezeigt.</col></row>
+				  <row><col>8</col><col>MSG_DropSpeech</col><col>Die Nachricht wird beim ersten Vorkommen des Zeichens '$' abgeschnitten.</col></row>
+				  <row><col>9</col><col>MSG_WidthRel</col><col>iHSize gibt die Breite des Textes in Prozent zur relativen Größe des Viewports an. Nur bei globalen Nachrichten und Spielernachrichten.</col></row>
+				  <row><col>10</col><col>MSG_XRel</col><col>offset_x gibt das X-Offset des Textes in Prozent zur relativen Größe des Viewports an. Nur bei globalen Nachrichten und Spielernachrichten. Empfohlene Werte: -50 bis +50.</col></row>
+				  <row><col>11</col><col>MSG_YRel</col><col>offset_y gibt das y-Offset des Textes in Prozent zur relativen Größe des Viewports an. Nur bei globalen Nachrichten und Spielernachrichten. Empfohlene Werte: -70 bis +25.</col></row>
+			</table></desc><optional /></param>
+			<param><type>int</type><name>iHSize</name><desc>Breite des Textes in Pixeln.</desc><optional /></param>
 			</params>
 		</syntax>
 		<desc>Gibt eine Nachricht aus.</desc>
@@ -43,6 +54,7 @@
 			<funclink>Message</funclink>
 			<funclink>PlayerMessage</funclink>
 			<funclink>PlrMessage</funclink>
+			<funclink>AddMessage</funclink>
 		</related>
 	</func>
 	<author>Sven2</author><date>Juli 2008</date>

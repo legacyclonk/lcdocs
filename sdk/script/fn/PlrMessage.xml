@@ -25,6 +25,7 @@
 			<funclink>Message</funclink>
 			<funclink>PlayerMessage</funclink>
 			<funclink>CustomMessage</funclink>
+			<funclink>AddMessage</funclink>
 		</related>
 	</func>
 	<author>Sven2</author><date>November 2001</date>

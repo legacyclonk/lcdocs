@@ -17,13 +17,29 @@
 				<param><type>int</type><name>iParameter</name><desc>Wird als 2. Parameter an die in szCommand angegebene Funktion übergeben (siehe Anmerkung)</desc></param>
 				<param><type>string</type><name>szInfoCaption</name><desc>Beschreibungstext des neuen Menüeintrags</desc></param>
 				<param><type>int</type><name>iExtra</name><desc>Zusatzparameter für das Verhalten des Menüeintrags.<br />
-					Untere 7 Bits (0-127): Menüsymbol.<br />
+					Untere 7 Bits (0-127): Menüsymbol. Sie lassen sich nicht gleichzeitig verwenden.<br />
 					0: Normal<br />
-					1: Rangsymbol. Bei angegebenem idItem wird ggf. die Rank.png der Definition genutzt. iCount gibt die Ranghöhe an<br />
-					2: Picturefacet, das um XPar1-fache Picturebreite nach rechts verschoben ist. Damit lassen sich mehrere Menüsymbole innerhalb einer Definition unterbringen.<br />
-					3: XPar1 gibt ein Objekt an, dessen Picture-Grafik mit Rang gezeichnet wird. Hat das Objekt keine Infosektion (und damit keinen Rang), so wird in Kontextmenüs dennoch ein entsprechender Leerraum gelassen. Ab CE.<br />
-					4: XPar1 gibt ein Objekt an, dessen Picture-Grafik gezeichnet wird. Ab CE.<br />
-					Bit 8 (128): XPar2 wird als Wertangabe benutzt, und überschreibt die Standardangabe (Wert der Definition idItem). Siehe auch iExtra von <funclink>CreateMenu</funclink></desc><optional/></param>
+					C4MN_Add_ImgRank = 1: Rangsymbol. Bei angegebenem idItem wird ggf. die Rank.png der Definition genutzt. iCount gibt die Ranghöhe an<br />
+					C4MN_Add_ImgIndexed = 2: Picturefacet, das um XPar1-fache Picturebreite nach rechts verschoben ist. Damit lassen sich mehrere Menüsymbole innerhalb einer Definition unterbringen.<br />
+					C4MN_Add_ImgObjRank = 3: XPar1 gibt ein Objekt an, dessen Picture-Grafik mit Rang gezeichnet wird. Hat das Objekt keine Infosektion (und damit keinen Rang), so wird in Kontextmenüs dennoch ein entsprechender Leerraum gelassen. Ab CE.<br />
+					C4MN_Add_ImgObject = 4: XPar1 gibt ein Objekt an, dessen Picture-Grafik gezeichnet wird. Ab CE.<br />
+					C4MN_Add_ImgTextSpec = 5: Das Symbol wird in szCaption festgelegt und kann entweder eine normale ID, eine Portrait-Spezifikation in der Form "Portrait:CLNK::00ff00::1" oder eines der folgenden Symbole sein:<br />
+					<table>
+						<rowh><col>Name</col><col>Beschreibung</col></rowh>
+						<row><col>Ico:Locked</col><col>Passwortsymbol</col></row>
+						<row><col>Ico:League</col><col>Ligasymbol</col></row>
+						<row><col>Ico:GameRunning</col><col>Symbol für "Spiel läuft"</col></row>
+						<row><col>Ico:Lobby</col><col>Symbol für "Lobby"</col></row>
+						<row><col>Ico:RuntimeJoin</col><col>Symbol für "Laufzeitbeitritt erlaubt"</col></row>
+						<row><col>Ico:FairCrew</col><col>Symbol für "Faire Crew"</col></row>
+						<row><col>Ico:Settlement</col><col>Symbol für Siedlungspunkte</col></row>
+					</table><br />
+					C4MN_Add_ImgColor = 6: Die Besitzerfarbflächen im Symbol werden mit der in XPar1 angegebenen Farbe eingefärbt. <br /><br />
+					Zusätzliche Flags (können mit obrigen Bits kombiniert werden):<br />
+					C4MN_Add_PassValue = 128: XPar2 wird als Wertangabe benutzt, und überschreibt die Standardangabe (Wert der Definition idItem). Siehe auch iExtra von <funclink>CreateMenu</funclink>.<br />
+					C4MN_Add_ForceCount = 256: Wenn dieses Flag angegeben wird, wird auch ein iCount von 0 im Menü als Anzahl angezeigt (wie es zB. auch im Kaufmenü der Fall ist).<br />
+					Bei dieser Gelegenheit sei auch erwähnt, dass intern der Wert C4MN_Item_NoCount = 12345678 verwendet wird, wenn dieses Flag nicht angegeben ist, aber iCount 0 ist. D.h. auch, dass in dem seltenen Fall, dass iCount mit 12345678 angegeben wird, keine Anzahl angezeigt wird. <br />
+					C4MN_Add_ForceNoDesc = 512: Wenn dieses Flag angegeben wird, wird auf keinen Fall eine Beschreibung für den Menüeintrag angezeigt. Beschreibung (setzbar mit szInfoCaption) in dem Sinn, dass ein Tooltip angezeigt wird, wenn der Menüeintrag lange genug ausgewählt ist.</desc><optional/></param>
 				<param><type>any</type><name>XPar1</name><desc>Erster Zusatzparameter für iExtra.</desc><optional /></param>
 				<param><type>any</type><name>XPar2</name><desc>Zweiter Zusatzparameter für iExtra.</desc><optional /></param>
 			</params>
@@ -82,6 +98,8 @@ func CreateItem(id item)
 								<related>
 												<funclink>CreateMenu</funclink>
 												<funclink>SelectMenuItem</funclink>
+												<funclink>SetMenuDecoration</funclink>
+												<funclink>SetMenuTextProgress</funclink>
 			<funclink>CloseMenu</funclink>
 								</related>
 	</func>

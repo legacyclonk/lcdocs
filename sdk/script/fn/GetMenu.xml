@@ -32,6 +32,8 @@ protected func ControlSpecial()
     <related>
             <funclink>CreateMenu</funclink>
             <funclink>CloseMenu</funclink>
+			<funclink>SetMenuDecoration</funclink>
+			<funclink>SetMenuTextProgress</funclink>
     </related>
   </func>
   <author>wipfmetz</author><date>August 2002</date>

@@ -52,6 +52,8 @@ Dieser Script beamt das Objekt, falls sein Kommando ist, in seine Basis zu gehen
       <funclink>SetCommand</funclink>
       <funclink>AddCommand</funclink>
       <funclink>AppendCommand</funclink>
+	  <funclink>FinishCommand</funclink>
+	  <funclink>PlayerObjectCommand</funclink>
     </related>
   </func>
   <author>PeterW</author><date>November 2001</date>

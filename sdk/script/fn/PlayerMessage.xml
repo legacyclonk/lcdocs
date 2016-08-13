@@ -26,6 +26,7 @@
 			<funclink>Message</funclink>
 			<funclink>PlrMessage</funclink>
 			<funclink>CustomMessage</funclink>
+			<funclink>AddMessage</funclink>
 		</related>
 	</func>
 	<author>Sven2</author><date>August 2002</date>

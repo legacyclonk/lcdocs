@@ -115,12 +115,14 @@
         <row><col>Throw</col><col>Zielobjekt</col><col>Zielposition</col><col></col><col></col><col>Zielobjekt einsammeln und an Zielposition werfen.</col></row>
         <row><col>UnGrab</col><col></col><col></col><col></col><col></col><col>Aktuell angefaßtes Objekt loslassen.</col></row>
         <row><col>Wait</col><col>Null</col><col>0,0</col><col>Null</col><col>Frames</col><col>Anzahl Frames/Ticks warten.</col></row>
-      </table>
+      </table><br />
+	  Um das Holen-Menü für ein Objekt zu öffnen, muss der Data-Parameter auf true gesetzt sein. Beispiel: 
+	  <code>func ControlLeft(object byObj) { SetCommand(byObj, "Get", <funclink>this</funclink>, 0, 0, 0, true); }</code>
     </remark>
 
     <examples>
       <example>
-        <code>SetCommand(<funclink>this</funclink>(), "Attack", <funclink>FindObjectOwner</funclink>(CLNK, 1, 0, 0, -1, -1), 0, 0, 0, 0, 10);</code>
+        <code>SetCommand(<funclink>this</funclink>, "Attack", <funclink>FindObjectOwner</funclink>(CLNK, 1, 0, 0, -1, -1), 0, 0, 0, 0, 10);</code>
         <text>
 Dieser Script gibt dem ausführenden Clonk den Befehl, den nächstgelegenen Clonk von Spieler 1 zu attackieren. Dabei soll er nicht so schnell aufgeben und (wenn er z.B.
 daran scheitert, den Weg zum Feind zu finden) es 10 Mal zu versuchen, bis er sein Ziel erreicht hat oder abbricht.
@@ -132,6 +134,7 @@ daran scheitert, den Weg zum Feind zu finden) es 10 Mal zu versuchen, bis er sei
       <funclink>AddCommand</funclink>
       <funclink>AppendCommand</funclink>
       <funclink>FinishCommand</funclink>
+	  <funclink>PlayerObjectCommand</funclink>
     </related>
   </func>
   <author>PeterW</author><date>November 2001</date>

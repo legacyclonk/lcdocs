@@ -10,6 +10,7 @@
 			<rtype>int</rtype>
 			<params>
 				<param><type>int</type><name>iMaterial</name><desc>Materialsindex</desc></param>
+				<param><type>bool</type><name>fReal</name><desc>Wenn true, wird MinHeightCount in der .c4m-Datei von iMaterial ignoriert.</desc></param>
 			</params>
 		</syntax>
 		<desc>Liefert die in der Landschaft vorhandene Menge des angegebenen Materials.</desc>

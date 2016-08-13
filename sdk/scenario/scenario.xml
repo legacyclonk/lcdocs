@@ -38,6 +38,16 @@ bestimmt.</text>
 		<col>Vom Szenario benötigte Version der Engine.</col>
 	</row>
 	<row>
+		<col>Access</col>
+		<col>Integer</col>
+		<col>&nbsp;</col>
+	</row>
+	<row>
+		<col>Difficulty</col>
+		<col>Integer</col>
+		<col>Gibt den Schwierigkeitsgrad des Szenarios an.</col>
+	</row>
+	<row>
 		<col>RoundOptions</col>
 		<col>Integer</col>
 		<col>0 oder 1. Freigabe der Szenarioeigenschaften im Menüsystem für andere Spieler.</col>
@@ -46,6 +56,16 @@ bestimmt.</text>
 		<col>MaxPlayer</col>
 		<col>Integer</col>
 		<col>Maximale Anzahl der Spieler.</col>
+	</row>
+	<row>
+		<col>MaxPlayerLeague</col>
+		<col>Integer</col>
+		<col>Maximale Anzahl der Spieler in der Liga.</col>
+	</row>
+	<row>
+		<col>MinPlayer</col>
+		<col>Integer</col>
+		<col>Minimale Anzahl der Spieler. Wird für "(Netzwerk-) Spiel starten" und von dedizierten Servern verwendet.</col>
 	</row>
 	<row>
 		<col>NoInitialize</col>
@@ -71,6 +91,46 @@ bestimmt.</text>
 		<col>ForcedGfxMode</col>
 		<col>Integer</col>
 		<col>0-2. 0: Jede Engine möglich; 1: Nur NewGfx (OpenGL/D3D); 2: Nur OldGfx (8Bit-DDraw).</col>
+	</row>
+	<row>
+		<col>DisableMouse</col>
+		<col>Integer</col>
+		<col>0 oder 1. Bei 1 kann man keine Maus verwenden.</col>
+	</row>
+	<row>
+		<col>FairCrewStrength</col>
+		<col>Integer</col>
+		<col>Stärke der fairen Crew.</col>
+	</row>
+	<row>
+		<col>Font</col>
+		<col>Zeichenfolge</col>
+		<col>Schriftart, die das Szenario verwendet. Angegeben wird der Name des Fonts, nicht der Name der Datei. Dateitypen: fon, fnt, ttf, ttc, fot, otf </col>
+	</row>
+	<row>
+		<col>ForcedAutoContextMenu</col>
+		<col>Integer</col>
+		<col>-1 - 1. -1: Keine Einstellung. 0: Menü öffnet sich nicht automatisch, wenn man ein Gebäude betritt. 1: Menü öffnet sich automatisch, wenn man ein Gebäude betritt.</col>
+	</row>
+	<row>
+		<col>ForcedAutoStopControl</col>
+		<col>Integer</col>
+		<col>-1 - 1. -1: Keine Einstellung. 0: Erzwingt Klassische Steuerung. 1: Erzwingt Jump'n'Run-Steuerung. 
+	</row>
+	<row>
+		<col>ForcedFairCrew</col>
+		<col>Integer</col>
+		<col>0 - 2. 0: Freie Einstellung. 1: Erzwingt faire Crew. 2: Erzwingt trainierte Crew.</col> 
+	</row>
+	<row>
+		<col>Loader</col>
+		<col>Zeichenfolge</col>
+		<col>Dateiname einer Grafik, die beim Start der Runde angezeigt wird. * darf verwendet werden.</col>
+	</row>
+	<row>
+		<col>Origin</col>
+		<col>Zeichenfolge</col>
+		<col>Pfadangabe. Definitionen werden vom angegebenen Ort geladen, auch wenn sich das Szenario nicht dort befindet.</col>
 	</row>
 </table></text>
 
@@ -104,7 +164,7 @@ bestimmt.</text>
 	<row>
 		<col>Mode</col>
 		<col>Integer</col>
-		<col> Veraltet. 0 Kooperativ, 1 Melee, 2 Teamwork-Melee.</col>
+		<col>Veraltet. 0 Kooperativ, 1 Melee, 2 Teamwork-Melee.</col>
 	</row>
 	<row>
 		<col>Elimination</col>
@@ -141,10 +201,15 @@ bestimmt.</text>
 		<col>Integer</col>
 		<col>Kosten, die aufgewendet werden, um einen Clonk in einer Basis um 100 Energiepunkte zu heilen. Standard ist 5; bei 0 ist die Heilung kostenlos. Ab CR.</col>
 	</row>
+	<row>
+		<col>LandscapeInsertThrust</col>
+		<col>Integer</col>
+		<col>0 oder 1. Betrifft die Verdrängung von Flüssigkeiten durch Material. Vor Clonk Rage wurde beispielsweise Wasser einfach ersetzt, wenn man einen Erdklumpen hinein warf. In Clonk Rage steigt dagegen der Wasserspiegel. 0 aktiviert das alte Verhalten.</col>
+	</row>
 </table></text>
 
 <text><table>
-	<caption id="SektionenPlayer1Player2Player3Player4">Sektionen [Player1] [Player2] [Player3] [Player4]</caption>
+	<caption id="SektionenPlayer1Player2Player3Player4">Sektionen [Player1] [Player2] [Player3] [Player4] (5. Spieler hat [Player1] usw.)</caption>
 	<rowh>
 		<col>Wert</col>
 		<col>Datentyp</col>
@@ -199,6 +264,11 @@ bestimmt.</text>
 		<col>Magic</col>
 		<col>ID-Liste</col>
 		<col>Zur Verfügung stehende Zauber. Sind keine Zauber angegeben, werden alle verfügbaren Zauber geladen (Abwärtskompatibilität zu älteren Szenarien).</col>
+	</row>
+	<row>
+		<col>EnforcePosition</col>
+		<col>Integer</col>
+		<col>0 oder 1. 1  verhindert, dass eine freie Fläche für den Spieler gesucht wird.</col>
 	</row>
 </table></text>
 

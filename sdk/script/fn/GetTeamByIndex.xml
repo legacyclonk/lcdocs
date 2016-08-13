@@ -28,6 +28,7 @@
 		<funclink>GetTeamName</funclink>
 		<funclink>GetPlayerTeam</funclink>
 		<funclink>GetTeamCount</funclink>
+		<funclink>GetTeamConfig</funclink>
 	</related>
   </func>
   <author>Clonkonaut</author><date>April 2008</date>
