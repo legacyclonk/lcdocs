@@ -14,7 +14,7 @@
 				<param><type>int &amp;</type><name>iXDir</name><desc>X-Anfangsgeschwindigkeit.</desc></param>
 				<param><type>int &amp;</type><name>iYDir</name><desc>Y-Anfangsgeschwindigkeit.</desc></param>
 				<param><type>int</type><name>iMinDensity</name><desc>Minimale Dichte des Materials nach dem auf der Wurfbahn gesucht wird. Keine Angabe oder Null entspricht 50 (festes Material).</desc><optional/></param>
-				<param><type>int</type><name>iMaxDensity</name><desc>Maximale Dichte des Materials nach dem auf der Wurfbahn gesucht wird. Keine Angabe oder Null entspricht 50 (festes Material).</desc><optional/></param>
+				<param><type>int</type><name>iMaxDensity</name><desc>Maximale Dichte des Materials nach dem auf der Wurfbahn gesucht wird. Keine Angabe oder Null entspricht 100 (Vehicle).</desc><optional/></param>
 				<param><type>int</type><name>iIteration</name><desc>Anzahl der simulierten Frames bis zum Abbruch der Simulation. Keine Angabe oder Null entspricht -1 (Kein Abbruch).</desc><optional/></param>
 				<param><type>int</type><name>iPrecision</name><desc>Genauigkeit. Keine Angabe oder Null entspricht 10.</desc><optional/></param>
 			</params>
