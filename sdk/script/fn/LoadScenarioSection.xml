@@ -16,7 +16,6 @@
 			<row><col>C4SECT_SaveLandscape</col><col>1</col><col>Veränderungen in der Landschaft werden gespeichert.</col></row>
 			<row><col>C4SECT_SaveObjects</col><col>2</col><col>Objekte werden gespeichert.</col></row>
 			<row><col>C4SECT_KeepEffects</col><col>4</col><col>Globale Effekte werden gespeichert.</col></row>
-			<row>
 		</table>
 		</desc></param>
       </params>

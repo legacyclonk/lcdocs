@@ -5,7 +5,7 @@
 	<func>
 		<title>SetKiller</title>
 		<category>Spieler</category>
-		<version>4.9.7.0 CR<</version>
+		<version>4.9.7.0 CR</version>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>

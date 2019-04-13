@@ -21,6 +21,8 @@
 			<row><col>TEAM_AllowTeamSwitch</col><col>5</col></row>
 			<row><col>TEAM_AutoGenerateTeams</col><col>6</col></row>
 			<row><col>TEAM_TeamColors</col><col>7</col></row>
+		</table>
+		</desc>
 		</param>
       </params>
     </syntax>

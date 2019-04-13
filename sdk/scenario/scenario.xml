@@ -40,7 +40,7 @@ bestimmt.</text>
 	<row>
 		<col>Access</col>
 		<col>Integer</col>
-		<col>&nbsp;</col>
+		<col> </col>
 	</row>
 	<row>
 		<col>Difficulty</col>
@@ -115,7 +115,7 @@ bestimmt.</text>
 	<row>
 		<col>ForcedAutoStopControl</col>
 		<col>Integer</col>
-		<col>-1 - 1. -1: Keine Einstellung. 0: Erzwingt Klassische Steuerung. 1: Erzwingt Jump'n'Run-Steuerung. 
+		<col>-1 - 1. -1: Keine Einstellung. 0: Erzwingt Klassische Steuerung. 1: Erzwingt Jump'n'Run-Steuerung.</col>
 	</row>
 	<row>
 		<col>ForcedFairCrew</col>
