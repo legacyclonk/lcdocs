@@ -32,7 +32,9 @@
     <related>
       <funclink>CreateParticle</funclink>
       <funclink>CastObjects</funclink>
-      <funclink>CastPXS</funclink>
+	  <funclink>CastObjectsX</funclink>
+	  <funclink>CastPXS</funclink>
+      <funclink>CastPXSX</funclink>
     </related>
   </func>
   <author>Sven2</author><date>Mai 2002</date>

@@ -23,6 +23,7 @@
 		<related>
 			<funclink>Format</funclink>
 			<funclink>Message</funclink>
+			<funclink>DebugLog</funclink>
 		</related>
 	</func>
 	<author>Sven2</author><date>November 2001</date>

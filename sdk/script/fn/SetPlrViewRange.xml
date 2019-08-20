@@ -12,6 +12,7 @@
 			<params>
 				<param><type>int</type><name>iRange</name><desc>Sichtweite in Pixel.</desc></param>
 				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Sichtweite gesetzt wird. 0 bei lokalem Aufruf.</desc></param>
+				<param><type>bool</type><name>fExact</name><desc>Muss true sein, um Werte kleiner 128 wählen zu können.</desc></param>
 			</params>
 		</syntax>
 		<desc>Setzt die Sichtweite eines Objekts.</desc>

@@ -23,7 +23,7 @@
     </examples>
     <related>
       <funclink>ShakeObjects</funclink>
-      <funclink>CastPXS</funclink>
+      <funclink>CastPXS</funclink><funclink>CastPXSX</funclink>
     </related>
   </func>
   <author>Sven2</author><date>Juni 2003</date>

@@ -39,6 +39,7 @@
 			<funclink>GetOwner</funclink>
 			<funclink>SetController</funclink>
 			<funclink>DoEnergy</funclink>
+			<funclink>SetKiller</funclink>
 		</related>
 	</func>
 	<author>Sven2</author><date>April 2007</date>

@@ -60,6 +60,7 @@ verwendet werden.
       <funclink>GetCommand</funclink>
       <funclink>AppendCommand</funclink>
 	  <funclink>AddCommand</funclink>
+	  <funclink>PlayerObjectCommand</funclink>
     </related>
   </func>
   <author>Günther</author><date>April 2004</date>

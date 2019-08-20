@@ -46,6 +46,16 @@
 			<col>0-100. Reibung.</col>
 		</row>
 		<row>
+			<col>MinHeightCount</col>
+			<col>Integer</col>
+			<col><emlink href="script/fn/GetMaterialCount.html">GetMaterialCount</emlink> zählt die Materialpixel erst ab der angegebenen Höhe.</col>
+		</row>
+		<row>
+			<col>SplashRate</col>
+			<col>Integer</col>
+			<col>Zufallswert im Sinne von !Random(&lt;Wert&gt;) : In 1 von &lt;Wert&gt; Fällen wird der Materialpixel (PXS) nach Aufprall mit dem Boden (Boden hat höhere Density als PXS) aufspringen. Standardwert 10.</col>
+		</row>
+		<row>
 			<col>DigFree</col>
 			<col>Integer</col>
 			<col>0 oder 1. Bestimmt, ob das Material freigegraben werden kann.</col>

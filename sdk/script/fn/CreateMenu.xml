@@ -20,7 +20,9 @@
 				        <row><col>C4MN_Extra_Value</col><col>2</col><col>Wert</col></row>
 				        <row><col>C4MN_Extra_MagicValue</col><col>3</col><col>Wert als Magiewert. Dabei wird außerdem iExtraData als Vergleichswert angezeigt, z.B. "50/100".</col></row>
 				        <row><col>C4MN_Extra_Info</col><col>4</col><col>Beschreibungstext sofort anzeigen</col></row>
-				        <row><col>C4MN_Extra_ComponentsMagic</col><col>5</col><col>Komponenten und Magiewert</col><col></col></row>
+				        <row><col>C4MN_Extra_ComponentsMagic</col><col>5</col><col>Komponenten und Magiewert</col></row>
+						<row><col>C4MN_Extra_LiveMagicValue</col><col>6</col><col>Wie C4MN_Extra_MagicValue, nur wird der Wert kontinuierlich aktualisiert.</col></row>
+						<row><col>C4MN_Extra_ComponentsLiveMagic</col><col>7</col><col>Wie C4MN_Extra_ComponentsMagic, nur wird der Wert kontinuierlich aktualisiert.</col></row>
 				      </table></desc></param>
 				<param><type>string</type><name>szCaption</name><desc>Bestimmt den angezeigten Menütext, wenn das Menü keine Einträge enthält</desc></param>
 				<param><type>int</type><name>iExtraData</name><desc>Vergleichswert für iExtra 3</desc></param>
@@ -48,6 +50,8 @@
 			<funclink>SelectMenuItem</funclink>
 			<funclink>GetMenu</funclink>
 			<funclink>CloseMenu</funclink>
+			<funclink>SetMenuDecoration</funclink>
+			<funclink>SetMenuTextProgress</funclink>
 		</related>
 	</func>
 	<author>springer</author><date>April 2002</date>

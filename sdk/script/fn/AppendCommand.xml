@@ -90,6 +90,7 @@ Gibt dem Clonk den Befehl, zuerst zu der ersten (gefundenen) Basis zu laufen, un
       <funclink>GetCommand</funclink>
       <funclink>AddCommand</funclink>
       <funclink>FinishCommand</funclink>
+	  <funclink>PlayerObjectCommand</funclink>
     </related>
   </func>
   <author>PeterW</author><date>November 2001</date>

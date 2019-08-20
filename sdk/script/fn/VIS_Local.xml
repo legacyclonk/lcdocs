@@ -34,6 +34,8 @@
 			<funclink>VIS_Allies</funclink>
 			<funclink>VIS_Enemies</funclink>
 			<funclink>VIS_God</funclink>
+			<funclink>VIS_LayerToggle</funclink>
+			<funclink>VIS_OverlayOnly</funclink>
 		</related>
 	</func>
 	<author>Sven2</author><date>November 2001</date>
