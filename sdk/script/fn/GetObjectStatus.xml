@@ -3,17 +3,17 @@
 <?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
 <funcs>
 	<func>
-		<title>DetObjectStatus</title>
+		<title>GetObjectStatus</title>
 		<category>Objekte</category><subcat>Status</subcat>
 		<version>4.9.7.0 CR</version>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype>int</rtype>
 			<params>
 				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Status abgefragt werden soll.</desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt den internen Status eines Objekts zurück.</desc>
-		 
+
 		 <related>
 			<funclink>SetObjectStatus</funclink>
 		 </related>
