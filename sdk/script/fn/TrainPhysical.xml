@@ -9,7 +9,7 @@
                 <syntax>
                         <rtype>bool</rtype>
                         <params>
-                                <param><type>string</type><name>szPhysical</name><desc>Name Eigenschaft, die geändert werden soll</desc></param>
+                                <param><type>string</type><name>szPhysical</name><desc>Name der Eigenschaft, die geändert werden soll</desc></param>
                                 <param><type>int</type><name>iTrainBy</name><desc>0-100000: Wert, um den trainiert wird</desc></param>
                                 <param><type>int</type><name>iMaxTrain</name><desc>Wert, der durch das Training nie überschritten wird. Es wird allerdings in keinem Fall die Physical reduziert, auch wenn der Zielwert unter dem hier angegebenen Wert läge.<br /></desc></param>
 				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Physical trainiert werden soll. 0 bei lokalen Aufrufen.</desc><optional /></param>
