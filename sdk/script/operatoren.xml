@@ -43,7 +43,7 @@
 		<row>
 		 <col>15</col>
 		 <col>!</col>
-		 <col>Negiert den nachgestelllten Wert logisch</col>
+		 <col>Negiert den nachgestellten Wert logisch</col>
 		 <col>prefix</col>
 		 <col>bool, bool</col>
 		</row>
