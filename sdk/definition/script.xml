@@ -230,7 +230,7 @@ fByCom ist true bei echtem Sprung; also wenn man per Sprungtaste, per Command (M
 Wenn OnActionJump true zurückgibt, wird der Engine-Sprung unterbunden.</col></row>
 <row id="OnOwnerChanged"><col>OnOwnerChanged</col><col>int iNewOwner, int iOldOwner</col>
   <col>Wird aufgerufen, wenn das Objekt seinen Besitzer wechselt.</col></row>
-<row id="RejectContents"><col>RejectContens</col><col></col>
+<row id="RejectContents"><col>RejectContents</col><col></col>
   <col>Wenn true zurückgegeben wird, lässt sich kein Inhaltsmenü öffnen. </col></row>
 <row id="RejectFight"><col>RejectFight</col><col>object pEnemy</col>
   <col>Wird vor jedem Kampf aufgerufen. Wenn true zurückgegeben wird, findet kein Kampf statt. </col></row>  
