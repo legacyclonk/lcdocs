@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-01 21:34+0200\n"
-"PO-Revision-Date: 2019-10-01 21:36+0200\n"
+"POT-Creation-Date: 2019-10-03 00:39+0200\n"
+"PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
 "Language: en\n"
@@ -2202,8 +2202,8 @@ msgid "Minimale Dichte des Materials nach dem auf der Wurfbahn gesucht wird. Kei
 msgstr "Mininum density of the material which will stop the projected trajectory. If not specified or 0 this will default to value 50 (solid material)."
 
 #: sdk/script/fn/SimFlight.xml:17(desc)
-msgid "Maximale Dichte des Materials nach dem auf der Wurfbahn gesucht wird. Keine Angabe oder Null entspricht 50 (festes Material)."
-msgstr "Maximum density of the material which will stop the projected trajectory. If not specified or 0 this will default to value 50 (solid material)."
+msgid "Maximale Dichte des Materials nach dem auf der Wurfbahn gesucht wird. Keine Angabe oder Null entspricht 100 (Vehicle)."
+msgstr "Maximum density of the material which will stop the projected trajectory. If not specified or 0 this will default to value 100 (Vehicle)."
 
 #: sdk/script/fn/SimFlight.xml:18(desc)
 msgid "Anzahl der simulierten Frames bis zum Abbruch der Simulation. Keine Angabe oder Null entspricht -1 (Kein Abbruch)."
