@@ -43,19 +43,19 @@
               <row><col>object</col><col>TransferTarget</col><col>Transferzielobjekt. nil, falls nicht vorhanden.</col></row>
           </table>
    </desc>
-   <remark>Diese Funktion kann aufgrund der Mapsyntax nur ab #strict 3 verwendet werden. In älteren Versionen kann <funclink>GetPathLength</funclink> verwendet werden.</remark>      
+   <remark>Diese Funktion kann aufgrund der Mapsyntax nur ab #strict 3 verwendet werden. In älteren Versionen kann <funclink>GetPathLength</funclink> verwendet werden.</remark>
 
     <examples>
       <example>
         <code>var path = GetPath(<funclink>GetX</funclink>(), <funclink>GetY</funclink>(), <funclink>GetX</funclink>(<funclink>FindBase</funclink>(<funclink>GetOwner</funclink>())), <funclink>GetY</funclink>(<funclink>FindBase</funclink>(<funclink>GetOwner</funclink>())));
-        <funclink>if</funclink> (path)
-        {
-            <funclink>Log</funclink>("Anzahl der Wegpunkte: %d, Pfadlänge: %d", <funclink>GetLength</funclink>(path.Waypoints);
-        }
-        else
-        {
-            <funclink>Log</funclink>("Kein Pfad gefunden!");
-        }
+<funclink>if</funclink> (path)
+{
+    <funclink>Log</funclink>("Anzahl der Wegpunkte: %d, Pfadlänge: %d", <funclink>GetLength</funclink>(path.Waypoints), path.Length);
+}
+else
+{
+    <funclink>Log</funclink>("Kein Pfad gefunden!");
+}
         </code>
         <text>Loggt die Anzahl der Wegpunkte und die Pfadlänge zur ersten Basis des Besitzers des aufrufenden Objekts, falls ein Weg gefunden wurde.</text>
       </example>
