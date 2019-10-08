@@ -532,7 +532,7 @@
   <xsl:template name="color2">
     <xsl:param name="s" select="." />
     <!-- the list of keywords -->
-    <xsl:param name="t" select="'#include|#strict|#appendto|public|private|protected|global|static|var|local|const|int|id|object|string|bool|return|goto|if|else|break|continue|while|for|func|true|false|'" />
+    <xsl:param name="t" select="'#include|#strict|#appendto|public|private|protected|global|static|var|local|const|int|id|object|string|bool|array|return|goto|if|else|break|continue|while|for|func|true|false|'" />
     <xsl:param name="w" select="substring-before($t, '|')" />
     <!-- text before the keyword -->
     <xsl:variable name="l" select="substring-before($s, $w)" />
