@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-06 15:31+0200\n"
+"POT-Creation-Date: 2019-10-08 17:44+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -66,6 +66,7 @@ msgstr "Operator"
 #: sdk/script/fn/GetVertex.xml:15(col)
 #: sdk/script/fn/GetPlayerType.xml:16(col)
 #: sdk/script/fn/GetPath.xml:40(col)
+#: sdk/script/fn/GetPath.xml:47(col)
 #: sdk/script/fn/CustomMessage.xml:22(col)
 #: sdk/script/fn/CreateScriptPlayer.xml:16(col)
 #: sdk/script/fn/AddMsgBoardCmd.xml:16(col)
@@ -8235,6 +8236,12 @@ msgid "Ermittelt die Entfernung eines Objekts bis zu seiner ersten Basis"
 msgstr "Determines the distance from an object to its closest friendly base"
 
 #: sdk/script/fn/GetPath.xml:40(col)
+#: sdk/script/fn/GetPath.xml:47(col)
+msgid "Schlüssel"
+msgstr "Key"
+
+#: sdk/script/fn/GetPath.xml:40(col)
+#: sdk/script/fn/GetPath.xml:47(col)
 #: sdk/scenario/scenario.xml:22(col)
 #: sdk/scenario/scenario.xml:141(col)
 #: sdk/scenario/scenario.xml:215(col)
@@ -8259,55 +8266,73 @@ msgstr "Determines the distance from an object to its closest friendly base"
 msgid "Datentyp"
 msgstr "File type"
 
-#: sdk/script/fn/GetPath.xml:40(col)
-msgid "Schlüssel"
-msgstr "Key"
+#: sdk/script/fn/GetPath.xml:41(col)
+#: sdk/definition/actmap.xml:51(col)
+msgid "Length"
+msgstr "Length"
 
 #: sdk/script/fn/GetPath.xml:41(col)
-#: sdk/script/fn/GetPath.xml:42(col)
+#: sdk/script/fn/GetPath.xml:48(col)
+#: sdk/script/fn/GetPath.xml:49(col)
 msgid "int"
 msgstr "int"
 
 #: sdk/script/fn/GetPath.xml:41(col)
+msgid "Länge des gefundenen Weges, wie bei <placeholder-1/>"
+msgstr "Length of the found path, same as returned by<placeholder-1/>"
+
+#: sdk/script/fn/GetPath.xml:42(col)
+msgid "Waypoints"
+msgstr "Waypoints"
+
+#: sdk/script/fn/GetPath.xml:42(col)
+msgid "array"
+msgstr "array"
+
+#: sdk/script/fn/GetPath.xml:42(col)
+msgid "Array mit Wegpunkten"
+msgstr "Array containing waypoints"
+
+#: sdk/script/fn/GetPath.xml:48(col)
 #: sdk/script/fn/Format.xml:24(col)
 #: sdk/script/fn/AbsX.xml:13(desc)
 msgid "X"
 msgstr "X"
 
-#: sdk/script/fn/GetPath.xml:41(col)
+#: sdk/script/fn/GetPath.xml:48(col)
 msgid "X-Koordinate des Wegpunkts"
 msgstr "X coordinate of the waypoint"
 
-#: sdk/script/fn/GetPath.xml:42(col)
+#: sdk/script/fn/GetPath.xml:49(col)
 #: sdk/script/fn/AbsY.xml:13(desc)
 msgid "Y"
 msgstr "Y"
 
-#: sdk/script/fn/GetPath.xml:42(col)
+#: sdk/script/fn/GetPath.xml:49(col)
 msgid "Y-Koordinate des Wegpunkts"
 msgstr "Y coordinate of the waypoint"
 
-#: sdk/script/fn/GetPath.xml:43(col)
-msgid "object"
-msgstr "object"
-
-#: sdk/script/fn/GetPath.xml:43(col)
+#: sdk/script/fn/GetPath.xml:50(col)
 msgid "TransferTarget"
 msgstr "TransferTarget"
 
-#: sdk/script/fn/GetPath.xml:43(col)
+#: sdk/script/fn/GetPath.xml:50(col)
+msgid "object"
+msgstr "object"
+
+#: sdk/script/fn/GetPath.xml:50(col)
 msgid "Transferzielobjekt. nil, falls nicht vorhanden."
 msgstr "Transfer target. nil, if not present."
 
 #: sdk/script/fn/GetPath.xml:35(desc)
-msgid "Sucht mittels des auch für die Clonk-Wegfindung benutzten Algorithmus einen Weg zwischen zwei Punkten der Landschaft und gibt eine Map mit Wegpunkten und Länge zurück. Wird kein Weg gefunden, wird nil zurückgegeben. Die Wegpunkte haben dabei folgende Struktur: <placeholder-1/>"
-msgstr "Searches for a path from start point to end point using the pathfinding algorithm as used by clonks and returns a map with its waypoints and length. Returns nil if no path was found. The waypoints are structured like this: <placeholder-1/>"
+msgid "Sucht mittels des auch für die Clonk-Wegfindung benutzten Algorithmus einen Weg zwischen zwei Punkten der Landschaft und gibt eine Map mit Wegpunkten und Länge zurück. Wird kein Weg gefunden, wird nil zurückgegeben. Die zurückgegebene Map hat folgende Struktur: <placeholder-1/> Die Wegpunkte haben dabei folgende Struktur: <placeholder-2/>"
+msgstr "Searches for a path from start point to end point using the pathfinding algorithm as used by clonks and returns a map with its waypoints and length. Returns nil if no path was found. The returned map is structured like this: <placeholder-1/> The waypoints are structured like this: <placeholder-2/>"
 
-#: sdk/script/fn/GetPath.xml:46(remark)
+#: sdk/script/fn/GetPath.xml:53(remark)
 msgid "Diese Funktion kann aufgrund der Mapsyntax nur ab #strict 3 verwendet werden. In älteren Versionen kann <placeholder-1/> verwendet werden."
 msgstr "This function can only be used with #strict 3 or above because of the map syntax. Use <placeholder-1/> in older versions."
 
-#: sdk/script/fn/GetPath.xml:60(text)
+#: sdk/script/fn/GetPath.xml:67(text)
 msgid "Loggt die Anzahl der Wegpunkte und die Pfadlänge zur ersten Basis des Besitzers des aufrufenden Objekts, falls ein Weg gefunden wurde."
 msgstr "Logs the number of waypoints and the path length to the calling object's owner's first base, if a way has been found."
 
@@ -20401,10 +20426,6 @@ msgstr "FlipDir"
 #: sdk/definition/actmap.xml:43(col)
 msgid "Wenn ungleich 0, gibt dieser Wert die erste Animationsrichtung an, die durch Spiegelung einer davor liegenden Animationsrichtung gezeichnet wird. So wird bei Wert 1 für die Richtung 1 (rechts) die gespiegelte Grafik der Richtung 0 (links) verwendet (siehe Clonks). Bei Wert 7 wird für Richtungen &gt;= 7 die gespiegelte Grafik der Richtung 6 - n verwendet, d.h. bei höheren Richtungsnummern wird wieder rückwärts nach oben gezählt (siehe Banner im Ritterpack)."
 msgstr "If nonzero, this value specifies the first animation phase that is produced by mirroring one of the previous animation directions. If this value is 1, graphics of direction 1 (DIR_Right) will be drawn as a horizontally mirrored graphics of direction 0 (DIR_Left) (see clonks). If it is 7, any directions n &gt;= 7 will be drawn using the mirrored graphics of directions 6 - n, i.e. higher direction values will be drawn using the mirrored graphics in reverse orders (cf. banner in the knights pack)."
-
-#: sdk/definition/actmap.xml:51(col)
-msgid "Length"
-msgstr "Length"
 
 #: sdk/definition/actmap.xml:53(col)
 msgid "Anzahl der Animationsphasen dieser Aktivität (horizontal in Graphics.png)."
