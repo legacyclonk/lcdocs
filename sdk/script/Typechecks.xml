@@ -43,7 +43,8 @@
 		<row>
 		  <col><code>object</code></col>
 		  <col>Objektzeiger</col>
-		  <col>Verweis auf ein im Spiel existierendes Objekt. Hat keine direkte Darstellung. Siehe z.B. <funclink>FindObject</funclink>()</col>
+		  <col>Verweis auf ein im Spiel existierendes Objekt. Hat keine direkte Darstellung. Siehe z.B. <funclink>FindObject</funclink>().
+				Zugriff auf lokale Variablen ist mit <code>obj["name"]</code> oder <code>obj.name</code>, letzteres bei aktiviertem <code>#strict 3</code>, möglich.</col>
 		  <col>-</col>
 		</row>
 		<row>
