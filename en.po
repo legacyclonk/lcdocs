@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-08 17:44+0200\n"
+"POT-Creation-Date: 2019-10-08 18:22+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -1680,6 +1680,7 @@ msgstr "Removes obj if one if its vertices is stuck"
 #: sdk/script/fn/IsRef.xml:7(category)
 #: sdk/script/fn/GlobalN.xml:7(category)
 #: sdk/script/fn/GetType.xml:7(category)
+#: sdk/script/fn/GetKeys.xml:7(category)
 #: sdk/script/fn/GetIndexOf.xml:7(category)
 #: sdk/script/fn/CastInt.xml:7(category)
 #: sdk/script/fn/CastC4ID.xml:7(category)
@@ -8618,6 +8619,24 @@ msgstr "Because of the complexity of Clonk, it may not always be possible to det
 msgid "Script für den Tod eines Clonks: Anstatt der normalen Todesnachricht richtet sich die Nachricht danach, wer den Clonk getötet hat."
 msgstr "Script for the death of a Clonk: Customized death messages which show the murderer are shown."
 
+#: sdk/script/fn/GetKeys.xml:12(desc)
+msgid "map, von der die Keys abgefragt werden"
+msgstr "map of which the keys are determined"
+
+#: sdk/script/fn/GetKeys.xml:15(desc)
+msgid "Gibt ein Array aller zurzeit gesetzten Keys der map zurück."
+msgstr "Returns an array containing all currently set keys of the map."
+
+#: sdk/script/fn/GetKeys.xml:19(text)
+msgid "Gibt [\"X\", \"Y\"] zurück."
+msgstr "Returns [\"X\", \"Y\"]."
+
+#: sdk/script/fn/GetKeys.xml:23(emlink)
+#: sdk/script/Typechecks.xml:5(title)
+#: sdk/script/Typechecks.xml:7(h)
+msgid "Datentypen"
+msgstr "Data Types"
+
 #: sdk/script/fn/GetIndexOf.xml:13(desc)
 msgid "Array, welches durchsucht werden soll."
 msgstr "Array in which the search should be done."
@@ -12357,11 +12376,6 @@ msgstr "Object which was specified as callback object when calling <emlink href=
 #: sdk/script/fn/AbortMessageBoard.xml:13(desc)
 msgid "Spieler, für den die Eingabezeile geschlossen werden soll."
 msgstr "Player whose input dialog should be closed."
-
-#: sdk/script/Typechecks.xml:5(title)
-#: sdk/script/Typechecks.xml:7(h)
-msgid "Datentypen"
-msgstr "Data Types"
 
 #: sdk/script/Typechecks.xml:10(text)
 msgid "C4Script unterstützt die folgenden Datentypen für Variablen, Parameter und Rückgabewerte:"
