@@ -5,9 +5,9 @@
 <title>#strict</title>
 <h>#strict</h>
 <part>
-<text>Neu geschriebene Scripte sollten #strict sein. Dabei werden einige
+<text>Bei aktiviertem <code>#strict</code> werden einige
 Altlasten der Engine ignoriert und es können unter anderem strengere Typüberprüfungen angesetzt
-werden. Scripte ohne #strict werden nur aus Gründen der Abwärtskompatibilität akzeptiert.</text>
+werden.</text>
 
 <h id="Syntax">Deklaration</h>
 <text>#strict muss als Direktive an den Anfang des Scriptes geschrieben werden. Bei #include und
@@ -24,9 +24,9 @@ werden. Scripte ohne #strict werden nur aus Gründen der Abwärtskompatibilität ak
 </part>
 <h>#strict 2</h>
 <part>
-<text>Neu geschriebene Scripte sollten <code>#strict 2</code> sein. Dabei werden einige
+<text>Bei aktiviertem <code>#strict 2</code> werden einige
 Altlasten der Engine ignoriert und es können unter anderem strengere Typüberprüfungen angesetzt
-werden. Scripte ohne <code>#strict 2</code> werden nur aus Gründen der Abwärtskompatibilität akzeptiert.</text>
+werden.</text>
 
 <h>Deklaration</h>
 <text><code>#strict 2</code> muss als Direktive an den Anfang des Scriptes geschrieben werden. Bei <code>#include</code> und
@@ -41,6 +41,46 @@ werden. Scripte ohne <code>#strict 2</code> werden nur aus Gründen der Abwärtsko
 <li><code>eq</code>, <code>ne</code>, <code>S=</code> gibt es nicht mehr. Man kann jetzt Funktionen und Variablen <code>eq</code> und <code>ne</code> nennen oder eine Variable namens <code>S</code> mit <code>S=42;</code> ändern.</li>
 </ul></text>
 </part>
-<author>Sven2</author><date>Juli 2001</date>
-<author>Günther</author><date>Dezember 2007</date>
+
+	<h>#strict 3</h>
+	<part>
+		<text>Neu geschriebene Scripte sollten <code>#strict 3</code> sein. Dabei werden einige weitere
+			Altlasten der Engine ignoriert, noch strengere Typüberprüfungen angesetzt und neue Sprachfeatures aktiviert.
+			Scripte ohne <code>#strict 3</code> werden nur aus Gründen der Abwärtskompatibilität akzeptiert.</text>
+
+		<h>Deklaration</h>
+		<text><code>#strict 3</code> muss als Direktive an den Anfang des Scriptes geschrieben werden. Bei <code>#include</code> und
+			<code>#appendto</code> gilt jeweils der Modus des Scriptes, in dem die Funktion definiert wurde.</text>
+
+		<h>nil</h>
+		<text>
+			Mit <code>#strict 3</code> wird der neue Wert <code>nil</code> eingeführt.
+			<code>nil</code> repräsentiert ungesetzte und undefinierte Werte und hat den Typ <code>any</code>.
+			Weiters wird 0 und <code>false</code> nicht mehr implizit zu <code>any</code> konvertiert, sondern bleiben jetzt <code>int</code> bzw. <code>bool</code>.
+			Dies ermöglicht unter anderem, default-Werte für Parameter ungleich 0/<code>false</code> zu definieren, die trotzdem durch 0/<code>false</code> überschrieben werden.
+			<code>nil</code> ist ungleich jeder Wert anderen Typs inklusive 0 und <code>false</code>, es reicht also aus auf <code>x != nil</code> zu überprüfen, um festzustellen ob ein Wert gesetzt ist.
+			<code>!nil</code> ist allerdings <code>true</code>.
+		</text>
+		<text>
+			Da 0 und false nicht mehr <code>any</code> sind, können diese Werte nicht mehr zu anderen Typen wie <code>string</code>, <code>object</code>, <code>array</code> oder <code>map</code> konvertiert werden, was zu einem Error führen würde.
+			Deshalb muss bei Funktionsargumenten dieser Typen auch nil statt 0 verwendet werden, um die jeweiligen Parameter als "ungesetzt" zu definieren.
+		</text>
+
+		<h>Der ?-Modifier</h>
+		<text>
+			Ebenfalls wird ein neuer Modifier eingeführt, der "sichere" Navigation erlaubt. ? wird dazu vor die Navigationsoperatoren gesetzt um eines der folgenden Konstrukte zu erhalten:
+			<code>?.</code>, <code>?[i]</code>, <code>?-></code> oder <code>?->~</code>.
+			Bei Verwendung des ?-Modifiers führen diese Zugriffe nicht zu einem Error, falls der zugrundeliegende Wert nil ist, sondern brechen den ganzen Ausdruck ab und lassen ihn als Ergebnis nil liefern.
+			Da man bei Angabe dieses Modifiers annimmt, dass das Ergebnis des Ausdrucks manchmal nil werden kann, liefert der gesamte Ausdruck nie eine Referenz, sondern immer nur den dereferenzierten Wert. Das hat den Hintergrund, dass sonst bei Verwendung des Ausdruckergebnisses als Referenz unabdingbar Errors entstehen können, wodurch der Sinn des Modifiers zunichte gemacht wird.
+		</text>
+
+		<h>Weitere Auswirkungen</h>
+		<text><ul>
+			<li>Maps und die .-Zugriffssyntax werden verfügbar.</li>
+			<li><emlink href="script/Funcs.html#Aufrufb">Aufrufberechtigungen</emlink> werden auch bei Verwendung der <code>-></code> Syntax überprüft, vorausgesetzt das Ziel-Script ist ebenfalls <code>#strict 3</code> oder höher.</li>
+		</ul></text>
+	</part>
+	<author>Sven2</author><date>Juli 2001</date>
+	<author>Günther</author><date>Dezember 2007</date>
+	<author>Der Tod</author><date>Oktober 2019</date>
 </doc>

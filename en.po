@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-08 21:12+0200\n"
+"POT-Creation-Date: 2019-10-08 22:24+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -12707,8 +12707,8 @@ msgid "Außerdem gibt es noch zwei spezielle Typen:"
 msgstr "Additionally, there are two special types:"
 
 #: sdk/script/Typechecks.xml:66(li)
-msgid "<code>any</code>: Der Typ ist nicht bekannt oder egal. \"0\" hat immer diesen Typ."
-msgstr "<code>any</code>: The type is unknown or does not make a difference. \"0\" always has this type."
+msgid "<code>any</code>: Der Typ ist nicht bekannt oder egal. \"nil\" hat immer diesen Typ."
+msgstr "<code>any</code>: The type is unknown or does not matter. \"nil\" always has this type."
 
 #: sdk/script/Typechecks.xml:67(li)
 msgid "<code>&amp;</code>: Der Wert ist eine Referenz - z.B. auf eine Variable. Er verhält sich genau wie der Zielwert, kann aber gesetzt werden (z.B. mit dem Operator \"<code>=</code>\"). Siehe auch <emlink href=\"script/Funcs.html#referenzen\">Referenzparameter</emlink>."
@@ -12872,11 +12872,12 @@ msgid "Konvertierung nach bool ist generell erlaubt. Sie ergibt für jeden Wert 
 msgstr "Conversion to bool is generally allowed. All values except 0 are <code>true</code>."
 
 #: sdk/script/Strict.xml:8(text)
-msgid "Neu geschriebene Scripte sollten #strict sein. Dabei werden einige Altlasten der Engine ignoriert und es können unter anderem strengere Typüberprüfungen angesetzt werden. Scripte ohne #strict werden nur aus Gründen der Abwärtskompatibilität akzeptiert."
-msgstr "Any new script should be #strict. In this way various old scripting inaccuracies will be ignored and proper type checking can be applied. Scripts without #strict are accepted only for backwards compatibility reasons."
+msgid "Bei aktiviertem <code>#strict</code> werden einige Altlasten der Engine ignoriert und es können unter anderem strengere Typüberprüfungen angesetzt werden."
+msgstr "With activated <code>#strict</code> various old scripting inaccuracies will be ignored and proper type checking can be applied."
 
 #: sdk/script/Strict.xml:12(h)
 #: sdk/script/Strict.xml:31(h)
+#: sdk/script/Strict.xml:51(h)
 #: sdk/script/AppendTo.xml:10(h)
 msgid "Deklaration"
 msgstr "Declaration"
@@ -12915,8 +12916,8 @@ msgid "#strict 2"
 msgstr "#strict 2"
 
 #: sdk/script/Strict.xml:27(text)
-msgid "Neu geschriebene Scripte sollten <code>#strict 2</code> sein. Dabei werden einige Altlasten der Engine ignoriert und es können unter anderem strengere Typüberprüfungen angesetzt werden. Scripte ohne <code>#strict 2</code> werden nur aus Gründen der Abwärtskompatibilität akzeptiert."
-msgstr "Any new script should be <code>#strict 2</code>. In this way various old scripting inaccuracies will be ignored and proper type checking can be applied. Scripts without <code>#strict 2</code> are accepted only for backwards compatibility reasons."
+msgid "Bei aktiviertem <code>#strict 2</code> werden einige Altlasten der Engine ignoriert und es können unter anderem strengere Typüberprüfungen angesetzt werden."
+msgstr "With activated <code>#strict 2</code> various old scripting inaccuracies will be ignored and proper type checking can be applied."
 
 #: sdk/script/Strict.xml:32(text)
 msgid "<code>#strict 2</code> muss als Direktive an den Anfang des Scriptes geschrieben werden. Bei <code>#include</code> und <code>#appendto</code> gilt jeweils der Modus des Scriptes, in dem die Funktion definiert wurde."
@@ -12941,6 +12942,50 @@ msgstr "Function and variable names may only contain the character a-z, A-Z, 0-9
 #: sdk/script/Strict.xml:41(li)
 msgid "<code>eq</code>, <code>ne</code>, <code>S=</code> gibt es nicht mehr. Man kann jetzt Funktionen und Variablen <code>eq</code> und <code>ne</code> nennen oder eine Variable namens <code>S</code> mit <code>S=42;</code> ändern."
 msgstr "<code>eq</code>, <code>ne</code>, <code>S=</code> are not available anymore. <code>eq</code> and <code>ne</code> can now be used as names of functions or variables or a variable of name <code>S</code> can be assigned via <code>S=42;</code>."
+
+#: sdk/script/Strict.xml:45(h)
+msgid "#strict 3"
+msgstr "#strict 3"
+
+#: sdk/script/Strict.xml:47(text)
+msgid "Neu geschriebene Scripte sollten <code>#strict 3</code> sein. Dabei werden einige weitere Altlasten der Engine ignoriert, noch strengere Typüberprüfungen angesetzt und neue Sprachfeatures aktiviert. Scripte ohne <code>#strict 3</code> werden nur aus Gründen der Abwärtskompatibilität akzeptiert."
+msgstr "Any new script should be <code>#strict 3</code>. In this way further old scripting inaccuracies will be ignored, even stronger type checking can be applied and new language features are activated. Scripts without <code>#strict 3</code> are accepted only for backwards compatibility reasons."
+
+#: sdk/script/Strict.xml:52(text)
+msgid "<code>#strict 3</code> muss als Direktive an den Anfang des Scriptes geschrieben werden. Bei <code>#include</code> und <code>#appendto</code> gilt jeweils der Modus des Scriptes, in dem die Funktion definiert wurde."
+msgstr "The <code>#strict 3</code> directive has to be placed at the beginning of each script. With <code>#include</code> or <code>#appendto</code> the strictness of the script in which a function was defined is used."
+
+#: sdk/script/Strict.xml:55(h)
+msgid "nil"
+msgstr "nil"
+
+#: sdk/script/Strict.xml:56(text)
+msgid "Mit <code>#strict 3</code> wird der neue Wert <code>nil</code> eingeführt. <code>nil</code> repräsentiert ungesetzte und undefinierte Werte und hat den Typ <code>any</code>. Weiters wird 0 und <code>false</code> nicht mehr implizit zu <code>any</code> konvertiert, sondern bleiben jetzt <code>int</code> bzw. <code>bool</code>. Dies ermöglicht unter anderem, default-Werte für Parameter ungleich 0/<code>false</code> zu definieren, die trotzdem durch 0/<code>false</code> überschrieben werden. <code>nil</code> ist ungleich jeder Wert anderen Typs inklusive 0 und <code>false</code>, es reicht also aus auf <code>x != nil</code> zu überprüfen, um festzustellen ob ein Wert gesetzt ist. <code>!nil</code> ist allerdings <code>true</code>."
+msgstr "<code>#strict 3</code> introduces the new value <code>nil</code>. It represents undefined and unset values and is of type <code>any</code>. Furthermore, 0 and <code>false</code> are not implicitly converted to <code>any</code> anymore but keep their respective type. This makes it possible distinguish undefined values from 0 and <code>false</code>, for example for defining default parameter values that can be overriden by 0 or <code>false</code>. <code>nil</code> is unequal to any possible value of any other type, including 0 and <code>false</code>. Thus, it suffices to check <code>x != nil</code> to tell if a value has been defined. Anyway, <code>!nil</code> is <code>true</code>."
+
+#: sdk/script/Strict.xml:64(text)
+msgid "Da 0 und false nicht mehr <code>any</code> sind, können diese Werte nicht mehr zu anderen Typen wie <code>string</code>, <code>object</code>, <code>array</code> oder <code>map</code> konvertiert werden, was zu einem Error führen würde. Deshalb muss bei Funktionsargumenten dieser Typen auch nil statt 0 verwendet werden, um die jeweiligen Parameter als \"ungesetzt\" zu definieren."
+msgstr "Because 0 and false are not <code>any</code> anymore, they can not be converted to other types like <code>string</code>, <code>object</code>, <code>array</code> or <code>map</code> which would trigger an error. Consequently, function arguments that should be passed as unset also have to be set to nil instead of 0."
+
+#: sdk/script/Strict.xml:69(h)
+msgid "Der ?-Modifier"
+msgstr "The ? modifier"
+
+#: sdk/script/Strict.xml:70(text)
+msgid "Ebenfalls wird ein neuer Modifier eingeführt, der \"sichere\" Navigation erlaubt. ? wird dazu vor die Navigationsoperatoren gesetzt um eines der folgenden Konstrukte zu erhalten: <code>?.</code>, <code>?[i]</code>, <code>?-&gt;</code> oder <code>?-&gt;~</code>. Bei Verwendung des ?-Modifiers führen diese Zugriffe nicht zu einem Error, falls der zugrundeliegende Wert nil ist, sondern brechen den ganzen Ausdruck ab und lassen ihn als Ergebnis nil liefern. Da man bei Angabe dieses Modifiers annimmt, dass das Ergebnis des Ausdrucks manchmal nil werden kann, liefert der gesamte Ausdruck nie eine Referenz, sondern immer nur den dereferenzierten Wert. Das hat den Hintergrund, dass sonst bei Verwendung des Ausdruckergebnisses als Referenz unabdingbar Errors entstehen können, wodurch der Sinn des Modifiers zunichte gemacht wird."
+msgstr "Likewise <code>#strict 3</code> introduces a new modifier which allows \"safe\" navigation. ? is prepended to the navigation operators to obtain one of the following constructs: <code>?.</code>, <code>?[i]</code>, <code>?-&gt;</code> or <code>?-&gt;~</code>. By using the ? modifier, those accesses do not trigger an error if the underlying value is nil. Instead, the whole expression is aborted and evaluates nil. Because by using this modifier the expression is assumed to return nil sometimes, the expression result is always dereferenced. This is due to the fact that using the result of a ?-modified expression in a reference context would defeat the purpose of the modifier, because in the case nil is returned it would error anyway."
+
+#: sdk/script/Strict.xml:77(h)
+msgid "Weitere Auswirkungen"
+msgstr "Further Effects"
+
+#: sdk/script/Strict.xml:79(li)
+msgid "Maps und die .-Zugriffssyntax werden verfügbar."
+msgstr "Maps and the .-navigation syntax are activated"
+
+#: sdk/script/Strict.xml:80(li)
+msgid "<emlink href=\"script/Funcs.html#Aufrufb\">Aufrufberechtigungen</emlink> werden auch bei Verwendung der <code>-&gt;</code> Syntax überprüft, vorausgesetzt das Ziel-Script ist ebenfalls <code>#strict 3</code> oder höher."
+msgstr "<emlink href=\"script/Funcs.html#Aufrufb\">Permissions</emlink> are also checked when using the <code>-&gt;</code> syntax to call a function, given that the target script is also at least <code>#strict 3</code>."
 
 #: sdk/script/ScriptPlayers.xml:10(text)
 msgid "Ab CR Build 265 ist es möglich, Spieler auch per Script beitreten zu lassen. Solche Spieler verhalten sich wie normale Spieler. Sie besitzen eine Crew, ein Konto, Heimatbasismaterial, ein Team, Baupläne, etc. Einziger Unterschied ist, dass sie von keinem Spieler gesteuert werden und auf keinem Rechner ein Sichtfenster für diese Spieler geöffnet wird."

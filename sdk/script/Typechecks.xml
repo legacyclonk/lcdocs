@@ -63,7 +63,7 @@
 	<text>Auﬂerdem gibt es noch zwei spezielle Typen:</text>
 
 	<text><ul>
-	<li><code>any</code>: Der Typ ist nicht bekannt oder egal. "0" hat immer diesen Typ.</li>
+	<li><code>any</code>: Der Typ ist nicht bekannt oder egal. "nil" hat immer diesen Typ.</li>
 	<li><code>&amp;</code>: Der Wert ist eine Referenz - z.B. auf eine Variable. Er verh‰lt sich genau wie der Zielwert, kann aber gesetzt werden (z.B. mit dem Operator "<code>=</code>"). Siehe auch <emlink href="script/Funcs.html#referenzen">Referenzparameter</emlink>.</li>
 	</ul></text>
 
