@@ -8264,7 +8264,7 @@ msgstr "Key"
 #: sdk/definition/defcore.xml:210(col)
 #: sdk/definition/actmap.xml:22(col)
 msgid "Datentyp"
-msgstr "File type"
+msgstr "Data type"
 
 #: sdk/script/fn/GetPath.xml:41(col)
 #: sdk/definition/actmap.xml:51(col)
