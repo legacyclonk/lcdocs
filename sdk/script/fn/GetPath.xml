@@ -47,7 +47,7 @@
             <rowh><col>Schlüssel</col><col>Datentyp</col><col>Beschreibung</col></rowh>
               <row><col>X</col><col>int</col><col>X-Koordinate des Wegpunkts</col></row>
               <row><col>Y</col><col>int</col><col>Y-Koordinate des Wegpunkts</col></row>
-              <row><col>TransferTarget</col><col>object</col><col>Transferzielobjekt. nil, falls nicht vorhanden.</col></row>
+              <row><col>TransferTarget</col><col>object</col><col>Transferzielobjekt. nur gesetzt, falls vorhanden.</col></row>
           </table>
    </desc>
    <remark>Diese Funktion kann aufgrund der Mapsyntax nur ab #strict 3 verwendet werden. In älteren Versionen kann <funclink>GetPathLength</funclink> verwendet werden.</remark>

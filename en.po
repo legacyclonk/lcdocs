@@ -8358,8 +8358,8 @@ msgid "object"
 msgstr "object"
 
 #: sdk/script/fn/GetPath.xml:50(col)
-msgid "Transferzielobjekt. nil, falls nicht vorhanden."
-msgstr "Transfer target. nil, if not present."
+msgid "Transferzielobjekt. nur gesetzt, falls vorhanden."
+msgstr "Transfer target. only set if present."
 
 #: sdk/script/fn/GetPath.xml:35(desc)
 msgid "Sucht mittels des auch für die Clonk-Wegfindung benutzten Algorithmus einen Weg zwischen zwei Punkten der Landschaft und gibt eine Map mit Wegpunkten und Länge zurück. Wird kein Weg gefunden, wird nil zurückgegeben. Die zurückgegebene Map hat folgende Struktur: <placeholder-1/> Die Wegpunkte haben dabei folgende Struktur: <placeholder-2/>"
