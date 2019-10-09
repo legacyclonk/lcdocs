@@ -78,6 +78,7 @@ werden.</text>
 		<text><ul>
 			<li>Maps und die .-Zugriffssyntax werden verfügbar.</li>
 			<li><emlink href="script/Funcs.html#Aufrufb">Aufrufberechtigungen</emlink> werden auch bei Verwendung der <code>-></code> Syntax überprüft, vorausgesetzt das Ziel-Script ist ebenfalls <code>#strict 3</code> oder höher.</li>
+			<li><code>global-></code> und <code>global->~</code> werden verfügbar.</li>
 		</ul></text>
 	</part>
 	<author>Sven2</author><date>Juli 2001</date>

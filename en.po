@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 18:42+0200\n"
+"POT-Creation-Date: 2019-10-10 00:30+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -706,7 +706,7 @@ msgstr "Generally, operators with a higher priority are evaluate before operator
 #: sdk/script/Funcs.xml:132(h)
 #: sdk/script/FuncCall.xml:15(h)
 #: sdk/script/FuncCall.xml:33(h)
-#: sdk/script/FuncCall.xml:75(h)
+#: sdk/script/FuncCall.xml:86(h)
 #: sdk/script/BreakContinue.xml:15(h)
 msgid "Beispiel:"
 msgstr "Example:"
@@ -12999,6 +12999,10 @@ msgstr "Maps and the .-navigation syntax are activated"
 msgid "<emlink href=\"script/Funcs.html#Aufrufb\">Aufrufberechtigungen</emlink> werden auch bei Verwendung der <code>-&gt;</code> Syntax überprüft, vorausgesetzt das Ziel-Script ist ebenfalls <code>#strict 3</code> oder höher."
 msgstr "<emlink href=\"script/Funcs.html#Aufrufb\">Permissions</emlink> are also checked when using the <code>-&gt;</code> syntax to call a function, given that the target script is also at least <code>#strict 3</code>."
 
+#: sdk/script/Strict.xml:81(li)
+msgid "<code>global-&gt;</code> und <code>global-&gt;~</code> werden verfügbar."
+msgstr "<code>global-&gt;</code> and <code>global-&gt;~</code> become available."
+
 #: sdk/script/ScriptPlayers.xml:10(text)
 msgid "Ab CR Build 265 ist es möglich, Spieler auch per Script beitreten zu lassen. Solche Spieler verhalten sich wie normale Spieler. Sie besitzen eine Crew, ein Konto, Heimatbasismaterial, ein Team, Baupläne, etc. Einziger Unterschied ist, dass sie von keinem Spieler gesteuert werden und auf keinem Rechner ein Sichtfenster für diese Spieler geöffnet wird."
 msgstr "From CR 4.9.7.8 it is possible to create non-humans players by script. These players have all the properties of normal players. They have a crew, wealth, build knowledge, home base material, hostility, teams, etc. However, script players do not have a game view port and they can not be controlled by human users."
@@ -13514,31 +13518,43 @@ msgstr "You don't <i>have</i> to store the object pointer in a variable as done 
 msgid "Es kann zusätzlich zum Namen der aufzurufenden Funktion noch die ID der Definition der Scriptfunktion mit angegeben werden. Das macht den Aufruf zum einen in vielen Fällen leicht schneller, außerdem können so auch überladene Funktionen im Zielscript aufgerufen werden (siehe #include/#appendto)."
 msgstr "To make sure that an object function is called from a given definition script you can also specify the definition's ID just before the function name. In some cases this may be necessary to resolve ambiguities if functions of the same name override each other."
 
-#: sdk/script/FuncCall.xml:71(h)
+#: sdk/script/FuncCall.xml:70(h)
+msgid "Aufruf globaler Funktionen ohne Objekt- oder Definitionskontext"
+msgstr "Calling global functions without object or definition context"
+
+#: sdk/script/FuncCall.xml:72(text)
+msgid "Seit LC [336] ist es möglich, <code>#strict 3</code> oder höher vorausgesetzt, global definierte Funktionen mit <code>global-&gt;Function()</code> ohne Kontext aufzurufen. <code>global-&gt;~</code> ist ebenfalls möglich. Wichtig ist aber, dass zwischen \"global\" und \"-&gt;\" kein Leerzeichen sein darf. Damit ist es zum Beispiel möglich, bei Funktionen, die objektlokale Koordinaten erwarten, globale Koordinaten anzugeben, ohne die eigenen Koordinaten davon abzuziehen."
+msgstr "Since LC [336] it is possible to call globally defined functions without any context using <code>global-&gt;Function()</code>, provided <code>#strict 3</code> or higher is enabled. <code>global-&gt;~</code> is possible as well. Though, it is important to note that there must not be any space between \"global\" and \"->\". With this it is for example possible to call functions which expect local coordinates with global coordinates, without the need of first subtracting the object's own coordinates."
+
+#: sdk/script/FuncCall.xml:77(text)
+msgid "Das folgende Script erstellt einen Flint an den globalen Koordinaten 10/10, sogar wenn es innerhalb eines Objektes ausgeführt wird:"
+msgstr "The following script creates a flint at the global coordinates 10/10 even if it is executed in an object context:"
+
+#: sdk/script/FuncCall.xml:82(h)
 msgid "Indirekter Aufruf von Skriptfunktionen"
 msgstr "Indirect call of script functions"
 
-#: sdk/script/FuncCall.xml:73(text)
+#: sdk/script/FuncCall.xml:84(text)
 msgid "In manchen Situationen kann allerdings auch ein \"indirekter\" Aufruf durch die Engine-Funktionen <placeholder-1/> und Verwandte sinnvoll sein. Hier wird der Funktionsname als String übergeben, was den Aufruf einer Funktion \"nach Namen\" ermöglicht."
 msgstr "In some cases you may want somebody else to call a script function that you have specified. The engine function <placeholder-1/> can do such \"indirect\" calls. You simply pass the function name of the function to be called as string."
 
-#: sdk/script/FuncCall.xml:86(text)
+#: sdk/script/FuncCall.xml:97(text)
 msgid "Ein solcher indirekter Aufruf ist allerdings in der Regel deutlich langsamer als der direkte Aufruf, da bei Call die entsprechende Funktion erst zur Laufzeit im Script gesucht werden muss. Beim direkten Aufruf steht die aufzurufende Funktion dagegen in der Regel bereits zur Zeit des Parsens (also beim Start der Engine) fest, weshalb dieser Aufruf besser optimiert werden kann und deshalb schneller ist."
 msgstr "Usually, indirect calls are a bit slower than direct calls, since they cannot be precompiled and the function will have to be searched by name at runtime."
 
-#: sdk/script/FuncCall.xml:88(text)
+#: sdk/script/FuncCall.xml:99(text)
 msgid "Dieser Nachteil ist aber gleichzeitig in bestimmten Situationen eine Stärke von Call: es ist möglich, zur Laufzeit zu entscheiden, welche Funktion aufgerufen werden soll. Eine Anwendung soll das folgende Beispiel deutlich machen:"
 msgstr "On the other hand, with indirect calls you can \"decide\" at runtime which function to call as is done in the following example:"
 
-#: sdk/script/FuncCall.xml:99(text)
+#: sdk/script/FuncCall.xml:110(text)
 msgid "Hier wird in TestFunktion() eine <em>zufällige</em> Funktion aufgerufen (mittels <placeholder-1/> und <placeholder-2/> wird zufällig einer der drei Strings \"Aufruf1\", \"Aufruf2\" oder \"Aufruf3\" an Call übergeben)."
 msgstr "In TestFunktion() a <em>random</em> function is called (using <placeholder-1/> and <placeholder-2/> one of the three strings \"Aufruf1\", \"Aufruf2\", and \"Aufruf3\" is randomly composed and passed to <code>Call</code>)."
 
-#: sdk/script/FuncCall.xml:100(text)
+#: sdk/script/FuncCall.xml:111(text)
 msgid "Call muss hier verwendet werden, da erst zur Laufzeit bestimmt wird, welche Funktion aufgerufen wird. Außerdem wird bei jeder Ausführung von TestFunktion() eine andere Scriptfunktion ausgewählt, die aufgerufen wird. Dies wäre mit einem direkten Aufruf nicht möglich."
 msgstr "This process has to be done with indirect calls as only at runtime we can know which function is to be called."
 
-#: sdk/script/FuncCall.xml:101(text)
+#: sdk/script/FuncCall.xml:112(text)
 msgid "Außer Call können auch andere Zugriffsarten indirekt erfolgen, siehe dazu <placeholder-1/> und <placeholder-2/>. Besondere Beachtung verdienen außerdem noch <placeholder-3/> und <placeholder-4/>. Sie ermöglichen die Umgehung der <emlink href=\"script/Funcs.html#Aufrufb\">Aufrufbeschränkung</emlink> und existieren nur in der \"Indirekt-Aufruf-Version\"."
 msgstr "There are also some other methods of indirect calls. See <placeholder-1/> and <placeholder-2/>. Also see <placeholder-3/> and <placeholder-4/>. They allow for bypassing the <emlink href=\"script/Funcs.html#Aufrufb\">calling permission</emlink> and only exist as indirect calls."
 
