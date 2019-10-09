@@ -37,7 +37,7 @@
 		<row>
 		  <col><code>string</code></col>
 		  <col>Zeichenkette</col>
-		  <col>Ein beliebiger Text.</col>
+			<col>Ein beliebiger Text. Ein einzelnes Zeichen des Strings als int lässt sich mit <funclink>GetChar</funclink> extrahieren. Einzelne Zeichen eines Strings können als Ein-Zeichen-Strings mit <code>"string"[index]</code> extrahiert werden. Ändern von Strings ist damit nicht möglich. Ein negativer Index wird als Index vom String-Ende aus angesehen.</col>
 		  <col><code>"Dies ist ein Text!" </code></col>
 		</row>
 		<row>

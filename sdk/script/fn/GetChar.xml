@@ -15,6 +15,7 @@
 		</syntax>
 		<desc>Ermittelt den Zeichencode eines indizierten Zeichens einer Zeichenkette.</desc>
 		<remark>Mit <code><funclink>Format</funclink>("%c")</code> lässt sich das Zeichen in einen String umwandeln.</remark>
+		<remark>Mit <code>"string"[index]</code> lässt sich das Zeichen am angegebenen Index als String extrahieren. Negative Indizes zählen vom String-Ende nach vorne.</remark>
 		<examples>
 			<example>
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-08 22:46+0200\n"
+"POT-Creation-Date: 2019-10-09 18:24+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -9188,7 +9188,11 @@ msgstr "Determines the ASCII character code of a character in a string."
 msgid "Mit <code><placeholder-1/>(\"%c\")</code> lässt sich das Zeichen in einen String umwandeln."
 msgstr "Using <code><placeholder-1/>(\"%c\")</code> the character can be converted back into a string."
 
-#: sdk/script/fn/GetChar.xml:25(text)
+#: sdk/script/fn/GetChar.xml:18(remark)
+msgid "Mit <code>\"string\"[index]</code> lässt sich das Zeichen am angegebenen Index als String extrahieren. Negative Indizes zählen vom String-Ende nach vorne."
+msgstr "Using <code>\"string\"[index]</code> the character at the position denoted by index can be extracted as a string. Negative indices count backwards from the string end."
+
+#: sdk/script/fn/GetChar.xml:26(text)
 msgid "Ermittelt den Anfangsbuchstaben des Spielernamens des ersten Spielers."
 msgstr "Gets the first character of the name of the first player."
 
@@ -12679,8 +12683,8 @@ msgid "ID einer Objektdefinition (siehe <emlink href=\"definition/index.html#Obj
 msgstr "ID of an object definition (see <emlink href=\"definition/index.html#ObjektundEntwicklerIdentifikation\">Object Definitions</emlink>)"
 
 #: sdk/script/Typechecks.xml:40(col)
-msgid "Ein beliebiger Text."
-msgstr "Any text."
+msgid "Ein beliebiger Text. Ein einzelnes Zeichen des Strings als int lässt sich mit <placeholder-1/> extrahieren. Einzelne Zeichen eines Strings können als Ein-Zeichen-Strings mit <code>\"string\"[index]</code> extrahiert werden. Ändern von Strings ist damit nicht möglich. Ein negativer Index wird als Index vom String-Ende aus angesehen."
+msgstr "Any text. Single characters can be extracted as int with <placeholder-1>. Furthermore, it is possible to extract single characters as single-character-strings using <code>\"string\"[index]</code>. Strings can not be modified this way. Negative indices count backwards, starting from the end."
 
 #: sdk/script/Typechecks.xml:45(col)
 msgid "Objektzeiger"
