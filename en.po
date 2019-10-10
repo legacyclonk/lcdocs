@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-10 14:26+0200\n"
+"POT-Creation-Date: 2019-10-10 14:35+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -96,7 +96,7 @@ msgstr "Operator"
 #: sdk/definition/procedures.xml:15(col)
 #: sdk/definition/lineconnect.xml:11(col)
 #: sdk/definition/defcore.xml:19(col)
-#: sdk/definition/defcore.xml:210(col)
+#: sdk/definition/defcore.xml:211(col)
 #: sdk/definition/cnat.xml:16(col)
 #: sdk/definition/category.xml:12(col)
 #: sdk/definition/actmap.xml:23(col)
@@ -3475,7 +3475,7 @@ msgstr "Display"
 #: sdk/folder/foldermap.xml:65(col)
 #: sdk/definition/lineconnect.xml:11(col)
 #: sdk/definition/defcore.xml:19(col)
-#: sdk/definition/defcore.xml:210(col)
+#: sdk/definition/defcore.xml:211(col)
 #: sdk/definition/cnat.xml:16(col)
 #: sdk/definition/category.xml:12(col)
 #: sdk/definition/actmap.xml:21(col)
@@ -5229,7 +5229,7 @@ msgid "Zielobjekt helfen, die Baustelle zu errichten (der Clonk baut mit, sobald
 msgstr "Help the target object with the construction (help building as soon as the site is created)."
 
 #: sdk/script/fn/SetCommand.xml:85(col)
-#: sdk/definition/defcore.xml:223(col)
+#: sdk/definition/defcore.xml:224(col)
 msgid "Dig"
 msgstr "Dig"
 
@@ -5257,7 +5257,7 @@ msgstr "Collect the target object and drop it at the target position."
 
 #: sdk/script/fn/SetCommand.xml:89(col)
 #: sdk/script/fn/SetCommand.xml:90(col)
-#: sdk/definition/defcore.xml:211(col)
+#: sdk/definition/defcore.xml:212(col)
 msgid "Energy"
 msgstr "Energy"
 
@@ -5336,7 +5336,7 @@ msgstr "Return to the closest friendly home base."
 
 #: sdk/script/fn/SetCommand.xml:98(col)
 #: sdk/script/fn/SetCommand.xml:99(col)
-#: sdk/definition/defcore.xml:217(col)
+#: sdk/definition/defcore.xml:218(col)
 msgid "Jump"
 msgstr "Jump"
 
@@ -5442,7 +5442,7 @@ msgstr "Open Sell menu for the specified base object."
 #: sdk/script/fn/SetCommand.xml:113(col)
 #: sdk/script/fn/SetCommand.xml:114(col)
 #: sdk/script/fn/SetCommand.xml:115(col)
-#: sdk/definition/defcore.xml:227(col)
+#: sdk/definition/defcore.xml:228(col)
 msgid "Throw"
 msgstr "Throw"
 
@@ -8455,7 +8455,7 @@ msgstr "Key"
 #: sdk/folder/foldermap.xml:43(col)
 #: sdk/folder/foldermap.xml:66(col)
 #: sdk/definition/defcore.xml:19(col)
-#: sdk/definition/defcore.xml:210(col)
+#: sdk/definition/defcore.xml:211(col)
 #: sdk/definition/actmap.xml:22(col)
 msgid "Datentyp"
 msgstr "Data type"
@@ -12771,25 +12771,25 @@ msgstr "Example"
 #: sdk/definition/defcore.xml:199(col)
 #: sdk/definition/defcore.xml:201(col)
 #: sdk/definition/defcore.xml:203(col)
-#: sdk/definition/defcore.xml:211(col)
-#: sdk/definition/defcore.xml:213(col)
-#: sdk/definition/defcore.xml:215(col)
-#: sdk/definition/defcore.xml:217(col)
-#: sdk/definition/defcore.xml:219(col)
-#: sdk/definition/defcore.xml:221(col)
-#: sdk/definition/defcore.xml:223(col)
-#: sdk/definition/defcore.xml:225(col)
-#: sdk/definition/defcore.xml:227(col)
-#: sdk/definition/defcore.xml:229(col)
-#: sdk/definition/defcore.xml:231(col)
-#: sdk/definition/defcore.xml:233(col)
-#: sdk/definition/defcore.xml:235(col)
-#: sdk/definition/defcore.xml:237(col)
-#: sdk/definition/defcore.xml:239(col)
-#: sdk/definition/defcore.xml:241(col)
-#: sdk/definition/defcore.xml:243(col)
-#: sdk/definition/defcore.xml:246(col)
-#: sdk/definition/defcore.xml:248(col)
+#: sdk/definition/defcore.xml:212(col)
+#: sdk/definition/defcore.xml:214(col)
+#: sdk/definition/defcore.xml:216(col)
+#: sdk/definition/defcore.xml:218(col)
+#: sdk/definition/defcore.xml:220(col)
+#: sdk/definition/defcore.xml:222(col)
+#: sdk/definition/defcore.xml:224(col)
+#: sdk/definition/defcore.xml:226(col)
+#: sdk/definition/defcore.xml:228(col)
+#: sdk/definition/defcore.xml:230(col)
+#: sdk/definition/defcore.xml:232(col)
+#: sdk/definition/defcore.xml:234(col)
+#: sdk/definition/defcore.xml:236(col)
+#: sdk/definition/defcore.xml:238(col)
+#: sdk/definition/defcore.xml:240(col)
+#: sdk/definition/defcore.xml:242(col)
+#: sdk/definition/defcore.xml:244(col)
+#: sdk/definition/defcore.xml:247(col)
+#: sdk/definition/defcore.xml:249(col)
 #: sdk/definition/actmap.xml:37(col)
 #: sdk/definition/actmap.xml:42(col)
 #: sdk/definition/actmap.xml:52(col)
@@ -14950,7 +14950,7 @@ msgid "Nachproduktion von Material für die Heimatbasis."
 msgstr "Additional supply of materials to buy."
 
 #: sdk/scenario/scenario.xml:264(col)
-#: sdk/definition/defcore.xml:233(col)
+#: sdk/definition/defcore.xml:234(col)
 msgid "Magic"
 msgstr "Magic"
 
@@ -19914,7 +19914,7 @@ msgid "0 oder 1. Legt fest, ob das Objekt gefällt werden kann."
 msgstr "0 or 1. Determines whether the object can be chopped."
 
 #: sdk/definition/defcore.xml:123(col)
-#: sdk/definition/defcore.xml:235(col)
+#: sdk/definition/defcore.xml:236(col)
 msgid "Float"
 msgstr "Float"
 
@@ -20190,143 +20190,155 @@ msgstr "AutoContextMenu"
 msgid "0 oder 1. Bei 1 wird für dieses Gebäude beim Betreten automatisch das Kontextmenü geöffnet. Ab 4.9.7.7."
 msgstr "0 or 1. If 1, the building's context menu will open automatically upon entry. From 4.9.7.7."
 
-#: sdk/definition/defcore.xml:209(caption)
+#: sdk/definition/defcore.xml:205(col)
+msgid "HideHUDBars"
+msgstr "HideHUDBars"
+
+#: sdk/definition/defcore.xml:205(col)
+msgid "Bitmaske"
+msgstr "bitmask"
+
+#: sdk/definition/defcore.xml:205(col)
+msgid "Blendet die angegebenen Statusleisten des Objekts aus wenn es als Cursor angewählt ist. Mögliche kombinierbare Werte: Energy, MagicEnergy, Breath, All; Ab LC [336]."
+msgstr "Hides the specified object's status bars that are visible while the object is the player's cursor. Possible combinable values: Energy, MagicEnergy, Breath, All; Since LC [336]."
+
+#: sdk/definition/defcore.xml:210(caption)
 msgid "Sektion [Physical]"
 msgstr "Section [Physical]"
 
-#: sdk/definition/defcore.xml:212(col)
+#: sdk/definition/defcore.xml:213(col)
 msgid "0-100000. Maximale Energie bzw. Lebensenergie."
 msgstr "0-100000. Maximum energy (electric or life)."
 
-#: sdk/definition/defcore.xml:213(col)
+#: sdk/definition/defcore.xml:214(col)
 msgid "Breath"
 msgstr "Breath"
 
-#: sdk/definition/defcore.xml:214(col)
+#: sdk/definition/defcore.xml:215(col)
 msgid "0-100000. Maximaler Atem."
 msgstr "0-100000. Maximum breath."
 
-#: sdk/definition/defcore.xml:215(col)
+#: sdk/definition/defcore.xml:216(col)
 msgid "Walk"
 msgstr "Walk"
 
-#: sdk/definition/defcore.xml:216(col)
+#: sdk/definition/defcore.xml:217(col)
 msgid "0-100000. Laufgeschwindigkeit."
 msgstr "0-100000. Walking speed."
 
-#: sdk/definition/defcore.xml:218(col)
+#: sdk/definition/defcore.xml:219(col)
 msgid "0-100000. Sprungkraft."
 msgstr "0-100000. Jump force."
 
-#: sdk/definition/defcore.xml:219(col)
+#: sdk/definition/defcore.xml:220(col)
 msgid "Scale"
 msgstr "Scale"
 
-#: sdk/definition/defcore.xml:220(col)
+#: sdk/definition/defcore.xml:221(col)
 msgid "0-100000. Klettergeschwindigkeit."
 msgstr "0-100000. Scaling speed."
 
-#: sdk/definition/defcore.xml:221(col)
+#: sdk/definition/defcore.xml:222(col)
 msgid "Hangle"
 msgstr "Hangle"
 
-#: sdk/definition/defcore.xml:222(col)
+#: sdk/definition/defcore.xml:223(col)
 msgid "0-100000. Hangelgeschwindigkeit."
 msgstr "0-100000. Hangling speed."
 
-#: sdk/definition/defcore.xml:224(col)
+#: sdk/definition/defcore.xml:225(col)
 msgid "0-100000. Grabgeschwindigkeit."
 msgstr "0-100000. Digging speed."
 
-#: sdk/definition/defcore.xml:225(col)
+#: sdk/definition/defcore.xml:226(col)
 msgid "Swim"
 msgstr "Swim"
 
-#: sdk/definition/defcore.xml:226(col)
+#: sdk/definition/defcore.xml:227(col)
 msgid "0-100000. Schwimmgeschwindigkeit."
 msgstr "0-100000. Swimming speed."
 
-#: sdk/definition/defcore.xml:228(col)
+#: sdk/definition/defcore.xml:229(col)
 msgid "0-100000. Wurfkraft."
 msgstr "0-100000. Throwing force."
 
-#: sdk/definition/defcore.xml:229(col)
+#: sdk/definition/defcore.xml:230(col)
 msgid "Push"
 msgstr "Push"
 
-#: sdk/definition/defcore.xml:230(col)
+#: sdk/definition/defcore.xml:231(col)
 msgid "0-100000. Schiebekraft."
 msgstr "0-100000. Push power."
 
-#: sdk/definition/defcore.xml:231(col)
+#: sdk/definition/defcore.xml:232(col)
 msgid "Fight"
 msgstr "Fight"
 
-#: sdk/definition/defcore.xml:232(col)
+#: sdk/definition/defcore.xml:233(col)
 msgid "0-100000. Kampfkraft."
 msgstr "0-100000. Fight power."
 
-#: sdk/definition/defcore.xml:234(col)
+#: sdk/definition/defcore.xml:235(col)
 msgid "0-100000. Maximale Zauberenergie."
 msgstr "0-100000. Maximal magic energy."
 
-#: sdk/definition/defcore.xml:236(col)
+#: sdk/definition/defcore.xml:237(col)
 msgid "0-100. Fluggeschwindigkeit."
 msgstr "0-100. Flight speed."
 
-#: sdk/definition/defcore.xml:237(col)
+#: sdk/definition/defcore.xml:238(col)
 msgid "CanScale"
 msgstr "CanScale"
 
-#: sdk/definition/defcore.xml:238(col)
+#: sdk/definition/defcore.xml:239(col)
 msgid "0 oder 1. Klettern."
 msgstr "0 or 1. Scale."
 
-#: sdk/definition/defcore.xml:239(col)
+#: sdk/definition/defcore.xml:240(col)
 msgid "CanHangle"
 msgstr "CanHangle"
 
-#: sdk/definition/defcore.xml:240(col)
+#: sdk/definition/defcore.xml:241(col)
 msgid "0 oder 1. Hangeln."
 msgstr "0 or 1. Brachiation."
 
-#: sdk/definition/defcore.xml:241(col)
+#: sdk/definition/defcore.xml:242(col)
 msgid "CanDig"
 msgstr "CanDig"
 
-#: sdk/definition/defcore.xml:242(col)
+#: sdk/definition/defcore.xml:243(col)
 msgid "0 oder 1. Graben."
 msgstr "0 or 1. Dig."
 
-#: sdk/definition/defcore.xml:243(col)
+#: sdk/definition/defcore.xml:244(col)
 msgid "CanConstruct"
 msgstr "CanConstruct"
 
-#: sdk/definition/defcore.xml:244(col)
+#: sdk/definition/defcore.xml:245(col)
 msgid "0 oder 1. Bauen. Bei Werten größer 1: Prozentuale Baugeschwindigkeit (100 entspricht dem Standard; 50 ist halbe Standardgeschwindigkeit). Erweitert"
 msgstr "0 or 1. Construct. If greater than 1, percentage construction speed. (100 normal, 50 half, etc.)"
 
-#: sdk/definition/defcore.xml:246(col)
+#: sdk/definition/defcore.xml:247(col)
 msgid "CorrosionResist"
 msgstr "CorrosionResist"
 
-#: sdk/definition/defcore.xml:247(col)
+#: sdk/definition/defcore.xml:248(col)
 msgid "0 oder 1. Legt fest, ob das Objekt Säure widersteht."
 msgstr "0 or 1. Determines wether the object resists acid."
 
-#: sdk/definition/defcore.xml:248(col)
+#: sdk/definition/defcore.xml:249(col)
 msgid "BreatheWater"
 msgstr "BreatheWater"
 
-#: sdk/definition/defcore.xml:249(col)
+#: sdk/definition/defcore.xml:250(col)
 msgid "0 Objekt atmet Luft, 1 Objekt atmet Wasser."
 msgstr "0 object breathes air, 1 object breathes water."
 
-#: sdk/definition/defcore.xml:252(h)
+#: sdk/definition/defcore.xml:253(h)
 msgid "Hinweis:"
 msgstr "Note:"
 
-#: sdk/definition/defcore.xml:253(text)
+#: sdk/definition/defcore.xml:254(text)
 msgid "Sobald ein Mannschaftsmitglied erschaffen wird, wird für dieses eine eigenständige Physical-Sektion erschaffen, die zusammen mit dem Mannschaftsmitglied in der Objektinfo (c4i) gespeichert wird. Jedes Mannschaftsmitglied behält seine eigene Physical-Sektion, da hier alle individuellen Veränderungen (z.B. erweiterte Fähigkeiten durch Beförderung) vorgenommen werden. Die Physical-Sektion der Objektdefinition wird also nur bei der Erschaffung des Objekts verwendet und nicht etwa bei ChangeDef."
 msgstr "When a crew member is created, it gets an own physical section in it's Objectinfo (c4i). In there, the individual changes to the physicals (for example because of training) are saved and restored when an object enters a player's crew. The physical section of the defcore is only used for new crew members and normal objects."
 
