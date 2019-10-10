@@ -17,7 +17,7 @@ Beschreibung der Scriptsprache C4Script siehe
 {
   <emlink href="script/fn/CreateContents.html">CreateContents</emlink>(ROCK);
   <emlink href="script/fn/return.html">return</emlink>(1);
-}  
+}
 </code>
 
 <text>Ein Objekt mit diesem Script enthält sofort nach seiner Erschaffung einen Stein. Die
@@ -199,7 +199,7 @@ Aufnahme des anderen Objekts verhindert werden.</col></row>
 Hineinversetzen in das andere Objekt verhindert werden.</col></row>
 <row id="InitializePlayer"><col>InitializePlayer</col><col>int iPlr, int iX, int iY, object pBase, int iTeam, id idExtra</col>
   <col>Aufruf in Spielziel, -regel und Umweltobjekten nach der Platzierung eines beitretenden
-Spielers, und vor dem entsprechenden Aufruf im Szenarioscript. Durch Angabe einer ID lassen sich Scriptspieler-Typen unterscheiden. 
+Spielers, und vor dem entsprechenden Aufruf im Szenarioscript. Durch Angabe einer ID lassen sich Scriptspieler-Typen unterscheiden.
 Beispielsweise könnte ein Szenario dynamisch Alien- oder Clonkgegner anbieten.</col></row>
 <row id="SellTo"><col>SellTo</col><col>int iByPlr</col>
   <col>Wenn das Objekt verkauft wird. Rückgabewert 0 oder die ID des Objekts, welches dem
@@ -233,18 +233,18 @@ Wenn OnActionJump true zurückgibt, wird der Engine-Sprung unterbunden.</col></ro
 <row id="RejectContents"><col>RejectContents</col><col></col>
   <col>Wenn true zurückgegeben wird, lässt sich kein Inhaltsmenü öffnen. </col></row>
 <row id="RejectFight"><col>RejectFight</col><col>object pEnemy</col>
-  <col>Wird vor jedem Kampf aufgerufen. Wenn true zurückgegeben wird, findet kein Kampf statt. </col></row>  
+  <col>Wird vor jedem Kampf aufgerufen. Wenn true zurückgegeben wird, findet kein Kampf statt. </col></row>
 </table></text>
 
 <h id="Control-Funktionen">Control-Funktionen</h>
-<text>Die Engine ruft bei jedem Spielerkommando (Left, Up, Right, Down, Dig, Throw, Special) im
+<text>Die Engine ruft bei jedem Spielerkommando (Left, Up, Right, Down, Dig, Throw, Special, Special2, CursorLeft, CursorToggle, CursorRight) im
 Script eines spielergesteuerten Objekts die entsprechende Control-Funktion auf, wenn diese vorhanden
 ist. Gibt die aufgerufene Control-Funktion 1 zurück, so wird die interne Bearbeitung des
 Spielerkommandos übersprungen. Ist die Funktion nicht vorhanden oder gibt 0 zurück, findet
 die interne Bearbeitung des Spielerkommandos statt.</text>
 <code>func ControlThrow()
 {
-  <emlink href="script/fn/if.html">if</emlink> (<emlink href="script/fn/FindContents.html">FindContents</emlink>(SPER)) 
+  <emlink href="script/fn/if.html">if</emlink> (<emlink href="script/fn/FindContents.html">FindContents</emlink>(SPER))
     <emlink href="script/fn/return.html">return</emlink>(<emlink href="script/fn/SetAction.html">SetAction</emlink>(&quot;ThrowSpear&quot;));
   <emlink href="script/fn/return.html">return</emlink>(0);
 }
@@ -265,7 +265,7 @@ wird.</text>
 (Behälter), so werden zunächst die Standardkommandos Down (Verlassen), Throw (Ablegen), Up
 (Kaufen, in Basisgebäude) und Dig (Verkaufen, in Basisgebäude) ausgewertet.
 Anschließend wird die Steuerung als Contained-Funktion an den Behälter weitergegeben.
-Ausnahme: die Spezialkommandos ControlSpecial, ControlSpecial2 und ControlWheelUp/Down sind nur
+Ausnahme: die Spezialkommandos ControlSpecial, ControlSpecial2, ControlCursorLeft, ControlCursorToggle, ControlCursorRight und ControlWheelUp/Down sind nur
 für die direkte Steuerung gedacht und werden nicht an den Behälter umgeleitet.</text>
 <text>ControlCommand: die Engine führt auch <a href="#ObjektCallsderEngine">Objekt-Calls</a>
 für selbständig auszuführende Befehle (Commands) aus, die direkt durch den Spieler
@@ -281,7 +281,7 @@ gegeben wurden (z.B. durch Maussteuerung).</text>
     <emlink href="script/fn/Message.html">Message</emlink>(&quot;Befehl: %s Koordinaten: %d/%d&quot;, <emlink href="script/fn/this.html">this</emlink>(), strCommand, iTx, iTy);
   // Kommando nicht abfangen
   <emlink href="script/fn/return.html">return</emlink>(0);
-}  
+}
 </code>
 
 <text>Durch Rückgabe des Werts 1 kann der Befehl abgefangen und die interne Verarbeitung
@@ -319,9 +319,9 @@ eine gültige Funktionsbeschreibung haben und müssen public sein.</text>
   [Bauauftrag|Image=CXCN|Condition=HasKnowledge]
   SetCommand(this(), "Construct");
   return(1);
-}  
+}
 </code>
-  
+
 <text>Über das Condition-Feld kann bestimmt werden, dass die Funktion nur dann im Kontextmenü
 auftaucht, wenn die entsprechende Funktion (hier HasKnowledge) im Objektscript vorhanden ist und
 einen positiven Wert zurückliefert. Das Menüobjekt wird als erster Parameter an die

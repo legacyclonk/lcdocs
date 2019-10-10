@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-10 14:35+0200\n"
+"POT-Creation-Date: 2019-10-10 14:49+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -18978,8 +18978,8 @@ msgid "Control-Funktionen"
 msgstr "Control Functions"
 
 #: sdk/definition/script.xml:240(text)
-msgid "Die Engine ruft bei jedem Spielerkommando (Left, Up, Right, Down, Dig, Throw, Special) im Script eines spielergesteuerten Objekts die entsprechende Control-Funktion auf, wenn diese vorhanden ist. Gibt die aufgerufene Control-Funktion 1 zurück, so wird die interne Bearbeitung des Spielerkommandos übersprungen. Ist die Funktion nicht vorhanden oder gibt 0 zurück, findet die interne Bearbeitung des Spielerkommandos statt."
-msgstr "At every player command (left, right, up, down dig, throw, special) the engine calls the corresponding control function in the script of the currently controlled object of the player. If the function is defined and returns true, the internal handling of the player command is skipped. If the function is not defined or returns false, internal processing is done."
+msgid "Die Engine ruft bei jedem Spielerkommando (Left, Up, Right, Down, Dig, Throw, Special, Special2, CursorLeft, CursorToggle, CursorRight) im Script eines spielergesteuerten Objekts die entsprechende Control-Funktion auf, wenn diese vorhanden ist. Gibt die aufgerufene Control-Funktion 1 zurück, so wird die interne Bearbeitung des Spielerkommandos übersprungen. Ist die Funktion nicht vorhanden oder gibt 0 zurück, findet die interne Bearbeitung des Spielerkommandos statt."
+msgstr "At every player command (Left, Up, Right, Down, Dig, Throw, Special, Special2, CursorLeft, CursorToggle, CursorRight) the engine calls the corresponding control function in the script of the currently controlled object of the player. If the function is defined and returns true, the internal handling of the player command is skipped. If the function is not defined or returns false, internal processing is done."
 
 #: sdk/definition/script.xml:247(emlink)
 #: sdk/definition/script.xml:277(emlink)
@@ -19007,8 +19007,8 @@ msgid "Einzelklicks und Doppelklicks: Die Engine ruft bei jedem Spielerkommando 
 msgstr "Single and double clicks: for each player command the engine will first call the simple variant of the control function (e.g. ControlDown) and then the more specific variant (i.e. ControlDownSingle or ControlDownDouble). When overloading control functions you should pay attention to catch the correct variant to overload."
 
 #: sdk/definition/script.xml:264(text)
-msgid "ContainedControl: Befindet sich das direkt spielergesteuerte Objekt in einem anderen Objekt (Behälter), so werden zunächst die Standardkommandos Down (Verlassen), Throw (Ablegen), Up (Kaufen, in Basisgebäude) und Dig (Verkaufen, in Basisgebäude) ausgewertet. Anschließend wird die Steuerung als Contained-Funktion an den Behälter weitergegeben. Ausnahme: die Spezialkommandos ControlSpecial, ControlSpecial2 und ControlWheelUp/Down sind nur für die direkte Steuerung gedacht und werden nicht an den Behälter umgeleitet."
-msgstr "ContainedControl: if a directly controlled object is contained in another object (container) the basic commands down (exit), throw (put), up (buy at base), dig (sell at base) are evaluated internally first. Then the command is passed to the container for special handling there. Exception: the commands ControlSpecial, ControlSpecial2, and ControlWheepUp/Down are only direct commands and are not passed to the container."
+msgid "ContainedControl: Befindet sich das direkt spielergesteuerte Objekt in einem anderen Objekt (Behälter), so werden zunächst die Standardkommandos Down (Verlassen), Throw (Ablegen), Up (Kaufen, in Basisgebäude) und Dig (Verkaufen, in Basisgebäude) ausgewertet. Anschließend wird die Steuerung als Contained-Funktion an den Behälter weitergegeben. Ausnahme: die Spezialkommandos ControlSpecial, ControlSpecial2, ControlCursorLeft, ControlCursorToggle, ControlCursorRight und ControlWheelUp/Down sind nur für die direkte Steuerung gedacht und werden nicht an den Behälter umgeleitet."
+msgstr "ContainedControl: if a directly controlled object is contained in another object (container) the basic commands down (exit), throw (put), up (buy at base), dig (sell at base) are evaluated internally first. Then the command is passed to the container for special handling there. Exception: the commands ControlSpecial, ControlSpecial2, ControlCursorLeft, ControlCursorToggle, ControlCursorRight, and ControlWheelUp/Down are only direct commands and are not passed to the container."
 
 #: sdk/definition/script.xml:270(text)
 msgid "ControlCommand: die Engine führt auch <a href=\"#ObjektCallsderEngine\">Objekt-Calls</a> für selbständig auszuführende Befehle (Commands) aus, die direkt durch den Spieler gegeben wurden (z.B. durch Maussteuerung)."
