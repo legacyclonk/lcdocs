@@ -57,7 +57,7 @@ werden.</text>
 			Mit <code>#strict 3</code> wird der neue Wert <code>nil</code> eingeführt.
 			<code>nil</code> repräsentiert ungesetzte und undefinierte Werte und hat den Typ <code>any</code>.
 			Weiters wird 0 und <code>false</code> nicht mehr implizit zu <code>any</code> konvertiert, sondern bleiben jetzt <code>int</code> bzw. <code>bool</code>.
-			Dies ermöglicht unter anderem, default-Werte für Parameter ungleich 0/<code>false</code> zu definieren, die trotzdem durch 0/<code>false</code> überschrieben werden.
+			Dies ermöglicht unter anderem default-Werte für Parameter ungleich 0/<code>false</code> zu definieren, die trotzdem durch 0/<code>false</code> überschrieben werden können.
 			<code>nil</code> ist ungleich jeder Wert anderen Typs inklusive 0 und <code>false</code>, es reicht also aus auf <code>x != nil</code> zu überprüfen, um festzustellen ob ein Wert gesetzt ist.
 			<code>!nil</code> ist allerdings <code>true</code>.
 		</text>
