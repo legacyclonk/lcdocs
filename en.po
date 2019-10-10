@@ -19012,7 +19012,7 @@ msgstr "ContainedControl: if a directly controlled object is contained in anothe
 
 #: sdk/definition/script.xml:270(text)
 msgid "ControlCommand: die Engine führt auch <a href=\"#ObjektCallsderEngine\">Objekt-Calls</a> für selbständig auszuführende Befehle (Commands) aus, die direkt durch den Spieler gegeben wurden (z.B. durch Maussteuerung)."
-msgstr "ControlCommnd: the engine also performs <a href=\"#ObjektCallsderEngine\">object calls</a> for independently executed commands which have been given directly by the player (i.e. by mouse control)."
+msgstr "ControlCommand: the engine also performs <a href=\"#ObjektCallsderEngine\">object calls</a> for independently executed commands which have been given directly by the player (i.e. by mouse control)."
 
 #: sdk/definition/script.xml:278(emlink)
 #: sdk/definition/script.xml:281(emlink)
