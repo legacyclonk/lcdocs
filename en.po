@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-10 14:15+0200\n"
+"POT-Creation-Date: 2019-10-10 14:26+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -13159,6 +13159,10 @@ msgstr "<emlink href=\"script/Funcs.html#Aufrufb\">Permissions</emlink> are also
 #: sdk/script/Strict.xml:81(li)
 msgid "<code>global-&gt;</code> und <code>global-&gt;~</code> werden verfügbar."
 msgstr "<code>global-&gt;</code> and <code>global-&gt;~</code> become available."
+
+#: sdk/script/Strict.xml:82(li)
+msgid "<code>false != 0</code> und <code>true != 1</code>"
+msgstr "<code>false != 0</code> and <code>true != 1</code>"
 
 #: sdk/script/ScriptPlayers.xml:10(text)
 msgid "Ab CR Build 265 ist es möglich, Spieler auch per Script beitreten zu lassen. Solche Spieler verhalten sich wie normale Spieler. Sie besitzen eine Crew, ein Konto, Heimatbasismaterial, ein Team, Baupläne, etc. Einziger Unterschied ist, dass sie von keinem Spieler gesteuert werden und auf keinem Rechner ein Sichtfenster für diese Spieler geöffnet wird."
