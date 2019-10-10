@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-10 16:08+0200\n"
+"POT-Creation-Date: 2019-10-10 16:56+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -14760,7 +14760,7 @@ msgstr "Rules"
 #: sdk/scenario/scenario.xml:438(col)
 #: sdk/scenario/scenario.xml:443(col)
 #: sdk/scenario/scenario.xml:530(col)
-#: sdk/scenario/scenario.xml:554(col)
+#: sdk/scenario/scenario.xml:559(col)
 #: sdk/definition/defcore.xml:50(col)
 msgid "ID-Liste"
 msgstr "ID list"
@@ -15353,22 +15353,34 @@ msgid "Wenn LocalOnly den Wert 1 hat, werden alle angegebenen Objektdefinitions-
 msgstr "If LocalOnly is 1, only definitions local to the scenario file will be load."
 
 #: sdk/scenario/scenario.xml:548(col)
+msgid "Definitions"
+msgstr "Definitions"
+
+#: sdk/scenario/scenario.xml:549(col)
+msgid "Liste von Zeichenfolgen"
+msgstr "List of strings"
+
+#: sdk/scenario/scenario.xml:550(col)
+msgid "Über Definitions (etwa Definitions=\"Objects.c4d\", \"Knights.c4d\") kann vorgegeben werden, welche Objektdefinitionspakete (c4d) das Szenario benutzen soll. Die Pakete müssen im Clonk-Verzeichnis vorhanden sein und in Anführungszeichen eingeschlossen angegeben werden. Sind Pakete im Szenario angegeben, wird die vom Menüsystem bestimmte Auswahl ignoriert."
+msgstr "With the Definitions entry (e.g. Definitions=\"Objects.c4d\", \"Knights.c4d\") you can specify which object definition packs (c4d) are to be loaded with this scenario. The specified files must be available in the Clonk directory; you must put double quotes around them. If files are specified here, manual pack selection in the menu system is disabled."
+
+#: sdk/scenario/scenario.xml:553(col)
 msgid "Definition1 (bis 9)"
 msgstr "Definition1 to 9"
 
-#: sdk/scenario/scenario.xml:549(col)
+#: sdk/scenario/scenario.xml:554(col)
 msgid "Zeichenfolge(n)"
 msgstr "String(s)"
 
-#: sdk/scenario/scenario.xml:550(col)
+#: sdk/scenario/scenario.xml:555(col)
 msgid "Über Definition<em>x</em>-Einträge kann vorgegeben werden, welche Objektdefinitionspakete (c4d) das Szenario benutzen soll. Die Pakete müssen im Clonk-Verzeichnis vorhanden sein. Sind Pakete im Szenario angegeben, wird die vom Menüsystem bestimmte Auswahl ignoriert."
 msgstr "With Definition<em>x</em> entries you can specify which object definition packs (c4d) are to be loaded with this scenario. The specified files must be available in the Clonk directory. If files are specified here, manual pack selection in the menu system is disabled."
 
-#: sdk/scenario/scenario.xml:553(col)
+#: sdk/scenario/scenario.xml:558(col)
 msgid "SkipDefs"
 msgstr "SkipDefs"
 
-#: sdk/scenario/scenario.xml:555(col)
+#: sdk/scenario/scenario.xml:560(col)
 msgid "Liste der Definitionen, die im Spiel nicht geladen werden sollen. So lässt sich beispielsweise die Erforschung bestimmter Objekte verhindern."
 msgstr "List of object definitions (C4IDs) which are not to be loaded with this scenario. This can be used to prevent researching certain object types in the game."
 
