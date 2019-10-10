@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-10 14:49+0200\n"
+"POT-Creation-Date: 2019-10-10 16:08+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -12918,8 +12918,8 @@ msgid "Maps"
 msgstr "Maps"
 
 #: sdk/script/Typechecks.xml:100(text)
-msgid "Maps heißen in anderen Programmiersprachen auch Hashes oder assoziative Arrays. Maps sind nur verfügbar, wenn das Script <emlink href=\"script/Strict.html\">#strict 3</emlink> oder höher ist. Maps können direkt mit <code>{ <em>Schlüssel 1</em> = <em>Ausdruck 1</em>, <em>Schlüssel 2</em> = <em>Ausdruck 2</em>, ... }</code> erstellt werden. Zur einfacheren zukünftigen Weiterbearbeitung ist es erlaubt, auch nach dem letzten Schlüssel-Wert-Paar ein Komma stehen zu lassen. Eine leere Map wird mit <code>{}</code> erstellt. Die Map-Syntax mit {} erlaubt nur Strings als Schlüssel. Falls der Schlüssel Leerzeichen oder andere in Identifiern nicht erlaubte Zeichen beinhalten soll, muss er wie ein richtiger String in \"\" (Anführungszeichen) stehen, ansonsten sind die Anführungszeichen optional."
-msgstr "Maps are also known as hashes or associative arrays in other languages. Maps are only available if <emlink href=\"script/Strict.html\">#strict 3</emlink> or higher is enabled. Maps can be created directly with <code>{ <em>Key 1</em> = <em>Expression 1</em>, <em>Key 2</em> = <em>Expression 2</em>, ... }</code>. To ease future additions, a comma may be placed after the last key-value-pair. An empty map can be created with <code>{}</code>. The map syntax with {} only allows strings as keys. If a key contains characters not allowed in identifiers the key must be enclosed in \"\" (quotation marks), otherwise quotation marks are optional."
+msgid "Maps heißen in anderen Programmiersprachen auch Hashes oder assoziative Arrays. Maps sind nur verfügbar, wenn das Script <emlink href=\"script/Strict.html\">#strict 3</emlink> oder höher ist. Maps können direkt mit <code>{ <em>Schlüssel 1</em> = <em>Ausdruck 1</em>, <em>Schlüssel 2</em> = <em>Ausdruck 2</em>, \"<em>Schlüssel 3</em>\" = <em>Ausdruck 3</em>, [<em>Schlüsselausdruck</em>] = <em>Ausdruck 4</em>, ... }</code> erstellt werden. Zur einfacheren zukünftigen Weiterbearbeitung ist es erlaubt, auch nach dem letzten Schlüssel-Wert-Paar ein Komma stehen zu lassen. Eine leere Map wird mit <code>{}</code> erstellt. Falls der Schlüssel Leerzeichen oder andere in Identifiern nicht erlaubte Zeichen beinhalten soll, muss er wie ein richtiger String in \"\" (Anführungszeichen) stehen, ansonsten sind die Anführungszeichen optional. Um das Ergebnis eines Ausdrucks oder einen Wert der kein String ist als Schlüssel zu verwenden, kann ein Ausdruck in <code>[]</code> stehen (siehe Beispiel)."
+msgstr "Maps are also known as hashes or associative arrays in other languages. Maps are only available if <emlink href=\"script/Strict.html\">#strict 3</emlink> or higher is enabled. Maps can be created directly with <code>{ <em>Key 1</em> = <em>Expression 1</em>, <em>Key 2</em> = <em>Expression 2</em>, \"<em>key3</em>\" = <em>Expression 3</em>, [<em>Key Expression</em>] = <em>Expression 4</em>, ... }</code>. To ease future additions, a comma may be placed after the last key-value-pair. An empty map can be created with <code>{}</code>. If a key contains characters not allowed in identifiers the key must be enclosed in \"\" (quotation marks), otherwise quotation marks are optional. To use values of types different than string or the result of an expression as key, enclose it in <code>[]</code> (see example)."
 
 #: sdk/script/Typechecks.xml:108(text)
 msgid "Zum Abfragen und Setzen von Werten wird die Syntax <code>map[key]</code> verwendet. Für String-Schlüssel die fest sind und nur Identifier-Zeichen beinhalten kann auch über <code>map.key</code> (ohne Anführungszeichen), statt <code>map[\"key\"]</code> zugegriffen werden. Um einen Schlüssel aus einer Map zu löschen muss der Wert auf <code>nil</code> gesetzt werden."
@@ -12945,98 +12945,98 @@ msgstr "Objects, regardless if used directly or nested inside maps and arrays, s
 msgid "Diese Funktion demonstriert den Umgang mit Maps."
 msgstr "This function demonstrates the usage of maps."
 
-#: sdk/script/Typechecks.xml:190(text)
+#: sdk/script/Typechecks.xml:192(text)
 msgid "Teil eines Objektscripts, das mithilfe einer Map für eine begrenzte Anzahl diverser Artikel Rabatte verwaltet."
 msgstr "Part of an object script that manages discounts for various articles of limited amount using a map."
 
-#: sdk/script/Typechecks.xml:193(h)
+#: sdk/script/Typechecks.xml:195(h)
 msgid "Konvertierung"
 msgstr "Conversion"
 
-#: sdk/script/Typechecks.xml:195(text)
+#: sdk/script/Typechecks.xml:197(text)
 msgid "Aus folgender Tabelle kann entnommen werden, welche Typen automatisch konvertiert werden und wo ein Fehler ausgelöst wird:"
 msgstr "Consult the following table to determine which types can be converted and which conversions might cause errors:"
 
-#: sdk/script/Typechecks.xml:198(col)
+#: sdk/script/Typechecks.xml:200(col)
 msgid "nach -&gt;"
 msgstr "to -&gt;"
 
-#: sdk/script/Typechecks.xml:209(col)
-#: sdk/script/Typechecks.xml:210(col)
-#: sdk/script/Typechecks.xml:219(col)
-#: sdk/script/Typechecks.xml:220(col)
-#: sdk/script/Typechecks.xml:230(col)
-#: sdk/script/Typechecks.xml:231(col)
-#: sdk/script/Typechecks.xml:240(col)
+#: sdk/script/Typechecks.xml:211(col)
+#: sdk/script/Typechecks.xml:212(col)
+#: sdk/script/Typechecks.xml:221(col)
+#: sdk/script/Typechecks.xml:222(col)
+#: sdk/script/Typechecks.xml:232(col)
+#: sdk/script/Typechecks.xml:233(col)
 #: sdk/script/Typechecks.xml:242(col)
-#: sdk/script/Typechecks.xml:250(col)
-#: sdk/script/Typechecks.xml:253(col)
-#: sdk/script/Typechecks.xml:260(col)
-#: sdk/script/Typechecks.xml:264(col)
-#: sdk/script/Typechecks.xml:270(col)
-#: sdk/script/Typechecks.xml:275(col)
+#: sdk/script/Typechecks.xml:244(col)
+#: sdk/script/Typechecks.xml:252(col)
+#: sdk/script/Typechecks.xml:255(col)
+#: sdk/script/Typechecks.xml:262(col)
+#: sdk/script/Typechecks.xml:266(col)
+#: sdk/script/Typechecks.xml:272(col)
+#: sdk/script/Typechecks.xml:277(col)
 msgid "OK"
 msgstr "OK"
 
-#: sdk/script/Typechecks.xml:211(col)
+#: sdk/script/Typechecks.xml:213(col)
 msgid "if &lt;= 9999"
 msgstr "if &lt;= 9999"
 
-#: sdk/script/Typechecks.xml:212(col)
-#: sdk/script/Typechecks.xml:213(col)
 #: sdk/script/Typechecks.xml:214(col)
 #: sdk/script/Typechecks.xml:215(col)
-#: sdk/script/Typechecks.xml:221(col)
-#: sdk/script/Typechecks.xml:222(col)
+#: sdk/script/Typechecks.xml:216(col)
+#: sdk/script/Typechecks.xml:217(col)
 #: sdk/script/Typechecks.xml:223(col)
 #: sdk/script/Typechecks.xml:224(col)
 #: sdk/script/Typechecks.xml:225(col)
-#: sdk/script/Typechecks.xml:232(col)
-#: sdk/script/Typechecks.xml:233(col)
+#: sdk/script/Typechecks.xml:226(col)
+#: sdk/script/Typechecks.xml:227(col)
 #: sdk/script/Typechecks.xml:234(col)
 #: sdk/script/Typechecks.xml:235(col)
-#: sdk/script/Typechecks.xml:241(col)
+#: sdk/script/Typechecks.xml:236(col)
+#: sdk/script/Typechecks.xml:237(col)
 #: sdk/script/Typechecks.xml:243(col)
-#: sdk/script/Typechecks.xml:244(col)
 #: sdk/script/Typechecks.xml:245(col)
-#: sdk/script/Typechecks.xml:251(col)
-#: sdk/script/Typechecks.xml:252(col)
+#: sdk/script/Typechecks.xml:246(col)
+#: sdk/script/Typechecks.xml:247(col)
+#: sdk/script/Typechecks.xml:253(col)
 #: sdk/script/Typechecks.xml:254(col)
-#: sdk/script/Typechecks.xml:255(col)
-#: sdk/script/Typechecks.xml:259(col)
+#: sdk/script/Typechecks.xml:256(col)
+#: sdk/script/Typechecks.xml:257(col)
 #: sdk/script/Typechecks.xml:261(col)
-#: sdk/script/Typechecks.xml:262(col)
 #: sdk/script/Typechecks.xml:263(col)
+#: sdk/script/Typechecks.xml:264(col)
 #: sdk/script/Typechecks.xml:265(col)
-#: sdk/script/Typechecks.xml:269(col)
+#: sdk/script/Typechecks.xml:267(col)
 #: sdk/script/Typechecks.xml:271(col)
-#: sdk/script/Typechecks.xml:272(col)
 #: sdk/script/Typechecks.xml:273(col)
 #: sdk/script/Typechecks.xml:274(col)
+#: sdk/script/Typechecks.xml:275(col)
+#: sdk/script/Typechecks.xml:276(col)
 msgid "Error"
 msgstr "Error"
 
-#: sdk/script/Typechecks.xml:229(col)
-#: sdk/script/Typechecks.xml:239(col)
-#: sdk/script/Typechecks.xml:249(col)
+#: sdk/script/Typechecks.xml:231(col)
+#: sdk/script/Typechecks.xml:241(col)
+#: sdk/script/Typechecks.xml:251(col)
 #: sdk/script/Strict.xml:5(title)
 #: sdk/script/Strict.xml:6(h)
 msgid "#strict"
 msgstr "#strict"
 
-#: sdk/script/Typechecks.xml:279(h)
+#: sdk/script/Typechecks.xml:281(h)
 msgid "Erklärung der Tabelle:"
 msgstr "Additional information:"
 
-#: sdk/script/Typechecks.xml:281(li)
+#: sdk/script/Typechecks.xml:283(li)
 msgid "Wo #strict steht, wird nur ein Fehler ausgelöst wenn der Script <emlink href=\"script/Strict.html\">#strict</emlink> ist. Hierbei handelt es sich um \"ungefährliche\" aber sinnlose Konvertierungen, die nur in einigen \"trickreichen\" Scripts zur Anwendung kamen."
 msgstr "Conversions marked #strict will only throw an error if the script is <emlink href=\"script/Strict.html\">#strict</emlink>. This only concerns harmless but nonsense conversions which might have appeared in older scripts."
 
-#: sdk/script/Typechecks.xml:282(li)
+#: sdk/script/Typechecks.xml:284(li)
 msgid "Die Konvertierung int zu id ist nur erlaubt, wenn die Zahl größer gleich 0 und kleiner gleich 9999 ist. Auf diese Weise werden auch IDs, die nur aus Zahlen bestehen, unterstützt (z.B. 0001)"
 msgstr "Conversion to id is valid only if the number is greater than or equal to 0 and less that or equal to 9999. This procedure also supports IDs that contain digits only."
 
-#: sdk/script/Typechecks.xml:283(li)
+#: sdk/script/Typechecks.xml:285(li)
 msgid "Konvertierung nach bool ist generell erlaubt. Sie ergibt für jeden Wert außer 0 <code>true</code>."
 msgstr "Conversion to bool is generally allowed. All values except 0 are <code>true</code>."
 

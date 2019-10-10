@@ -100,10 +100,10 @@
     <text>
       Maps heißen in anderen Programmiersprachen auch Hashes oder assoziative Arrays.
       Maps sind nur verfügbar, wenn das Script <emlink href="script/Strict.html">#strict 3</emlink> oder höher ist.
-      Maps können direkt mit <code>{ <em>Schlüssel 1</em> = <em>Ausdruck 1</em>, <em>Schlüssel 2</em> = <em>Ausdruck 2</em>, ... }</code> erstellt werden.
+      Maps können direkt mit <code>{ <em>Schlüssel 1</em> = <em>Ausdruck 1</em>, <em>Schlüssel 2</em> = <em>Ausdruck 2</em>, "<em>Schlüssel 3</em>" = <em>Ausdruck 3</em>, [<em>Schlüsselausdruck</em>] = <em>Ausdruck 4</em>, ... }</code> erstellt werden.
       Zur einfacheren zukünftigen Weiterbearbeitung ist es erlaubt, auch nach dem letzten Schlüssel-Wert-Paar ein Komma stehen zu lassen.
       Eine leere Map wird mit <code>{}</code> erstellt.
-      Die Map-Syntax mit {} erlaubt nur Strings als Schlüssel. Falls der Schlüssel Leerzeichen oder andere in Identifiern nicht erlaubte Zeichen beinhalten soll, muss er wie ein richtiger String in "" (Anführungszeichen) stehen, ansonsten sind die Anführungszeichen optional.
+      Falls der Schlüssel Leerzeichen oder andere in Identifiern nicht erlaubte Zeichen beinhalten soll, muss er wie ein richtiger String in "" (Anführungszeichen) stehen, ansonsten sind die Anführungszeichen optional. Um das Ergebnis eines Ausdrucks oder einen Wert der kein String ist als Schlüssel zu verwenden, kann ein Ausdruck in <code>[]</code> stehen (siehe Beispiel).
     </text>
     <text>
       Zum Abfragen und Setzen von Werten wird die Syntax <code>map[key]</code> verwendet.
@@ -163,12 +163,14 @@ local discounts;
 
 func Initialize()
 {
-  discounts = {};
-  // [discount in %, pieces left], could also be maps, but would be more writing effort :p
-  discounts[CLNK] = [10, 3];
-  discounts[EFLN] = [25, 4];
-  discounts[WOOD] = [50, 50];
-  // ...
+  discounts = {
+    // [discount in %, pieces left], could also be maps, but would be more writing effort :p
+    [CLNK] = [10, 3],
+    [EFLN] = [25, 4],
+    [WOOD] = [50, 50],
+    [<funclink>GetID</funclink>(<funclink>GetCursor</funclink>(0))] = [5, 1],
+    // ...
+  };
 }
 
 func GetDiscount(id ID)
