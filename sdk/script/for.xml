@@ -59,6 +59,16 @@ und für einen Durchlauf ein Element in einer Variable zu speichern. Das Script s
 
 <text> Mit diesem Script würden alle Elemente des Array <code>a</code> ins Log ausgegeben.</text>
 
+<h id="Mapschleife">Gebrauch der for-Schleife zum Durchlauf von Maps</h>
+
+<text> Eine weitere Funktion der <code>for</code>-Schleife ist es, Schlüssel-Wert-Paare von Maps nacheinander zu durchlaufen. Das Script sieht folgendermaßen aus: </text>
+
+<code>for(var key, value in m)
+  <funclink>Log</funclink>("%v => %v", key, value);
+</code>
+
+<text> Mit diesem Script würden alle Einträge der Map <code>m</code> durchlaufen und im Format "Schlüssel => Wert" geloggt.</text>
+
 <h>Weitere Beispiele:</h>
 
 <code>for(var i = 10; i &gt;= 1; i--)

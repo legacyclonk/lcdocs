@@ -13,8 +13,8 @@
 				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Layerobjekt geändert werden soll.</desc></param>
 			</params>
 		</syntax>
-		<desc>Ändert das Layerobjekt von pobj auf pnewlayer und alle Inhalte auch. Standardmäßig sind alle Objekte im globalen Layer 0. 
-		Wenn pnewlayer 0 ist, wird der Layer in den globalen Layer gesetzt.. Objekte können nur miteinander interagieren, wenn sie im selben Layer sind.
+		<desc>Ändert das Layerobjekt von pobj auf pnewlayer und alle Inhalte auch. Standardmäßig sind alle Objekte im globalen Layer 0.
+		Wenn pnewlayer 0 ist, wird der Layer in den globalen Layer gesetzt. Objekte können nur miteinander interagieren, wenn sie im selben Layer sind.
 		Wird das Layerobjekt gelöscht, werden alle Objekte, die diesen Layer hatten, dem globalen Layer zugeordnet.</desc>
 		 
 		 <related>

@@ -9,7 +9,7 @@
                 <syntax>
                         <rtype>bool</rtype>
                         <params>
-                                <param><type>string</type><name>szPhysical</name><desc>Name Eigenschaft, die geändert werden soll</desc></param>
+                                <param><type>string</type><name>szPhysical</name><desc>Name der Eigenschaft, die geändert werden soll</desc></param>
                                 <param><type>int</type><name>iValue</name><desc>0-100000: Neuer Wert für diese Eigenschaft</desc></param>
                                 <param><type>int</type><name>iMode</name><desc>Änderungsmodus (symbolische Konstanten ab CR):<br />
 					<table><rowh><col>Konstante</col><col>Wert</col><col>Bedeutung</col></rowh>

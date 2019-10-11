@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
 <funcs>
 	<func>
-		<title>LocalN</title>
+		<title>LocalN (veraltet)</title>
 		<category>Variablen</category>
 		<version>4.9.1.0 GWE</version>
 		<syntax>
@@ -14,6 +14,7 @@
 			</params>
 		</syntax>
 		<desc>Gibt eine Referenz auf eine Objektlokale Variable zurück. Diese Referenz kann zum Lesen und Schreiben benutzt werden.</desc>
+		<remark>Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <code>obj["name"]</code> oder <code>obj.name</code>, letzteres bei aktiviertem <code>#strict 3</code>, verwendet werden.</remark>
 		<examples>
 			<example>
 				<code><emlink href="script/NamedVar.html">var</emlink> obj;
@@ -41,4 +42,5 @@ func TimerCall () {
 		</related>
 	</func>
 	<author>Günther</author><date>November 2002</date>
+	<author>Der Tod</author><date>Oktober 2019</date>
 </funcs>

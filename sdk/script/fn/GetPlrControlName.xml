@@ -7,7 +7,7 @@
         <category>Spieler</category>
         <version>4.9.7.0 CR</version>
         <syntax>
-            <rtype>int</rtype>
+            <rtype>string</rtype>
             <params>
                 <param><type>int</type><name>iPlr</name><desc>Spieler, dessen Taste gesucht wird.</desc></param>
 				<param><type>int</type><name>iCon</name><desc>Taste, die gesucht wird. Folgende Werte sind möglich:
@@ -27,14 +27,14 @@
 						<row><col>CON_Special2</col><col>11</col></row>
 					</table>
 				</desc></param>
-				<param><type>int</type><name>iPlr</name><desc>Wenn true, wird die kurze Version der Taste zurückgegeben. (Beispiel: statt "&lt; &gt; |" wird "&lt;" zurückgegeben.)</desc></param>
+				<param><type>bool</type><name>fShort</name><desc>Wenn true, wird die kurze Version der Taste zurückgegeben. (Beispiel: statt "&lt; &gt; |" wird "&lt;" zurückgegeben.)</desc></param>
             </params>
         </syntax>
-        <desc>Gibt die Taste iCon von iPlr zurück.</desc>
+        <desc>Gibt den Namen der Taste iCon von iPlr zurück.</desc>
 		<examples>
 			<example>
 				<code><funclink>Log</funclink>(GetPlrControlName(0, CON_Dig));</code>
-				<text>Gibt den Namen der Taste [Graben] vom ersten Spieler zurück. Dies ist "D", wenn dieser das unveränderte Tastaturprofil 1 hat.</text>
+				<text>Gibt den Namen der Taste [Graben] vom ersten Spieler im Log aus. Dies ist "D", wenn dieser das unveränderte Tastaturprofil 1 hat.</text>
 			</example>
 		</examples>
     </func>

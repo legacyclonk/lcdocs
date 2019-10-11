@@ -7,9 +7,9 @@
 <text>Die Sort_* - Funktionen dienen dem Sortieren von Suchergebnissen von <funclink>FindObjects</funclink>.</text>
 <text><table>
 	<rowh><col>Name</col><col>Beschreibung</col></rowh>
-	<row><col>Sort_Reverse(array sort)</col><col>Sortiert das Array sort in umgekehrter Reihenfolge.</col></row>
-	<row><col>Sort_Multiple()</col><col>Sortiert mehrfach.</col></row>
-	<row><col>Sort_Distance(int x, int y)</col><col>Sortiert nach Entfernung</col></row>
+	<row><col>Sort_Reverse(array sort)</col><col>Sortiert entsprechend den in sort angegebenen Sortierspezifikationen aber in umgekehrter Reihenfolge.</col></row>
+	<row><col>Sort_Multiple(array sort, ...)</col><col>Sortiert nacheinander nach allen angegebenen Sortierspezifikationen, bis die erste keine Gleichheit ergibt.</col></row>
+	<row><col>Sort_Distance(int x, int y)</col><col>Sortiert nach Entfernung zum (objektlokalen) Punkt x/y.</col></row>
 	<row><col>Sort_Random()</col><col>Sortiert zufällig.</col></row>
 	<row><col>Sort_Speed()</col><col>Sortiert nach Geschwindigkeit.</col></row>
 	<row><col>Sort_Mass()</col><col>Sortiert nach Masse.</col></row>

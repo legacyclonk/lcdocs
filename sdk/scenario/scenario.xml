@@ -545,6 +545,11 @@ bestimmt.</text>
 		<col>Wenn LocalOnly den Wert 1 hat, werden alle angegebenen Objektdefinitions-pakete ignoriert und nur lokale Objektdefinitionen geladen.</col>
 	</row>
 	<row>
+		<col>Definitions</col>
+		<col>Liste von Zeichenfolgen</col>
+		<col>Über Definitions (etwa Definitions="Objects.c4d", "Knights.c4d") kann vorgegeben werden, welche Objektdefinitionspakete (c4d) das Szenario benutzen soll. Die Pakete müssen im Clonk-Verzeichnis vorhanden sein und in Anführungszeichen eingeschlossen angegeben werden. Sind Pakete im Szenario angegeben, wird die vom Menüsystem bestimmte Auswahl ignoriert.</col>
+	</row>
+	<row>
 		<col>Definition1 (bis 9)</col>
 		<col>Zeichenfolge(n)</col>
 		<col>Über Definition<em>x</em>-Einträge kann vorgegeben werden, welche Objektdefinitionspakete (c4d) das Szenario benutzen soll. Die Pakete müssen im Clonk-Verzeichnis vorhanden sein. Sind Pakete im Szenario angegeben, wird die vom Menüsystem bestimmte Auswahl ignoriert.</col>
@@ -556,6 +561,6 @@ bestimmt.</text>
 	</row>
 </table></text>
 
-<author>Sven2</author><date>April 2002</date>
+<author>Sven2, Fulgen</author><date>Oktober 2019</date>
 
 </doc>

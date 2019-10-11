@@ -11,12 +11,6 @@
 		</syntax>
 		<desc>Konstante für <funclink>GetVisibility</funclink>/<funclink>SetVisibility</funclink>. Die Sichtbarkeit eines Objekts richtet sich nach der Sichtbarkeit des Layers, in dem sich das Objekt befindet: Wenn der Layer in dem sich das Objekt befindet, VIS_LayerToggle hat, dann ist das Objekt unsichtbar, wenn der Layer sichtbar ist. Ist der Layer hingegen unsichtbar, ist die Sichtbarkeit des Objekts unbeeinflusst.</desc>
 		<remark>Dieser Wert ist als Engine-Konstante definiert. Die Funktionsklammern können daher optional weggelassen werden.</remark>
-		<examples>
-			<example>
-				<code><funclink>SetObjectLayer</funclink>(<funclink>FindObject</funclink>(HUT3),<funclink>GetCursor</funclink>(0)); <funclink>FindObject</funclink>(HUT3)-><funclink>SetVisibility</funclink>(VIS_Local);</code>
-				<text>Das aufrufende Objekt ist nur noch für Spieler 0 und Spieler 3 sichtbar</text>
-			</example>
-		</examples>
 		<related>
 			<funclink>GetVisibility</funclink>
 			<funclink>SetVisibility</funclink>

@@ -6,8 +6,8 @@
 <h id="DefCoretxt">DefCore</h>
 <part>
 <text>In der Komponente DefCore.txt eines Objekts lässt sich das Basisverhalten eines Objekts
-einrichten. Dazu gehören zum Beispiel die Kategorie, also ob es sich um ein Gebäude oder ein Lebewesen handelt, 
-die Grafik, Eingangs- und Einsammelbereiche, Brennbarkeit, Wert, Masse, und so weiter. 
+einrichten. Dazu gehören zum Beispiel die Kategorie, also ob es sich um ein Gebäude oder ein Lebewesen handelt,
+die Grafik, Eingangs- und Einsammelbereiche, Brennbarkeit, Wert, Masse, und so weiter.
 Außerdem wird hier das Objekt-ID angegeben, mit dem dieser Objekttyp
 später in Scripten referenziert wird - es ist wichtig, dass jedes Objekt ein eigenes ID hat.
 Hierzu siehe auch <emlink href="definition/index.html#ObjektundEntwicklerIdentifikation">Objekt- und
@@ -202,6 +202,7 @@ Entwickleridentifikation</emlink>.</text>
   <col>0 oder 1. Bei 1 berücksichtigt die Wegfindung des Objekts keine Transferzonen an Gebäuden. Ab 4.95.4.</col></row>
 <row><col>AutoContextMenu</col><col>Integer</col>
   <col>0 oder 1. Bei 1 wird für dieses Gebäude beim Betreten automatisch das Kontextmenü geöffnet. Ab 4.9.7.7.</col></row>
+<row><col>HideHUDBars</col><col>Bitmaske</col><col>Blendet die angegebenen Statusleisten des Objekts aus wenn es als Cursor angewählt ist. Mögliche kombinierbare Werte: Energy, MagicEnergy, Breath, All; Ab LC [336].</col></row>
 </table>
 </text>
 <text>
