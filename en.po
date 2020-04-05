@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-10 16:56+0200\n"
+"POT-Creation-Date: 2020-04-05 16:57+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -14442,8 +14442,8 @@ msgid "Durch Verwendung von #appendto können zahlreiche Objektüberladungen ver
 msgstr "By using #appendto you can avoid various object definition overloads."
 
 #: sdk/script/AppendTo.xml:12(text)
-msgid "Jedes Script kann sich mit <code>#appendto</code> an ein oder mehrere Objektscripte anhängen. Dabei werden alle Funktionen ans Ende des Zielscripts angehängt und haben damit bei Namensgleichheit eine höhere Priorität. Die überladenen Funktionen sind dabei durch <emlink href=\"script/fn/inherited.html\">inherited</emlink> verfügbar. Eigene #include-Scripte werden nicht angehängt, angehängte Scripte aber mit inkludiert."
-msgstr "A script can append itself to one or multiple existing scripts using the <code>#appendto</code> directive. Functions of the same name will overload functions in the target script. The original overloaded functions can still be called using <emlink href=\"script/fn/inherited.html\">inherited</emlink>. #included scripts are not appended with #append, but #appended scripts are included by #include."
+msgid "Jedes Script kann sich mit <code>#appendto</code> an ein oder mehrere Objektscripte anhängen. Dabei werden alle Funktionen ans Ende des Zielscripts angehängt und haben damit bei Namensgleichheit eine höhere Priorität. Die überladenen Funktionen sind dabei durch <emlink href=\"script/fn/inherited.html\">inherited</emlink> verfügbar. Eigene #include-Scripte werden nicht angehängt, angehängte Scripte aber mit inkludiert. nowarn ist optional und unterdrückt, falls vorhanden, eine Warnung wenn die angegebene Definition nicht gefunden wurde. nowarn kann in appendto-Scripten verwendet werden die für korrekte Funktionalität nicht essenziell sind. Zum Beispiel wenn ein Pack Unterstützung für Knights.c4d bieten will, aber auch ohne geladenem Ritterpack funktioniert."
+msgstr "A script can append itself to one or multiple existing scripts using the <code>#appendto</code> directive. Functions of the same name will overload functions in the target script. The original overloaded functions can still be called using <emlink href=\"script/fn/inherited.html\">inherited</emlink>. #included scripts are not appended with #append, but #appended scripts are included by #include. nowarn is optional and if specified suppresses the warning triggered when the given definition can not be found. It can be used for appento-scripts which are non-essential for normal operation. For example if some pack wants to support Knights.c4d but also works without it."
 
 #: sdk/script/AppendTo.xml:18(text)
 msgid "Durch Angabe von <code>*</code> anstelle eine id wird das Script an alle geladenen Definitionen angehängt."
