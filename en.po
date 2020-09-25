@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-05 16:57+0200\n"
+"POT-Creation-Date: 2020-09-25 18:18+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -60,6 +60,7 @@ msgstr "Operator"
 
 #: sdk/script/operatoren.xml:18(col)
 #: sdk/script/fn/Sort_.xml:9(col)
+#: sdk/script/fn/SetRestoreInfos.xml:15(col)
 #: sdk/script/fn/SetObjectStatus.xml:14(col)
 #: sdk/script/fn/SetCommand.xml:69(col)
 #: sdk/script/fn/LoadScenarioSection.xml:15(col)
@@ -2401,6 +2402,7 @@ msgid "Die Sort_* - Funktionen dienen dem Sortieren von Suchergebnissen von <pla
 msgstr "The Sort_* functions are used to sort the results of <placeholder-1/>."
 
 #: sdk/script/fn/Sort_.xml:9(col)
+#: sdk/script/fn/SetRestoreInfos.xml:15(col)
 #: sdk/script/fn/SetObjectStatus.xml:14(col)
 #: sdk/script/fn/LoadScenarioSection.xml:15(col)
 #: sdk/script/fn/GetVertex.xml:15(col)
@@ -3260,6 +3262,47 @@ msgstr "Another function in the same scenario script would remove the cell in th
 #: sdk/script/fn/SetScoreboardData.xml:55(text)
 msgid "Diese Funktion fügt schließlich einen Punkt für den Spieler hinzu. Als Extradaten werden die Punktwerte gesetzt, damit die Sortierung nach der Punktespalte automatisch richtig sortiert.<br/> Mittels <placeholder-1/> wird das Scoreboard für den Spieler, der den Punkte erhält, angezeigt. Der nachfolgende Aufruf von Schedule lässt dann in einigen Sekunden (200 Frames) das Scoreboard wieder verschwinden."
 msgstr "Finally, this function will add a score point for a player. The score is also set as extra data so the list can automatically be sorted by score.<br/> Using <placeholder-1/> the scoreboard is displayed for the player receiving the point. The following call to Schedule will then hide the scoreboard after a few seconds (200 frames)."
+
+#: sdk/script/fn/SetRestoreInfos.xml:7(category)
+#: sdk/script/fn/GetTime.xml:7(category)
+#: sdk/script/fn/GetSystemTime.xml:7(category)
+#: sdk/script/fn/GetMissionAccess.xml:7(category)
+#: sdk/script/fn/GetLeague.xml:7(category)
+#: sdk/script/fn/GainMissionAccess.xml:7(category)
+msgid "System"
+msgstr "System"
+
+#: sdk/script/fn/SetRestoreInfos.xml:16(col)
+msgid "RESTORE_None"
+msgstr "RESTORE_None"
+
+#: sdk/script/fn/SetRestoreInfos.xml:16(col)
+msgid "Nichts. Standardeinstellung."
+msgstr "Nothing. Default."
+
+#: sdk/script/fn/SetRestoreInfos.xml:17(col)
+msgid "RESTORE_ScriptPlayers"
+msgstr "RESTORE_ScriptPlayers"
+
+#: sdk/script/fn/SetRestoreInfos.xml:17(col)
+msgid "In der Lobby eingestellte Scriptspieler, inkl. Name, Team und Farbe."
+msgstr "Script players as setup in the lobby, incl. name, team and color."
+
+#: sdk/script/fn/SetRestoreInfos.xml:18(col)
+msgid "RESTORE_PlayerTeams"
+msgstr "RESTORE_PlayerTeams"
+
+#: sdk/script/fn/SetRestoreInfos.xml:18(col)
+msgid "In der Lobby zugewiesene Spielerteams anhand der Spielernamen."
+msgstr "Player teams set in the lobby according to player names."
+
+#: sdk/script/fn/SetRestoreInfos.xml:13(desc)
+msgid "Bit-Maske der wiederherzustellenden Dinge: <placeholder-1/>"
+msgstr "Bit mask of the things to be restored: <placeholder-1/>"
+
+#: sdk/script/fn/SetRestoreInfos.xml:24(desc)
+msgid "Stellt bei Rundenneustart über den Neustart-Knopf Einstellungen in der Lobby wieder her.<br/> Es gelten die Werte, die zu Spielstart in der Lobby eingestellt waren.<br/> Im Spiel nachträglich gemachte Änderungen werden nicht beachtet."
+msgstr "Restores some things in the lobby on restart via the restart button.<br /> The values set in the lobby are restored.<br /> Later ingame changes are not considered."
 
 #: sdk/script/fn/SetRGBaValue.xml:13(desc)
 msgid "0-255: Farbwert, der mit dem alten ersetzt werden soll."
@@ -7675,14 +7718,6 @@ msgstr "Data of which to determine the type."
 #: sdk/script/fn/GetType.xml:15(desc)
 msgid "Gibt den Typ des übergebenen Werts zurück."
 msgstr "Returns the data type of a passed value."
-
-#: sdk/script/fn/GetTime.xml:7(category)
-#: sdk/script/fn/GetSystemTime.xml:7(category)
-#: sdk/script/fn/GetMissionAccess.xml:7(category)
-#: sdk/script/fn/GetLeague.xml:7(category)
-#: sdk/script/fn/GainMissionAccess.xml:7(category)
-msgid "System"
-msgstr "System"
 
 #: sdk/script/fn/GetTime.xml:12(desc)
 msgid "Gibt die Zeit seit Windowsstart in Millisekunden zurück. Kann zur genauen Zeitmessung verwendet werden."
