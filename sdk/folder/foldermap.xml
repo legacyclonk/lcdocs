@@ -131,6 +131,11 @@ Diese Karten werden nur in der Szenarienauswahl im Spiel und nicht im Entwickler
 		<col>Boolean</col>
 		<col>0 oder 1. Bei 1 wird die schattenlose Schriftart des Startupmenüs anstatt der nromalen InGame-Schriftart für den Titelverwendet.</col>
 	</row>
+	<row>
+		<col>SingleClick</col>
+		<col>Boolean</col>
+		<col>Falls true, wird der Eintrag bereits bei Einzelklick gestartet/geöffnet.</col>
+	</row>
 </table></text>
 
 <h id="order">Anordnung der Elemente</h>
