@@ -7,7 +7,7 @@
 		<category>Script</category><subcat>Strings</subcat>
 		<version>4.9.6.0 CR</version>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype>void</rtype>
 			<params>
 				<param><type>array</type><name>aResize</name><desc>Array, dessen Länge verändert werden soll</desc></param>
 				<param><type>int</type><name>iSize</name><desc>Neue Länge des Feldes</desc></param>

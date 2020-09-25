@@ -7,7 +7,7 @@
     <category>Global</category>
     <version>4.9.1.0 GWE</version>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype>void</rtype>
       <params>
         <param><type>int</type><name>iRampIndex</name><desc>0-7: Index der Gammarampe, die zurückgesetzt werden soll.</desc></param>
       </params>

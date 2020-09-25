@@ -7,7 +7,7 @@
 		<category>Global</category>
 		<version>4.9.1.0 GWE</version>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype>void</rtype>
 			<params>
 				<param><type>int</type><name>dwClr1</name><desc>Veränderung für dunkle Farben. Standard ist <funclink>RGB</funclink>(0,0,0) für keine Veränderung.</desc></param>
 				<param><type>int</type><name>dwClr2</name><desc>Veränderung für mittlere Farben. Standard ist <funclink>RGB</funclink>(128,128,128) für keine Veränderung.</desc></param>

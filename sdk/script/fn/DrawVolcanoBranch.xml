@@ -7,7 +7,7 @@
     <category>Landschaft</category>
     <version>4.9.6.0 CR</version>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype>void</rtype>
       <params>
         <param><type>int</type><name>iMat</name><desc>Index des Materials, das gezeichnet werden soll.</desc></param>
         <param><type>int</type><name>fX</name><desc></desc></param>

@@ -7,7 +7,7 @@
 		<category>Himmel</category>
 		<version>4.9.1.0 GWE</version>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype>void</rtype>
 			<params>
 				<param><type>int</type><name>dwClrMod</name><desc>Primäre Farbmodulation</desc></param>
 				<param><type>int</type><name>dwBackClr</name><desc>Hintergrundfarbe. Wenn in dwClrMod das Alphabyte nicht 0 ist, wird diese Farbe als Hintergrund hinter den Himmel gelegt. So lassen sich auch hellere oder entsättigte Himmel realisieren.</desc></param>

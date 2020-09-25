@@ -7,7 +7,7 @@
     <category>Interface</category>
     <version>4.9.6.0 CR</version>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype>void</rtype>
       <params>
         <param><type>int</type><name>iRowID</name><desc>Wert größer oder gleich 0, oder SBRD_Caption. Index der Zeile, dessen Daten gesetzt werden sollen. Die Konstante SBRD_Caption steht dabei für die erste Spalte, die als Spaltenbeschriftung verwendet werden sollte.</desc></param>
         <param><type>int</type><name>iColID</name><desc>Wert größer oder gleich 0, oder SBRD_Caption. Index der Spalte, dessen Daten gesetzt werden sollen. Die Konstante SBRD_Caption steht dabei für die erste Zeile, die als Zeilenüberschrift verwendet werden sollte.</desc></param>

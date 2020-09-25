@@ -7,7 +7,7 @@
     <category>Effekte</category>
     <version>4.6.5.0 CP<extversion>4.9.6.0 CR</extversion></version>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype>void</rtype>
       <params>
         <param><type>string</type><name>szSound</name><desc>Name des Soundeffekts (ohne .wav-Endung)</desc></param>
         <param><type>int</type><name>iVolume</name><desc>0-100: Lautstärke, in der der Sound abgespielt wird. Bei 0 wird die Abspielung dieses Soundeffektes gestoppt.</desc></param>

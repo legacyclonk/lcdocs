@@ -7,7 +7,7 @@
 		<category>Objekte</category>
 		<version>4.6.5.0 CP<extversion>4.9.6.0 CR</extversion></version>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype>void</rtype>
 			<params>
 				<param><type>int</type><name>iX</name><desc>X-Koordinate</desc></param>
 				<param><type>int</type><name>iY</name><desc>Y-Koordinate</desc></param>

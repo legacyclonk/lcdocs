@@ -7,7 +7,7 @@
 		<category>Nachrichten</category>
 		<version>4.9.7.0 CR</version>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype>void</rtype>
 			<params>
 				<param><type>string</type><name>szMessage</name><desc>Auszugebender Text</desc></param>
 			</params>

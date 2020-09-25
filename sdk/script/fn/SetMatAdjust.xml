@@ -7,7 +7,7 @@
     <category>Landschaft</category>
     <version>4.9.1.0 GWE</version>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype>void</rtype>
       <params>
         <param><type>int</type><name>dwClrMod</name><desc>Primäre Farbmodulation</desc></param>
       </params>

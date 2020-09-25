@@ -7,7 +7,7 @@
     <category>Landschaft</category>
     <version>4.9.1.0 GWE</version>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype>void</rtype>
       <params>
         <param><type>int</type><name>iX</name><desc>X-Position des Pixels, das umgefärbt werden soll; relative Koordinaten bei objektlokalem Aufruf</desc></param>
         <param><type>int</type><name>iY</name><desc>Y-Position des Pixels, das umgefärbt werden soll; relative Koordinaten bei objektlokalem Aufruf</desc></param>
