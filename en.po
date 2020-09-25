@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-25 18:18+0200\n"
+"POT-Creation-Date: 2020-09-25 18:24+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -91,8 +91,8 @@ msgstr "Operator"
 #: sdk/material/c4m.xml:241(col)
 #: sdk/material/c4m.xml:329(col)
 #: sdk/folder/foldermap.xml:16(col)
-#: sdk/folder/foldermap.xml:44(col)
-#: sdk/folder/foldermap.xml:67(col)
+#: sdk/folder/foldermap.xml:49(col)
+#: sdk/folder/foldermap.xml:72(col)
 #: sdk/definition/script.xml:67(col)
 #: sdk/definition/procedures.xml:15(col)
 #: sdk/definition/lineconnect.xml:11(col)
@@ -3514,8 +3514,8 @@ msgstr "Display"
 #: sdk/material/c4m.xml:239(col)
 #: sdk/material/c4m.xml:296(col)
 #: sdk/folder/foldermap.xml:14(col)
-#: sdk/folder/foldermap.xml:42(col)
-#: sdk/folder/foldermap.xml:65(col)
+#: sdk/folder/foldermap.xml:47(col)
+#: sdk/folder/foldermap.xml:70(col)
 #: sdk/definition/lineconnect.xml:11(col)
 #: sdk/definition/defcore.xml:19(col)
 #: sdk/definition/defcore.xml:211(col)
@@ -8487,8 +8487,8 @@ msgstr "Key"
 #: sdk/material/c4m.xml:240(col)
 #: sdk/material/c4m.xml:329(col)
 #: sdk/folder/foldermap.xml:15(col)
-#: sdk/folder/foldermap.xml:43(col)
-#: sdk/folder/foldermap.xml:66(col)
+#: sdk/folder/foldermap.xml:48(col)
+#: sdk/folder/foldermap.xml:71(col)
 #: sdk/definition/defcore.xml:19(col)
 #: sdk/definition/defcore.xml:211(col)
 #: sdk/definition/actmap.xml:22(col)
@@ -12736,12 +12736,12 @@ msgstr "Example"
 #: sdk/folder/foldermap.xml:25(col)
 #: sdk/folder/foldermap.xml:30(col)
 #: sdk/folder/foldermap.xml:35(col)
-#: sdk/folder/foldermap.xml:96(col)
 #: sdk/folder/foldermap.xml:101(col)
 #: sdk/folder/foldermap.xml:106(col)
 #: sdk/folder/foldermap.xml:111(col)
 #: sdk/folder/foldermap.xml:116(col)
 #: sdk/folder/foldermap.xml:121(col)
+#: sdk/folder/foldermap.xml:126(col)
 #: sdk/definition/defcore.xml:27(col)
 #: sdk/definition/defcore.xml:29(col)
 #: sdk/definition/defcore.xml:36(col)
@@ -12853,7 +12853,8 @@ msgstr "A whole number from -2.147.483.648 to +2.147.483.647."
 #: sdk/material/c4m.xml:265(col)
 #: sdk/material/c4m.xml:270(col)
 #: sdk/material/c4m.xml:275(col)
-#: sdk/folder/foldermap.xml:126(col)
+#: sdk/folder/foldermap.xml:40(col)
+#: sdk/folder/foldermap.xml:131(col)
 #: sdk/definition/actmap.xml:94(col)
 msgid "Boolean"
 msgstr "Boolean"
@@ -14546,7 +14547,7 @@ msgid "Standard-Icon des Szenarios. Siehe Szenarioeigenschaften im Menüsystem."
 msgstr "Default icon for the scenario. See the scenario options in the menu system."
 
 #: sdk/scenario/scenario.xml:31(col)
-#: sdk/folder/foldermap.xml:90(col)
+#: sdk/folder/foldermap.xml:95(col)
 msgid "Title"
 msgstr "Title"
 
@@ -14587,8 +14588,8 @@ msgstr "Version"
 #: sdk/scenario/scenario.xml:516(col)
 #: sdk/material/c4m.xml:230(col)
 #: sdk/folder/foldermap.xml:20(col)
-#: sdk/folder/foldermap.xml:58(col)
-#: sdk/folder/foldermap.xml:86(col)
+#: sdk/folder/foldermap.xml:63(col)
+#: sdk/folder/foldermap.xml:91(col)
 #: sdk/definition/defcore.xml:57(col)
 #: sdk/definition/defcore.xml:73(col)
 #: sdk/definition/defcore.xml:75(col)
@@ -14600,7 +14601,7 @@ msgid "Vom Szenario benötigte Version der Engine."
 msgstr "Engine version required by the scenario."
 
 #: sdk/scenario/scenario.xml:41(col)
-#: sdk/folder/foldermap.xml:47(col)
+#: sdk/folder/foldermap.xml:52(col)
 msgid "Access"
 msgstr "Access"
 
@@ -14668,12 +14669,12 @@ msgstr "MissionAccess"
 #: sdk/material/c4m.xml:245(col)
 #: sdk/material/c4m.xml:250(col)
 #: sdk/material/c4m.xml:255(col)
-#: sdk/folder/foldermap.xml:48(col)
 #: sdk/folder/foldermap.xml:53(col)
-#: sdk/folder/foldermap.xml:71(col)
+#: sdk/folder/foldermap.xml:58(col)
 #: sdk/folder/foldermap.xml:76(col)
 #: sdk/folder/foldermap.xml:81(col)
-#: sdk/folder/foldermap.xml:91(col)
+#: sdk/folder/foldermap.xml:86(col)
+#: sdk/folder/foldermap.xml:96(col)
 msgid "Zeichenfolge"
 msgstr "String"
 
@@ -17999,177 +18000,185 @@ msgstr "FullscreenBG"
 msgid "Wenn ungleich 0, wird das Hintergrundbild auf die gesamte Bildschirmgröße gestreckt. Dabei ist zu beachten, dass Kontrollelemente trotzdem nur innerhalb des mittleren Gebietes platziert werden dürfen."
 msgstr "If not 0, the background image is stretched to full screen size. Notice that button controls may still only be placed in the inner area of the map."
 
-#: sdk/folder/foldermap.xml:40(caption)
+#: sdk/folder/foldermap.xml:39(col)
+msgid "HideTitle"
+msgstr "HideTitle"
+
+#: sdk/folder/foldermap.xml:41(col)
+msgid "Falls true, wird die Überschrift \"Spiel starten\" am oberen Rand ausgeblendet."
+msgstr "Hides the title \"Start game\" at the top if true."
+
+#: sdk/folder/foldermap.xml:45(caption)
 msgid "Beliebig viele Sektionen [AccessGfx]"
 msgstr "Any number of sections [AccessGfx]"
 
-#: sdk/folder/foldermap.xml:49(col)
+#: sdk/folder/foldermap.xml:54(col)
 msgid "Wenn für diesen Benutzer das hier angegebene MissionAccess-Passwort freigeschaltet ist, wird die in dieser Sektion beschriebene Grafik auf der FolderMap angezeigt. Auf diese Weise können einzelne Bestandteile der Karte freigespielt werden. Siehe dazu die Scriptfunktion <placeholder-1/>."
 msgstr "If the player has gained the specified MissionAccess password, the graphical element specified in this section is displayed. This can be used to give access to certain scenarios only after other scenarios have been completed. See <placeholder-1/>."
 
-#: sdk/folder/foldermap.xml:52(col)
-#: sdk/folder/foldermap.xml:80(col)
+#: sdk/folder/foldermap.xml:57(col)
+#: sdk/folder/foldermap.xml:85(col)
 msgid "OverlayImage"
 msgstr "OverlayImage"
 
-#: sdk/folder/foldermap.xml:54(col)
+#: sdk/folder/foldermap.xml:59(col)
 msgid "Dateiname der Grafikdatei, die angezeigt wird. Die Datei sollte im selben Rundenordner liegen."
 msgstr "Filename of the image to be displayed. The file should be available in the scenario folder."
 
-#: sdk/folder/foldermap.xml:57(col)
-#: sdk/folder/foldermap.xml:85(col)
+#: sdk/folder/foldermap.xml:62(col)
+#: sdk/folder/foldermap.xml:90(col)
 msgid "Area"
 msgstr "Area"
 
-#: sdk/folder/foldermap.xml:59(col)
+#: sdk/folder/foldermap.xml:64(col)
 msgid "Koordinaten des Bereiches, in dem das Bild angezeigt wird. Die Koordinaten sind relativ zum <emlink href=\"#background\">Hintergrundbild</emlink>."
 msgstr "Screen area in which to display the image. The coordinates are relative to the <emlink href=\"#background\">background image</emlink>."
 
-#: sdk/folder/foldermap.xml:63(caption)
+#: sdk/folder/foldermap.xml:68(caption)
 msgid "Beliebig viele Sektionen [Scenario]"
 msgstr "Any number of sections [Scenario]"
 
-#: sdk/folder/foldermap.xml:70(col)
+#: sdk/folder/foldermap.xml:75(col)
 msgid "File"
 msgstr "File"
 
-#: sdk/folder/foldermap.xml:72(col)
+#: sdk/folder/foldermap.xml:77(col)
 msgid "Szenariendatei (inklusive Endung .c4s), für die mit dieser Sektion ein Knopf erstellt wird. Für jedes Szenario im Rundenordner sollte eine [Scenario]-Sektion erstellt werden. Es werden grundsätzlich nur die Knöpfe angezeigt, für die der Benutzer MissionAccess (siehe <placeholder-1/>) freigeschaltet hat."
 msgstr "Scenario file (including .c4s extension) to be started by this section. You should create a [Scenario] section for each scenario in the scenario folder. Only those scenario sections are displayed for which MissionAccess (see <placeholder-1/>) is displayed."
 
-#: sdk/folder/foldermap.xml:75(col)
+#: sdk/folder/foldermap.xml:80(col)
 msgid "BaseImage"
 msgstr "BaseImage"
 
-#: sdk/folder/foldermap.xml:77(col)
+#: sdk/folder/foldermap.xml:82(col)
 msgid "Dateiname der Grafikdatei, die angezeigt wird, wenn das Szenario nicht ausgewählt ist. Die Datei sollte im selben Rundenordner liegen."
 msgstr "Image to be displayed if the scenario is not selected. The image file should be available in the scenario folder."
 
-#: sdk/folder/foldermap.xml:82(col)
+#: sdk/folder/foldermap.xml:87(col)
 msgid "Dateiname der Grafikdatei, die angezeigt wird, wenn der Benutzer das Szenario ausgewählt hat oder mit der Maus darüber fährt. Die Datei sollte im selben Rundenordner liegen."
 msgstr "Image to be displayed if the scenario is selected or hovered over with the mouse. The image file should be available in the scenario folder."
 
-#: sdk/folder/foldermap.xml:87(col)
+#: sdk/folder/foldermap.xml:92(col)
 msgid "Koordinaten des Bereiches, in dem der Knopf angezeigt wird. Die Koordinaten sind relativ zum <emlink href=\"#background\">Hintergrundbild</emlink>."
 msgstr "Screen area in which to display the selection button. The coordinates are relative to the <emlink href=\"#background\">background image</emlink>."
 
-#: sdk/folder/foldermap.xml:92(col)
+#: sdk/folder/foldermap.xml:97(col)
 msgid "Titel, der auf den Knopf geschrieben wird. Für Szenarientitel, die in allen Sprachen gleich sind, kann der Titel auch weggelassen und stattdessen direkt ins BaseImage bzw. Overlayimage gemalt werden. Die Zeichenkette TITLE wird dabei automatisch durch den aus dem Szenario geladenen Titel ersetzt."
 msgstr "Text to be displayed on the selection button. If no localization is needed, you can also integrate the text directly into the base image or overlay image. If you specify the string TITLE, the localized title is loaded from the corresponding scenario."
 
-#: sdk/folder/foldermap.xml:95(col)
+#: sdk/folder/foldermap.xml:100(col)
 msgid "TitleFontSize"
 msgstr "TitleFontSize"
 
-#: sdk/folder/foldermap.xml:97(col)
+#: sdk/folder/foldermap.xml:102(col)
 msgid "Schriftgröße des Titels. Die Größe bezieht sich auf ein nicht gezoomtes Hintergrundbild und kann je nach Auflösung verändert werden."
 msgstr "Font size of the title. Relative to the unstretched background image."
 
-#: sdk/folder/foldermap.xml:100(col)
+#: sdk/folder/foldermap.xml:105(col)
 msgid "TitleColorInactive"
 msgstr "TitleColorInactive"
 
-#: sdk/folder/foldermap.xml:102(col)
+#: sdk/folder/foldermap.xml:107(col)
 msgid "DWORD-Farbe des Titels, wenn der Knopf nicht ausgewählt ist."
 msgstr "DWORD color value of the unselect button title."
 
-#: sdk/folder/foldermap.xml:105(col)
+#: sdk/folder/foldermap.xml:110(col)
 msgid "TitleColorActive"
 msgstr "TitleColorActive"
 
-#: sdk/folder/foldermap.xml:107(col)
+#: sdk/folder/foldermap.xml:112(col)
 msgid "DWORD-Farbe des Titels, wenn der Knopf nicht sgewählt ist."
 msgstr "DWORD color value of the unselect button title."
 
-#: sdk/folder/foldermap.xml:110(col)
+#: sdk/folder/foldermap.xml:115(col)
 msgid "TitleOffX"
 msgstr "TitleOffX"
 
-#: sdk/folder/foldermap.xml:112(col)
+#: sdk/folder/foldermap.xml:117(col)
 msgid "Horizontaler Offset der linken Kante (bzw. Textmitte bei zentriertem Text) des Titels von der linken Kante des Knopfes."
 msgstr "Horizontal offset of the left aligned or centered position of the title from the left edge of the selection button."
 
-#: sdk/folder/foldermap.xml:115(col)
+#: sdk/folder/foldermap.xml:120(col)
 msgid "TitleOffY"
 msgstr "TitleOffY"
 
-#: sdk/folder/foldermap.xml:117(col)
+#: sdk/folder/foldermap.xml:122(col)
 msgid "Vertikaler Offset der Oberkante des Titels von der oberen Kante des Knopfes."
 msgstr "Vertical offset of the title from the upper edge of the selection button."
 
-#: sdk/folder/foldermap.xml:120(col)
+#: sdk/folder/foldermap.xml:125(col)
 msgid "TitleAlign"
 msgstr "TitleAlign"
 
-#: sdk/folder/foldermap.xml:122(col)
+#: sdk/folder/foldermap.xml:127(col)
 msgid "Ausrichtung des Titels: 0 für linksbündig, 1 für zentriert, 2 für rechtsbündig."
 msgstr "Text alignment: 0 left, 1 centered, 2 right aligned."
 
-#: sdk/folder/foldermap.xml:125(col)
+#: sdk/folder/foldermap.xml:130(col)
 msgid "TitleUseBookFont"
 msgstr "TitleUseBookFont"
 
-#: sdk/folder/foldermap.xml:127(col)
+#: sdk/folder/foldermap.xml:132(col)
 msgid "0 oder 1. Bei 1 wird die schattenlose Schriftart des Startupmenüs anstatt der nromalen InGame-Schriftart für den Titelverwendet."
 msgstr "0 or 1. If 0, the regular in-game font is used. If 1, the shadow-less font of the fullscreen menu is used."
 
-#: sdk/folder/foldermap.xml:131(h)
+#: sdk/folder/foldermap.xml:136(h)
 msgid "Anordnung der Elemente"
 msgstr "Element Order"
 
-#: sdk/folder/foldermap.xml:132(text)
+#: sdk/folder/foldermap.xml:137(text)
 msgid "Es werden grundsätzlich alle AccessGfx-Grafiken unter die Szenarienknöpfe gezeichnet. Die Szenarienknöpfe erscheinen in der Reihenfolge, in der sie in der Datei angegeben sind. Dabei ist darauf zu achten, dass man sie in einer sinnvollen Reihenfolge angibt (also von links nach rechts und von oben nach unten), da das Durchschalten mit Tastatur oder Gamepad hiervon abhängt. Es ist auch Aufgabe des Entwicklers, dafür zu sorgen, dass sich Knöpfe und Grafiken nicht überlappen."
 msgstr "AccessGfx images drawn under the scenario selection buttons. Selection buttons appear in the order in which they are specified in the file. Thus you should specifiy sections in a meaningful order, from left to right and top to bottom as this will affect the tab stepping sequence when controlling the dialog with the keyboard or gamepad. Also, you should take care not to overlap any buttons."
 
-#: sdk/folder/foldermap.xml:134(h)
+#: sdk/folder/foldermap.xml:139(h)
 msgid "Hintergrundbild"
 msgstr "Background image"
 
-#: sdk/folder/foldermap.xml:135(text)
+#: sdk/folder/foldermap.xml:140(text)
 msgid "Wenn der Ordner eine FolderMap enthält, wird eine der Bilddateien FolderMap.png/.jpg/.jpeg/.bmp als Hintergrund erwartet. Die optimale Bildgröße, bei der das Hintergrundbild ohne gestreckt zu werden angezeigt werden kann, hängt von der Bildschirmauflösung des Benutzers ab:"
 msgstr "If the scenario folder contains a folder map, an image file of name FolderMap.png/.jpg/.jpeg/.bmp is expected. The recommended size of this image depends on the screen resolution of the end user:"
 
-#: sdk/folder/foldermap.xml:137(col)
+#: sdk/folder/foldermap.xml:142(col)
 msgid "Auflösung"
 msgstr "Resolution"
 
-#: sdk/folder/foldermap.xml:137(col)
+#: sdk/folder/foldermap.xml:142(col)
 msgid "Größe der FolderMap"
 msgstr "Size of the folder map."
 
-#: sdk/folder/foldermap.xml:138(col)
+#: sdk/folder/foldermap.xml:143(col)
 msgid "640x480"
 msgstr "640x480"
 
-#: sdk/folder/foldermap.xml:138(col)
+#: sdk/folder/foldermap.xml:143(col)
 msgid "616x385"
 msgstr "616x385"
 
-#: sdk/folder/foldermap.xml:139(col)
+#: sdk/folder/foldermap.xml:144(col)
 msgid "800x600"
 msgstr "800x600"
 
-#: sdk/folder/foldermap.xml:139(col)
+#: sdk/folder/foldermap.xml:144(col)
 msgid "768x480"
 msgstr "768x480"
 
-#: sdk/folder/foldermap.xml:140(col)
+#: sdk/folder/foldermap.xml:145(col)
 msgid "1024x768"
 msgstr "1024x768"
 
-#: sdk/folder/foldermap.xml:140(col)
+#: sdk/folder/foldermap.xml:145(col)
 msgid "984x616"
 msgstr "984x616"
 
-#: sdk/folder/foldermap.xml:141(text)
+#: sdk/folder/foldermap.xml:146(text)
 msgid "Das Bild wird immer auf die volle, für die Auswahl zur Verfügung stehende Größe gestreckt bzw. gestaucht. Alle Positionsangaben für Szenarien, die Beschreibungsleiste, etc. beziehen sich auf Koordinaten in diesem Hintergrundbild und werden entsprechend mitgestreckt oder gestaucht. Es empfiehlt sich also, die Karte für eine relativ große Auflösung wie z.B. 1024x768 zu gestalten, und stets zu testen, ob für kleine Auflösungen noch alles lesbar ist."
 msgstr "The image is always stretched to the full available screen area. All coordinates given for section elements are relative to the unstretched background image."
 
-#: sdk/folder/foldermap.xml:143(h)
+#: sdk/folder/foldermap.xml:148(h)
 msgid "Tipps zur Entwicklung"
 msgstr "Useful Hints"
 
-#: sdk/folder/foldermap.xml:144(text)
+#: sdk/folder/foldermap.xml:149(text)
 msgid "Zum Testen kann die FolderMap mit einem entpackten Rundenordner entworfen, und dann in der Szenarienauswahl mit Druck auf F5 jeweils neu geladen werden. Erscheint statt der FolderMap die klassische Szenarienauswahl, ist beim Laden der Definitionsdatei ein Fehler aufgetreten, oder zum Beispiel eine referenzierte Grafikdatei nicht gefunden worden. Bei aktiviertem Debugmodus findet sich in dem Fall eine Fehlermeldung in der Datei Clonk.log."
 msgstr "For testing purposes a folder map can be loaded from an unpacked scenario folder and reloaded an runtime using F5. If the classic scenario selection appears instead of the folder map, an error has occured in the folder map declaration, such as missing image files. With debug mode activated, there will also be an error message in Clonk.log."
 

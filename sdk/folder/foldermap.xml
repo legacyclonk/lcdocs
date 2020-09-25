@@ -34,6 +34,11 @@ Diese Karten werden nur in der Szenarienauswahl im Spiel und nicht im Entwickler
 		<col>FullscreenBG</col>
 		<col>Integer</col>
 		<col>Wenn ungleich 0, wird das Hintergrundbild auf die gesamte Bildschirmgröße gestreckt. Dabei ist zu beachten, dass Kontrollelemente trotzdem nur innerhalb des mittleren Gebietes platziert werden dürfen.</col>
+	</row>
+	<row>
+		<col>HideTitle</col>
+		<col>Boolean</col>
+		<col>Falls true, wird die Überschrift "Spiel starten" am oberen Rand ausgeblendet.</col>
 	</row></table></text>
 
 <text><table>
