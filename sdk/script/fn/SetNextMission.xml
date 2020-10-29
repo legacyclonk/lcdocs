@@ -7,7 +7,7 @@
     <category>Global</category>
     <version>4.9.7.0 CR</version>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype>void</rtype>
       <params>
         <param><type>string</type><name>szNextMissionFile</name><desc>Name der Datei, welche gestartet werden soll.</desc></param>
         <param><type>string</type><name>szButtonText</name><desc>Text des Buttons</desc></param>

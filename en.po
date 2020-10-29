@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-25 18:24+0200\n"
+"POT-Creation-Date: 2020-09-25 18:34+0200\n"
 "PO-Revision-Date: 2019-10-03 00:40+0200\n"
 "Last-Translator: matthes <matthes@clonk.de>\n"
 "Language-Team: English\n"
@@ -12855,6 +12855,7 @@ msgstr "A whole number from -2.147.483.648 to +2.147.483.647."
 #: sdk/material/c4m.xml:275(col)
 #: sdk/folder/foldermap.xml:40(col)
 #: sdk/folder/foldermap.xml:131(col)
+#: sdk/folder/foldermap.xml:136(col)
 #: sdk/definition/actmap.xml:94(col)
 msgid "Boolean"
 msgstr "Boolean"
@@ -18122,63 +18123,71 @@ msgstr "TitleUseBookFont"
 msgid "0 oder 1. Bei 1 wird die schattenlose Schriftart des Startupmenüs anstatt der nromalen InGame-Schriftart für den Titelverwendet."
 msgstr "0 or 1. If 0, the regular in-game font is used. If 1, the shadow-less font of the fullscreen menu is used."
 
-#: sdk/folder/foldermap.xml:136(h)
+#: sdk/folder/foldermap.xml:135(col)
+msgid "SingleClick"
+msgstr "SingleClick"
+
+#: sdk/folder/foldermap.xml:137(col)
+msgid "Falls true, wird der Eintrag bereits bei Einzelklick gestartet/geöffnet."
+msgstr "If true the entry is started/opened using a single click instead of double click."
+
+#: sdk/folder/foldermap.xml:141(h)
 msgid "Anordnung der Elemente"
 msgstr "Element Order"
 
-#: sdk/folder/foldermap.xml:137(text)
+#: sdk/folder/foldermap.xml:142(text)
 msgid "Es werden grundsätzlich alle AccessGfx-Grafiken unter die Szenarienknöpfe gezeichnet. Die Szenarienknöpfe erscheinen in der Reihenfolge, in der sie in der Datei angegeben sind. Dabei ist darauf zu achten, dass man sie in einer sinnvollen Reihenfolge angibt (also von links nach rechts und von oben nach unten), da das Durchschalten mit Tastatur oder Gamepad hiervon abhängt. Es ist auch Aufgabe des Entwicklers, dafür zu sorgen, dass sich Knöpfe und Grafiken nicht überlappen."
 msgstr "AccessGfx images drawn under the scenario selection buttons. Selection buttons appear in the order in which they are specified in the file. Thus you should specifiy sections in a meaningful order, from left to right and top to bottom as this will affect the tab stepping sequence when controlling the dialog with the keyboard or gamepad. Also, you should take care not to overlap any buttons."
 
-#: sdk/folder/foldermap.xml:139(h)
+#: sdk/folder/foldermap.xml:144(h)
 msgid "Hintergrundbild"
 msgstr "Background image"
 
-#: sdk/folder/foldermap.xml:140(text)
+#: sdk/folder/foldermap.xml:145(text)
 msgid "Wenn der Ordner eine FolderMap enthält, wird eine der Bilddateien FolderMap.png/.jpg/.jpeg/.bmp als Hintergrund erwartet. Die optimale Bildgröße, bei der das Hintergrundbild ohne gestreckt zu werden angezeigt werden kann, hängt von der Bildschirmauflösung des Benutzers ab:"
 msgstr "If the scenario folder contains a folder map, an image file of name FolderMap.png/.jpg/.jpeg/.bmp is expected. The recommended size of this image depends on the screen resolution of the end user:"
 
-#: sdk/folder/foldermap.xml:142(col)
+#: sdk/folder/foldermap.xml:147(col)
 msgid "Auflösung"
 msgstr "Resolution"
 
-#: sdk/folder/foldermap.xml:142(col)
+#: sdk/folder/foldermap.xml:147(col)
 msgid "Größe der FolderMap"
 msgstr "Size of the folder map."
 
-#: sdk/folder/foldermap.xml:143(col)
+#: sdk/folder/foldermap.xml:148(col)
 msgid "640x480"
 msgstr "640x480"
 
-#: sdk/folder/foldermap.xml:143(col)
+#: sdk/folder/foldermap.xml:148(col)
 msgid "616x385"
 msgstr "616x385"
 
-#: sdk/folder/foldermap.xml:144(col)
+#: sdk/folder/foldermap.xml:149(col)
 msgid "800x600"
 msgstr "800x600"
 
-#: sdk/folder/foldermap.xml:144(col)
+#: sdk/folder/foldermap.xml:149(col)
 msgid "768x480"
 msgstr "768x480"
 
-#: sdk/folder/foldermap.xml:145(col)
+#: sdk/folder/foldermap.xml:150(col)
 msgid "1024x768"
 msgstr "1024x768"
 
-#: sdk/folder/foldermap.xml:145(col)
+#: sdk/folder/foldermap.xml:150(col)
 msgid "984x616"
 msgstr "984x616"
 
-#: sdk/folder/foldermap.xml:146(text)
+#: sdk/folder/foldermap.xml:151(text)
 msgid "Das Bild wird immer auf die volle, für die Auswahl zur Verfügung stehende Größe gestreckt bzw. gestaucht. Alle Positionsangaben für Szenarien, die Beschreibungsleiste, etc. beziehen sich auf Koordinaten in diesem Hintergrundbild und werden entsprechend mitgestreckt oder gestaucht. Es empfiehlt sich also, die Karte für eine relativ große Auflösung wie z.B. 1024x768 zu gestalten, und stets zu testen, ob für kleine Auflösungen noch alles lesbar ist."
 msgstr "The image is always stretched to the full available screen area. All coordinates given for section elements are relative to the unstretched background image."
 
-#: sdk/folder/foldermap.xml:148(h)
+#: sdk/folder/foldermap.xml:153(h)
 msgid "Tipps zur Entwicklung"
 msgstr "Useful Hints"
 
-#: sdk/folder/foldermap.xml:149(text)
+#: sdk/folder/foldermap.xml:154(text)
 msgid "Zum Testen kann die FolderMap mit einem entpackten Rundenordner entworfen, und dann in der Szenarienauswahl mit Druck auf F5 jeweils neu geladen werden. Erscheint statt der FolderMap die klassische Szenarienauswahl, ist beim Laden der Definitionsdatei ein Fehler aufgetreten, oder zum Beispiel eine referenzierte Grafikdatei nicht gefunden worden. Bei aktiviertem Debugmodus findet sich in dem Fall eine Fehlermeldung in der Datei Clonk.log."
 msgstr "For testing purposes a folder map can be loaded from an unpacked scenario folder and reloaded an runtime using F5. If the classic scenario selection appears instead of the folder map, an error has occured in the folder map declaration, such as missing image files. With debug mode activated, there will also be an error message in Clonk.log."
 

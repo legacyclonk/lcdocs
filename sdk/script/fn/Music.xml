@@ -9,7 +9,7 @@
     <extversion>4.9.1.0 GWE</extversion>
   </version>
   <syntax>
-   <rtype>int</rtype>
+   <rtype>void</rtype>
    <params>
     <param><type>string</type><name>szSongName</name><desc>Dateiame des Musikstückes. Die Endung muss mit angegeben werden. Wird der Parameter weggelassen oder 0 übergeben, so wird die Musikwiedergabe deaktiviert (auch wenn sie in den Optionen aktiviert wurde)</desc><optional/></param>
     <param><type>bool</type><name>fLoop</name><desc>Wenn 1, wird das angegebene Musikstück andauernd abgespielt.</desc><optional/></param>

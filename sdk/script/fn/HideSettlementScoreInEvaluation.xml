@@ -7,13 +7,13 @@
 		<category>Global</category>
 		<version>4.9.6.0 CR</version>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype>void</rtype>
 			<params>
 				<param><type>bool</type><name>fHide</name><desc>Gibt an, ob die Siedelpunkte ausgeblendet werden sollen.</desc></param>
 			</params>
 		</syntax>
 		<desc>Blendet die Siedlungspunkte aus dem Auswertungsdialog am Ende der Runde aus, wenn fHide true ist.</desc>
-		 
+
 		 <related>
 			<funclink>AddEvaluationData</funclink>
 		 </related>

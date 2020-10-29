@@ -7,7 +7,7 @@
 		<category>Objekte</category><subcat>Erzeugung</subcat>
 		<version>4.6.5.0 CP</version>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype>void</rtype>
 			<params>
 				<param><type>id </type><name>id</name><desc>ID des Objekttyps, der verschleudert wird</desc></param>
 				<param><type>int </type><name>iNumber</name><desc>Anzahl verschleuderter Objekte.</desc></param>

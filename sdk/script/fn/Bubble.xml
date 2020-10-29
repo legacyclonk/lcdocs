@@ -7,7 +7,7 @@
     <category>Umwelt</category><subcat>Effekte</subcat>
     <version>4.6.5.0 CP</version>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype>void</rtype>
       <params>
         <param><type>int</type><name>iX</name><desc>X-Position der Luftblase. Offset bei lokalem Aufruf.</desc><optional /></param>
         <param><type>int</type><name>iY</name><desc>Y-Position der Luftblase. Offset bei lokalem Aufruf.</desc><optional /></param>
