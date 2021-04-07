@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-04 20:15+0200\n"
+"POT-Creation-Date: 2021-04-08 00:01+0200\n"
 "PO-Revision-Date: 2021-04-04 18:46+0200\n"
 "Last-Translator: Markus Mittendrein <maxmitti@gmx.at>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -12972,7 +12972,7 @@ msgid "Elemente am Ende eines Arrays können mit <code>a[] = wert;</code> am End
 msgstr "Elements can be appended to the array using <code>a[] = value;</code>"
 
 #: sdk/script/Typechecks.xml:77(h)
-#: sdk/script/Typechecks.xml:129(h)
+#: sdk/script/Typechecks.xml:130(h)
 msgid "Beispiel 1"
 msgstr "Example 1"
 
@@ -12981,7 +12981,7 @@ msgid "Diese Funktion summiert alle Elemente eines Arrays."
 msgstr "This function adds up all elements of an array."
 
 #: sdk/script/Typechecks.xml:89(h)
-#: sdk/script/Typechecks.xml:158(h)
+#: sdk/script/Typechecks.xml:159(h)
 msgid "Beispiel 2"
 msgstr "Example 2"
 
@@ -13014,105 +13014,105 @@ msgid "Achtung"
 msgstr "Attention"
 
 #: sdk/script/Typechecks.xml:125(text)
-msgid "Objekte, egal ob direkt oder verschachtelt in Maps und Arrays, sollten nur mit äußerster Vorsicht als Schlüssel verwendet werden. Prinzipiell funktioniert das zwar genau gleich gut wie andere Schlüsseltypen, allerdings kann auf die gespeicherten Werte nicht mehr zugegriffen werden, wenn das entsprechende Objekt gelöscht wird, da beim Löschen alle darauf verweisenden Variablen auf nil gesetzt werden. Löschen dieser Werte ist ebenfalls nicht mehr möglich."
-msgstr "Objects, regardless if used directly or nested inside maps and arrays, should be used as keys only with much caution. Basically this works as well as using other key-types, but after the according object has been deleted it is no longer possible to access the associated values, nor deleting them from the map. This is because on removal all variables referencing an object are set to nil."
+msgid "Wird ein Objekt direkt als Schlüssel verwendet und das Objekt wird währenddessen gelöscht, so wird der zugehörige Wert aus der Map entfernt. Wird hingegen ein Objekt beliebig verschachtelt in einer Map oder einem Array verwendet und wird währenddessen gelöscht, kann auf den darunter gespeicherten Wert nicht mehr zugegriffen werden. Löschen dieses Wertes ist ebenfalls nicht mehr möglich. Nur durch neu setzen der ganzen Map kann ein derartiger Zustand beseitigt werden."
+msgstr "If an object is used directly as key and in the meantime it is deleted, the related value is removed from the map. However, if the object is contained arbitrarily in a map or array that is being used as a key and the object is deleted, the associated value becomes inaccessible and also can not be removed. The only way to get rid of such a state is resetting the whole map by assigning a new one to the variable."
 
-#: sdk/script/Typechecks.xml:157(text)
+#: sdk/script/Typechecks.xml:158(text)
 msgid "Diese Funktion demonstriert den Umgang mit Maps."
 msgstr "This function demonstrates the usage of maps."
 
-#: sdk/script/Typechecks.xml:192(text)
+#: sdk/script/Typechecks.xml:193(text)
 msgid "Teil eines Objektscripts, das mithilfe einer Map für eine begrenzte Anzahl diverser Artikel Rabatte verwaltet."
 msgstr "Part of an object script that manages discounts for various articles of limited amount using a map."
 
-#: sdk/script/Typechecks.xml:195(h)
+#: sdk/script/Typechecks.xml:196(h)
 msgid "Konvertierung"
 msgstr "Conversion"
 
-#: sdk/script/Typechecks.xml:197(text)
+#: sdk/script/Typechecks.xml:198(text)
 msgid "Aus folgender Tabelle kann entnommen werden, welche Typen automatisch konvertiert werden und wo ein Fehler ausgelöst wird:"
 msgstr "Consult the following table to determine which types can be converted and which conversions might cause errors:"
 
-#: sdk/script/Typechecks.xml:200(col)
+#: sdk/script/Typechecks.xml:201(col)
 msgid "nach -&gt;"
 msgstr "to -&gt;"
 
-#: sdk/script/Typechecks.xml:211(col)
 #: sdk/script/Typechecks.xml:212(col)
-#: sdk/script/Typechecks.xml:221(col)
+#: sdk/script/Typechecks.xml:213(col)
 #: sdk/script/Typechecks.xml:222(col)
-#: sdk/script/Typechecks.xml:232(col)
+#: sdk/script/Typechecks.xml:223(col)
 #: sdk/script/Typechecks.xml:233(col)
-#: sdk/script/Typechecks.xml:242(col)
-#: sdk/script/Typechecks.xml:244(col)
-#: sdk/script/Typechecks.xml:252(col)
-#: sdk/script/Typechecks.xml:255(col)
-#: sdk/script/Typechecks.xml:262(col)
-#: sdk/script/Typechecks.xml:266(col)
-#: sdk/script/Typechecks.xml:272(col)
-#: sdk/script/Typechecks.xml:277(col)
+#: sdk/script/Typechecks.xml:234(col)
+#: sdk/script/Typechecks.xml:243(col)
+#: sdk/script/Typechecks.xml:245(col)
+#: sdk/script/Typechecks.xml:253(col)
+#: sdk/script/Typechecks.xml:256(col)
+#: sdk/script/Typechecks.xml:263(col)
+#: sdk/script/Typechecks.xml:267(col)
+#: sdk/script/Typechecks.xml:273(col)
+#: sdk/script/Typechecks.xml:278(col)
 msgid "OK"
 msgstr "OK"
 
-#: sdk/script/Typechecks.xml:213(col)
+#: sdk/script/Typechecks.xml:214(col)
 msgid "if &lt;= 9999"
 msgstr "if &lt;= 9999"
 
-#: sdk/script/Typechecks.xml:214(col)
 #: sdk/script/Typechecks.xml:215(col)
 #: sdk/script/Typechecks.xml:216(col)
 #: sdk/script/Typechecks.xml:217(col)
-#: sdk/script/Typechecks.xml:223(col)
+#: sdk/script/Typechecks.xml:218(col)
 #: sdk/script/Typechecks.xml:224(col)
 #: sdk/script/Typechecks.xml:225(col)
 #: sdk/script/Typechecks.xml:226(col)
 #: sdk/script/Typechecks.xml:227(col)
-#: sdk/script/Typechecks.xml:234(col)
+#: sdk/script/Typechecks.xml:228(col)
 #: sdk/script/Typechecks.xml:235(col)
 #: sdk/script/Typechecks.xml:236(col)
 #: sdk/script/Typechecks.xml:237(col)
-#: sdk/script/Typechecks.xml:243(col)
-#: sdk/script/Typechecks.xml:245(col)
+#: sdk/script/Typechecks.xml:238(col)
+#: sdk/script/Typechecks.xml:244(col)
 #: sdk/script/Typechecks.xml:246(col)
 #: sdk/script/Typechecks.xml:247(col)
-#: sdk/script/Typechecks.xml:253(col)
+#: sdk/script/Typechecks.xml:248(col)
 #: sdk/script/Typechecks.xml:254(col)
-#: sdk/script/Typechecks.xml:256(col)
+#: sdk/script/Typechecks.xml:255(col)
 #: sdk/script/Typechecks.xml:257(col)
-#: sdk/script/Typechecks.xml:261(col)
-#: sdk/script/Typechecks.xml:263(col)
+#: sdk/script/Typechecks.xml:258(col)
+#: sdk/script/Typechecks.xml:262(col)
 #: sdk/script/Typechecks.xml:264(col)
 #: sdk/script/Typechecks.xml:265(col)
-#: sdk/script/Typechecks.xml:267(col)
-#: sdk/script/Typechecks.xml:271(col)
-#: sdk/script/Typechecks.xml:273(col)
+#: sdk/script/Typechecks.xml:266(col)
+#: sdk/script/Typechecks.xml:268(col)
+#: sdk/script/Typechecks.xml:272(col)
 #: sdk/script/Typechecks.xml:274(col)
 #: sdk/script/Typechecks.xml:275(col)
 #: sdk/script/Typechecks.xml:276(col)
+#: sdk/script/Typechecks.xml:277(col)
 msgid "Error"
 msgstr "Error"
 
-#: sdk/script/Typechecks.xml:231(col)
-#: sdk/script/Typechecks.xml:241(col)
-#: sdk/script/Typechecks.xml:251(col)
+#: sdk/script/Typechecks.xml:232(col)
+#: sdk/script/Typechecks.xml:242(col)
+#: sdk/script/Typechecks.xml:252(col)
 #: sdk/script/Strict.xml:5(title)
 #: sdk/script/Strict.xml:6(h)
 msgid "#strict"
 msgstr "#strict"
 
-#: sdk/script/Typechecks.xml:281(h)
+#: sdk/script/Typechecks.xml:282(h)
 msgid "Erklärung der Tabelle:"
 msgstr "Additional information:"
 
-#: sdk/script/Typechecks.xml:283(li)
+#: sdk/script/Typechecks.xml:284(li)
 msgid "Wo #strict steht, wird nur ein Fehler ausgelöst wenn der Script <emlink href=\"script/Strict.html\">#strict</emlink> ist. Hierbei handelt es sich um \"ungefährliche\" aber sinnlose Konvertierungen, die nur in einigen \"trickreichen\" Scripts zur Anwendung kamen."
 msgstr "Conversions marked #strict will only throw an error if the script is <emlink href=\"script/Strict.html\">#strict</emlink>. This only concerns harmless but nonsense conversions which might have appeared in older scripts."
 
-#: sdk/script/Typechecks.xml:284(li)
+#: sdk/script/Typechecks.xml:285(li)
 msgid "Die Konvertierung int zu id ist nur erlaubt, wenn die Zahl größer gleich 0 und kleiner gleich 9999 ist. Auf diese Weise werden auch IDs, die nur aus Zahlen bestehen, unterstützt (z.B. 0001)"
 msgstr "Conversion to id is valid only if the number is greater than or equal to 0 and less that or equal to 9999. This procedure also supports IDs that contain digits only."
 
-#: sdk/script/Typechecks.xml:285(li)
+#: sdk/script/Typechecks.xml:286(li)
 msgid "Konvertierung nach bool ist generell erlaubt. Sie ergibt für jeden Wert außer 0 <code>true</code>."
 msgstr "Conversion to bool is generally allowed. All values except 0 are <code>true</code>."
 
@@ -20313,9 +20313,7 @@ msgstr "HideHUDElements"
 
 #: sdk/definition/defcore.xml:206(col)
 msgid "Blendet die angegebenen HUD-Elemente des Objekts aus wenn es als Cursor angewählt ist. Mögliche kombinierbare Werte: Portrait, Captain (der Kapitänsstern), Name, Rank, RankImage, All; Ab LC [346]."
-msgstr "Hides the specified object's HUD elements that are visible while the object"
-" is the player's cursor. Possible combinable values: Portrait, Captain (the"
-" captain's star), Name, Rank, RankImage, All; Since LC [346]."
+msgstr "Hides the specified object's HUD elements that are visible while the object is the player's cursor. Possible combinable values: Portrait, Captain (the captain's star), Name, Rank, RankImage, All; Since LC [346]."
 
 #: sdk/definition/defcore.xml:211(caption)
 msgid "Sektion [Physical]"
@@ -21363,6 +21361,9 @@ msgstr "c4group.exe (Windows) c4group (Linux) c4group (Mac)"
 #: sdk/cmdline.xml:73(text)
 msgid "Dieses Kommandozeilen-Programm dient zum Bearbeiten von Gruppendateien. Es kann nicht per Doppelklick, sondern nur per Kommandozeile (Eingabeaufforderung) gestartet werden. Auskunft über alle verfügbaren Kommandozeilenparameter erhält man, indem man das Programm ohne weitere Parameter über die Kommandozeile startet."
 msgstr "This command line program is used for processing group files. A list of command line options is available by starting the program without parameters via command line (<i>not</i> by double clicking)."
+
+#~ msgid "Objekte, egal ob direkt oder verschachtelt in Maps und Arrays, sollten nur mit äußerster Vorsicht als Schlüssel verwendet werden. Prinzipiell funktioniert das zwar genau gleich gut wie andere Schlüsseltypen, allerdings kann auf die gespeicherten Werte nicht mehr zugegriffen werden, wenn das entsprechende Objekt gelöscht wird, da beim Löschen alle darauf verweisenden Variablen auf nil gesetzt werden. Löschen dieser Werte ist ebenfalls nicht mehr möglich."
+#~ msgstr "Objects, regardless if used directly or nested inside maps and arrays, should be used as keys only with much caution. Basically this works as well as using other key-types, but after the according object has been deleted it is no longer possible to access the associated values, nor deleting them from the map. This is because on removal all variables referencing an object are set to nil."
 
 #~ msgid "Dies wird typischerweise für arbeiten mit Default-Werten oder für Ersatzwerte von möglicherweise nil zurückgebenden Funktionsaufrufen verwendet. Im Gegensatz zu || wird auf nil geprüft, nicht auf den boolschen Wert."
 #~ msgstr "These are typically used for default values or fallback values of function calls which may return nil. In contrast to || the check is spefically against nil and without conversion to bool."
