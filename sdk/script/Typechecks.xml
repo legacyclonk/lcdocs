@@ -123,8 +123,9 @@
     </text>
     <h>Achtung</h>
     <text>
-      Objekte, egal ob direkt oder verschachtelt in Maps und Arrays, sollten nur mit äußerster Vorsicht als Schlüssel verwendet werden.
-      Prinzipiell funktioniert das zwar genau gleich gut wie andere Schlüsseltypen, allerdings kann auf die gespeicherten Werte nicht mehr zugegriffen werden, wenn das entsprechende Objekt gelöscht wird, da beim Löschen alle darauf verweisenden Variablen auf nil gesetzt werden. Löschen dieser Werte ist ebenfalls nicht mehr möglich.
+      Wird ein Objekt direkt als Schlüssel verwendet und das Objekt wird währenddessen gelöscht, so wird der zugehörige Wert aus der Map entfernt.
+
+      Wird hingegen ein Objekt beliebig verschachtelt in einer Map oder einem Array verwendet und wird währenddessen gelöscht, kann auf den darunter gespeicherten Wert nicht mehr zugegriffen werden. Löschen dieses Wertes ist ebenfalls nicht mehr möglich. Nur durch neu setzen der ganzen Map kann ein derartiger Zustand beseitigt werden.
     </text>
     <h>Beispiel 1</h>
 <code>func MapPlayground(int plr)

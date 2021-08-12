@@ -251,6 +251,13 @@
 		 <col>any, any/any</col>
 		</row>
 		<row>
+		 <col>3l</col>
+		 <col>??</col>
+		 <col>Liefert den nachgestellten Wert falls der vorangestellte nil ist, den vorangestellte andernfalls. ab <emlink href="script/Strict.html">#strict 3</emlink></col>
+		 <col>postfix</col>
+		 <col>any, any/any</col>
+		</row>
+		<row>
 		 <col>2r</col>
 		 <col>**=</col>
 		 <col>potenziert die vorangestellte Variable mit dem nachgestellten Wert</col>
@@ -348,6 +355,13 @@
 		 <col>postfix</col>
 		 <col>Referenz, Referenz/int</col>
 	 </row>
+	 <row>
+		 <col>2r</col>
+		 <col>??=</col>
+		 <col>Weist der vorangestellten Variable den nachgestellten Wert zu, falls, die vorangestellte Variable nil ist. ab <emlink href="script/Strict.html">#strict 3</emlink></col>
+		 <col>postfix</col>
+		 <col>Referenz, Referenz/any</col>
+	 </row>
 		<row>
 		 <col>2r</col>
 		 <col>=</col>
@@ -420,6 +434,31 @@ while(<strong>++Var(0)</strong> &lt; 10)
 			<code>0 &amp;&amp; Explode(20);</code>
 			<text>Außerdem ist das Ergebnis des Operators der Wert des ersten oder zweiten Parameters, je nachdem ob einer oder beide ausgewertet wurden. Beispielsweise kann man so wenn möglich einen Ritter, und ansonsten einen Clonk erzeugen:</text>
 			<code>CreateObject(KNIG,0,0,GetOwner()) || CreateObject(CLNK,0,0,GetOwner())</code>
+		</part>
+
+		<h id="nilcoalescing">Die Operatoren ?? und ??=</h>
+		<part>
+			<text>?? ist in manchen Sprachen als nil-coalescing Operator bekannt.
+				Beide Operatoren prüfen, ob der vorangestellte Wert nil ist. Nur falls dieser nil ist wird der nachgestellte Ausdruck ausgewertet und das Ergebnis davon geliefert bzw. zugewiesen. Andernfalls liefert ?? den vorangestellten Wert bzw. ??= verändert die Variable nicht.
+				Dies wird typischerweise für arbeiten mit Default-Werten oder für Ersatzwerte von möglicherweise nil zurückgebenden Funktionsaufrufen verwendet.
+				Im Gegensatz zu || wird explizit auf nil geprüft ohne den Wert in einen bool zu verwandeln.
+			</text>
+			<text>
+				Die Operatoren sind so wie nil nur ab <emlink href="script/Strict.html">#strict 3</emlink> verfügbar.
+			</text>
+				<h>Beispiele:</h>
+				<code>
+1337 ?? 42; // = 1337
+nil ?? 42; // = 42
+0 ?? 42; // = 0
+0 || 42; // = 42
+
+// Standardwert für x ist 10, 0 kann aber explizit übergeben werden.
+func Foo(int x)
+{
+	x ??= 10;
+}
+				</code>
 		</part>
 
 		<h id="concat">Die Operatoren .. und ..=</h>
