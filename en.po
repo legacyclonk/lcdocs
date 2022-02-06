@@ -7832,7 +7832,7 @@ msgid "Bei TEAM_Dist werden die Lobby-Teameinstellungen zurückgegeben. Dort mus
 msgstr ""
 "For TEAM_Dist the settings from the lobby will be returned. In this case it must be distinguished if TEAM_AutoGenerateTeams has been enabled or disabled because it determines the available options.\n"
 "With TEAM_AutoGenerateTeams = true the possible return values are<br/> TEAMDIST_Free (0, free team choice),<br/> TEAMDIST_Host (1, teams chosen by host)<br/> or 2 (without according constant, no teams).<br/>\n"
-"With TEAM_AutoGenerateTeams = false (the norm for predefined teams) the return values are<br/> TEAMDIST_Free (0),<br/> TEAMDIST_Host (1),<br/> TEAMDIST_Random (2, random teams)<br/> or TEAMDIST_RandomInv (3, random and invisible in the lobby)<br/>."
+"With TEAM_AutoGenerateTeams = false (the norm for predefined teams) the return values are<br/> TEAMDIST_Free (0),<br/> TEAMDIST_Host (1),<br/> TEAMDIST_Random (2, random teams)<br/> or TEAMDIST_RandomInv (3, random and invisible in the lobby)."
 
 #: sdk/script/fn/GetTeamColor.xml:12(desc)
 msgid "Teamnummer des Teams, dessen Farbe abgefragt werden soll"
