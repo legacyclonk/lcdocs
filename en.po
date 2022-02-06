@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-06 17:19+0100\n"
+"POT-Creation-Date: 2022-02-06 18:08+0100\n"
 "PO-Revision-Date: 2021-04-04 18:46+0200\n"
 "Last-Translator: Markus Mittendrein <maxmitti@gmx.at>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -1563,6 +1563,7 @@ msgstr "Removes all objects."
 #: sdk/script/fn/GetPhase.xml:7(category)
 #: sdk/script/fn/GetOwner.xml:7(category)
 #: sdk/script/fn/GetObjectStatus.xml:7(category)
+#: sdk/script/fn/GetObjectLayer.xml:7(category)
 #: sdk/script/fn/GetObjectBlitMode.xml:7(category)
 #: sdk/script/fn/GetOCF.xml:7(category)
 #: sdk/script/fn/GetNeededMatStr.xml:7(category)
@@ -1939,6 +1940,7 @@ msgstr "Sets a randomly chosen thread local variable to a random value."
 #: sdk/script/fn/GetPhysical.xml:7(subcat)
 #: sdk/script/fn/GetOwner.xml:7(subcat)
 #: sdk/script/fn/GetObjectStatus.xml:7(subcat)
+#: sdk/script/fn/GetObjectLayer.xml:7(subcat)
 #: sdk/script/fn/GetNeededMatStr.xml:7(subcat)
 #: sdk/script/fn/GetMass.xml:7(subcat)
 #: sdk/script/fn/GetKiller.xml:7(subcat)
@@ -8637,6 +8639,14 @@ msgstr "Object of which to get the status."
 #: sdk/script/fn/GetObjectStatus.xml:15(desc)
 msgid "Gibt den internen Status eines Objekts zurück."
 msgstr "Returns the internal status of an object."
+
+#: sdk/script/fn/GetObjectLayer.xml:12(desc)
+msgid "Objekt, dessen Layerobjekt abgefragt werden soll. nil bei lokalem Aufruf."
+msgstr "Object of which the layer object should be retrieved. Can be nil in local calls."
+
+#: sdk/script/fn/GetObjectLayer.xml:15(desc)
+msgid "Gibt das Layerobjekt von pObj zurück."
+msgstr "Returns the layer object of pObj."
 
 #: sdk/script/fn/GetObjectInfoCoreVal.xml:38(desc)
 msgid "Bei dem InfoCore handelt es sich um die Informationen eines CrewMembers, die in dem Spieler gespeichert werden (*.c4i). Dementsprechend gibt GetObjectInfoCoreVal einen Eigenschaftswert eines Crewmembers nach Namen in einer c4i-Datei zurück"
