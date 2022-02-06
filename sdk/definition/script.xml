@@ -221,7 +221,7 @@ Heimatbasismaterial hinzugefügt wird.</col></row>
 <row id="Hit*"><col>Hit / Hit2 / Hit 3</col><col>int xdir, int ydir</col>
   <col>Wird aufgerufen, wenn das Objekt auf etwas Solides aufschlägt. Die Parameter werden bei Collection nicht übergeben.</col></row>
 <row id="IsFullfilledforPlr"><col>IsFullfilledforPlr</col><col>int iPlr</col>
-  <col>Wenn die Regel "Wettstreit" (EN=Rivalry; ID=RVLR) aktiviert ist, wird IsFulfilledforPlr aufgerufen, ansonsten IsFulfilled. Nur bei Spielziel-Objekten. Bei Rückgabewert true ist das Spielziel für ir erfüllt.</col></row>
+  <col>Wenn die Regel "Wettstreit" (EN=Rivalry; ID=RVLR) aktiviert ist, wird IsFulfilledforPlr aufgerufen, ansonsten IsFulfilled. Nur bei Spielziel-Objekten. Bei Rückgabewert true ist das Spielziel für iPlr erfüllt.</col></row>
 <row id="MouseSelection"><col>MouseSelection</col><col>int iPlr</col>
   <col>Wenn das Objekt per Maus angeklickt wurde. Objekt muss die Category C4D_MouseSelect haben.</col></row>
 <row id="OnActionJump"><col>OnActionJump</col><col>int iXDir100, int iYDir100, bool fByCom</col>

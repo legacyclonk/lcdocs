@@ -19030,7 +19030,7 @@ msgid "IsFullfilledforPlr"
 msgstr "IsFullfilledforPlr"
 
 #: sdk/definition/script.xml:224(col)
-msgid "Wenn die Regel \"Wettstreit\" (EN=Rivalry; ID=RVLR) aktiviert ist, wird IsFulfilledforPlr aufgerufen, ansonsten IsFulfilled. Nur bei Spielziel-Objekten. Bei Rückgabewert true ist das Spielziel für ir erfüllt."
+msgid "Wenn die Regel \"Wettstreit\" (EN=Rivalry; ID=RVLR) aktiviert ist, wird IsFulfilledforPlr aufgerufen, ansonsten IsFulfilled. Nur bei Spielziel-Objekten. Bei Rückgabewert true ist das Spielziel für iPlr erfüllt."
 msgstr "If the rule \"Rivalry\" (RVLR) is enabled, IsFulfilledforPlr is being called, otherwise IsFulfilled. Only for goal objects. The function should return true if the goal is fulfilled for iPlr."
 
 #: sdk/definition/script.xml:225(col)
