@@ -1008,7 +1008,7 @@ msgstr "With the AND operator, the resulting bit will only be 1 if both incoming
 #: sdk/script/fn/AddMsgBoardCmd.xml:17(col)
 #: sdk/script/fn/AddCommand.xml:73(col)
 #: sdk/script/Effects.xml:492(col)
-#: sdk/script/Effects.xml:529(col)
+#: sdk/script/Effects.xml:533(col)
 #: sdk/scenario/basefunc.xml:12(col)
 #: sdk/scenario/Teams.xml:34(col)
 #: sdk/scenario/Teams.xml:52(col)
@@ -1060,7 +1060,7 @@ msgstr "0"
 #: sdk/script/fn/AddCommand.xml:79(col)
 #: sdk/script/Effects.xml:184(col)
 #: sdk/script/Effects.xml:493(col)
-#: sdk/script/Effects.xml:530(col)
+#: sdk/script/Effects.xml:534(col)
 #: sdk/scenario/basefunc.xml:12(col)
 #: sdk/scenario/basefunc.xml:14(col)
 #: sdk/scenario/Teams.xml:22(col)
@@ -3399,7 +3399,7 @@ msgstr "Red value"
 #: sdk/script/fn/AddMsgBoardCmd.xml:19(col)
 #: sdk/script/fn/AddCommand.xml:77(col)
 #: sdk/script/Effects.xml:494(col)
-#: sdk/script/Effects.xml:531(col)
+#: sdk/script/Effects.xml:535(col)
 #: sdk/scenario/basefunc.xml:14(col)
 #: sdk/scenario/basefunc.xml:16(col)
 #: sdk/material/c4m.xml:299(col)
@@ -3437,7 +3437,7 @@ msgstr "Green value"
 #: sdk/script/fn/CreateMenu.xml:35(col)
 #: sdk/script/fn/AddCommand.xml:75(col)
 #: sdk/script/Effects.xml:495(col)
-#: sdk/script/Effects.xml:532(col)
+#: sdk/script/Effects.xml:536(col)
 #: sdk/scenario/basefunc.xml:18(col)
 #: sdk/definition/lineconnect.xml:19(col)
 #: sdk/definition/cnat.xml:23(col)
@@ -3572,7 +3572,7 @@ msgstr "Value"
 #: sdk/script/fn/Format.xml:21(col)
 #: sdk/script/Effects.xml:432(col)
 #: sdk/script/Effects.xml:491(col)
-#: sdk/script/Effects.xml:528(col)
+#: sdk/script/Effects.xml:532(col)
 msgid "Bedeutung"
 msgstr "Meaning"
 
@@ -14264,54 +14264,62 @@ msgid "Jeder Effekt erhält diesen Callback, wann immer sich der Energie- oder S
 msgstr "Every effect receives this callback whenever the energy or damage value of the target object is to change. If the function is defined, it should then return whether to allow the change."
 
 #: sdk/script/Effects.xml:525(text)
+msgid "iDmgEngy gibt die Änderung an. Negative Werte geben Schaden an, Positive Werte Heilung (im Falle von Lebewesen)."
+msgstr "iDmgEngy is the change amount. Negative values are used for damage, positive values for healing (in case of living beings)."
+
+#: sdk/script/Effects.xml:526(text)
+msgid "Werte für die Energie sind dabei exakt, das heißt 100.000 entspricht der vollen Energie eines normalen Clonks mit Rang 10 (C4MaxPhysical). Der Umrechnungsfaktor zwischen GetEnergy und diesem Wert ist 1.000."
+msgstr "Energy values are exact, meaning 100,000 is the full energy value of a normal clonk of rank 10 (C4MaxPhysical). The conversion factor from GetEnergy to this value is 1,000."
+
+#: sdk/script/Effects.xml:529(text)
 msgid "Der Callback wird bei Energiewertänderungen bei Lebewesen, sowie bei Schadenswertänderungen bei nicht-Lebewesen durchgeführt - nicht aber umgekehrt. iCause gibt den geänderten Wert und den Grund an:"
 msgstr "This callback is made upon life energy changes in living beings and damage value changes in non-livings - but not vice versa. iCause contains the value change and reason:"
 
-#: sdk/script/Effects.xml:528(col)
+#: sdk/script/Effects.xml:532(col)
 msgid "Scriptkonstante"
 msgstr "Script constant"
 
-#: sdk/script/Effects.xml:528(col)
+#: sdk/script/Effects.xml:532(col)
 msgid "iCause"
 msgstr "iCause"
 
-#: sdk/script/Effects.xml:529(col)
+#: sdk/script/Effects.xml:533(col)
 msgid "FX_Call_DmgScript"
 msgstr "FX_Call_DmgScript"
 
-#: sdk/script/Effects.xml:529(col)
+#: sdk/script/Effects.xml:533(col)
 msgid "Schaden durch Scriptaufruf <placeholder-1/>()"
 msgstr "Damage by script call <placeholder-1/>()"
 
-#: sdk/script/Effects.xml:530(col)
+#: sdk/script/Effects.xml:534(col)
 msgid "FX_Call_DmgBlast"
 msgstr "FX_Call_DmgBlast"
 
-#: sdk/script/Effects.xml:530(col)
+#: sdk/script/Effects.xml:534(col)
 msgid "Schaden durch Explosion"
 msgstr "Damage by explosion"
 
-#: sdk/script/Effects.xml:531(col)
+#: sdk/script/Effects.xml:535(col)
 msgid "FX_Call_DmgFire"
 msgstr "FX_Call_DmgFire"
 
-#: sdk/script/Effects.xml:531(col)
+#: sdk/script/Effects.xml:535(col)
 msgid "Schaden durch Feuer"
 msgstr "Damage by fire"
 
-#: sdk/script/Effects.xml:532(col)
+#: sdk/script/Effects.xml:536(col)
 msgid "FX_Call_DmgChop"
 msgstr "FX_Call_DmgChop"
 
-#: sdk/script/Effects.xml:532(col)
+#: sdk/script/Effects.xml:536(col)
 msgid "Schaden durch Fällen (nur Bäume)"
 msgstr "Damage by chopping (only trees)"
 
-#: sdk/script/Effects.xml:533(col)
+#: sdk/script/Effects.xml:537(col)
 msgid "FX_Call_EngScript"
 msgstr "FX_Call_EngScript"
 
-#: sdk/script/Effects.xml:533(col)
+#: sdk/script/Effects.xml:537(col)
 #: sdk/scenario/basefunc.xml:22(col)
 #: sdk/definition/lineconnect.xml:23(col)
 #: sdk/definition/cnat.xml:27(col)
@@ -14319,159 +14327,163 @@ msgstr "FX_Call_EngScript"
 msgid "32"
 msgstr "32"
 
-#: sdk/script/Effects.xml:533(col)
+#: sdk/script/Effects.xml:537(col)
 msgid "Energieänderung durch Scriptaufruf <placeholder-1/>()"
 msgstr "Energy value change by script call <placeholder-1/>()"
 
-#: sdk/script/Effects.xml:534(col)
+#: sdk/script/Effects.xml:538(col)
 msgid "FX_Call_EngBlast"
 msgstr "FX_Call_EngBlast"
 
-#: sdk/script/Effects.xml:534(col)
+#: sdk/script/Effects.xml:538(col)
 msgid "33"
 msgstr "33"
 
-#: sdk/script/Effects.xml:534(col)
+#: sdk/script/Effects.xml:538(col)
 msgid "Energieverlust durch Explosion"
 msgstr "Energy loss by explosion"
 
-#: sdk/script/Effects.xml:535(col)
+#: sdk/script/Effects.xml:539(col)
 msgid "FX_Call_EngObjHit"
 msgstr "FX_Call_EngObjHit"
 
-#: sdk/script/Effects.xml:535(col)
+#: sdk/script/Effects.xml:539(col)
 msgid "34"
 msgstr "34"
 
-#: sdk/script/Effects.xml:535(col)
+#: sdk/script/Effects.xml:539(col)
 msgid "Energieverlust durch Objekttreffer"
 msgstr "Energy loss by object hit"
 
-#: sdk/script/Effects.xml:536(col)
+#: sdk/script/Effects.xml:540(col)
 msgid "FX_Call_EngFire"
 msgstr "FX_Call_EngFire"
 
-#: sdk/script/Effects.xml:536(col)
+#: sdk/script/Effects.xml:540(col)
 msgid "35"
 msgstr "35"
 
-#: sdk/script/Effects.xml:536(col)
+#: sdk/script/Effects.xml:540(col)
 msgid "Energieverlust durch Feuer"
 msgstr "Energy loss by fire"
 
-#: sdk/script/Effects.xml:537(col)
+#: sdk/script/Effects.xml:541(col)
 msgid "FX_Call_EngBaseRefresh"
 msgstr "FX_Call_EngBaseRefresh"
 
-#: sdk/script/Effects.xml:537(col)
+#: sdk/script/Effects.xml:541(col)
 msgid "36"
 msgstr "36"
 
-#: sdk/script/Effects.xml:537(col)
+#: sdk/script/Effects.xml:541(col)
 msgid "Energieaufnahme in der Basis - auch Abgabe und Kauf der Basis, wenn die Basis ein Lebewesen ist"
 msgstr "Energy recharge at the home base"
 
-#: sdk/script/Effects.xml:538(col)
+#: sdk/script/Effects.xml:542(col)
 msgid "FX_Call_EngAsphyxiation"
 msgstr "FX_Call_EngAsphyxiation"
 
-#: sdk/script/Effects.xml:538(col)
+#: sdk/script/Effects.xml:542(col)
 msgid "37"
 msgstr "37"
 
-#: sdk/script/Effects.xml:538(col)
+#: sdk/script/Effects.xml:542(col)
 msgid "Energieverlust durch Ersticken"
 msgstr "Energy loss by suffocation"
 
-#: sdk/script/Effects.xml:539(col)
+#: sdk/script/Effects.xml:543(col)
 msgid "FX_Call_EngCorrosion"
 msgstr "FX_Call_EngCorrosion"
 
-#: sdk/script/Effects.xml:539(col)
+#: sdk/script/Effects.xml:543(col)
 msgid "38"
 msgstr "38"
 
-#: sdk/script/Effects.xml:539(col)
+#: sdk/script/Effects.xml:543(col)
 msgid "Energieverlust durch Säure"
 msgstr "Energy loss through acid"
 
-#: sdk/script/Effects.xml:540(col)
+#: sdk/script/Effects.xml:544(col)
 msgid "FX_Call_EngStruct"
 msgstr "FX_Call_EngStruct"
 
-#: sdk/script/Effects.xml:540(col)
+#: sdk/script/Effects.xml:544(col)
 msgid "39"
 msgstr "39"
 
-#: sdk/script/Effects.xml:540(col)
+#: sdk/script/Effects.xml:544(col)
 msgid "Energieverlust von Gebäuden (Nur lebende Gebäude)"
 msgstr "Energy loss of buildings (only \"living\" buildings)"
 
-#: sdk/script/Effects.xml:541(col)
+#: sdk/script/Effects.xml:545(col)
 msgid "FX_Call_EngGetPunched"
 msgstr "FX_Call_EngGetPunched"
 
-#: sdk/script/Effects.xml:541(col)
+#: sdk/script/Effects.xml:545(col)
 msgid "40"
 msgstr "40"
 
-#: sdk/script/Effects.xml:541(col)
+#: sdk/script/Effects.xml:545(col)
 msgid "Energieverlust im Clonk-zu-Clonk-Kampf"
 msgstr "Energy loss through clonk-to-clonk battle"
 
-#: sdk/script/Effects.xml:544(text)
-msgid "Allgemein kann der Ausdruck \"iCause &amp; 32\" verwendet werden, um festzustellen, ob Energie oder Schadenswert verändert wurden. Werte für die Energie sind dabei exakt, das heißt 100.000 entspricht der vollen Energie eines normalen Clonks mit Rang 10 (C4MaxPhysical)."
-msgstr "Generally, the expression \"iCause &amp; 32\" can be used to determine whether the energy or damage values were changed. Energy values are exact, meaning 100,000 is the full energy value of a normal clonk of rank 10 (C4MaxPhysical)."
+#: sdk/script/Effects.xml:548(text)
+msgid "Allgemein kann der Ausdruck \"iCause &amp; 32\" verwendet werden, um festzustellen, ob Energie oder Schadenswert verändert wurden."
+msgstr "Generally, the expression \"iCause &amp; 32\" can be used to determine whether the energy or damage values were changed."
 
-#: sdk/script/Effects.xml:545(text)
+#: sdk/script/Effects.xml:549(text)
+msgid "iCausePlr gibt die Spielernummer des verursachenden Spielers."
+msgstr "iCausePlr is the player number of the player who caused the change."
+
+#: sdk/script/Effects.xml:550(text)
 msgid "Über diesen Callback kann zum Beispiel Schaden an einem Objekt verhindert, abgeschwächt oder verstärkt werden; man kann Lebensschaden zunächst nur von der Zauberenergie abziehen, gleichmäßig auf verbundene Clonks verteilen und so weiter."
 msgstr "Using this callback, damage to an object can be prevented, lessened, or increased. You could deduct magic energy instead, transfer damage to other objects, or something similar."
 
-#: sdk/script/Effects.xml:547(h)
+#: sdk/script/Effects.xml:552(h)
 msgid "Fx*Info"
 msgstr "Fx*Info"
 
-#: sdk/script/Effects.xml:549(text)
+#: sdk/script/Effects.xml:554(text)
 msgid "Wird aufgerufen, wenn via Kontextmenü die Infos eines Objektes, das das Ziel dieses Effektes ist, abgefragt werden."
 msgstr "Is being called when the info of an object is shown via the context menu of the object target."
 
-#: sdk/script/Effects.xml:552(h)
+#: sdk/script/Effects.xml:557(h)
 msgid "Funktions-Referenz"
 msgstr "Function Reference"
 
-#: sdk/script/Effects.xml:553(text)
+#: sdk/script/Effects.xml:558(text)
 msgid "Es gibt folgende Funktionen sind zum Manipulieren und Abfragen von Effekten:"
 msgstr "There are the following functions for manipulation of effects:"
 
-#: sdk/script/Effects.xml:556(li)
+#: sdk/script/Effects.xml:561(li)
 msgid "<placeholder-1/>() - zum Erzeugen von Effekten"
 msgstr "<placeholder-1/>() - for effect creation"
 
-#: sdk/script/Effects.xml:557(li)
+#: sdk/script/Effects.xml:562(li)
 msgid "<placeholder-1/>() - zum Entfernen von Effekten"
 msgstr "<placeholder-1/>() - for effect removal"
 
-#: sdk/script/Effects.xml:558(li)
+#: sdk/script/Effects.xml:563(li)
 msgid "<placeholder-1/>() - zum Abfragen von Effekten und Parametern"
 msgstr "<placeholder-1/>() - to request effect parameters"
 
-#: sdk/script/Effects.xml:559(li)
+#: sdk/script/Effects.xml:564(li)
 msgid "<placeholder-1/>() - um Effekte zu zählen"
 msgstr "<placeholder-1/>() - for effect counting"
 
-#: sdk/script/Effects.xml:560(li)
+#: sdk/script/Effects.xml:565(li)
 msgid "<placeholder-1/>() - für Benutzeraufrufe in Effekten"
 msgstr "<placeholder-1/>() - for user defined calls in effects"
 
-#: sdk/script/Effects.xml:561(li)
+#: sdk/script/Effects.xml:566(li)
 msgid "<placeholder-1/>() - zum Abfragen von Effektvariablen"
 msgstr "<placeholder-1/>() - to request effect variables"
 
-#: sdk/script/Effects.xml:562(li)
+#: sdk/script/Effects.xml:567(li)
 msgid "<placeholder-1/>() - zum Ändern von Effektnamen und -timern (beispielsweise für mehrstufige Effekte)"
 msgstr "<placeholder-1/>() - to modify effect names and timers (e.g. for multi-stage effects)"
 
-#: sdk/script/Effects.xml:563(li)
+#: sdk/script/Effects.xml:568(li)
 msgid "<placeholder-1/>() - um Effekt-Callbacks auszuführen, ohne den Effekt selber zu erstellen"
 msgstr "<placeholder-1/>() - to cause effects callbacks without actually creating an effect"
 
