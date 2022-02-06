@@ -18607,7 +18607,7 @@ msgid "object pObj, int iTx, int iTy"
 msgstr "object pObj, int iTx, int iTy"
 
 #: sdk/definition/script.xml:126(col)
-msgid "Wenn ein durch die Wegfindungsroutine gesteuertes Objekt (pObj) die Transferzone dieses Objekts zum Zielpunkt iTx/iTy passieren möchte. Die Transferfunktion kann dem Objekt entsprechende Kommandos geben und sollte bei erfolgreicher Bearbeitung TRUE zurückliefern. Siehe auch <emlink href=\"script/fn/SetTransferZone.html\">SetTransferZone</emlink>()."
+msgid "Wenn ein durch die Wegfindungsroutine gesteuertes Objekt (pObj) die Transferzone dieses Objekts zum Zielpunkt iTx/iTy passieren möchte. Die Transferfunktion kann dem Objekt entsprechende Kommandos geben und sollte bei erfolgreicher Bearbeitung true zurückliefern. Siehe auch <emlink href=\"script/fn/SetTransferZone.html\">SetTransferZone</emlink>()."
 msgstr "When an object (pObj) using the internal pathfinding algorithm is trying to pass the transfer zone of this object on its way to point iTx/iTy. The transfer function can then help the object along by giving special script commands and returning true. Also see <emlink href=\"script/fn/SetTransferZone.html\">SetTransferZone</emlink>()."
 
 #: sdk/definition/script.xml:130(col)
@@ -18627,7 +18627,7 @@ msgid "int iSelection, object pMenuObj"
 msgstr "int iSelection, object pMenuObj"
 
 #: sdk/definition/script.xml:135(col)
-msgid "Wird in einem Objekt aufgerufen, wenn der Spieler ein benutzerdefiniertes Menu schließen will. Bei Rückgabewert TRUE bleibt das Menu geöffnet."
+msgid "Wird in einem Objekt aufgerufen, wenn der Spieler ein benutzerdefiniertes Menu schließen will. Bei Rückgabewert true bleibt das Menu geöffnet."
 msgstr "When the player wants to close a user defined object menu. Return value true will keep the menu open."
 
 #: sdk/definition/script.xml:137(col)
@@ -18635,7 +18635,7 @@ msgid "IsFulfilled"
 msgstr "IsFulfilled"
 
 #: sdk/definition/script.xml:138(col)
-msgid "Nur bei Spielziel-Objekten. Bei Rückgabewert TRUE ist das Spielziel erfüllt."
+msgid "Nur bei Spielziel-Objekten. Bei Rückgabewert true ist das Spielziel erfüllt."
 msgstr "Only in game goal objects. A return value true indicates that this goal is fulfilled."
 
 #: sdk/definition/script.xml:139(col)
@@ -18685,7 +18685,7 @@ msgid "object pBy"
 msgstr "object pBy"
 
 #: sdk/definition/script.xml:147(col)
-msgid "Bevor das Objekt von einem anderen Objekt geschlagen oder getroffen wird. Wenn QueryCatchBlow TRUE zurückgibt, können damit physikalische Treffer abgefangen werden."
+msgid "Bevor das Objekt von einem anderen Objekt geschlagen oder getroffen wird. Wenn QueryCatchBlow true zurückgibt, können damit physikalische Treffer abgefangen werden."
 msgstr "Called before the object is hit or punched by another object. By returning true, QueryCatchBlow can reject physical blows."
 
 #: sdk/definition/script.xml:149(col)
@@ -18709,7 +18709,7 @@ msgid "id idMaterial, int iAmount"
 msgstr "id idMaterial, int iAmount"
 
 #: sdk/definition/script.xml:152(col)
-msgid "Wenn das Objekt ein anderes Objekt baut und noch Baumaterial benötigt wird. Parameter sind Typ und Menge des ersten noch benötigten Baustoffs. Durch Rückgabewert TRUE kann die Textmeldung über fehlendes Material abgefangen werden."
+msgid "Wenn das Objekt ein anderes Objekt baut und noch Baumaterial benötigt wird. Parameter sind Typ und Menge des ersten noch benötigten Baustoffs. Durch Rückgabewert true kann die Textmeldung über fehlendes Material abgefangen werden."
 msgstr "When the object is building another object and building material is required. The parameters are the type and amount of the first needed material. If this function returns true, no material message is displayed above the object."
 
 #: sdk/definition/script.xml:155(col)
@@ -18895,7 +18895,7 @@ msgid "id idObj, object pObj"
 msgstr "id idObj, object pObj"
 
 #: sdk/definition/script.xml:195(col)
-msgid "Wird vor Collection aufgerufen. Wenn RejectCollect TRUE zurückgibt, kann damit die Aufnahme des anderen Objekts verhindert werden."
+msgid "Wird vor Collection aufgerufen. Wenn RejectCollect true zurückgibt, kann damit die Aufnahme des anderen Objekts verhindert werden."
 msgstr "Called before Collection. If RejectCollect returns true, the collection of the other object is prevented."
 
 #: sdk/definition/script.xml:197(col)
@@ -18907,7 +18907,7 @@ msgid "object pIntoObj"
 msgstr "object pIntoObj"
 
 #: sdk/definition/script.xml:198(col)
-msgid "Wird vor Entrance aufgerufen. Wenn RejectEntrance TRUE zurückgibt, kann damit das Hineinversetzen in das andere Objekt verhindert werden."
+msgid "Wird vor Entrance aufgerufen. Wenn RejectEntrance true zurückgibt, kann damit das Hineinversetzen in das andere Objekt verhindert werden."
 msgstr "Called before Entrance. If RejectEntrance returns true, then entrance of the other object is prevented."
 
 #: sdk/definition/script.xml:200(col)
@@ -18978,7 +18978,7 @@ msgid "int iPlr, int iNewTeam"
 msgstr "int iPlr, int iNewTeam"
 
 #: sdk/definition/script.xml:214(col)
-msgid "Aufruf in Spielziel, -regel und Umweltobjekten und dem Szenarioscript. Wenn RejectTeamSwitch TRUE zurückgibt, kann der Teamwechsel eines Spielers (durch <placeholder-1/>) verhindert werden. Ab 4.9.6.0 CR."
+msgid "Aufruf in Spielziel, -regel und Umweltobjekten und dem Szenarioscript. Wenn RejectTeamSwitch true zurückgibt, kann der Teamwechsel eines Spielers (durch <placeholder-1/>) verhindert werden. Ab 4.9.6.0 CR."
 msgstr "Callback in game goal, rule, and environment objects and in the scenario script. If RejectTeamSwitch returns true, the team switch of a player can be prevented (see <placeholder-1/>). From 4.9.6.0 CR."
 
 #: sdk/definition/script.xml:215(col)
@@ -19030,7 +19030,7 @@ msgid "IsFullfilledforPlr"
 msgstr "IsFullfilledforPlr"
 
 #: sdk/definition/script.xml:224(col)
-msgid "Wenn die Regel \"Wettstreit\" (EN=Rivalry; ID=RVLR) aktiviert ist, wird IsFulfilledforPlr aufgerufen, ansonsten IsFulfilled. Nur bei Spielziel-Objekten. Bei Rückgabewert TRUE ist das Spielziel für ir erfüllt."
+msgid "Wenn die Regel \"Wettstreit\" (EN=Rivalry; ID=RVLR) aktiviert ist, wird IsFulfilledforPlr aufgerufen, ansonsten IsFulfilled. Nur bei Spielziel-Objekten. Bei Rückgabewert true ist das Spielziel für ir erfüllt."
 msgstr "If the rule \"Rivalry\" (RVLR) is enabled, IsFulfilledforPlr is being called, otherwise IsFulfilled. Only for goal objects. The function should return true if the goal is fulfilled for iPlr."
 
 #: sdk/definition/script.xml:225(col)
