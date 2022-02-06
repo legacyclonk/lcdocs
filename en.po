@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-06 18:08+0100\n"
+"POT-Creation-Date: 2022-02-06 18:44+0100\n"
 "PO-Revision-Date: 2021-04-04 18:46+0200\n"
 "Last-Translator: Markus Mittendrein <maxmitti@gmx.at>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -1609,6 +1609,7 @@ msgstr "Removes all objects."
 #: sdk/script/fn/Find_OCF.xml:7(category)
 #: sdk/script/fn/Find_Not.xml:7(category)
 #: sdk/script/fn/Find_NoContainer.xml:7(category)
+#: sdk/script/fn/Find_Layer.xml:7(category)
 #: sdk/script/fn/Find_InRect.xml:7(category)
 #: sdk/script/fn/Find_ID.xml:7(category)
 #: sdk/script/fn/Find_Hostile.xml:7(category)
@@ -6664,6 +6665,7 @@ msgstr "Returns the distance between two objects. If pObj is 0 the distance betw
 #: sdk/script/fn/Find_OCF.xml:7(subcat)
 #: sdk/script/fn/Find_Not.xml:7(subcat)
 #: sdk/script/fn/Find_NoContainer.xml:7(subcat)
+#: sdk/script/fn/Find_Layer.xml:7(subcat)
 #: sdk/script/fn/Find_InRect.xml:7(subcat)
 #: sdk/script/fn/Find_ID.xml:7(subcat)
 #: sdk/script/fn/Find_Hostile.xml:7(subcat)
@@ -9842,6 +9844,7 @@ msgstr "Search criterion: finds all objects owned by the specified player."
 #: sdk/script/fn/Find_OCF.xml:16(remark)
 #: sdk/script/fn/Find_Not.xml:16(remark)
 #: sdk/script/fn/Find_NoContainer.xml:13(remark)
+#: sdk/script/fn/Find_Layer.xml:16(remark)
 #: sdk/script/fn/Find_InRect.xml:19(remark)
 #: sdk/script/fn/Find_ID.xml:16(remark)
 #: sdk/script/fn/Find_Hostile.xml:16(remark)
@@ -9890,6 +9893,14 @@ msgstr "Returns a list of all objects which are at at least 30 but no more than 
 #: sdk/script/fn/Find_NoContainer.xml:12(desc)
 msgid "Suchkriterium: sucht alle Objekte die im Freien sind."
 msgstr "Search criterion: finds all uncontained objects."
+
+#: sdk/script/fn/Find_Layer.xml:12(desc)
+msgid "Layerobjekt in dem sich das Objekt befinden muss. nil für den globalen Layer."
+msgstr "Layer object in which the object has to be. nil for the global layer."
+
+#: sdk/script/fn/Find_Layer.xml:15(desc)
+msgid "Suchkriterium: sucht alle Objekte mit dem entsprechenden Layerobjekt."
+msgstr "Search criterion: finds all objects with the specified layer object."
 
 #: sdk/script/fn/Find_InRect.xml:12(desc)
 msgid "X-Position der linken oberen Ecke des Suchbereiches. Bei lokalem Aufruf relativ zur Objektmitte."

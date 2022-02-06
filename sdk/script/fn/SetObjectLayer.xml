@@ -19,6 +19,7 @@
 
 		 <related>
 			<funclink>GetObjectLayer</funclink>
+			<funclink>Find_Layer</funclink>
 			<funclink>VIS_LayerToggle</funclink>
 		 </related>
 	</func>
