@@ -6,7 +6,7 @@
   <title>Music</title>
   <category>Musik</category>
   <version>4.6.5.0 CP
-    <extversion>4.9.1.0 GWE</extversion>
+   <extversion>4.9.1.0 GWE</extversion>
   </version>
   <syntax>
    <rtype>void</rtype>
@@ -17,7 +17,9 @@
   </syntax>
   <desc>Spielt ein Musikstück ab. Die entsprechende Datei muss in einer der aktiven Musikdateien vorhanden sein. Sind im ausgewählten Szenario Musikdateien vorhanden, gilt die Szenariodatei als aktive Musikdatei, andernfalls wird die globale Musikdatei Music.c4g genutzt. Bei erfolgreichem Aufruf dieser Funktion wird die Musikwiedergabe aktiviert, auch wenn sie in den Optionen des Menüsystems deaktiviert wurde.</desc>
   <related>
-    <funclink>SetPlayList</funclink>
+   <funclink>MusicLevel</funclink>
+   <funclink>SetPlayList</funclink>
+   <funclink>Sound</funclink>
   </related>
  </func>
  <author>jwk</author><date>August 2002</date>
