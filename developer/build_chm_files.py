@@ -158,12 +158,11 @@ for filename in sys.argv[1:]:
     parser.setfilename(filename)
     reader.parse(filename)
 
-if 0:
-    reader.setContentHandler(experimental.ExperimentParser())
-    for filename in sys.argv[1:]:
-        reader.getEntityResolver().setrelpath(filename)
-        reader.parse(filename)
-    experimental.Result()
+reader.setContentHandler(experimental.ExperimentParser())
+for filename in sys.argv[1:]:
+    reader.getEntityResolver().setrelpath(filename)
+    reader.parse(filename)
+experimental.Result()
 
 mofile = open("en.mo", "rb")
 gt = gettext.GNUTranslations(mofile)
