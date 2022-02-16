@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-06 18:44+0100\n"
+"POT-Creation-Date: 2022-02-16 16:06+0100\n"
 "PO-Revision-Date: 2021-04-04 18:46+0200\n"
 "Last-Translator: Markus Mittendrein <maxmitti@gmx.at>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -7221,7 +7221,6 @@ msgid "TRE1"
 msgstr "TRE1"
 
 #: sdk/script/fn/LocalN.xml:28(emlink)
-#: sdk/script/GetXXVal.xml:29(col)
 #: sdk/definition/index.xml:12(emlink)
 #: sdk/definition/defcore.xml:5(title)
 msgid "DefCore.txt"
@@ -13404,32 +13403,26 @@ msgid "GetDefCoreVal, GetActMapVal, GetObjectVal, GetScenarioVal"
 msgstr "GetDefCoreVal, GetActMapVal, GetObjectVal, GetScenarioVal"
 
 #: sdk/script/GetXXVal.xml:10(li)
-msgid "GetDefCoreVal(string strEntry, string strSection, id idDef);"
-msgstr "GetDefCoreVal(string strEntry, string strSection, id idDef);"
+msgid "<placeholder-1/>(string strEntry, string strSection, id idDef);"
+msgstr "<placeholder-1/>(string strEntry, string strSection, id idDef);"
 
 #: sdk/script/GetXXVal.xml:11(li)
-msgid "GetActMapVal(string strEntry, stringstrAction, id idDef);"
-msgstr "GetActMapVal(string strEntry, stringstrAction, id idDef);"
+msgid "<placeholder-1/>(string strEntry, string strAction, id idDef);"
+msgstr "<placeholder-1/>(string strEntry, string strAction, id idDef);"
 
 #: sdk/script/GetXXVal.xml:12(li)
-msgid "GetObjectVal(string strEntry, string strSection, object pObj);"
-msgstr "GetObjectVal(string strEntry, string strSection, object pObj);"
-
 #: sdk/script/GetXXVal.xml:13(li)
-msgid "GetObjectInfoCoreVal(string strEntry, string strSection, object pObj);"
-msgstr "GetObjectInfoCoreVal(string strEntry, string strSection, object pObj);"
+msgid "<placeholder-1/>(string strEntry, string strSection, object pObj);"
+msgstr "<placeholder-1/>(string strEntry, string strSection, object pObj);"
 
 #: sdk/script/GetXXVal.xml:14(li)
-msgid "GetScenarioVal(string strEntry, string strSection);"
-msgstr "GetScenarioVal(string strEntry, string strSection);"
+msgid "<placeholder-1/>(string strEntry, string strSection);"
+msgstr "<placeholder-1/>(string strEntry, string strSection);"
 
 #: sdk/script/GetXXVal.xml:15(li)
-msgid "GetPlayerVal(string strEntry, string strSection, int iPlr);"
-msgstr "GetPlayerVal(string strEntry, string strSection, int iPlr);"
-
 #: sdk/script/GetXXVal.xml:16(li)
-msgid "GetPlayerInfoCoreVal(string strEntry, string strSection, int iPlr);"
-msgstr "GetPlayerInfoCoreVal(string strEntry, string strSection, int iPlr);"
+msgid "<placeholder-1/>(string strEntry, string strSection, int iPlr);"
+msgstr "<placeholder-1/>(string strEntry, string strSection, int iPlr);"
 
 #: sdk/script/GetXXVal.xml:19(text)
 msgid "Diese Funktionsfamilie gewährt direkten Zugriff auf sämtliche Eigenschaften der entsprechenden Objekte, wie sie auch abgespeichert werden."
@@ -13443,75 +13436,45 @@ msgstr "Each function corresponds to the following files:"
 msgid "Datei"
 msgstr "File"
 
-#: sdk/script/GetXXVal.xml:28(col)
-msgid "GetDefCoreVal"
-msgstr "GetDefCoreVal"
+#: sdk/script/GetXXVal.xml:29(emlink)
+msgid "*.c4d/DefCore.txt"
+msgstr "*.c4d/DefCore.txt"
 
-#: sdk/script/GetXXVal.xml:32(col)
-msgid "GetActMapVal"
-msgstr "GetActMapVal"
+#: sdk/script/GetXXVal.xml:33(emlink)
+msgid "*.c4d/ActMap.txt"
+msgstr "*.c4d/ActMap.txt"
 
-#: sdk/script/GetXXVal.xml:33(col)
-#: sdk/definition/script.xml:33(h)
-#: sdk/definition/index.xml:15(emlink)
-#: sdk/definition/actmap.xml:5(title)
-msgid "ActMap.txt"
-msgstr "ActMap.txt"
+#: sdk/script/GetXXVal.xml:37(emlink)
+msgid "*.c4s/Objects.txt"
+msgstr "*.c4s/Objects.txt"
 
-#: sdk/script/GetXXVal.xml:36(col)
-msgid "GetObjectVal"
-msgstr "GetObjectVal"
-
-#: sdk/script/GetXXVal.xml:37(col)
-msgid "Objects.txt"
-msgstr "Objects.txt"
-
-#: sdk/script/GetXXVal.xml:40(col)
-msgid "GetObjectInfoCoreVal"
-msgstr "GetObjectInfoCoreVal"
-
-#: sdk/script/GetXXVal.xml:41(col)
-msgid "*.c4i (in Spielerdateien)"
-msgstr "*.c4i (in player files)"
-
-#: sdk/script/GetXXVal.xml:44(col)
-msgid "GetScenarioVal"
-msgstr "GetScenarioVal"
+#: sdk/script/GetXXVal.xml:41(emlink)
+msgid "*.c4s/Scenario.txt"
+msgstr "*.c4s/Scenario.txt"
 
 #: sdk/script/GetXXVal.xml:45(col)
-#: sdk/scenario/scenario.xml:5(title)
-#: sdk/scenario/scenario.xml:7(h)
-#: sdk/scenario/index.xml:13(emlink)
-msgid "Scenario.txt"
-msgstr "Scenario.txt"
-
-#: sdk/script/GetXXVal.xml:48(col)
-msgid "GetPlayerVal"
-msgstr "GetPlayerVal"
+msgid "<emlink href=\"scenario/index.html\">*.c4s</emlink>/Game.txt (in Spielständen)"
+msgstr "<emlink href=\"scenario/index.html\">*.c4s</emlink>/Game.txt (in Savegames)"
 
 #: sdk/script/GetXXVal.xml:49(col)
-msgid "scenario.txt"
-msgstr "scenario.txt"
-
-#: sdk/script/GetXXVal.xml:52(col)
-msgid "GetPlayerInfoCoreVal"
-msgstr "GetPlayerInfoCoreVal"
+msgid "<emlink href=\"files.html#Spielerdateienc4p\">*.c4p</emlink>/*.c4i"
+msgstr "<emlink href=\"files.html#Spielerdateienc4p\">*.c4p</emlink>/*.c4i"
 
 #: sdk/script/GetXXVal.xml:53(col)
-msgid "player.txt"
-msgstr "Player.txt"
+msgid "<emlink href=\"files.html#Spielerdateienc4p\">*.c4p</emlink>/Player.txt"
+msgstr "<emlink href=\"files.html#Spielerdateienc4p\">*.c4p</emlink>/Player.txt"
 
 #: sdk/script/GetXXVal.xml:57(text)
 msgid "Die Eigenschaft wird jeweils anhand ihres Namen und ggf. der Sektion übergeben (wird 0 übergeben, so werden alle Sektionen nach einem gleichnamigen Wert durchsucht). Wurde eine entsprechende Eigenschaft nicht gefunden oder entsprcht der Typ der Eigenschaft keinem gültigen Script-Datenformat (z.B. ID-Liste), so wird 0 zurückgegeben."
 msgstr "The property to be accessed is referenced through its name and section, if applicable (if no value is given for the section, all sections will be searched for the property). If a matching property was not found or does not correspond to a valid C4Script data type (e.g. ID lists) the result is 0."
 
 #: sdk/script/GetXXVal.xml:58(text)
-msgid "Wird GetObjectVal für pObj/idDef jeweils 0 zurückgegeben, so wird das Objekt (bzw. dessen Definition), aus dem der Aufruf erfolgte angenommen."
-msgstr "If 0 is given for pObj/idDef in a call to GetObjectVal, the object or the definition of the object from which the call was made is used."
+msgid "Wird <placeholder-1/> für pObj/idDef jeweils 0 zurückgegeben, so wird das Objekt (bzw. dessen Definition), aus dem der Aufruf erfolgte angenommen."
+msgstr "If 0 is given for pObj/idDef in a call to <placeholder-1/>, the object or the definition of the object from which the call was made is used."
 
 #: sdk/script/GetXXVal.xml:59(text)
-msgid "Die Zusatzfunktionen GetXVal.c (in System.c4g) ermöglichen Aufrufe verschiedener Get*Val-Funktionen durch globale Scriptfunktionen (z.B. <code>GetObjWidth()</code>, entspricht <code>GetObjectVal(\"Width\", 0, -obj-)</code>)."
-msgstr "There is a number of additional wrapper functions located in System.c4g/GetXVal.c. These functions allow for easy access to various common Get*Val functions (e.g. <code>GetObjWidth()</code> for <code><i>GetObjectVal</i>(\"Width\", 0, -obj-)</code>)."
+msgid "Die Zusatzfunktionen in GetXVal.c (in System.c4g) ermöglichen Aufrufe verschiedener Get*Val-Funktionen durch globale Scriptfunktionen (z.B. <code>GetObjWidth()</code>, entspricht <code><placeholder-1/>(\"Width\", 0, -obj-)</code>)."
+msgstr "There is a number of additional wrapper functions located in System.c4g/GetXVal.c. These functions allow for easy access to various common Get*Val functions (e.g. <code>GetObjWidth()</code> for <code><i><placeholder-1/></i>(\"Width\", 0, -obj-)</code>)."
 
 #: sdk/script/Funcs.xml:9(text)
 msgid "Eine Skriptfunktion fasst ein bestimmtes Stück Code zusammen, welches dann von der Engine oder einem anderen Script aufgerufen (also ausgeführt) werden kann. Das gesamte Script eines Szenarios oder Objekts ist in solchen Funktionen untergebracht."
@@ -14598,6 +14561,12 @@ msgstr "When a player leaves a round, the function RemovePlayer is called."
 #: sdk/scenario/script.xml:41(text)
 msgid "Wird eine Runde durch szenariobedingte Spielziele wie Spielereliminierung, Materialabbau, usw. (siehe Scenario.txt <emlink href=\"scenario/scenario.html#SektionGame\">Sektion [Game]</emlink>) oder durch den Scriptbefehl GameOver beendet (also nicht bei abgebrochenen Runden), ruft die Engine im Szenario-Script die Funktion OnGameOver auf."
 msgstr "If a round is ended through the game i.e. by player elimination, fulfillment of all goals as defined in Scenario.txt <emlink href=\"scenario/scenario.html#SektionGame\">section [Game]</emlink>), or by the script command GameOver, the engine will call the function OnGameOver in the scenario script. This will not be called if the round was aborted."
+
+#: sdk/scenario/scenario.xml:5(title)
+#: sdk/scenario/scenario.xml:7(h)
+#: sdk/scenario/index.xml:13(emlink)
+msgid "Scenario.txt"
+msgstr "Scenario.txt"
 
 #: sdk/scenario/scenario.xml:8(text)
 msgid "Über die Scenario.txt lassen sich alle Szenarienvoreinstellungen anpassen. Dazu gehören einfache, dynamische Karten, Spielervorgaben, Spielziele, Wetter, usw. Die meisten dieser Einstellungen lassen sich allerdings bequemer über den Editor in den Rundenoptionen konfigurieren. Für komplexere Startbedingungen wie zum Beispiel Teamschlachten mit automatischen Rejoins, sowie für vorgegebene Handlungsabläufe im Spiel benötigt man ein <emlink href=\"scenario/script.html\">Script</emlink>."
@@ -18365,6 +18334,12 @@ msgstr "TimerCall"
 msgid "Jede Objektdefinition kann im <emlink href=\"definition/defcore.html\">DefCore</emlink> einen TimerCall bestimmen. Der TimerCall ist eine Funktion, die in regelmäßigen Abständen im Objektscript aufgerufen wird. Den Zeitabstand der Aufrufe bestimmt der DefCore-Eintrag Timer. Ohne spezielle Angabe für den Timer gilt der Vorgabewert von 35 Frames (also ca. einmal pro Sekunde)."
 msgstr "Each object definition can define a timer call in its <emlink href=\"definition/defcore.html\">DefCore</emlink>. The TimerCall is a function which will be called at regular intervals. The DefCore entry Timer determines the rate of calls. If no rate is specifed, the default value is 35 frames (roughly once per second)."
 
+#: sdk/definition/script.xml:33(h)
+#: sdk/definition/index.xml:15(emlink)
+#: sdk/definition/actmap.xml:5(title)
+msgid "ActMap.txt"
+msgstr "ActMap.txt"
+
 #: sdk/definition/script.xml:34(text)
 msgid "Ein aktives Objekt kann außerdem in seiner <emlink href=\"definition/actmap.html\">Aktivitätsdefinition</emlink> Script-Aufrufe enthalten. Die als StartCall definierte Funktion wird immer dann aufgerufen wird, wenn die Aktivitätsschleife erneut startet. EndCall wird aufgerufen, wenn die Aktivitätsschleife endet. PhaseCall wird bei jedem Animationsschritt aufgerufen (da dies äußerst rechenintensiv ist, sollte PhaseCall nur bei seltenen und kurzzeitig ausgeführten Aktivitäten eingesetzt werden). Die Frequenz der Aufrufe bestimmt sich aus der Aktivitätsgeschwindigkeit."
 msgstr "An active object can also define activity script calls in its <emlink href=\"definition/actmap.html\">ActMap</emlink>. The defined StartCall is made whenever an action begins (or repeats), an EndCall is made at the end of each activity. PhaseCall is called at each animation phase step and should only be used for very short animations. The call frequency of PhaseCalls is determined by the speed of the animation."
@@ -21388,6 +21363,42 @@ msgstr "c4group.exe (Windows) c4group (Linux) c4group (Mac)"
 #: sdk/cmdline.xml:73(text)
 msgid "Dieses Kommandozeilen-Programm dient zum Bearbeiten von Gruppendateien. Es kann nicht per Doppelklick, sondern nur per Kommandozeile (Eingabeaufforderung) gestartet werden. Auskunft über alle verfügbaren Kommandozeilenparameter erhält man, indem man das Programm ohne weitere Parameter über die Kommandozeile startet."
 msgstr "This command line program is used for processing group files. A list of command line options is available by starting the program without parameters via command line (<i>not</i> by double clicking)."
+
+#~ msgid "GetObjectInfoCoreVal(string strEntry, string strSection, object pObj);"
+#~ msgstr "GetObjectInfoCoreVal(string strEntry, string strSection, object pObj);"
+
+#~ msgid "GetPlayerInfoCoreVal(string strEntry, string strSection, int iPlr);"
+#~ msgstr "GetPlayerInfoCoreVal(string strEntry, string strSection, int iPlr);"
+
+#~ msgid "GetDefCoreVal"
+#~ msgstr "GetDefCoreVal"
+
+#~ msgid "GetActMapVal"
+#~ msgstr "GetActMapVal"
+
+#~ msgid "GetObjectVal"
+#~ msgstr "GetObjectVal"
+
+#~ msgid "GetObjectInfoCoreVal"
+#~ msgstr "GetObjectInfoCoreVal"
+
+#~ msgid "*.c4i (in Spielerdateien)"
+#~ msgstr "*.c4i (in player files)"
+
+#~ msgid "GetScenarioVal"
+#~ msgstr "GetScenarioVal"
+
+#~ msgid "GetPlayerVal"
+#~ msgstr "GetPlayerVal"
+
+#~ msgid "scenario.txt"
+#~ msgstr "scenario.txt"
+
+#~ msgid "GetPlayerInfoCoreVal"
+#~ msgstr "GetPlayerInfoCoreVal"
+
+#~ msgid "player.txt"
+#~ msgstr "Player.txt"
 
 #~ msgid "Objekte, egal ob direkt oder verschachtelt in Maps und Arrays, sollten nur mit äußerster Vorsicht als Schlüssel verwendet werden. Prinzipiell funktioniert das zwar genau gleich gut wie andere Schlüsseltypen, allerdings kann auf die gespeicherten Werte nicht mehr zugegriffen werden, wenn das entsprechende Objekt gelöscht wird, da beim Löschen alle darauf verweisenden Variablen auf nil gesetzt werden. Löschen dieser Werte ist ebenfalls nicht mehr möglich."
 #~ msgstr "Objects, regardless if used directly or nested inside maps and arrays, should be used as keys only with much caution. Basically this works as well as using other key-types, but after the according object has been deleted it is no longer possible to access the associated values, nor deleting them from the map. This is because on removal all variables referencing an object are set to nil."
