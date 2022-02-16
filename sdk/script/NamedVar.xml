@@ -7,9 +7,9 @@
 <h>Benannte Variablen</h>
 <part>
 	<text>Variablen dienen innerhalb von Scripts zur Speicherung von Daten. Es gibt bestimmte <emlink href="script/Typechecks.html">Datentypen</emlink>, die Variablen annehmen können.</text>
-	
-	<text>Außerdem kann eine Variable einen von drei Gültigkeitsbereiche haben. Die Variable ist außerhalb ihres Gültigkeitsbereiches nicht sichtbar.</text>
-	
+
+	<text>Außerdem kann eine Variable einen von drei Gültigkeitsbereichen haben. Die Variable ist außerhalb ihres Gültigkeitsbereiches nicht sichtbar.</text>
+
 	<text><table>
 		<row>
 		  <col>Schlüsselwort</col>

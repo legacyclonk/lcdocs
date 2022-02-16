@@ -13327,7 +13327,7 @@ msgid "Variablen dienen innerhalb von Scripts zur Speicherung von Daten. Es gibt
 msgstr "Variables are placeholders for values stored in a script. A variable stores a value in one of several <emlink href=\"script/Typechecks.html\">data types</emlink>."
 
 #: sdk/script/NamedVar.xml:11(text)
-msgid "Außerdem kann eine Variable einen von drei Gültigkeitsbereiche haben. Die Variable ist außerhalb ihres Gültigkeitsbereiches nicht sichtbar."
+msgid "Außerdem kann eine Variable einen von drei Gültigkeitsbereichen haben. Die Variable ist außerhalb ihres Gültigkeitsbereiches nicht sichtbar."
 msgstr "There are three different scopes in which a variable can be declared. Variables are not visible outside their declared scope."
 
 #: sdk/script/NamedVar.xml:15(col)
