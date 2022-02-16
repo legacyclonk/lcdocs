@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-16 16:06+0100\n"
+"POT-Creation-Date: 2022-02-17 00:10+0100\n"
 "PO-Revision-Date: 2021-04-04 18:46+0200\n"
 "Last-Translator: Markus Mittendrein <maxmitti@gmx.at>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -737,8 +737,8 @@ msgstr "reference, reference/any"
 #: sdk/script/operatoren.xml:367(col)
 #: sdk/script/fn/SetPlrMagic.xml:20(emlink)
 #: sdk/script/fn/SetPlrMagic.xml:21(emlink)
-#: sdk/script/fn/LocalN.xml:21(emlink)
-#: sdk/script/fn/LocalN.xml:26(emlink)
+#: sdk/script/fn/LocalN.xml:22(emlink)
+#: sdk/script/fn/LocalN.xml:27(emlink)
 msgid "="
 msgstr "="
 
@@ -1887,7 +1887,7 @@ msgid "Entfernt obj wenn einer seiner Vertices feststeckt"
 msgstr "Removes obj if one if its vertices is stuck"
 
 #: sdk/script/fn/VarN.xml:7(category)
-#: sdk/script/fn/LocalN.xml:7(category)
+#: sdk/script/fn/LocalN.xml:8(category)
 #: sdk/script/fn/IsRef.xml:7(category)
 #: sdk/script/fn/GlobalN.xml:7(category)
 #: sdk/script/fn/GetValues.xml:7(category)
@@ -1909,7 +1909,7 @@ msgid "Variablen"
 msgstr "Variables"
 
 #: sdk/script/fn/VarN.xml:15(desc)
-#: sdk/script/fn/LocalN.xml:12(desc)
+#: sdk/script/fn/LocalN.xml:13(desc)
 msgid "Name der Variablen, zu der eine Referenz zurückgegeben werden soll"
 msgstr "Name of the variable to which a reference is to be returned"
 
@@ -2796,7 +2796,7 @@ msgstr "Shakes all living beings."
 #: sdk/script/fn/LandscapeHeight.xml:7(category)
 #: sdk/script/fn/InsertMaterial.xml:7(category)
 #: sdk/script/fn/InLiquid.xml:7(category)
-#: sdk/script/fn/GetPathLength.xml:7(category)
+#: sdk/script/fn/GetPathLength.xml:8(category)
 #: sdk/script/fn/GetPath.xml:7(category)
 #: sdk/script/fn/GetMaterialCount.xml:7(category)
 #: sdk/script/fn/GetMaterialColor.xml:7(category)
@@ -3915,7 +3915,7 @@ msgstr "Adds or removes a magic spell to or from the list of available spells of
 
 #: sdk/script/fn/SetPlrMagic.xml:20(emlink)
 #: sdk/script/fn/SetPlrMagic.xml:21(emlink)
-#: sdk/script/fn/LocalN.xml:20(emlink)
+#: sdk/script/fn/LocalN.xml:21(emlink)
 #: sdk/script/fn/FinishCommand.xml:39(emlink)
 msgid "var"
 msgstr "var"
@@ -7191,46 +7191,46 @@ msgstr "If pObj equals nil, an ID can be specified to tell in which definition t
 msgid "Gibt den Pfad zur Datei per Log aus, aus der angegebene Funktion geladen wurde und zeigt Überladungen an. Weiterhin kann über pObj direkt in einem Objekt gesucht werden, oder, falls pObj==0, in einer Definition über idDefinition."
 msgstr "Logs the path of the file where the specified function has been loaded from and also shows overrides. Furthermore functions of objects can be searched via specifying pObj or if pObj is nil they can be searched in a definition by specifiyng idDefinition."
 
-#: sdk/script/fn/LocalN.xml:13(desc)
+#: sdk/script/fn/LocalN.xml:14(desc)
 msgid "Objekt, dessen Variable abgefragt werden soll. 0 bei lokalem Aufruf."
 msgstr "Object of which you want to retrieve a variable. Can be 0 in local calls."
 
-#: sdk/script/fn/LocalN.xml:16(desc)
+#: sdk/script/fn/LocalN.xml:17(desc)
 msgid "Gibt eine Referenz auf eine Objektlokale Variable zurück. Diese Referenz kann zum Lesen und Schreiben benutzt werden."
 msgstr "Returns a reference to an object local variable. This reference can be used for reading or writing this variable."
 
-#: sdk/script/fn/LocalN.xml:17(remark)
+#: sdk/script/fn/LocalN.xml:18(remark)
 msgid "Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <code>obj[\"name\"]</code> oder <code>obj.name</code>, letzteres bei aktiviertem <code>#strict 3</code>, verwendet werden."
 msgstr "This function exists in order to preserve compatibility to older game content. You should use <code>obj[\"name\"]</code> or <code>obj.name</code>, the latter if <code>#strict 3</code> is activated."
 
-#: sdk/script/fn/LocalN.xml:22(text)
+#: sdk/script/fn/LocalN.xml:23(text)
 msgid "Lässt ein Fundament eines Zauberturms explodieren. Funktioniert nur bei einem Zauberturm, alle anderen Objekte benutzen <placeholder-1/> (9) zum Speichern des Fundamentobjektes."
 msgstr "Explodes the basement of a wizard tower. Only works with a magic tower - all other objects use <placeholder-1/>(9) to store a pointer to their basement."
 
-#: sdk/script/fn/LocalN.xml:25(emlink)
+#: sdk/script/fn/LocalN.xml:26(emlink)
 #: sdk/definition/script.xml:68(col)
 msgid "Initialize"
 msgstr "Initialize"
 
-#: sdk/script/fn/LocalN.xml:26(emlink)
+#: sdk/script/fn/LocalN.xml:27(emlink)
 msgid "local"
 msgstr "local"
 
-#: sdk/script/fn/LocalN.xml:26(emlink)
+#: sdk/script/fn/LocalN.xml:27(emlink)
 msgid "TRE1"
 msgstr "TRE1"
 
-#: sdk/script/fn/LocalN.xml:28(emlink)
+#: sdk/script/fn/LocalN.xml:29(emlink)
 #: sdk/definition/index.xml:12(emlink)
 #: sdk/definition/defcore.xml:5(title)
 msgid "DefCore.txt"
 msgstr "DefCore.txt"
 
-#: sdk/script/fn/LocalN.xml:33(text)
+#: sdk/script/fn/LocalN.xml:34(text)
 msgid "Das Objekt trägt einen Baum mit sich herum."
 msgstr "The object carries a tree around with it."
 
-#: sdk/script/fn/LocalN.xml:37(emlink)
+#: sdk/script/fn/LocalN.xml:38(emlink)
 msgid "benannte Variablen"
 msgstr "named variables"
 
@@ -8474,35 +8474,35 @@ msgstr "Object of which to deterine the activity phase. Can be 0 in local calls.
 msgid "Liefert die Aktivitätsphase von *pObj. *pObj ist Null bei lokalem Aufruf."
 msgstr "Returns the activity phase of an object."
 
-#: sdk/script/fn/GetPathLength.xml:15(desc)
+#: sdk/script/fn/GetPathLength.xml:16(desc)
 #: sdk/script/fn/GetPath.xml:15(desc)
 msgid "X-Koordinate der Startposition"
 msgstr "X coordinate of the starting position"
 
-#: sdk/script/fn/GetPathLength.xml:20(desc)
+#: sdk/script/fn/GetPathLength.xml:21(desc)
 #: sdk/script/fn/GetPath.xml:20(desc)
 msgid "Y-Koordinate der Startposition"
 msgstr "Y coordinate of the starting position"
 
-#: sdk/script/fn/GetPathLength.xml:25(desc)
+#: sdk/script/fn/GetPathLength.xml:26(desc)
 #: sdk/script/fn/GetPath.xml:25(desc)
 msgid "X-Koordinate der Zielposition"
 msgstr "X coordinate of the end position"
 
-#: sdk/script/fn/GetPathLength.xml:30(desc)
+#: sdk/script/fn/GetPathLength.xml:31(desc)
 #: sdk/script/fn/GetPath.xml:30(desc)
 msgid "Y-Koordinate der Zielposition"
 msgstr "Y coordinate of the end position"
 
-#: sdk/script/fn/GetPathLength.xml:35(desc)
+#: sdk/script/fn/GetPathLength.xml:36(desc)
 msgid "Sucht mittels des auch für die Clonk-Wegfindung benutzten Algorithmus einen Weg zwischen zwei Punkten der Landschaft und gibt dessen Länge zurück. Wurde kein Weg gefunden, gibt die Funktion 0 zurück."
 msgstr "Searches for a path from start point to end point using the pathfinding algorithm as used by clonks and returns the length of the found path. Returns 0 if no path was found."
 
-#: sdk/script/fn/GetPathLength.xml:39(remark)
+#: sdk/script/fn/GetPathLength.xml:40(remark)
 msgid "Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <placeholder-1/> verwendet werden."
 msgstr "This function exists in order to preserve compatibility to older game content. You should use <placeholder-1/> in newer scripts."
 
-#: sdk/script/fn/GetPathLength.xml:43(text)
+#: sdk/script/fn/GetPathLength.xml:44(text)
 msgid "Ermittelt die Entfernung eines Objekts bis zu seiner ersten Basis"
 msgstr "Determines the distance from an object to its closest friendly base"
 
