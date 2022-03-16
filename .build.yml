@@ -2,9 +2,10 @@ image: archlinux
 packages:
   - libxslt
   - python2
+  - python2-libxml2
   - rsync
 secrets:
-  - 3612b5e9-3819-4f44-ad00-bd5bf63e8dad # deploy key
+  - 2512d659-6458-48cc-9a91-4d9793baa7a3 # deploy key
 sources:
   - https://github.com/clonkspot/crdocs
 
@@ -17,4 +18,4 @@ tasks:
   - deploy: |
       cd crdocs
       sshopts="ssh -o StrictHostKeyChecking=no"
-      rsync --rsh="$sshopts" -rv --delete online/{de,en} clnk@lupus.uberspace.de:~/www/crdocs.clonkspot.org/
+      rsync --rsh="$sshopts" -rv --delete online/{de,en} crdocs@openclonk.org:~/www/
