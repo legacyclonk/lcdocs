@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-17 13:55+0100\n"
+"POT-Creation-Date: 2022-03-17 16:05+0100\n"
 "PO-Revision-Date: 2021-04-04 18:46+0200\n"
 "Last-Translator: Markus Mittendrein <maxmitti@gmx.at>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -85,7 +85,7 @@ msgstr "Operator"
 #: sdk/scenario/scenario.xml:540(col)
 #: sdk/scenario/basefunc.xml:10(col)
 #: sdk/scenario/Teams.xml:15(col)
-#: sdk/scenario/Teams.xml:73(col)
+#: sdk/scenario/Teams.xml:79(col)
 #: sdk/scenario/MapCreatorS2.xml:35(col)
 #: sdk/particle/index.xml:32(col)
 #: sdk/material/c4m.xml:16(col)
@@ -1013,9 +1013,10 @@ msgstr "With the AND operator, the resulting bit will only be 1 if both incoming
 #: sdk/scenario/Teams.xml:34(col)
 #: sdk/scenario/Teams.xml:52(col)
 #: sdk/scenario/Teams.xml:58(col)
-#: sdk/scenario/Teams.xml:92(col)
+#: sdk/scenario/Teams.xml:70(col)
 #: sdk/scenario/Teams.xml:98(col)
-#: sdk/scenario/Teams.xml:110(col)
+#: sdk/scenario/Teams.xml:104(col)
+#: sdk/scenario/Teams.xml:116(col)
 #: sdk/material/c4m.xml:297(col)
 #: sdk/definition/lineconnect.xml:13(col)
 #: sdk/definition/cnat.xml:17(col)
@@ -2454,7 +2455,7 @@ msgstr "The Sort_* functions are used to sort the results of <placeholder-1/>."
 #: sdk/script/fn/AddMsgBoardCmd.xml:16(col)
 #: sdk/script/fn/AddMenuItem.xml:28(col)
 #: sdk/script/fn/AddCommand.xml:71(col)
-#: sdk/scenario/Teams.xml:83(col)
+#: sdk/scenario/Teams.xml:89(col)
 #: sdk/particle/index.xml:35(col)
 #: sdk/material/c4m.xml:19(col)
 #: sdk/material/c4m.xml:296(col)
@@ -3550,7 +3551,7 @@ msgstr "Display"
 #: sdk/scenario/scenario.xml:538(col)
 #: sdk/scenario/basefunc.xml:10(col)
 #: sdk/scenario/Teams.xml:13(col)
-#: sdk/scenario/Teams.xml:71(col)
+#: sdk/scenario/Teams.xml:77(col)
 #: sdk/particle/index.xml:32(col)
 #: sdk/material/c4m.xml:14(col)
 #: sdk/material/c4m.xml:239(col)
@@ -8523,7 +8524,7 @@ msgstr "Key"
 #: sdk/scenario/scenario.xml:525(col)
 #: sdk/scenario/scenario.xml:539(col)
 #: sdk/scenario/Teams.xml:14(col)
-#: sdk/scenario/Teams.xml:72(col)
+#: sdk/scenario/Teams.xml:78(col)
 #: sdk/particle/index.xml:32(col)
 #: sdk/material/c4m.xml:15(col)
 #: sdk/material/c4m.xml:240(col)
@@ -12724,10 +12725,11 @@ msgstr "Example"
 #: sdk/scenario/Teams.xml:38(col)
 #: sdk/scenario/Teams.xml:50(col)
 #: sdk/scenario/Teams.xml:56(col)
-#: sdk/scenario/Teams.xml:78(col)
-#: sdk/scenario/Teams.xml:90(col)
+#: sdk/scenario/Teams.xml:68(col)
+#: sdk/scenario/Teams.xml:84(col)
 #: sdk/scenario/Teams.xml:96(col)
-#: sdk/scenario/Teams.xml:108(col)
+#: sdk/scenario/Teams.xml:102(col)
+#: sdk/scenario/Teams.xml:114(col)
 #: sdk/scenario/MapCreatorS2.xml:49(col)
 #: sdk/scenario/MapCreatorS2.xml:59(col)
 #: sdk/scenario/MapCreatorS2.xml:64(col)
@@ -14664,7 +14666,7 @@ msgid "0 oder 1. Freigabe der Szenarioeigenschaften im Menüsystem für andere S
 msgstr "0 or 1. Allow other players to change scenario properties in the menu system."
 
 #: sdk/scenario/scenario.xml:56(col)
-#: sdk/scenario/Teams.xml:107(col)
+#: sdk/scenario/Teams.xml:113(col)
 msgid "MaxPlayer"
 msgstr "MaxPlayer"
 
@@ -15792,7 +15794,7 @@ msgid "Sektion [Teams]"
 msgstr "Section [Teams]"
 
 #: sdk/scenario/Teams.xml:16(col)
-#: sdk/scenario/Teams.xml:74(col)
+#: sdk/scenario/Teams.xml:80(col)
 msgid "Standardwert"
 msgstr "Default value"
 
@@ -15870,7 +15872,7 @@ msgid "ScriptPlayerNames"
 msgstr "ScriptPlayerNames"
 
 #: sdk/scenario/Teams.xml:62(col)
-#: sdk/scenario/Teams.xml:102(col)
+#: sdk/scenario/Teams.xml:108(col)
 #: sdk/material/c4m.xml:285(col)
 msgid "String"
 msgstr "String"
@@ -15883,57 +15885,65 @@ msgstr "A list of names separated by \"|\" which are assigned to script players 
 msgid "Computer"
 msgstr "Computer"
 
-#: sdk/scenario/Teams.xml:69(caption)
+#: sdk/scenario/Teams.xml:67(col)
+msgid "RandomTeamCount"
+msgstr "RandomTeamCount"
+
+#: sdk/scenario/Teams.xml:69(col)
+msgid "Gibt an wieviele Teams generiert werden sollen, falls Zufallsteams eingestellt sind. Dies gibt den Standardwert für die Lobby-Einstellung an. Bei 0 werden alle definierten Teams gefüllt oder 2 Teams generiert, falls AutoGenerateTeams aktiviert ist. Ab LC [349]."
+msgstr "Defines how many teams should be generated if random teams are selected. This defines the default value of the related lobby setting. If 0, all defined teams are filled, or 2 teams are generated if AutoGenerateTeams is enabled. Since LC [349]."
+
+#: sdk/scenario/Teams.xml:75(caption)
 msgid "Beliebig viele Sektionen [Team]"
 msgstr "Any number of sections [Team]"
 
-#: sdk/scenario/Teams.xml:77(col)
+#: sdk/scenario/Teams.xml:83(col)
 #: sdk/definition/defcore.xml:20(col)
 msgid "id"
 msgstr "id"
 
-#: sdk/scenario/Teams.xml:79(col)
+#: sdk/scenario/Teams.xml:85(col)
 msgid "Identifikator: Eine eindeutige Zahl größer als 0, die im Szenarienscript zur Identifikation des Teams benutzt werden kann. Normalerweise kann man die Team-IDs einfach mit sequentiell von 1 aufsteigend durchnummerieren."
 msgstr "Identifier: a unique number greater than 0 which can be used to identify a team in scenario scripts. Usually you can simply use ascending numerical values as team identifiers."
 
-#: sdk/scenario/Teams.xml:80(col)
+#: sdk/scenario/Teams.xml:86(col)
 msgid "Muss angegeben werden!"
 msgstr "Must be specified!"
 
-#: sdk/scenario/Teams.xml:84(col)
+#: sdk/scenario/Teams.xml:90(col)
 msgid "Zeichenfole (max 30)"
 msgstr "String (max. 30 chars)"
 
-#: sdk/scenario/Teams.xml:85(col)
+#: sdk/scenario/Teams.xml:91(col)
 msgid "Name für das Team. Es können wie in Scripten auch lokalisierte Zeichenketten wie $TeamRight$ benutzt werden. Siehe <emlink href=\"lang.html#Teamstxt\">Sprachanpassung</emlink>."
 msgstr "Team name. You can also specify localized strings such as $TeamRight$. See <emlink href=\"lang.html#Teamstxt\">Localization</emlink>."
 
-#: sdk/scenario/Teams.xml:89(col)
+#: sdk/scenario/Teams.xml:95(col)
 msgid "PlrStartIndex"
 msgstr "PlrStartIndex"
 
-#: sdk/scenario/Teams.xml:91(col)
+#: sdk/scenario/Teams.xml:97(col)
 msgid "Wenn ungleich 0, wird für alle Mitglieder dieses Teams die entsprechende [PlayerX]-Sektion der <emlink href=\"scenario/scenario.html#SektionenPlayer1Player2Player3Player4\">Scenario.txt</emlink> für die Startparameter verwendet. 0 für automatische Vergabe unabhängig von den Teams."
 msgstr "If not 0, all members of this team use the corresponding [PlayerX] section in <emlink href=\"scenario/scenario.html#SektionenPlayer1Player2Player3Player4\">Scenario.txt</emlink> for starting conditions. If 0, starting conditions are assigned automatically and independent of team membership."
 
-#: sdk/scenario/Teams.xml:95(col)
+#: sdk/scenario/Teams.xml:101(col)
 #: sdk/material/c4m.xml:24(col)
 msgid "Color"
 msgstr "Color"
 
-#: sdk/scenario/Teams.xml:97(col)
+#: sdk/scenario/Teams.xml:103(col)
 msgid "32 Bit RGB-Wert, der die Teamfarbe angibt. Die Teamfarbe wird statt der Spielerfarbe benutzt, wenn TeamColors angegeben ist."
 msgstr "32 bit RGB value of the team color. The team color is used instead of the player color if TeamColors is set."
 
-#: sdk/scenario/Teams.xml:101(col)
+#: sdk/scenario/Teams.xml:107(col)
 msgid "IconSpec"
 msgstr "IconSpec"
 
-#: sdk/scenario/Teams.xml:103(col)
+#: sdk/scenario/Teams.xml:109(col)
 msgid "Spezifikation für das Teamicon für Beitritt im nicht-Netzwerk oder zur Laufzeit."
 msgstr "Specifies a team icon for runtime joins or non-network games."
 
-#: sdk/scenario/Teams.xml:109(col)
+#: sdk/scenario/Teams.xml:115(col)
 msgid "Maximale Anzahl der Spieler, die diesem Team beitreten dürfen. 0 für endlos."
 msgstr "Maximum number of players who may join this team. 0 for infinite."
 

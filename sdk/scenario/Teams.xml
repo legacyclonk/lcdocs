@@ -63,6 +63,12 @@
 		<col>Durch "|" getrennte Liste von Namen, die an in der Lobby beitretende Scriptspieler vergeben werden. Sind keine Namen angegeben, heißen alle Scriptspieler "Computer".</col>
 		<col>Computer</col>
 	</row>
+	<row>
+		<col>RandomTeamCount</col>
+		<col>Integer</col>
+		<col>Gibt an wieviele Teams generiert werden sollen, falls Zufallsteams eingestellt sind. Dies gibt den Standardwert für die Lobby-Einstellung an. Bei 0 werden alle definierten Teams gefüllt oder 2 Teams generiert, falls AutoGenerateTeams aktiviert ist. Ab LC [349].</col>
+		<col>0</col>
+	</row>
 </table></text>
 
 <text><table>
