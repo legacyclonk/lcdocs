@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-17 00:10+0100\n"
+"POT-Creation-Date: 2022-03-17 13:55+0100\n"
 "PO-Revision-Date: 2021-04-04 18:46+0200\n"
 "Last-Translator: Markus Mittendrein <maxmitti@gmx.at>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -837,7 +837,7 @@ msgid "Die Operatoren ?? und ??="
 msgstr "Operators ?? and ??="
 
 #: sdk/script/operatoren.xml:441(text)
-msgid "?? ist in manchen Sprachen als nil-coalescing Operator bekannt. Beide Operatoren prüfen, ob der vorangestellte Wert nil ist. Nur falls dieser nil ist wird der nachgestellte Ausdruck ausgewertet und das Ergebnis davon geliefert bzw. zugewiesen. Andernfalls liefert ?? den vorangestellten Wert bzw. ??= verändert die Variable nicht. Dies wird typischerweise für arbeiten mit Default-Werten oder für Ersatzwerte von möglicherweise nil zurückgebenden Funktionsaufrufen verwendet. Im Gegensatz zu || wird explizit auf nil geprüft ohne den Wert in einen bool zu verwandeln."
+msgid "?? ist in manchen Sprachen als nil-coalescing Operator bekannt. Beide Operatoren prüfen, ob der vorangestellte Wert nil ist. Nur falls dieser nil ist wird der nachgestellte Ausdruck ausgewertet und das Ergebnis davon geliefert bzw. zugewiesen. Andernfalls liefert ?? den vorangestellten Wert bzw. ??= verändert die Variable nicht. Dies wird typischerweise für Arbeiten mit Default-Werten oder für Ersatzwerte von möglicherweise nil zurückgebenden Funktionsaufrufen verwendet. Im Gegensatz zu || wird explizit auf nil geprüft ohne den Wert in einen bool zu verwandeln."
 msgstr "?? is known as nil-coalescing operator in some programming languages. Both operators check if the preceding value is nil. Only if it is nil the following expression is evaluated and the result is returned or stored respectively. Otherwise ?? returns the preceding value and ??= does not change the variable. These are typically used for default values or fallback values of function calls which may return nil. In contrast to || the check is spefically against nil and without conversion to bool."
 
 #: sdk/script/operatoren.xml:446(text)

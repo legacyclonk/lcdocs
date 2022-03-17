@@ -440,7 +440,7 @@ while(<strong>++Var(0)</strong> &lt; 10)
 		<part>
 			<text>?? ist in manchen Sprachen als nil-coalescing Operator bekannt.
 				Beide Operatoren prüfen, ob der vorangestellte Wert nil ist. Nur falls dieser nil ist wird der nachgestellte Ausdruck ausgewertet und das Ergebnis davon geliefert bzw. zugewiesen. Andernfalls liefert ?? den vorangestellten Wert bzw. ??= verändert die Variable nicht.
-				Dies wird typischerweise für arbeiten mit Default-Werten oder für Ersatzwerte von möglicherweise nil zurückgebenden Funktionsaufrufen verwendet.
+				Dies wird typischerweise für Arbeiten mit Default-Werten oder für Ersatzwerte von möglicherweise nil zurückgebenden Funktionsaufrufen verwendet.
 				Im Gegensatz zu || wird explizit auf nil geprüft ohne den Wert in einen bool zu verwandeln.
 			</text>
 			<text>
