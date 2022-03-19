@@ -176,6 +176,10 @@
 				<param name="Local" value="sdk\script\ScriptPlayers.html">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Get*Val">
+				<param name="Local" value="sdk\script\GetXXVal.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Functions by Category">
 				</OBJECT>
 			<!-- Insert Functions here 1-->

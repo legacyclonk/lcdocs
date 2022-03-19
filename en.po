@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-08 00:01+0200\n"
+"POT-Creation-Date: 2022-03-19 02:31+0100\n"
 "PO-Revision-Date: 2021-04-04 18:46+0200\n"
 "Last-Translator: Markus Mittendrein <maxmitti@gmx.at>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -85,7 +85,7 @@ msgstr "Operator"
 #: sdk/scenario/scenario.xml:540(col)
 #: sdk/scenario/basefunc.xml:10(col)
 #: sdk/scenario/Teams.xml:15(col)
-#: sdk/scenario/Teams.xml:73(col)
+#: sdk/scenario/Teams.xml:79(col)
 #: sdk/scenario/MapCreatorS2.xml:35(col)
 #: sdk/particle/index.xml:32(col)
 #: sdk/material/c4m.xml:16(col)
@@ -98,7 +98,7 @@ msgstr "Operator"
 #: sdk/definition/procedures.xml:15(col)
 #: sdk/definition/lineconnect.xml:11(col)
 #: sdk/definition/defcore.xml:19(col)
-#: sdk/definition/defcore.xml:212(col)
+#: sdk/definition/defcore.xml:213(col)
 #: sdk/definition/cnat.xml:16(col)
 #: sdk/definition/category.xml:12(col)
 #: sdk/definition/actmap.xml:23(col)
@@ -737,8 +737,8 @@ msgstr "reference, reference/any"
 #: sdk/script/operatoren.xml:367(col)
 #: sdk/script/fn/SetPlrMagic.xml:20(emlink)
 #: sdk/script/fn/SetPlrMagic.xml:21(emlink)
-#: sdk/script/fn/LocalN.xml:21(emlink)
-#: sdk/script/fn/LocalN.xml:26(emlink)
+#: sdk/script/fn/LocalN.xml:22(emlink)
+#: sdk/script/fn/LocalN.xml:27(emlink)
 msgid "="
 msgstr "="
 
@@ -837,7 +837,7 @@ msgid "Die Operatoren ?? und ??="
 msgstr "Operators ?? and ??="
 
 #: sdk/script/operatoren.xml:441(text)
-msgid "?? ist in manchen Sprachen als nil-coalescing Operator bekannt. Beide Operatoren prüfen, ob der vorangestellte Wert nil ist. Nur falls dieser nil ist wird der nachgestellte Ausdruck ausgewertet und das Ergebnis davon geliefert bzw. zugewiesen. Andernfalls liefert ?? den vorangestellten Wert bzw. ??= verändert die Variable nicht. Dies wird typischerweise für arbeiten mit Default-Werten oder für Ersatzwerte von möglicherweise nil zurückgebenden Funktionsaufrufen verwendet. Im Gegensatz zu || wird explizit auf nil geprüft ohne den Wert in einen bool zu verwandeln."
+msgid "?? ist in manchen Sprachen als nil-coalescing Operator bekannt. Beide Operatoren prüfen, ob der vorangestellte Wert nil ist. Nur falls dieser nil ist wird der nachgestellte Ausdruck ausgewertet und das Ergebnis davon geliefert bzw. zugewiesen. Andernfalls liefert ?? den vorangestellten Wert bzw. ??= verändert die Variable nicht. Dies wird typischerweise für Arbeiten mit Default-Werten oder für Ersatzwerte von möglicherweise nil zurückgebenden Funktionsaufrufen verwendet. Im Gegensatz zu || wird explizit auf nil geprüft ohne den Wert in einen bool zu verwandeln."
 msgstr "?? is known as nil-coalescing operator in some programming languages. Both operators check if the preceding value is nil. Only if it is nil the following expression is evaluated and the result is returned or stored respectively. Otherwise ?? returns the preceding value and ??= does not change the variable. These are typically used for default values or fallback values of function calls which may return nil. In contrast to || the check is spefically against nil and without conversion to bool."
 
 #: sdk/script/operatoren.xml:446(text)
@@ -1008,14 +1008,15 @@ msgstr "With the AND operator, the resulting bit will only be 1 if both incoming
 #: sdk/script/fn/AddMsgBoardCmd.xml:17(col)
 #: sdk/script/fn/AddCommand.xml:73(col)
 #: sdk/script/Effects.xml:492(col)
-#: sdk/script/Effects.xml:529(col)
+#: sdk/script/Effects.xml:533(col)
 #: sdk/scenario/basefunc.xml:12(col)
 #: sdk/scenario/Teams.xml:34(col)
 #: sdk/scenario/Teams.xml:52(col)
 #: sdk/scenario/Teams.xml:58(col)
-#: sdk/scenario/Teams.xml:92(col)
+#: sdk/scenario/Teams.xml:70(col)
 #: sdk/scenario/Teams.xml:98(col)
-#: sdk/scenario/Teams.xml:110(col)
+#: sdk/scenario/Teams.xml:104(col)
+#: sdk/scenario/Teams.xml:116(col)
 #: sdk/material/c4m.xml:297(col)
 #: sdk/definition/lineconnect.xml:13(col)
 #: sdk/definition/cnat.xml:17(col)
@@ -1060,7 +1061,7 @@ msgstr "0"
 #: sdk/script/fn/AddCommand.xml:79(col)
 #: sdk/script/Effects.xml:184(col)
 #: sdk/script/Effects.xml:493(col)
-#: sdk/script/Effects.xml:530(col)
+#: sdk/script/Effects.xml:534(col)
 #: sdk/scenario/basefunc.xml:12(col)
 #: sdk/scenario/basefunc.xml:14(col)
 #: sdk/scenario/Teams.xml:22(col)
@@ -1563,6 +1564,7 @@ msgstr "Removes all objects."
 #: sdk/script/fn/GetPhase.xml:7(category)
 #: sdk/script/fn/GetOwner.xml:7(category)
 #: sdk/script/fn/GetObjectStatus.xml:7(category)
+#: sdk/script/fn/GetObjectLayer.xml:7(category)
 #: sdk/script/fn/GetObjectBlitMode.xml:7(category)
 #: sdk/script/fn/GetOCF.xml:7(category)
 #: sdk/script/fn/GetNeededMatStr.xml:7(category)
@@ -1608,6 +1610,7 @@ msgstr "Removes all objects."
 #: sdk/script/fn/Find_OCF.xml:7(category)
 #: sdk/script/fn/Find_Not.xml:7(category)
 #: sdk/script/fn/Find_NoContainer.xml:7(category)
+#: sdk/script/fn/Find_Layer.xml:7(category)
 #: sdk/script/fn/Find_InRect.xml:7(category)
 #: sdk/script/fn/Find_ID.xml:7(category)
 #: sdk/script/fn/Find_Hostile.xml:7(category)
@@ -1885,7 +1888,7 @@ msgid "Entfernt obj wenn einer seiner Vertices feststeckt"
 msgstr "Removes obj if one if its vertices is stuck"
 
 #: sdk/script/fn/VarN.xml:7(category)
-#: sdk/script/fn/LocalN.xml:7(category)
+#: sdk/script/fn/LocalN.xml:8(category)
 #: sdk/script/fn/IsRef.xml:7(category)
 #: sdk/script/fn/GlobalN.xml:7(category)
 #: sdk/script/fn/GetValues.xml:7(category)
@@ -1907,7 +1910,7 @@ msgid "Variablen"
 msgstr "Variables"
 
 #: sdk/script/fn/VarN.xml:15(desc)
-#: sdk/script/fn/LocalN.xml:12(desc)
+#: sdk/script/fn/LocalN.xml:13(desc)
 msgid "Name der Variablen, zu der eine Referenz zurückgegeben werden soll"
 msgstr "Name of the variable to which a reference is to be returned"
 
@@ -1939,6 +1942,7 @@ msgstr "Sets a randomly chosen thread local variable to a random value."
 #: sdk/script/fn/GetPhysical.xml:7(subcat)
 #: sdk/script/fn/GetOwner.xml:7(subcat)
 #: sdk/script/fn/GetObjectStatus.xml:7(subcat)
+#: sdk/script/fn/GetObjectLayer.xml:7(subcat)
 #: sdk/script/fn/GetNeededMatStr.xml:7(subcat)
 #: sdk/script/fn/GetMass.xml:7(subcat)
 #: sdk/script/fn/GetKiller.xml:7(subcat)
@@ -2451,7 +2455,7 @@ msgstr "The Sort_* functions are used to sort the results of <placeholder-1/>."
 #: sdk/script/fn/AddMsgBoardCmd.xml:16(col)
 #: sdk/script/fn/AddMenuItem.xml:28(col)
 #: sdk/script/fn/AddCommand.xml:71(col)
-#: sdk/scenario/Teams.xml:83(col)
+#: sdk/scenario/Teams.xml:89(col)
 #: sdk/particle/index.xml:35(col)
 #: sdk/material/c4m.xml:19(col)
 #: sdk/material/c4m.xml:296(col)
@@ -2793,7 +2797,7 @@ msgstr "Shakes all living beings."
 #: sdk/script/fn/LandscapeHeight.xml:7(category)
 #: sdk/script/fn/InsertMaterial.xml:7(category)
 #: sdk/script/fn/InLiquid.xml:7(category)
-#: sdk/script/fn/GetPathLength.xml:7(category)
+#: sdk/script/fn/GetPathLength.xml:8(category)
 #: sdk/script/fn/GetPath.xml:7(category)
 #: sdk/script/fn/GetMaterialCount.xml:7(category)
 #: sdk/script/fn/GetMaterialColor.xml:7(category)
@@ -3399,7 +3403,7 @@ msgstr "Red value"
 #: sdk/script/fn/AddMsgBoardCmd.xml:19(col)
 #: sdk/script/fn/AddCommand.xml:77(col)
 #: sdk/script/Effects.xml:494(col)
-#: sdk/script/Effects.xml:531(col)
+#: sdk/script/Effects.xml:535(col)
 #: sdk/scenario/basefunc.xml:14(col)
 #: sdk/scenario/basefunc.xml:16(col)
 #: sdk/material/c4m.xml:299(col)
@@ -3437,7 +3441,7 @@ msgstr "Green value"
 #: sdk/script/fn/CreateMenu.xml:35(col)
 #: sdk/script/fn/AddCommand.xml:75(col)
 #: sdk/script/Effects.xml:495(col)
-#: sdk/script/Effects.xml:532(col)
+#: sdk/script/Effects.xml:536(col)
 #: sdk/scenario/basefunc.xml:18(col)
 #: sdk/definition/lineconnect.xml:19(col)
 #: sdk/definition/cnat.xml:23(col)
@@ -3547,7 +3551,7 @@ msgstr "Display"
 #: sdk/scenario/scenario.xml:538(col)
 #: sdk/scenario/basefunc.xml:10(col)
 #: sdk/scenario/Teams.xml:13(col)
-#: sdk/scenario/Teams.xml:71(col)
+#: sdk/scenario/Teams.xml:77(col)
 #: sdk/particle/index.xml:32(col)
 #: sdk/material/c4m.xml:14(col)
 #: sdk/material/c4m.xml:239(col)
@@ -3557,7 +3561,7 @@ msgstr "Display"
 #: sdk/folder/foldermap.xml:70(col)
 #: sdk/definition/lineconnect.xml:11(col)
 #: sdk/definition/defcore.xml:19(col)
-#: sdk/definition/defcore.xml:212(col)
+#: sdk/definition/defcore.xml:213(col)
 #: sdk/definition/cnat.xml:16(col)
 #: sdk/definition/category.xml:12(col)
 #: sdk/definition/actmap.xml:21(col)
@@ -3572,7 +3576,7 @@ msgstr "Value"
 #: sdk/script/fn/Format.xml:21(col)
 #: sdk/script/Effects.xml:432(col)
 #: sdk/script/Effects.xml:491(col)
-#: sdk/script/Effects.xml:528(col)
+#: sdk/script/Effects.xml:532(col)
 msgid "Bedeutung"
 msgstr "Meaning"
 
@@ -3912,7 +3916,7 @@ msgstr "Adds or removes a magic spell to or from the list of available spells of
 
 #: sdk/script/fn/SetPlrMagic.xml:20(emlink)
 #: sdk/script/fn/SetPlrMagic.xml:21(emlink)
-#: sdk/script/fn/LocalN.xml:20(emlink)
+#: sdk/script/fn/LocalN.xml:21(emlink)
 #: sdk/script/fn/FinishCommand.xml:39(emlink)
 msgid "var"
 msgstr "var"
@@ -5169,7 +5173,7 @@ msgstr "Type of object to be acquired. May be bought at the home base if necessa
 #: sdk/script/fn/SetCommand.xml:71(col)
 #: sdk/script/fn/SetCommand.xml:72(col)
 #: sdk/script/fn/SetCommand.xml:73(col)
-#: sdk/definition/script.xml:107(col)
+#: sdk/definition/script.xml:109(col)
 msgid "Activate"
 msgstr "Activate"
 
@@ -5311,7 +5315,7 @@ msgid "Zielobjekt helfen, die Baustelle zu errichten (der Clonk baut mit, sobald
 msgstr "Help the target object with the construction (help building as soon as the site is created)."
 
 #: sdk/script/fn/SetCommand.xml:85(col)
-#: sdk/definition/defcore.xml:225(col)
+#: sdk/definition/defcore.xml:226(col)
 msgid "Dig"
 msgstr "Dig"
 
@@ -5339,7 +5343,7 @@ msgstr "Collect the target object and drop it at the target position."
 
 #: sdk/script/fn/SetCommand.xml:89(col)
 #: sdk/script/fn/SetCommand.xml:90(col)
-#: sdk/definition/defcore.xml:213(col)
+#: sdk/definition/defcore.xml:214(col)
 msgid "Energy"
 msgstr "Energy"
 
@@ -5381,7 +5385,7 @@ msgstr "Follow the target object (permanently)."
 
 #: sdk/script/fn/SetCommand.xml:94(col)
 #: sdk/script/fn/SetCommand.xml:95(col)
-#: sdk/definition/script.xml:90(col)
+#: sdk/definition/script.xml:92(col)
 msgid "Get"
 msgstr "Get"
 
@@ -5394,7 +5398,7 @@ msgid "Anzahl Objekte von Objekttyp aus Zielobjekt holen. Ab 4.9.8.3."
 msgstr "Get the specified number of objects from the target object. From 4.9.8.3."
 
 #: sdk/script/fn/SetCommand.xml:96(col)
-#: sdk/definition/script.xml:86(col)
+#: sdk/definition/script.xml:88(col)
 #: sdk/definition/defcore.xml:113(col)
 msgid "Grab"
 msgstr "Grab"
@@ -5418,7 +5422,7 @@ msgstr "Return to the closest friendly home base."
 
 #: sdk/script/fn/SetCommand.xml:98(col)
 #: sdk/script/fn/SetCommand.xml:99(col)
-#: sdk/definition/defcore.xml:219(col)
+#: sdk/definition/defcore.xml:220(col)
 msgid "Jump"
 msgstr "Jump"
 
@@ -5474,7 +5478,7 @@ msgstr "Push the target object into the secondary target object."
 #: sdk/script/fn/SetCommand.xml:107(col)
 #: sdk/script/fn/SetCommand.xml:108(col)
 #: sdk/script/fn/SetCommand.xml:109(col)
-#: sdk/definition/script.xml:92(col)
+#: sdk/definition/script.xml:94(col)
 msgid "Put"
 msgstr "Put"
 
@@ -5524,7 +5528,7 @@ msgstr "Open Sell menu for the specified base object."
 #: sdk/script/fn/SetCommand.xml:113(col)
 #: sdk/script/fn/SetCommand.xml:114(col)
 #: sdk/script/fn/SetCommand.xml:115(col)
-#: sdk/definition/defcore.xml:229(col)
+#: sdk/definition/defcore.xml:230(col)
 msgid "Throw"
 msgstr "Throw"
 
@@ -6662,6 +6666,7 @@ msgstr "Returns the distance between two objects. If pObj is 0 the distance betw
 #: sdk/script/fn/Find_OCF.xml:7(subcat)
 #: sdk/script/fn/Find_Not.xml:7(subcat)
 #: sdk/script/fn/Find_NoContainer.xml:7(subcat)
+#: sdk/script/fn/Find_Layer.xml:7(subcat)
 #: sdk/script/fn/Find_InRect.xml:7(subcat)
 #: sdk/script/fn/Find_ID.xml:7(subcat)
 #: sdk/script/fn/Find_Hostile.xml:7(subcat)
@@ -7187,47 +7192,46 @@ msgstr "If pObj equals nil, an ID can be specified to tell in which definition t
 msgid "Gibt den Pfad zur Datei per Log aus, aus der angegebene Funktion geladen wurde und zeigt Überladungen an. Weiterhin kann über pObj direkt in einem Objekt gesucht werden, oder, falls pObj==0, in einer Definition über idDefinition."
 msgstr "Logs the path of the file where the specified function has been loaded from and also shows overrides. Furthermore functions of objects can be searched via specifying pObj or if pObj is nil they can be searched in a definition by specifiyng idDefinition."
 
-#: sdk/script/fn/LocalN.xml:13(desc)
+#: sdk/script/fn/LocalN.xml:14(desc)
 msgid "Objekt, dessen Variable abgefragt werden soll. 0 bei lokalem Aufruf."
 msgstr "Object of which you want to retrieve a variable. Can be 0 in local calls."
 
-#: sdk/script/fn/LocalN.xml:16(desc)
+#: sdk/script/fn/LocalN.xml:17(desc)
 msgid "Gibt eine Referenz auf eine Objektlokale Variable zurück. Diese Referenz kann zum Lesen und Schreiben benutzt werden."
 msgstr "Returns a reference to an object local variable. This reference can be used for reading or writing this variable."
 
-#: sdk/script/fn/LocalN.xml:17(remark)
+#: sdk/script/fn/LocalN.xml:18(remark)
 msgid "Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <code>obj[\"name\"]</code> oder <code>obj.name</code>, letzteres bei aktiviertem <code>#strict 3</code>, verwendet werden."
 msgstr "This function exists in order to preserve compatibility to older game content. You should use <code>obj[\"name\"]</code> or <code>obj.name</code>, the latter if <code>#strict 3</code> is activated."
 
-#: sdk/script/fn/LocalN.xml:22(text)
+#: sdk/script/fn/LocalN.xml:23(text)
 msgid "Lässt ein Fundament eines Zauberturms explodieren. Funktioniert nur bei einem Zauberturm, alle anderen Objekte benutzen <placeholder-1/> (9) zum Speichern des Fundamentobjektes."
 msgstr "Explodes the basement of a wizard tower. Only works with a magic tower - all other objects use <placeholder-1/>(9) to store a pointer to their basement."
 
-#: sdk/script/fn/LocalN.xml:25(emlink)
+#: sdk/script/fn/LocalN.xml:26(emlink)
 #: sdk/definition/script.xml:68(col)
 msgid "Initialize"
 msgstr "Initialize"
 
-#: sdk/script/fn/LocalN.xml:26(emlink)
+#: sdk/script/fn/LocalN.xml:27(emlink)
 msgid "local"
 msgstr "local"
 
-#: sdk/script/fn/LocalN.xml:26(emlink)
+#: sdk/script/fn/LocalN.xml:27(emlink)
 msgid "TRE1"
 msgstr "TRE1"
 
-#: sdk/script/fn/LocalN.xml:28(emlink)
-#: sdk/script/GetXXVal.xml:29(col)
+#: sdk/script/fn/LocalN.xml:29(emlink)
 #: sdk/definition/index.xml:12(emlink)
 #: sdk/definition/defcore.xml:5(title)
 msgid "DefCore.txt"
 msgstr "DefCore.txt"
 
-#: sdk/script/fn/LocalN.xml:33(text)
+#: sdk/script/fn/LocalN.xml:34(text)
 msgid "Das Objekt trägt einen Baum mit sich herum."
 msgstr "The object carries a tree around with it."
 
-#: sdk/script/fn/LocalN.xml:37(emlink)
+#: sdk/script/fn/LocalN.xml:38(emlink)
 msgid "benannte Variablen"
 msgstr "named variables"
 
@@ -7832,7 +7836,7 @@ msgid "Bei TEAM_Dist werden die Lobby-Teameinstellungen zurückgegeben. Dort mus
 msgstr ""
 "For TEAM_Dist the settings from the lobby will be returned. In this case it must be distinguished if TEAM_AutoGenerateTeams has been enabled or disabled because it determines the available options.\n"
 "With TEAM_AutoGenerateTeams = true the possible return values are<br/> TEAMDIST_Free (0, free team choice),<br/> TEAMDIST_Host (1, teams chosen by host)<br/> or 2 (without according constant, no teams).<br/>\n"
-"With TEAM_AutoGenerateTeams = false (the norm for predefined teams) the return values are<br/> TEAMDIST_Free (0),<br/> TEAMDIST_Host (1),<br/> TEAMDIST_Random (2, random teams)<br/> or TEAMDIST_RandomInv (3, random and invisible in the lobby)<br/>."
+"With TEAM_AutoGenerateTeams = false (the norm for predefined teams) the return values are<br/> TEAMDIST_Free (0),<br/> TEAMDIST_Host (1),<br/> TEAMDIST_Random (2, random teams)<br/> or TEAMDIST_RandomInv (3, random and invisible in the lobby)."
 
 #: sdk/script/fn/GetTeamColor.xml:12(desc)
 msgid "Teamnummer des Teams, dessen Farbe abgefragt werden soll"
@@ -8471,35 +8475,35 @@ msgstr "Object of which to deterine the activity phase. Can be 0 in local calls.
 msgid "Liefert die Aktivitätsphase von *pObj. *pObj ist Null bei lokalem Aufruf."
 msgstr "Returns the activity phase of an object."
 
-#: sdk/script/fn/GetPathLength.xml:15(desc)
+#: sdk/script/fn/GetPathLength.xml:16(desc)
 #: sdk/script/fn/GetPath.xml:15(desc)
 msgid "X-Koordinate der Startposition"
 msgstr "X coordinate of the starting position"
 
-#: sdk/script/fn/GetPathLength.xml:20(desc)
+#: sdk/script/fn/GetPathLength.xml:21(desc)
 #: sdk/script/fn/GetPath.xml:20(desc)
 msgid "Y-Koordinate der Startposition"
 msgstr "Y coordinate of the starting position"
 
-#: sdk/script/fn/GetPathLength.xml:25(desc)
+#: sdk/script/fn/GetPathLength.xml:26(desc)
 #: sdk/script/fn/GetPath.xml:25(desc)
 msgid "X-Koordinate der Zielposition"
 msgstr "X coordinate of the end position"
 
-#: sdk/script/fn/GetPathLength.xml:30(desc)
+#: sdk/script/fn/GetPathLength.xml:31(desc)
 #: sdk/script/fn/GetPath.xml:30(desc)
 msgid "Y-Koordinate der Zielposition"
 msgstr "Y coordinate of the end position"
 
-#: sdk/script/fn/GetPathLength.xml:35(desc)
+#: sdk/script/fn/GetPathLength.xml:36(desc)
 msgid "Sucht mittels des auch für die Clonk-Wegfindung benutzten Algorithmus einen Weg zwischen zwei Punkten der Landschaft und gibt dessen Länge zurück. Wurde kein Weg gefunden, gibt die Funktion 0 zurück."
 msgstr "Searches for a path from start point to end point using the pathfinding algorithm as used by clonks and returns the length of the found path. Returns 0 if no path was found."
 
-#: sdk/script/fn/GetPathLength.xml:39(remark)
+#: sdk/script/fn/GetPathLength.xml:40(remark)
 msgid "Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <placeholder-1/> verwendet werden."
 msgstr "This function exists in order to preserve compatibility to older game content. You should use <placeholder-1/> in newer scripts."
 
-#: sdk/script/fn/GetPathLength.xml:43(text)
+#: sdk/script/fn/GetPathLength.xml:44(text)
 msgid "Ermittelt die Entfernung eines Objekts bis zu seiner ersten Basis"
 msgstr "Determines the distance from an object to its closest friendly base"
 
@@ -8520,7 +8524,7 @@ msgstr "Key"
 #: sdk/scenario/scenario.xml:525(col)
 #: sdk/scenario/scenario.xml:539(col)
 #: sdk/scenario/Teams.xml:14(col)
-#: sdk/scenario/Teams.xml:72(col)
+#: sdk/scenario/Teams.xml:78(col)
 #: sdk/particle/index.xml:32(col)
 #: sdk/material/c4m.xml:15(col)
 #: sdk/material/c4m.xml:240(col)
@@ -8529,7 +8533,7 @@ msgstr "Key"
 #: sdk/folder/foldermap.xml:48(col)
 #: sdk/folder/foldermap.xml:71(col)
 #: sdk/definition/defcore.xml:19(col)
-#: sdk/definition/defcore.xml:212(col)
+#: sdk/definition/defcore.xml:213(col)
 #: sdk/definition/actmap.xml:22(col)
 msgid "Datentyp"
 msgstr "Data type"
@@ -8637,6 +8641,14 @@ msgstr "Object of which to get the status."
 #: sdk/script/fn/GetObjectStatus.xml:15(desc)
 msgid "Gibt den internen Status eines Objekts zurück."
 msgstr "Returns the internal status of an object."
+
+#: sdk/script/fn/GetObjectLayer.xml:12(desc)
+msgid "Objekt, dessen Layerobjekt abgefragt werden soll. nil bei lokalem Aufruf."
+msgstr "Object of which the layer object should be retrieved. Can be nil in local calls."
+
+#: sdk/script/fn/GetObjectLayer.xml:15(desc)
+msgid "Gibt das Layerobjekt von pObj zurück."
+msgstr "Returns the layer object of pObj."
 
 #: sdk/script/fn/GetObjectInfoCoreVal.xml:38(desc)
 msgid "Bei dem InfoCore handelt es sich um die Informationen eines CrewMembers, die in dem Spieler gespeichert werden (*.c4i). Dementsprechend gibt GetObjectInfoCoreVal einen Eigenschaftswert eines Crewmembers nach Namen in einer c4i-Datei zurück"
@@ -9832,6 +9844,7 @@ msgstr "Search criterion: finds all objects owned by the specified player."
 #: sdk/script/fn/Find_OCF.xml:16(remark)
 #: sdk/script/fn/Find_Not.xml:16(remark)
 #: sdk/script/fn/Find_NoContainer.xml:13(remark)
+#: sdk/script/fn/Find_Layer.xml:16(remark)
 #: sdk/script/fn/Find_InRect.xml:19(remark)
 #: sdk/script/fn/Find_ID.xml:16(remark)
 #: sdk/script/fn/Find_Hostile.xml:16(remark)
@@ -9880,6 +9893,14 @@ msgstr "Returns a list of all objects which are at at least 30 but no more than 
 #: sdk/script/fn/Find_NoContainer.xml:12(desc)
 msgid "Suchkriterium: sucht alle Objekte die im Freien sind."
 msgstr "Search criterion: finds all uncontained objects."
+
+#: sdk/script/fn/Find_Layer.xml:12(desc)
+msgid "Layerobjekt in dem sich das Objekt befinden muss. nil für den globalen Layer."
+msgstr "Layer object in which the object has to be. nil for the global layer."
+
+#: sdk/script/fn/Find_Layer.xml:15(desc)
+msgid "Suchkriterium: sucht alle Objekte mit dem entsprechenden Layerobjekt."
+msgstr "Search criterion: finds all objects with the specified layer object."
 
 #: sdk/script/fn/Find_InRect.xml:12(desc)
 msgid "X-Position der linken oberen Ecke des Suchbereiches. Bei lokalem Aufruf relativ zur Objektmitte."
@@ -12420,34 +12441,34 @@ msgid "Symbol für Siedlungspunkte"
 msgstr "Settlement score icon"
 
 #: sdk/script/fn/AddMenuItem.xml:19(desc)
-msgid "Zusatzparameter für das Verhalten des Menüeintrags.<br/> Untere 7 Bits (0-127): Menüsymbol. Sie lassen sich nicht gleichzeitig verwenden.<br/> 0: Normal<br/> C4MN_Add_ImgRank = 1: Rangsymbol. Bei angegebenem idItem wird ggf. die Rank.png der Definition genutzt. iCount gibt die Ranghöhe an<br/> C4MN_Add_ImgIndexed = 2: Picturefacet, das um XPar1-fache Picturebreite nach rechts verschoben ist. Damit lassen sich mehrere Menüsymbole innerhalb einer Definition unterbringen.<br/> C4MN_Add_ImgObjRank = 3: XPar1 gibt ein Objekt an, dessen Picture-Grafik mit Rang gezeichnet wird. Hat das Objekt keine Infosektion (und damit keinen Rang), so wird in Kontextmenüs dennoch ein entsprechender Leerraum gelassen. Ab CE.<br/> C4MN_Add_ImgObject = 4: XPar1 gibt ein Objekt an, dessen Picture-Grafik gezeichnet wird. Ab CE.<br/> C4MN_Add_ImgTextSpec = 5: Das Symbol wird in szCaption festgelegt und kann entweder eine normale ID, eine Portrait-Spezifikation in der Form \"Portrait:CLNK::00ff00::1\" oder eines der folgenden Symbole sein:<br/><placeholder-1/><br/> C4MN_Add_ImgColor = 6: Die Besitzerfarbflächen im Symbol werden mit der in XPar1 angegebenen Farbe eingefärbt. <br/><br/> Zusätzliche Flags (können mit obrigen Bits kombiniert werden):<br/> C4MN_Add_PassValue = 128: XPar2 wird als Wertangabe benutzt, und überschreibt die Standardangabe (Wert der Definition idItem). Siehe auch iExtra von <placeholder-2/>.<br/> C4MN_Add_ForceCount = 256: Wenn dieses Flag angegeben wird, wird auch ein iCount von 0 im Menü als Anzahl angezeigt (wie es zB. auch im Kaufmenü der Fall ist).<br/> Bei dieser Gelegenheit sei auch erwähnt, dass intern der Wert C4MN_Item_NoCount = 12345678 verwendet wird, wenn dieses Flag nicht angegeben ist, aber iCount 0 ist. D.h. auch, dass in dem seltenen Fall, dass iCount mit 12345678 angegeben wird, keine Anzahl angezeigt wird. <br/> C4MN_Add_ForceNoDesc = 512: Wenn dieses Flag angegeben wird, wird auf keinen Fall eine Beschreibung für den Menüeintrag angezeigt. Beschreibung (setzbar mit szInfoCaption) in dem Sinn, dass ein Tooltip angezeigt wird, wenn der Menüeintrag lange genug ausgewählt ist."
-msgstr "Additional parameter determining the behavior of the menu entry.<br/>Lower 7 bits (0-127): Menu entry icon. Can't be combined.<br/>0: Normal<br/> C4MN_Add_ImgRank = 1; Rank icon. With a specified idItem the Rank.png of the definition will be used if applicable. iCount determines the rank level.<br/> C4MN_Add_ImgIndexed = 2; The picture facet XPar1 times the picture width shifted to the right will be used. This may be used to store multiple icons in a single definition.<br/> C4MN_Add_ImgObjRank = 3: XPar1 is an object of which the picture including its rank will be used as icon. If the object doesn't have any info section (thus also no rank) in context menus a space for the rank symbol will be left out anyway. Since CE.<br/> C4MN_Add_ImgObject = 4: XPar1 is an object of which the picture is used as icon. Since CE.<br/> C4MN_Add_ImgTextSpec = 5: The symbol is defined in szCaption and can be either a normal ID, a portrait specification of the format \"Portrait:CLNK::00ff00::1\" or one of the following icons:<br/><placeholder-1/><br/> C4MN_Add_ImgColor = 6: The owner color area of the icon will be colorized with the color specified in XPar1. <br/><br/> Additional flags (can be combined with those mentioned before):<br/> C4MN_Add_PassValue = 128: XPar2 is used as value and overrides the default value found (in the definition idItem). See also iExtra of <placeholder-2/>.<br/> C4MN_Add_ForceCount = 256: If this flag is specified, also an iCount of 0 will be shown (like it is the case in the buying menu, for example).<br/> It should also be mentioned that internally the value C4MN_Item_NoCount = 12345678 is used if this flag isn't specified but iCount is 0. This means that in the special case where iCount is passed as 12345678 the count won't be shown. <br/> C4MN_Add_ForceNoDesc = 512: If this flag is specified the description (set with szInfoCaption and shown as a tooltip) of the menu entry is suppressed completely, whereas in contrast passing 0 as szInfoCaption will show the description of idItem."
+msgid "Zusatzparameter für das Verhalten des Menüeintrags.<br/> Untere 7 Bits (0-127): Menüsymbol. Sie lassen sich nicht gleichzeitig verwenden.<br/> 0: Normal<br/> C4MN_Add_ImgRank = 1: Rangsymbol. Bei angegebenem idItem wird ggf. die Rank.png der Definition genutzt. iCount gibt die Ranghöhe an<br/> C4MN_Add_ImgIndexed = 2: Picturefacet, das um XPar1-fache Picturebreite nach rechts verschoben ist, wird verwendet. Damit lassen sich mehrere Menüsymbole innerhalb einer Definition unterbringen.<br/> C4MN_Add_ImgObjRank = 3: XPar1 gibt ein Objekt an, dessen Picture-Grafik mit Rang gezeichnet wird. Hat das Objekt keine Infosektion (und damit keinen Rang), so wird in Kontextmenüs dennoch ein entsprechender Leerraum gelassen. Ab CE.<br/> C4MN_Add_ImgObject = 4: XPar1 gibt ein Objekt an, dessen Picture-Grafik gezeichnet wird. Ab CE.<br/> C4MN_Add_ImgTextSpec = 5: Das Symbol wird in szCaption festgelegt und kann entweder eine normale ID, eine Portrait-Spezifikation in der Form \"Portrait:CLNK::00ff00::1\" oder eines der folgenden Symbole sein:<br/><placeholder-1/><br/> C4MN_Add_ImgColor = 6: Die Besitzerfarbflächen im Symbol werden mit der in XPar1 angegebenen Farbe eingefärbt. <br/> C4MN_Add_ImgIndexedColor = 7: Picturefacet, das um XPar1-fache Picturebreite nach rechts verschoben ist, wird verwendet. Die Besitzerfarbflächen im Symbol werden mit der in XPar2 angegebenen Farbe eingefärbt. Kann nicht mit C4MN_Add_PassValue kombiniert werden.<br/><br/> Zusätzliche Flags (können mit obrigen Bits kombiniert werden):<br/> C4MN_Add_PassValue = 128: XPar2 wird als Wertangabe benutzt, und überschreibt die Standardangabe (Wert der Definition idItem). Siehe auch iExtra von <placeholder-2/>.<br/> C4MN_Add_ForceCount = 256: Wenn dieses Flag angegeben wird, wird auch ein iCount von 0 im Menü als Anzahl angezeigt (wie es zB. auch im Kaufmenü der Fall ist).<br/> Bei dieser Gelegenheit sei auch erwähnt, dass intern der Wert C4MN_Item_NoCount = 12345678 verwendet wird, wenn dieses Flag nicht angegeben ist, aber iCount 0 ist. D.h. auch, dass in dem seltenen Fall, dass iCount mit 12345678 angegeben wird, keine Anzahl angezeigt wird. <br/> C4MN_Add_ForceNoDesc = 512: Wenn dieses Flag angegeben wird, wird auf keinen Fall eine Beschreibung für den Menüeintrag angezeigt. Beschreibung (setzbar mit szInfoCaption) in dem Sinn, dass ein Tooltip angezeigt wird, wenn der Menüeintrag lange genug ausgewählt ist."
+msgstr "Additional parameter determining the behavior of the menu entry.<br/>Lower 7 bits (0-127): Menu entry icon. Can't be combined.<br/>0: Normal<br/> C4MN_Add_ImgRank = 1; Rank icon. With a specified idItem the Rank.png of the definition will be used if applicable. iCount determines the rank level.<br/> C4MN_Add_ImgIndexed = 2; The picture facet XPar1 times the picture width shifted to the right will be used. This may be used to store multiple icons in a single definition.<br/> C4MN_Add_ImgObjRank = 3: XPar1 is an object of which the picture including its rank will be used as icon. If the object doesn't have any info section (thus also no rank) in context menus a space for the rank symbol will be left out anyway. Since CE.<br/> C4MN_Add_ImgObject = 4: XPar1 is an object of which the picture is used as icon. Since CE.<br/> C4MN_Add_ImgTextSpec = 5: The symbol is defined in szCaption and can be either a normal ID, a portrait specification of the format \"Portrait:CLNK::00ff00::1\" or one of the following icons:<br/><placeholder-1/><br/> C4MN_Add_ImgColor = 6: The owner color area of the icon will be colorized with the color specified in XPar1. <br/> C4MN_Add_ImgIndexedColor = 7: The picture facet XPar1 times the picture width shifted to the right will be used. The owner color area of the icon will be colorized with the color specified in XPar2. Can not be combined with C4MN_Add_PassValue.<br/><br/> Additional flags (can be combined with those mentioned before):<br/> C4MN_Add_PassValue = 128: XPar2 is used as value and overrides the default value found (in the definition idItem). See also iExtra of <placeholder-2/>.<br/> C4MN_Add_ForceCount = 256: If this flag is specified, also an iCount of 0 will be shown (like it is the case in the buying menu, for example).<br/> It should also be mentioned that internally the value C4MN_Item_NoCount = 12345678 is used if this flag isn't specified but iCount is 0. This means that in the special case where iCount is passed as 12345678 the count won't be shown. <br/> C4MN_Add_ForceNoDesc = 512: If this flag is specified the description (set with szInfoCaption and shown as a tooltip) of the menu entry is suppressed completely, whereas in contrast passing 0 as szInfoCaption will show the description of idItem."
 
-#: sdk/script/fn/AddMenuItem.xml:43(desc)
+#: sdk/script/fn/AddMenuItem.xml:44(desc)
 msgid "Erster Zusatzparameter für iExtra."
 msgstr "First additional parameter for iExtra."
 
-#: sdk/script/fn/AddMenuItem.xml:44(desc)
+#: sdk/script/fn/AddMenuItem.xml:45(desc)
 msgid "Zweiter Zusatzparameter für iExtra."
 msgstr "Second additional parameter for iExtra."
 
-#: sdk/script/fn/AddMenuItem.xml:47(desc)
+#: sdk/script/fn/AddMenuItem.xml:48(desc)
 msgid "Fügt einen Menüeintrag hinzu."
 msgstr "Adds a menu entry."
 
-#: sdk/script/fn/AddMenuItem.xml:48(remark)
+#: sdk/script/fn/AddMenuItem.xml:49(remark)
 msgid "Menüsymbole sollten optimalerweise die Größe 35x35 für normale Menüs, 16x16 für Kontextmenüs besitzen. Andernfalls wird unter Beibehaltung des Höhe/Breite-Verhältnisses so gestreckt, dass die längere Seite dieser Größe entspricht."
 msgstr "Custom menu symbols should best have square aspect ratio."
 
-#: sdk/script/fn/AddMenuItem.xml:49(remark)
+#: sdk/script/fn/AddMenuItem.xml:50(remark)
 msgid "Wird als szCommand-Parameter nur ein Funktionsname angegeben, werden folgende Parameter übergeben: <code>idItem, iParameter, bRight[, iValue]</code> wobei bRight angibt, ob der Menueintrag mit [Special2] bzw. der rechten Maustaste ausgewählt wurde. iValue wird nur übergeben, wenn das Bit 8 bei iExtra gesetzt wird und gibt den (überschriebenen) angezeigten Wert des ausgewählten Menüeintrags an."
 msgstr "If a function name is specified for szCommand, the following parameters are passed: <code>idItem, iParameter, bRight[, iValue]</code> with bRight indicating whether the menu entry was selected with [Special2] or the right mouse button. iValue is passed only if bit 8 is set in iExtra and specifies the displayed (overridden) object value of the menu entry."
 
-#: sdk/script/fn/AddMenuItem.xml:85(text)
+#: sdk/script/fn/AddMenuItem.xml:86(text)
 msgid "Menü für einen Spezialclonk."
 msgstr "Menu for a special clonk."
 
-#: sdk/script/fn/AddMenuItem.xml:95(text)
+#: sdk/script/fn/AddMenuItem.xml:96(text)
 msgid "Menü für ein Schrumpfobjekt."
 msgstr "Menu for a shrinking object."
 
@@ -12704,10 +12725,11 @@ msgstr "Example"
 #: sdk/scenario/Teams.xml:38(col)
 #: sdk/scenario/Teams.xml:50(col)
 #: sdk/scenario/Teams.xml:56(col)
-#: sdk/scenario/Teams.xml:78(col)
-#: sdk/scenario/Teams.xml:90(col)
+#: sdk/scenario/Teams.xml:68(col)
+#: sdk/scenario/Teams.xml:84(col)
 #: sdk/scenario/Teams.xml:96(col)
-#: sdk/scenario/Teams.xml:108(col)
+#: sdk/scenario/Teams.xml:102(col)
+#: sdk/scenario/Teams.xml:114(col)
 #: sdk/scenario/MapCreatorS2.xml:49(col)
 #: sdk/scenario/MapCreatorS2.xml:59(col)
 #: sdk/scenario/MapCreatorS2.xml:64(col)
@@ -12845,25 +12867,25 @@ msgstr "Example"
 #: sdk/definition/defcore.xml:199(col)
 #: sdk/definition/defcore.xml:201(col)
 #: sdk/definition/defcore.xml:203(col)
-#: sdk/definition/defcore.xml:213(col)
-#: sdk/definition/defcore.xml:215(col)
-#: sdk/definition/defcore.xml:217(col)
-#: sdk/definition/defcore.xml:219(col)
-#: sdk/definition/defcore.xml:221(col)
-#: sdk/definition/defcore.xml:223(col)
-#: sdk/definition/defcore.xml:225(col)
-#: sdk/definition/defcore.xml:227(col)
-#: sdk/definition/defcore.xml:229(col)
-#: sdk/definition/defcore.xml:231(col)
-#: sdk/definition/defcore.xml:233(col)
-#: sdk/definition/defcore.xml:235(col)
-#: sdk/definition/defcore.xml:237(col)
-#: sdk/definition/defcore.xml:239(col)
-#: sdk/definition/defcore.xml:241(col)
-#: sdk/definition/defcore.xml:243(col)
-#: sdk/definition/defcore.xml:245(col)
-#: sdk/definition/defcore.xml:248(col)
-#: sdk/definition/defcore.xml:250(col)
+#: sdk/definition/defcore.xml:214(col)
+#: sdk/definition/defcore.xml:216(col)
+#: sdk/definition/defcore.xml:218(col)
+#: sdk/definition/defcore.xml:220(col)
+#: sdk/definition/defcore.xml:222(col)
+#: sdk/definition/defcore.xml:224(col)
+#: sdk/definition/defcore.xml:226(col)
+#: sdk/definition/defcore.xml:228(col)
+#: sdk/definition/defcore.xml:230(col)
+#: sdk/definition/defcore.xml:232(col)
+#: sdk/definition/defcore.xml:234(col)
+#: sdk/definition/defcore.xml:236(col)
+#: sdk/definition/defcore.xml:238(col)
+#: sdk/definition/defcore.xml:240(col)
+#: sdk/definition/defcore.xml:242(col)
+#: sdk/definition/defcore.xml:244(col)
+#: sdk/definition/defcore.xml:246(col)
+#: sdk/definition/defcore.xml:249(col)
+#: sdk/definition/defcore.xml:251(col)
 #: sdk/definition/actmap.xml:37(col)
 #: sdk/definition/actmap.xml:42(col)
 #: sdk/definition/actmap.xml:52(col)
@@ -12895,6 +12917,7 @@ msgstr "A whole number from -2.147.483.648 to +2.147.483.647."
 #: sdk/folder/foldermap.xml:40(col)
 #: sdk/folder/foldermap.xml:131(col)
 #: sdk/folder/foldermap.xml:136(col)
+#: sdk/definition/defcore.xml:207(col)
 #: sdk/definition/actmap.xml:94(col)
 msgid "Boolean"
 msgstr "Boolean"
@@ -13306,7 +13329,7 @@ msgid "Variablen dienen innerhalb von Scripts zur Speicherung von Daten. Es gibt
 msgstr "Variables are placeholders for values stored in a script. A variable stores a value in one of several <emlink href=\"script/Typechecks.html\">data types</emlink>."
 
 #: sdk/script/NamedVar.xml:11(text)
-msgid "Außerdem kann eine Variable einen von drei Gültigkeitsbereiche haben. Die Variable ist außerhalb ihres Gültigkeitsbereiches nicht sichtbar."
+msgid "Außerdem kann eine Variable einen von drei Gültigkeitsbereichen haben. Die Variable ist außerhalb ihres Gültigkeitsbereiches nicht sichtbar."
 msgstr "There are three different scopes in which a variable can be declared. Variables are not visible outside their declared scope."
 
 #: sdk/script/NamedVar.xml:15(col)
@@ -13383,32 +13406,26 @@ msgid "GetDefCoreVal, GetActMapVal, GetObjectVal, GetScenarioVal"
 msgstr "GetDefCoreVal, GetActMapVal, GetObjectVal, GetScenarioVal"
 
 #: sdk/script/GetXXVal.xml:10(li)
-msgid "GetDefCoreVal(string strEntry, string strSection, id idDef);"
-msgstr "GetDefCoreVal(string strEntry, string strSection, id idDef);"
+msgid "<placeholder-1/>(string strEntry, string strSection, id idDef);"
+msgstr "<placeholder-1/>(string strEntry, string strSection, id idDef);"
 
 #: sdk/script/GetXXVal.xml:11(li)
-msgid "GetActMapVal(string strEntry, stringstrAction, id idDef);"
-msgstr "GetActMapVal(string strEntry, stringstrAction, id idDef);"
+msgid "<placeholder-1/>(string strEntry, string strAction, id idDef);"
+msgstr "<placeholder-1/>(string strEntry, string strAction, id idDef);"
 
 #: sdk/script/GetXXVal.xml:12(li)
-msgid "GetObjectVal(string strEntry, string strSection, object pObj);"
-msgstr "GetObjectVal(string strEntry, string strSection, object pObj);"
-
 #: sdk/script/GetXXVal.xml:13(li)
-msgid "GetObjectInfoCoreVal(string strEntry, string strSection, object pObj);"
-msgstr "GetObjectInfoCoreVal(string strEntry, string strSection, object pObj);"
+msgid "<placeholder-1/>(string strEntry, string strSection, object pObj);"
+msgstr "<placeholder-1/>(string strEntry, string strSection, object pObj);"
 
 #: sdk/script/GetXXVal.xml:14(li)
-msgid "GetScenarioVal(string strEntry, string strSection);"
-msgstr "GetScenarioVal(string strEntry, string strSection);"
+msgid "<placeholder-1/>(string strEntry, string strSection);"
+msgstr "<placeholder-1/>(string strEntry, string strSection);"
 
 #: sdk/script/GetXXVal.xml:15(li)
-msgid "GetPlayerVal(string strEntry, string strSection, int iPlr);"
-msgstr "GetPlayerVal(string strEntry, string strSection, int iPlr);"
-
 #: sdk/script/GetXXVal.xml:16(li)
-msgid "GetPlayerInfoCoreVal(string strEntry, string strSection, int iPlr);"
-msgstr "GetPlayerInfoCoreVal(string strEntry, string strSection, int iPlr);"
+msgid "<placeholder-1/>(string strEntry, string strSection, int iPlr);"
+msgstr "<placeholder-1/>(string strEntry, string strSection, int iPlr);"
 
 #: sdk/script/GetXXVal.xml:19(text)
 msgid "Diese Funktionsfamilie gewährt direkten Zugriff auf sämtliche Eigenschaften der entsprechenden Objekte, wie sie auch abgespeichert werden."
@@ -13422,75 +13439,45 @@ msgstr "Each function corresponds to the following files:"
 msgid "Datei"
 msgstr "File"
 
-#: sdk/script/GetXXVal.xml:28(col)
-msgid "GetDefCoreVal"
-msgstr "GetDefCoreVal"
+#: sdk/script/GetXXVal.xml:29(emlink)
+msgid "*.c4d/DefCore.txt"
+msgstr "*.c4d/DefCore.txt"
 
-#: sdk/script/GetXXVal.xml:32(col)
-msgid "GetActMapVal"
-msgstr "GetActMapVal"
+#: sdk/script/GetXXVal.xml:33(emlink)
+msgid "*.c4d/ActMap.txt"
+msgstr "*.c4d/ActMap.txt"
 
-#: sdk/script/GetXXVal.xml:33(col)
-#: sdk/definition/script.xml:33(h)
-#: sdk/definition/index.xml:15(emlink)
-#: sdk/definition/actmap.xml:5(title)
-msgid "ActMap.txt"
-msgstr "ActMap.txt"
+#: sdk/script/GetXXVal.xml:37(emlink)
+msgid "*.c4s/Objects.txt"
+msgstr "*.c4s/Objects.txt"
 
-#: sdk/script/GetXXVal.xml:36(col)
-msgid "GetObjectVal"
-msgstr "GetObjectVal"
-
-#: sdk/script/GetXXVal.xml:37(col)
-msgid "Objects.txt"
-msgstr "Objects.txt"
-
-#: sdk/script/GetXXVal.xml:40(col)
-msgid "GetObjectInfoCoreVal"
-msgstr "GetObjectInfoCoreVal"
-
-#: sdk/script/GetXXVal.xml:41(col)
-msgid "*.c4i (in Spielerdateien)"
-msgstr "*.c4i (in player files)"
-
-#: sdk/script/GetXXVal.xml:44(col)
-msgid "GetScenarioVal"
-msgstr "GetScenarioVal"
+#: sdk/script/GetXXVal.xml:41(emlink)
+msgid "*.c4s/Scenario.txt"
+msgstr "*.c4s/Scenario.txt"
 
 #: sdk/script/GetXXVal.xml:45(col)
-#: sdk/scenario/scenario.xml:5(title)
-#: sdk/scenario/scenario.xml:7(h)
-#: sdk/scenario/index.xml:13(emlink)
-msgid "Scenario.txt"
-msgstr "Scenario.txt"
-
-#: sdk/script/GetXXVal.xml:48(col)
-msgid "GetPlayerVal"
-msgstr "GetPlayerVal"
+msgid "<emlink href=\"scenario/index.html\">*.c4s</emlink>/Game.txt (in Spielständen)"
+msgstr "<emlink href=\"scenario/index.html\">*.c4s</emlink>/Game.txt (in Savegames)"
 
 #: sdk/script/GetXXVal.xml:49(col)
-msgid "scenario.txt"
-msgstr "scenario.txt"
-
-#: sdk/script/GetXXVal.xml:52(col)
-msgid "GetPlayerInfoCoreVal"
-msgstr "GetPlayerInfoCoreVal"
+msgid "<emlink href=\"files.html#Spielerdateienc4p\">*.c4p</emlink>/*.c4i"
+msgstr "<emlink href=\"files.html#Spielerdateienc4p\">*.c4p</emlink>/*.c4i"
 
 #: sdk/script/GetXXVal.xml:53(col)
-msgid "player.txt"
-msgstr "Player.txt"
+msgid "<emlink href=\"files.html#Spielerdateienc4p\">*.c4p</emlink>/Player.txt"
+msgstr "<emlink href=\"files.html#Spielerdateienc4p\">*.c4p</emlink>/Player.txt"
 
 #: sdk/script/GetXXVal.xml:57(text)
 msgid "Die Eigenschaft wird jeweils anhand ihres Namen und ggf. der Sektion übergeben (wird 0 übergeben, so werden alle Sektionen nach einem gleichnamigen Wert durchsucht). Wurde eine entsprechende Eigenschaft nicht gefunden oder entsprcht der Typ der Eigenschaft keinem gültigen Script-Datenformat (z.B. ID-Liste), so wird 0 zurückgegeben."
 msgstr "The property to be accessed is referenced through its name and section, if applicable (if no value is given for the section, all sections will be searched for the property). If a matching property was not found or does not correspond to a valid C4Script data type (e.g. ID lists) the result is 0."
 
 #: sdk/script/GetXXVal.xml:58(text)
-msgid "Wird GetObjectVal für pObj/idDef jeweils 0 zurückgegeben, so wird das Objekt (bzw. dessen Definition), aus dem der Aufruf erfolgte angenommen."
-msgstr "If 0 is given for pObj/idDef in a call to GetObjectVal, the object or the definition of the object from which the call was made is used."
+msgid "Wird <placeholder-1/> für pObj/idDef jeweils 0 zurückgegeben, so wird das Objekt (bzw. dessen Definition), aus dem der Aufruf erfolgte angenommen."
+msgstr "If 0 is given for pObj/idDef in a call to <placeholder-1/>, the object or the definition of the object from which the call was made is used."
 
 #: sdk/script/GetXXVal.xml:59(text)
-msgid "Die Zusatzfunktionen GetXVal.c (in System.c4g) ermöglichen Aufrufe verschiedener Get*Val-Funktionen durch globale Scriptfunktionen (z.B. <code>GetObjWidth()</code>, entspricht <code>GetObjectVal(\"Width\", 0, -obj-)</code>)."
-msgstr "There is a number of additional wrapper functions located in System.c4g/GetXVal.c. These functions allow for easy access to various common Get*Val functions (e.g. <code>GetObjWidth()</code> for <code><i>GetObjectVal</i>(\"Width\", 0, -obj-)</code>)."
+msgid "Die Zusatzfunktionen in GetXVal.c (in System.c4g) ermöglichen Aufrufe verschiedener Get*Val-Funktionen durch globale Scriptfunktionen (z.B. <code>GetObjWidth()</code>, entspricht <code><placeholder-1/>(\"Width\", 0, -obj-)</code>)."
+msgstr "There is a number of additional wrapper functions located in System.c4g/GetXVal.c. These functions allow for easy access to various common Get*Val functions (e.g. <code>GetObjWidth()</code> for <code><i><placeholder-1/></i>(\"Width\", 0, -obj-)</code>)."
 
 #: sdk/script/Funcs.xml:9(text)
 msgid "Eine Skriptfunktion fasst ein bestimmtes Stück Code zusammen, welches dann von der Engine oder einem anderen Script aufgerufen (also ausgeführt) werden kann. Das gesamte Script eines Szenarios oder Objekts ist in solchen Funktionen untergebracht."
@@ -14264,54 +14251,62 @@ msgid "Jeder Effekt erhält diesen Callback, wann immer sich der Energie- oder S
 msgstr "Every effect receives this callback whenever the energy or damage value of the target object is to change. If the function is defined, it should then return whether to allow the change."
 
 #: sdk/script/Effects.xml:525(text)
+msgid "iDmgEngy gibt die Änderung an. Negative Werte geben Schaden an, Positive Werte Heilung (im Falle von Lebewesen)."
+msgstr "iDmgEngy is the change amount. Negative values are used for damage, positive values for healing (in case of living beings)."
+
+#: sdk/script/Effects.xml:526(text)
+msgid "Werte für die Energie sind dabei exakt, das heißt 100.000 entspricht der vollen Energie eines normalen Clonks mit Rang 10 (C4MaxPhysical). Der Umrechnungsfaktor zwischen GetEnergy und diesem Wert ist 1.000."
+msgstr "Energy values are exact, meaning 100,000 is the full energy value of a normal clonk of rank 10 (C4MaxPhysical). The conversion factor from GetEnergy to this value is 1,000."
+
+#: sdk/script/Effects.xml:529(text)
 msgid "Der Callback wird bei Energiewertänderungen bei Lebewesen, sowie bei Schadenswertänderungen bei nicht-Lebewesen durchgeführt - nicht aber umgekehrt. iCause gibt den geänderten Wert und den Grund an:"
 msgstr "This callback is made upon life energy changes in living beings and damage value changes in non-livings - but not vice versa. iCause contains the value change and reason:"
 
-#: sdk/script/Effects.xml:528(col)
+#: sdk/script/Effects.xml:532(col)
 msgid "Scriptkonstante"
 msgstr "Script constant"
 
-#: sdk/script/Effects.xml:528(col)
+#: sdk/script/Effects.xml:532(col)
 msgid "iCause"
 msgstr "iCause"
 
-#: sdk/script/Effects.xml:529(col)
+#: sdk/script/Effects.xml:533(col)
 msgid "FX_Call_DmgScript"
 msgstr "FX_Call_DmgScript"
 
-#: sdk/script/Effects.xml:529(col)
+#: sdk/script/Effects.xml:533(col)
 msgid "Schaden durch Scriptaufruf <placeholder-1/>()"
 msgstr "Damage by script call <placeholder-1/>()"
 
-#: sdk/script/Effects.xml:530(col)
+#: sdk/script/Effects.xml:534(col)
 msgid "FX_Call_DmgBlast"
 msgstr "FX_Call_DmgBlast"
 
-#: sdk/script/Effects.xml:530(col)
+#: sdk/script/Effects.xml:534(col)
 msgid "Schaden durch Explosion"
 msgstr "Damage by explosion"
 
-#: sdk/script/Effects.xml:531(col)
+#: sdk/script/Effects.xml:535(col)
 msgid "FX_Call_DmgFire"
 msgstr "FX_Call_DmgFire"
 
-#: sdk/script/Effects.xml:531(col)
+#: sdk/script/Effects.xml:535(col)
 msgid "Schaden durch Feuer"
 msgstr "Damage by fire"
 
-#: sdk/script/Effects.xml:532(col)
+#: sdk/script/Effects.xml:536(col)
 msgid "FX_Call_DmgChop"
 msgstr "FX_Call_DmgChop"
 
-#: sdk/script/Effects.xml:532(col)
+#: sdk/script/Effects.xml:536(col)
 msgid "Schaden durch Fällen (nur Bäume)"
 msgstr "Damage by chopping (only trees)"
 
-#: sdk/script/Effects.xml:533(col)
+#: sdk/script/Effects.xml:537(col)
 msgid "FX_Call_EngScript"
 msgstr "FX_Call_EngScript"
 
-#: sdk/script/Effects.xml:533(col)
+#: sdk/script/Effects.xml:537(col)
 #: sdk/scenario/basefunc.xml:22(col)
 #: sdk/definition/lineconnect.xml:23(col)
 #: sdk/definition/cnat.xml:27(col)
@@ -14319,159 +14314,163 @@ msgstr "FX_Call_EngScript"
 msgid "32"
 msgstr "32"
 
-#: sdk/script/Effects.xml:533(col)
+#: sdk/script/Effects.xml:537(col)
 msgid "Energieänderung durch Scriptaufruf <placeholder-1/>()"
 msgstr "Energy value change by script call <placeholder-1/>()"
 
-#: sdk/script/Effects.xml:534(col)
+#: sdk/script/Effects.xml:538(col)
 msgid "FX_Call_EngBlast"
 msgstr "FX_Call_EngBlast"
 
-#: sdk/script/Effects.xml:534(col)
+#: sdk/script/Effects.xml:538(col)
 msgid "33"
 msgstr "33"
 
-#: sdk/script/Effects.xml:534(col)
+#: sdk/script/Effects.xml:538(col)
 msgid "Energieverlust durch Explosion"
 msgstr "Energy loss by explosion"
 
-#: sdk/script/Effects.xml:535(col)
+#: sdk/script/Effects.xml:539(col)
 msgid "FX_Call_EngObjHit"
 msgstr "FX_Call_EngObjHit"
 
-#: sdk/script/Effects.xml:535(col)
+#: sdk/script/Effects.xml:539(col)
 msgid "34"
 msgstr "34"
 
-#: sdk/script/Effects.xml:535(col)
+#: sdk/script/Effects.xml:539(col)
 msgid "Energieverlust durch Objekttreffer"
 msgstr "Energy loss by object hit"
 
-#: sdk/script/Effects.xml:536(col)
+#: sdk/script/Effects.xml:540(col)
 msgid "FX_Call_EngFire"
 msgstr "FX_Call_EngFire"
 
-#: sdk/script/Effects.xml:536(col)
+#: sdk/script/Effects.xml:540(col)
 msgid "35"
 msgstr "35"
 
-#: sdk/script/Effects.xml:536(col)
+#: sdk/script/Effects.xml:540(col)
 msgid "Energieverlust durch Feuer"
 msgstr "Energy loss by fire"
 
-#: sdk/script/Effects.xml:537(col)
+#: sdk/script/Effects.xml:541(col)
 msgid "FX_Call_EngBaseRefresh"
 msgstr "FX_Call_EngBaseRefresh"
 
-#: sdk/script/Effects.xml:537(col)
+#: sdk/script/Effects.xml:541(col)
 msgid "36"
 msgstr "36"
 
-#: sdk/script/Effects.xml:537(col)
+#: sdk/script/Effects.xml:541(col)
 msgid "Energieaufnahme in der Basis - auch Abgabe und Kauf der Basis, wenn die Basis ein Lebewesen ist"
 msgstr "Energy recharge at the home base"
 
-#: sdk/script/Effects.xml:538(col)
+#: sdk/script/Effects.xml:542(col)
 msgid "FX_Call_EngAsphyxiation"
 msgstr "FX_Call_EngAsphyxiation"
 
-#: sdk/script/Effects.xml:538(col)
+#: sdk/script/Effects.xml:542(col)
 msgid "37"
 msgstr "37"
 
-#: sdk/script/Effects.xml:538(col)
+#: sdk/script/Effects.xml:542(col)
 msgid "Energieverlust durch Ersticken"
 msgstr "Energy loss by suffocation"
 
-#: sdk/script/Effects.xml:539(col)
+#: sdk/script/Effects.xml:543(col)
 msgid "FX_Call_EngCorrosion"
 msgstr "FX_Call_EngCorrosion"
 
-#: sdk/script/Effects.xml:539(col)
+#: sdk/script/Effects.xml:543(col)
 msgid "38"
 msgstr "38"
 
-#: sdk/script/Effects.xml:539(col)
+#: sdk/script/Effects.xml:543(col)
 msgid "Energieverlust durch Säure"
 msgstr "Energy loss through acid"
 
-#: sdk/script/Effects.xml:540(col)
+#: sdk/script/Effects.xml:544(col)
 msgid "FX_Call_EngStruct"
 msgstr "FX_Call_EngStruct"
 
-#: sdk/script/Effects.xml:540(col)
+#: sdk/script/Effects.xml:544(col)
 msgid "39"
 msgstr "39"
 
-#: sdk/script/Effects.xml:540(col)
+#: sdk/script/Effects.xml:544(col)
 msgid "Energieverlust von Gebäuden (Nur lebende Gebäude)"
 msgstr "Energy loss of buildings (only \"living\" buildings)"
 
-#: sdk/script/Effects.xml:541(col)
+#: sdk/script/Effects.xml:545(col)
 msgid "FX_Call_EngGetPunched"
 msgstr "FX_Call_EngGetPunched"
 
-#: sdk/script/Effects.xml:541(col)
+#: sdk/script/Effects.xml:545(col)
 msgid "40"
 msgstr "40"
 
-#: sdk/script/Effects.xml:541(col)
+#: sdk/script/Effects.xml:545(col)
 msgid "Energieverlust im Clonk-zu-Clonk-Kampf"
 msgstr "Energy loss through clonk-to-clonk battle"
 
-#: sdk/script/Effects.xml:544(text)
-msgid "Allgemein kann der Ausdruck \"iCause &amp; 32\" verwendet werden, um festzustellen, ob Energie oder Schadenswert verändert wurden. Werte für die Energie sind dabei exakt, das heißt 100.000 entspricht der vollen Energie eines normalen Clonks mit Rang 10 (C4MaxPhysical)."
-msgstr "Generally, the expression \"iCause &amp; 32\" can be used to determine whether the energy or damage values were changed. Energy values are exact, meaning 100,000 is the full energy value of a normal clonk of rank 10 (C4MaxPhysical)."
+#: sdk/script/Effects.xml:548(text)
+msgid "Allgemein kann der Ausdruck \"iCause &amp; 32\" verwendet werden, um festzustellen, ob Energie oder Schadenswert verändert wurden."
+msgstr "Generally, the expression \"iCause &amp; 32\" can be used to determine whether the energy or damage values were changed."
 
-#: sdk/script/Effects.xml:545(text)
+#: sdk/script/Effects.xml:549(text)
+msgid "iCausePlr gibt die Spielernummer des verursachenden Spielers."
+msgstr "iCausePlr is the player number of the player who caused the change."
+
+#: sdk/script/Effects.xml:550(text)
 msgid "Über diesen Callback kann zum Beispiel Schaden an einem Objekt verhindert, abgeschwächt oder verstärkt werden; man kann Lebensschaden zunächst nur von der Zauberenergie abziehen, gleichmäßig auf verbundene Clonks verteilen und so weiter."
 msgstr "Using this callback, damage to an object can be prevented, lessened, or increased. You could deduct magic energy instead, transfer damage to other objects, or something similar."
 
-#: sdk/script/Effects.xml:547(h)
+#: sdk/script/Effects.xml:552(h)
 msgid "Fx*Info"
 msgstr "Fx*Info"
 
-#: sdk/script/Effects.xml:549(text)
+#: sdk/script/Effects.xml:554(text)
 msgid "Wird aufgerufen, wenn via Kontextmenü die Infos eines Objektes, das das Ziel dieses Effektes ist, abgefragt werden."
 msgstr "Is being called when the info of an object is shown via the context menu of the object target."
 
-#: sdk/script/Effects.xml:552(h)
+#: sdk/script/Effects.xml:557(h)
 msgid "Funktions-Referenz"
 msgstr "Function Reference"
 
-#: sdk/script/Effects.xml:553(text)
+#: sdk/script/Effects.xml:558(text)
 msgid "Es gibt folgende Funktionen sind zum Manipulieren und Abfragen von Effekten:"
 msgstr "There are the following functions for manipulation of effects:"
 
-#: sdk/script/Effects.xml:556(li)
+#: sdk/script/Effects.xml:561(li)
 msgid "<placeholder-1/>() - zum Erzeugen von Effekten"
 msgstr "<placeholder-1/>() - for effect creation"
 
-#: sdk/script/Effects.xml:557(li)
+#: sdk/script/Effects.xml:562(li)
 msgid "<placeholder-1/>() - zum Entfernen von Effekten"
 msgstr "<placeholder-1/>() - for effect removal"
 
-#: sdk/script/Effects.xml:558(li)
+#: sdk/script/Effects.xml:563(li)
 msgid "<placeholder-1/>() - zum Abfragen von Effekten und Parametern"
 msgstr "<placeholder-1/>() - to request effect parameters"
 
-#: sdk/script/Effects.xml:559(li)
+#: sdk/script/Effects.xml:564(li)
 msgid "<placeholder-1/>() - um Effekte zu zählen"
 msgstr "<placeholder-1/>() - for effect counting"
 
-#: sdk/script/Effects.xml:560(li)
+#: sdk/script/Effects.xml:565(li)
 msgid "<placeholder-1/>() - für Benutzeraufrufe in Effekten"
 msgstr "<placeholder-1/>() - for user defined calls in effects"
 
-#: sdk/script/Effects.xml:561(li)
+#: sdk/script/Effects.xml:566(li)
 msgid "<placeholder-1/>() - zum Abfragen von Effektvariablen"
 msgstr "<placeholder-1/>() - to request effect variables"
 
-#: sdk/script/Effects.xml:562(li)
+#: sdk/script/Effects.xml:567(li)
 msgid "<placeholder-1/>() - zum Ändern von Effektnamen und -timern (beispielsweise für mehrstufige Effekte)"
 msgstr "<placeholder-1/>() - to modify effect names and timers (e.g. for multi-stage effects)"
 
-#: sdk/script/Effects.xml:563(li)
+#: sdk/script/Effects.xml:568(li)
 msgid "<placeholder-1/>() - um Effekt-Callbacks auszuführen, ohne den Effekt selber zu erstellen"
 msgstr "<placeholder-1/>() - to cause effects callbacks without actually creating an effect"
 
@@ -14565,6 +14564,12 @@ msgstr "When a player leaves a round, the function RemovePlayer is called."
 #: sdk/scenario/script.xml:41(text)
 msgid "Wird eine Runde durch szenariobedingte Spielziele wie Spielereliminierung, Materialabbau, usw. (siehe Scenario.txt <emlink href=\"scenario/scenario.html#SektionGame\">Sektion [Game]</emlink>) oder durch den Scriptbefehl GameOver beendet (also nicht bei abgebrochenen Runden), ruft die Engine im Szenario-Script die Funktion OnGameOver auf."
 msgstr "If a round is ended through the game i.e. by player elimination, fulfillment of all goals as defined in Scenario.txt <emlink href=\"scenario/scenario.html#SektionGame\">section [Game]</emlink>), or by the script command GameOver, the engine will call the function OnGameOver in the scenario script. This will not be called if the round was aborted."
+
+#: sdk/scenario/scenario.xml:5(title)
+#: sdk/scenario/scenario.xml:7(h)
+#: sdk/scenario/index.xml:13(emlink)
+msgid "Scenario.txt"
+msgstr "Scenario.txt"
 
 #: sdk/scenario/scenario.xml:8(text)
 msgid "Über die Scenario.txt lassen sich alle Szenarienvoreinstellungen anpassen. Dazu gehören einfache, dynamische Karten, Spielervorgaben, Spielziele, Wetter, usw. Die meisten dieser Einstellungen lassen sich allerdings bequemer über den Editor in den Rundenoptionen konfigurieren. Für komplexere Startbedingungen wie zum Beispiel Teamschlachten mit automatischen Rejoins, sowie für vorgegebene Handlungsabläufe im Spiel benötigt man ein <emlink href=\"scenario/script.html\">Script</emlink>."
@@ -14662,7 +14667,7 @@ msgid "0 oder 1. Freigabe der Szenarioeigenschaften im Menüsystem für andere S
 msgstr "0 or 1. Allow other players to change scenario properties in the menu system."
 
 #: sdk/scenario/scenario.xml:56(col)
-#: sdk/scenario/Teams.xml:107(col)
+#: sdk/scenario/Teams.xml:113(col)
 msgid "MaxPlayer"
 msgstr "MaxPlayer"
 
@@ -15026,7 +15031,7 @@ msgid "Nachproduktion von Material für die Heimatbasis."
 msgstr "Additional supply of materials to buy."
 
 #: sdk/scenario/scenario.xml:264(col)
-#: sdk/definition/defcore.xml:235(col)
+#: sdk/definition/defcore.xml:236(col)
 msgid "Magic"
 msgstr "Magic"
 
@@ -15790,7 +15795,7 @@ msgid "Sektion [Teams]"
 msgstr "Section [Teams]"
 
 #: sdk/scenario/Teams.xml:16(col)
-#: sdk/scenario/Teams.xml:74(col)
+#: sdk/scenario/Teams.xml:80(col)
 msgid "Standardwert"
 msgstr "Default value"
 
@@ -15868,7 +15873,7 @@ msgid "ScriptPlayerNames"
 msgstr "ScriptPlayerNames"
 
 #: sdk/scenario/Teams.xml:62(col)
-#: sdk/scenario/Teams.xml:102(col)
+#: sdk/scenario/Teams.xml:108(col)
 #: sdk/material/c4m.xml:285(col)
 msgid "String"
 msgstr "String"
@@ -15881,57 +15886,65 @@ msgstr "A list of names separated by \"|\" which are assigned to script players 
 msgid "Computer"
 msgstr "Computer"
 
-#: sdk/scenario/Teams.xml:69(caption)
+#: sdk/scenario/Teams.xml:67(col)
+msgid "RandomTeamCount"
+msgstr "RandomTeamCount"
+
+#: sdk/scenario/Teams.xml:69(col)
+msgid "Gibt an wieviele Teams generiert werden sollen, falls Zufallsteams eingestellt sind. Dies gibt den Standardwert für die Lobby-Einstellung an. Bei 0 werden alle definierten Teams gefüllt oder 2 Teams generiert, falls AutoGenerateTeams aktiviert ist. Ab LC [349]."
+msgstr "Defines how many teams should be generated if random teams are selected. This defines the default value of the related lobby setting. If 0, all defined teams are filled, or 2 teams are generated if AutoGenerateTeams is enabled. Since LC [349]."
+
+#: sdk/scenario/Teams.xml:75(caption)
 msgid "Beliebig viele Sektionen [Team]"
 msgstr "Any number of sections [Team]"
 
-#: sdk/scenario/Teams.xml:77(col)
+#: sdk/scenario/Teams.xml:83(col)
 #: sdk/definition/defcore.xml:20(col)
 msgid "id"
 msgstr "id"
 
-#: sdk/scenario/Teams.xml:79(col)
+#: sdk/scenario/Teams.xml:85(col)
 msgid "Identifikator: Eine eindeutige Zahl größer als 0, die im Szenarienscript zur Identifikation des Teams benutzt werden kann. Normalerweise kann man die Team-IDs einfach mit sequentiell von 1 aufsteigend durchnummerieren."
 msgstr "Identifier: a unique number greater than 0 which can be used to identify a team in scenario scripts. Usually you can simply use ascending numerical values as team identifiers."
 
-#: sdk/scenario/Teams.xml:80(col)
+#: sdk/scenario/Teams.xml:86(col)
 msgid "Muss angegeben werden!"
 msgstr "Must be specified!"
 
-#: sdk/scenario/Teams.xml:84(col)
+#: sdk/scenario/Teams.xml:90(col)
 msgid "Zeichenfole (max 30)"
 msgstr "String (max. 30 chars)"
 
-#: sdk/scenario/Teams.xml:85(col)
+#: sdk/scenario/Teams.xml:91(col)
 msgid "Name für das Team. Es können wie in Scripten auch lokalisierte Zeichenketten wie $TeamRight$ benutzt werden. Siehe <emlink href=\"lang.html#Teamstxt\">Sprachanpassung</emlink>."
 msgstr "Team name. You can also specify localized strings such as $TeamRight$. See <emlink href=\"lang.html#Teamstxt\">Localization</emlink>."
 
-#: sdk/scenario/Teams.xml:89(col)
+#: sdk/scenario/Teams.xml:95(col)
 msgid "PlrStartIndex"
 msgstr "PlrStartIndex"
 
-#: sdk/scenario/Teams.xml:91(col)
+#: sdk/scenario/Teams.xml:97(col)
 msgid "Wenn ungleich 0, wird für alle Mitglieder dieses Teams die entsprechende [PlayerX]-Sektion der <emlink href=\"scenario/scenario.html#SektionenPlayer1Player2Player3Player4\">Scenario.txt</emlink> für die Startparameter verwendet. 0 für automatische Vergabe unabhängig von den Teams."
 msgstr "If not 0, all members of this team use the corresponding [PlayerX] section in <emlink href=\"scenario/scenario.html#SektionenPlayer1Player2Player3Player4\">Scenario.txt</emlink> for starting conditions. If 0, starting conditions are assigned automatically and independent of team membership."
 
-#: sdk/scenario/Teams.xml:95(col)
+#: sdk/scenario/Teams.xml:101(col)
 #: sdk/material/c4m.xml:24(col)
 msgid "Color"
 msgstr "Color"
 
-#: sdk/scenario/Teams.xml:97(col)
+#: sdk/scenario/Teams.xml:103(col)
 msgid "32 Bit RGB-Wert, der die Teamfarbe angibt. Die Teamfarbe wird statt der Spielerfarbe benutzt, wenn TeamColors angegeben ist."
 msgstr "32 bit RGB value of the team color. The team color is used instead of the player color if TeamColors is set."
 
-#: sdk/scenario/Teams.xml:101(col)
+#: sdk/scenario/Teams.xml:107(col)
 msgid "IconSpec"
 msgstr "IconSpec"
 
-#: sdk/scenario/Teams.xml:103(col)
+#: sdk/scenario/Teams.xml:109(col)
 msgid "Spezifikation für das Teamicon für Beitritt im nicht-Netzwerk oder zur Laufzeit."
 msgstr "Specifies a team icon for runtime joins or non-network games."
 
-#: sdk/scenario/Teams.xml:109(col)
+#: sdk/scenario/Teams.xml:115(col)
 msgid "Maximale Anzahl der Spieler, die diesem Team beitreten dürfen. 0 für endlos."
 msgstr "Maximum number of players who may join this team. 0 for infinite."
 
@@ -18332,6 +18345,12 @@ msgstr "TimerCall"
 msgid "Jede Objektdefinition kann im <emlink href=\"definition/defcore.html\">DefCore</emlink> einen TimerCall bestimmen. Der TimerCall ist eine Funktion, die in regelmäßigen Abständen im Objektscript aufgerufen wird. Den Zeitabstand der Aufrufe bestimmt der DefCore-Eintrag Timer. Ohne spezielle Angabe für den Timer gilt der Vorgabewert von 35 Frames (also ca. einmal pro Sekunde)."
 msgstr "Each object definition can define a timer call in its <emlink href=\"definition/defcore.html\">DefCore</emlink>. The TimerCall is a function which will be called at regular intervals. The DefCore entry Timer determines the rate of calls. If no rate is specifed, the default value is 35 frames (roughly once per second)."
 
+#: sdk/definition/script.xml:33(h)
+#: sdk/definition/index.xml:15(emlink)
+#: sdk/definition/actmap.xml:5(title)
+msgid "ActMap.txt"
+msgstr "ActMap.txt"
+
 #: sdk/definition/script.xml:34(text)
 msgid "Ein aktives Objekt kann außerdem in seiner <emlink href=\"definition/actmap.html\">Aktivitätsdefinition</emlink> Script-Aufrufe enthalten. Die als StartCall definierte Funktion wird immer dann aufgerufen wird, wenn die Aktivitätsschleife erneut startet. EndCall wird aufgerufen, wenn die Aktivitätsschleife endet. PhaseCall wird bei jedem Animationsschritt aufgerufen (da dies äußerst rechenintensiv ist, sollte PhaseCall nur bei seltenen und kurzzeitig ausgeführten Aktivitäten eingesetzt werden). Die Frequenz der Aufrufe bestimmt sich aus der Aktivitätsgeschwindigkeit."
 msgstr "An active object can also define activity script calls in its <emlink href=\"definition/actmap.html\">ActMap</emlink>. The defined StartCall is made whenever an action begins (or repeats), an EndCall is made at the end of each activity. PhaseCall is called at each animation phase step and should only be used for very short animations. The call frequency of PhaseCalls is determined by the speed of the animation."
@@ -18410,10 +18429,10 @@ msgid "Construction"
 msgstr "Construction"
 
 #: sdk/definition/script.xml:73(col)
-#: sdk/definition/script.xml:107(col)
-#: sdk/definition/script.xml:114(col)
-#: sdk/definition/script.xml:117(col)
-#: sdk/definition/script.xml:192(col)
+#: sdk/definition/script.xml:109(col)
+#: sdk/definition/script.xml:116(col)
+#: sdk/definition/script.xml:119(col)
+#: sdk/definition/script.xml:194(col)
 msgid "object pByObj"
 msgstr "object pByObj"
 
@@ -18433,592 +18452,586 @@ msgstr "When the object is removed."
 msgid "Hit"
 msgstr "Hit"
 
-#: sdk/definition/script.xml:78(col)
-msgid "Wenn das Objekt bei hoher Geschwindigkeit (&gt;= 15) mit der Landschaft kollidiert oder aufgenommen wird (Collection)"
-msgstr "When the object collides with the landscape or is collected at high velocity (&gt;=15)."
+#: sdk/definition/script.xml:77(col)
+#: sdk/definition/script.xml:82(col)
+#: sdk/definition/script.xml:85(col)
+msgid "int xdir, int ydir"
+msgstr "int xdir, int ydir"
 
-#: sdk/definition/script.xml:80(col)
+#: sdk/definition/script.xml:78(col)
+msgid "Wenn das Objekt bei hoher Geschwindigkeit (&gt;= 15; siehe <emlink href=\"script/fn/OCF_HitSpeed1.html\">OCF_HitSpeed1</emlink>) mit der Landschaft kollidiert oder aufgenommen wird (Collection).<br/> xdir und ydir geben die Aufprallgeschwindigkeit mit Precision 100 (siehe <emlink href=\"script/fn/GetXDir.html\">GetXDir</emlink>) an. Die Parameter werden bei Collection nicht übergeben."
+msgstr "When the object collides with the landscape or is collected at high velocity (&gt;=15; see <emlink href=\"script/fn/OCF_HitSpeed1.html\">OCF_HitSpeed1</emlink>).<br/> xdir and ydir are the impact speed with precision 100 (see <emlink href=\"script/fn/GetXDir.html\">GetXDir</emlink>). The parameters are not passed in case of collection."
+
+#: sdk/definition/script.xml:82(col)
 msgid "Hit2"
 msgstr "Hit2"
 
-#: sdk/definition/script.xml:81(col)
+#: sdk/definition/script.xml:83(col)
 msgid "Wie Hit, bei Geschwindigkeiten &gt;= 20 (siehe <emlink href=\"script/fn/OCF_HitSpeed2.html\">OCF_HitSpeed2</emlink>)."
 msgstr "Like Hit, with speeds &gt;= 20 (see <emlink href=\"script/fn/OCF_HitSpeed2.html\">OCF_HitSpeed2</emlink>)."
 
-#: sdk/definition/script.xml:83(col)
+#: sdk/definition/script.xml:85(col)
 msgid "Hit3"
 msgstr "Hit3"
 
-#: sdk/definition/script.xml:84(col)
+#: sdk/definition/script.xml:86(col)
 msgid "Wie Hit, bei Geschwindigkeiten &gt;= 60 (siehe <emlink href=\"script/fn/OCF_HitSpeed3.html\">OCF_HitSpeed3</emlink>)."
 msgstr "Like Hit, with speeds &gt;= 60 (see <emlink href=\"script/fn/OCF_HitSpeed3.html\">OCF_HitSpeed3</emlink>)."
 
-#: sdk/definition/script.xml:86(col)
+#: sdk/definition/script.xml:88(col)
 msgid "object pTarget, bool fGrab"
 msgstr "object pTarget, bool fGrab"
 
-#: sdk/definition/script.xml:87(col)
+#: sdk/definition/script.xml:89(col)
 msgid "Wenn das Objekt ein anderes Objekt anfasst oder loslässt."
 msgstr "When the object grabs or lets go of another object."
 
-#: sdk/definition/script.xml:88(col)
+#: sdk/definition/script.xml:90(col)
 msgid "Grabbed"
 msgstr "Grabbed"
 
-#: sdk/definition/script.xml:88(col)
+#: sdk/definition/script.xml:90(col)
 msgid "object pByObject, bool fGrab"
 msgstr "object pByObject, bool fGrab"
 
-#: sdk/definition/script.xml:89(col)
+#: sdk/definition/script.xml:91(col)
 msgid "Wenn das Objekt durch ein anderes Objekt angefasst oder losgelassen wird. Ab 4.9.8.4."
 msgstr "When the object is grabbed or let go by another object. Since 4.9.8.4."
 
-#: sdk/definition/script.xml:90(col)
+#: sdk/definition/script.xml:92(col)
 msgid "object pTarget"
 msgstr "object pTarget"
 
-#: sdk/definition/script.xml:91(col)
+#: sdk/definition/script.xml:93(col)
 msgid "Wenn das Objekt ein Objekt aus einem anderen Objekt herausnimmt."
 msgstr "When the object takes another object from a container."
 
-#: sdk/definition/script.xml:93(col)
+#: sdk/definition/script.xml:95(col)
 msgid "Wenn das Objekt ein Objekt in einem anderen Objekt ablegt."
 msgstr "When the object puts another object into a container."
 
-#: sdk/definition/script.xml:94(col)
+#: sdk/definition/script.xml:96(col)
 msgid "Damage"
 msgstr "Damage"
 
-#: sdk/definition/script.xml:94(col)
+#: sdk/definition/script.xml:96(col)
 msgid "int iChange, int iByPlayer"
 msgstr "int iChange, int iByPlayer"
 
-#: sdk/definition/script.xml:95(col)
+#: sdk/definition/script.xml:97(col)
 msgid "Wenn das Objekt beschädigt wird."
 msgstr "When the object is damage."
 
-#: sdk/definition/script.xml:96(col)
+#: sdk/definition/script.xml:98(col)
 msgid "DeepBreath"
 msgstr "DeepBreath"
 
-#: sdk/definition/script.xml:97(col)
+#: sdk/definition/script.xml:99(col)
 msgid "Wenn das Lebewesen nach dem Auftauchen mehr als die Hälfte seiner Atemkapazität auffüllt."
 msgstr "When a living being surfaces after having used up more than half of its breath."
 
-#: sdk/definition/script.xml:99(col)
+#: sdk/definition/script.xml:101(col)
 msgid "Incineration"
 msgstr "Incineration"
 
-#: sdk/definition/script.xml:99(col)
-#: sdk/definition/script.xml:102(col)
+#: sdk/definition/script.xml:101(col)
+#: sdk/definition/script.xml:104(col)
 msgid "int iByPlayer"
 msgstr "int iByPlayer"
 
-#: sdk/definition/script.xml:100(col)
+#: sdk/definition/script.xml:102(col)
 msgid "Wenn das Objekt entzündet wird. Achtung: Bei Objekten, die ihre Definition mit BurnTo ändern, findet der Aufruf im verbrannten Objekt statt!"
 msgstr "When the object is incinerated. Notice: with objects changing their definition via BurnTo, this call is made to the burned version!"
 
-#: sdk/definition/script.xml:102(col)
+#: sdk/definition/script.xml:104(col)
 msgid "IncinerationEx"
 msgstr "IncinerationEx"
 
-#: sdk/definition/script.xml:103(col)
+#: sdk/definition/script.xml:105(col)
 msgid "Wenn das Objekt in einer löschenden Flüssigkeit gesprengt, und damit nicht angezündet wird. Aufruf analog zu Incineration. Ab CE."
 msgstr "When the object is incinerated in and immediately extinguished by a surrounding liquid. Otherwise as Incineration. From CE."
 
-#: sdk/definition/script.xml:105(col)
+#: sdk/definition/script.xml:107(col)
 msgid "Death"
 msgstr "Death"
 
-#: sdk/definition/script.xml:106(col)
+#: sdk/definition/script.xml:108(col)
 msgid "Wenn ein Lebwesen stirbt."
 msgstr "When a living being dies."
 
-#: sdk/definition/script.xml:108(col)
+#: sdk/definition/script.xml:110(col)
 msgid "Aktivierung durch einen Doppelklick auf Graben. Nur getragene Objekte und direkt spielergesteuerte Objekte. Wird aufgerufen, nachdem die interne Befehlskette (z.B. Bäume fällen) abgearbeitet wurde."
 msgstr "Activation by double dig. Only applies to collected items or directly controlled crew objects. Called after internal handling of the double dig command has been completed (e.g. chopping of trees etc.)"
 
-#: sdk/definition/script.xml:111(col)
+#: sdk/definition/script.xml:113(col)
 msgid "Contact_"
 msgstr "Contact_"
 
-#: sdk/definition/script.xml:112(col)
+#: sdk/definition/script.xml:114(col)
 msgid "Wenn das Objekt die Landschaft berührt. Siehe <emlink href=\"definition/cnat.html\">CNAT - Contact Attachment</emlink>."
 msgstr "When the object collides with the landscape. See <emlink href=\"definition/cnat.html\">CNAT - Contact Attachment</emlink>."
 
-#: sdk/definition/script.xml:114(col)
+#: sdk/definition/script.xml:116(col)
 msgid "Control_"
 msgstr "Control_"
 
-#: sdk/definition/script.xml:115(col)
+#: sdk/definition/script.xml:117(col)
 msgid "Wenn das Objekt von außen gesteuert wird. Siehe <a href=\"#Control-Funktionen\">Control-Funktionen</a>."
 msgstr "When the object is controlled from the outside. See <a href=\"#Control-Funktionen\">Control Functions</a>."
 
-#: sdk/definition/script.xml:117(col)
+#: sdk/definition/script.xml:119(col)
 msgid "Contained_"
 msgstr "Contained_"
 
-#: sdk/definition/script.xml:118(col)
+#: sdk/definition/script.xml:120(col)
 msgid "Wenn das Objekt von innen gesteuert wird. Siehe <a href=\"#Control-Funktionen\">Control-Funktionen</a>."
 msgstr "When the object is controlled from the inside. See <a href=\"#Control-Funktionen\">Control Functions</a>."
 
-#: sdk/definition/script.xml:119(col)
+#: sdk/definition/script.xml:121(col)
 msgid "ControlCommand"
 msgstr "ControlCommand"
 
-#: sdk/definition/script.xml:119(col)
+#: sdk/definition/script.xml:121(col)
 msgid "string strCommand, object pTarget, int iTx, int iTy, object pTarget2, int iData, object pCmdObj"
 msgstr "string strCommand, object pTarget, int iTx, int iTy, object pTarget2, int iData, object pCmdObj"
 
-#: sdk/definition/script.xml:120(col)
+#: sdk/definition/script.xml:122(col)
 msgid "Wenn dem Objekt durch den Spieler ein selbständig auszuführender Befehl gegeben wurde. Siehe <a href=\"#Control-Funktionen\">Control-Funktionen</a>."
 msgstr "When the object has received a command to be independently executed. See <a href=\"#Control-Funktionen\">Control functions</a>."
 
-#: sdk/definition/script.xml:122(col)
+#: sdk/definition/script.xml:124(col)
 msgid "ControlCommandFinished"
 msgstr "ControlCommandFinished"
 
-#: sdk/definition/script.xml:122(col)
+#: sdk/definition/script.xml:124(col)
 msgid "string strCommand, object pTarget, int iTx, int iTy, object pTarget2, C4Value Data"
 msgstr "string strCommand, object pTarget, int iTx, int iTy, object pTarget2, C4Value Data"
 
-#: sdk/definition/script.xml:123(col)
+#: sdk/definition/script.xml:125(col)
 msgid "Wenn das Objekt einen selbständigen auszuführenden Befehl vollendet hat oder die Ausführung des Befehls fehlgeschlagen ist."
 msgstr "When the object has completed a command or execution of a command has failed."
 
-#: sdk/definition/script.xml:125(col)
+#: sdk/definition/script.xml:127(col)
 msgid "ControlTransfer"
 msgstr "ControlTransfer"
 
-#: sdk/definition/script.xml:125(col)
+#: sdk/definition/script.xml:127(col)
 msgid "object pObj, int iTx, int iTy"
 msgstr "object pObj, int iTx, int iTy"
 
-#: sdk/definition/script.xml:126(col)
-msgid "Wenn ein durch die Wegfindungsroutine gesteuertes Objekt (pObj) die Transferzone dieses Objekts zum Zielpunkt iTx/iTy passieren möchte. Die Transferfunktion kann dem Objekt entsprechende Kommandos geben und sollte bei erfolgreicher Bearbeitung TRUE zurückliefern. Siehe auch <emlink href=\"script/fn/SetTransferZone.html\">SetTransferZone</emlink>()."
+#: sdk/definition/script.xml:128(col)
+msgid "Wenn ein durch die Wegfindungsroutine gesteuertes Objekt (pObj) die Transferzone dieses Objekts zum Zielpunkt iTx/iTy passieren möchte. Die Transferfunktion kann dem Objekt entsprechende Kommandos geben und sollte bei erfolgreicher Bearbeitung true zurückliefern. Siehe auch <emlink href=\"script/fn/SetTransferZone.html\">SetTransferZone</emlink>()."
 msgstr "When an object (pObj) using the internal pathfinding algorithm is trying to pass the transfer zone of this object on its way to point iTx/iTy. The transfer function can then help the object along by giving special script commands and returning true. Also see <emlink href=\"script/fn/SetTransferZone.html\">SetTransferZone</emlink>()."
 
-#: sdk/definition/script.xml:130(col)
+#: sdk/definition/script.xml:132(col)
 msgid "UpdateTransferZone"
 msgstr "UpdateTransferZone"
 
-#: sdk/definition/script.xml:131(col)
+#: sdk/definition/script.xml:133(col)
 msgid "Wenn ein Objekt geladen oder synchronisiert wird. Objekte mit einer TransferZone sollten diese bei jedem Aufruf von UpdateTransferZone neu setzen. Siehe auch <emlink href=\"script/fn/SetTransferZone.html\">SetTransferZone</emlink>()."
 msgstr "When an object is loaded from a savegame or network synchronization is performed. Objects with a transfer zone should reset the zone in this call. Also see <emlink href=\"script/fn/SetTransferZone.html\">SetTransferZone</emlink>()."
 
-#: sdk/definition/script.xml:134(col)
+#: sdk/definition/script.xml:136(col)
 msgid "MenuQueryCancel"
 msgstr "MenuQueryCancel"
 
-#: sdk/definition/script.xml:134(col)
+#: sdk/definition/script.xml:136(col)
 msgid "int iSelection, object pMenuObj"
 msgstr "int iSelection, object pMenuObj"
 
-#: sdk/definition/script.xml:135(col)
-msgid "Wird in einem Objekt aufgerufen, wenn der Spieler ein benutzerdefiniertes Menu schließen will. Bei Rückgabewert TRUE bleibt das Menu geöffnet."
+#: sdk/definition/script.xml:137(col)
+msgid "Wird in einem Objekt aufgerufen, wenn der Spieler ein benutzerdefiniertes Menu schließen will. Bei Rückgabewert true bleibt das Menu geöffnet."
 msgstr "When the player wants to close a user defined object menu. Return value true will keep the menu open."
 
-#: sdk/definition/script.xml:137(col)
+#: sdk/definition/script.xml:139(col)
 msgid "IsFulfilled"
 msgstr "IsFulfilled"
 
-#: sdk/definition/script.xml:138(col)
-msgid "Nur bei Spielziel-Objekten. Bei Rückgabewert TRUE ist das Spielziel erfüllt."
+#: sdk/definition/script.xml:140(col)
+msgid "Nur bei Spielziel-Objekten. Bei Rückgabewert true ist das Spielziel erfüllt."
 msgstr "Only in game goal objects. A return value true indicates that this goal is fulfilled."
 
-#: sdk/definition/script.xml:139(col)
+#: sdk/definition/script.xml:141(col)
 msgid "ControlContents"
 msgstr "ControlContents"
 
-#: sdk/definition/script.xml:139(col)
+#: sdk/definition/script.xml:141(col)
 msgid "id idTarget"
 msgstr "id idTarget"
 
-#: sdk/definition/script.xml:140(col)
+#: sdk/definition/script.xml:142(col)
 msgid "Wenn ein neues Inhaltsobjekt angewählt wird. Siehe <a href=\"#Control-Funktionen\">Control-Funktionen</a>."
 msgstr "When a new inventory object is selected. See <a href=\"#Control-Funktionen\">Control Functions</a>."
 
-#: sdk/definition/script.xml:141(col)
+#: sdk/definition/script.xml:143(col)
 msgid "Selection"
 msgstr "Selection"
 
-#: sdk/definition/script.xml:141(col)
-#: sdk/definition/script.xml:185(col)
-#: sdk/definition/script.xml:190(col)
+#: sdk/definition/script.xml:143(col)
+#: sdk/definition/script.xml:187(col)
+#: sdk/definition/script.xml:192(col)
 msgid "object pContainer"
 msgstr "object pContainer"
 
-#: sdk/definition/script.xml:142(col)
+#: sdk/definition/script.xml:144(col)
 msgid "Wenn das Objekt durch einen Inventarwechsel ausgewählt wird. Wenn die Funktion abgefangen wird, sollte ein eigener Auswahlsound abgespielt werden."
 msgstr "When the object is selected in an inventory change. If you are processing this event, the function should play its own selection sound."
 
-#: sdk/definition/script.xml:144(col)
+#: sdk/definition/script.xml:146(col)
 msgid "CatchBlow"
 msgstr "CatchBlow"
 
-#: sdk/definition/script.xml:144(col)
+#: sdk/definition/script.xml:146(col)
 msgid "int iLevel, object pBy"
 msgstr "int iLevel, object pBy"
 
-#: sdk/definition/script.xml:145(col)
+#: sdk/definition/script.xml:147(col)
 msgid "Wenn das Objekt von einem anderen Objekt geschlagen oder getroffen wird."
 msgstr "When the object is hit or punched by another object."
 
-#: sdk/definition/script.xml:146(col)
+#: sdk/definition/script.xml:148(col)
 msgid "QueryCatchBlow"
 msgstr "QueryCatchBlow"
 
-#: sdk/definition/script.xml:146(col)
+#: sdk/definition/script.xml:148(col)
 msgid "object pBy"
 msgstr "object pBy"
 
-#: sdk/definition/script.xml:147(col)
-msgid "Bevor das Objekt von einem anderen Objekt geschlagen oder getroffen wird. Wenn QueryCatchBlow TRUE zurückgibt, können damit physikalische Treffer abgefangen werden."
+#: sdk/definition/script.xml:149(col)
+msgid "Bevor das Objekt von einem anderen Objekt geschlagen oder getroffen wird. Wenn QueryCatchBlow true zurückgibt, können damit physikalische Treffer abgefangen werden."
 msgstr "Called before the object is hit or punched by another object. By returning true, QueryCatchBlow can reject physical blows."
 
-#: sdk/definition/script.xml:149(col)
+#: sdk/definition/script.xml:151(col)
 msgid "LineBreak"
 msgstr "LineBreak"
 
-#: sdk/definition/script.xml:149(col)
+#: sdk/definition/script.xml:151(col)
 msgid "int iCause"
 msgstr "int iCause"
 
-#: sdk/definition/script.xml:150(col)
+#: sdk/definition/script.xml:152(col)
 msgid "Wenn ein Leitungsobjekt unterbrochen wird. iCause: 0 durch Bewegung, 1 durch fehlendes oder unvollständiges Zielobjekt."
 msgstr "When a line object is broken. iCause: 0 by movement, 1 because of a damaged or destroyed target object."
 
-#: sdk/definition/script.xml:151(col)
+#: sdk/definition/script.xml:153(col)
 msgid "BuildNeedsMaterial"
 msgstr "BuildNeedsMaterial"
 
-#: sdk/definition/script.xml:151(col)
+#: sdk/definition/script.xml:153(col)
 msgid "id idMaterial, int iAmount"
 msgstr "id idMaterial, int iAmount"
 
-#: sdk/definition/script.xml:152(col)
-msgid "Wenn das Objekt ein anderes Objekt baut und noch Baumaterial benötigt wird. Parameter sind Typ und Menge des ersten noch benötigten Baustoffs. Durch Rückgabewert TRUE kann die Textmeldung über fehlendes Material abgefangen werden."
+#: sdk/definition/script.xml:154(col)
+msgid "Wenn das Objekt ein anderes Objekt baut und noch Baumaterial benötigt wird. Parameter sind Typ und Menge des ersten noch benötigten Baustoffs. Durch Rückgabewert true kann die Textmeldung über fehlendes Material abgefangen werden."
 msgstr "When the object is building another object and building material is required. The parameters are the type and amount of the first needed material. If this function returns true, no material message is displayed above the object."
 
-#: sdk/definition/script.xml:155(col)
+#: sdk/definition/script.xml:157(col)
 msgid "AttachTargetLost"
 msgstr "AttachTargetLost"
 
-#: sdk/definition/script.xml:156(col)
+#: sdk/definition/script.xml:158(col)
 msgid "Wenn das Objekt eine ATTACH-Aktivität besessen hatte, aber das Actiontarget verloren hat. Die Aktivität ist beim Aufruf bereits zurückgesetzt."
 msgstr "When the object is in an ATTACH action and has lost its action target. At this time, the object's action has already been reset."
 
-#: sdk/definition/script.xml:158(col)
+#: sdk/definition/script.xml:160(col)
 msgid "CrewSelection"
 msgstr "CrewSelection"
 
-#: sdk/definition/script.xml:158(col)
+#: sdk/definition/script.xml:160(col)
 msgid "bool fDeselect, bool fCursorOnly"
 msgstr "bool fDeselect, bool fCursorOnly"
 
-#: sdk/definition/script.xml:159(col)
+#: sdk/definition/script.xml:161(col)
 msgid "Bei Änderung der Crewauswahl. fCursorOnly gibt an, ob nur das Mannschaftsmitglied angewählt wurde, welches den Cursor hat."
 msgstr "When crew selection is changed. fCursorOnly specifies whether only that crew member has been selected which is also the cursor."
 
-#: sdk/definition/script.xml:160(col)
+#: sdk/definition/script.xml:162(col)
 msgid "GetObject2Drop"
 msgstr "GetObject2Drop"
 
-#: sdk/definition/script.xml:160(col)
+#: sdk/definition/script.xml:162(col)
 msgid "object pForCollectionOfObj"
 msgstr "object pForCollectionOfObj"
 
-#: sdk/definition/script.xml:161(col)
+#: sdk/definition/script.xml:163(col)
 msgid "Zur Ermittlung des am wenigsten gebrauchten Objekts, wenn der Clonk versucht, ein neues aufzunehmen. Die Funktion sollte das abzulegende Objekt zurückliefern, oder 0 für keins."
 msgstr "Called to determine the least needed inventory object when a clonk tries to collect a new object and his inventory is full. The function should return the object to be dropped to gain space, or 0 if none."
 
-#: sdk/definition/script.xml:164(col)
+#: sdk/definition/script.xml:166(col)
 msgid "OnMenuSelection"
 msgstr "OnMenuSelection"
 
-#: sdk/definition/script.xml:164(col)
+#: sdk/definition/script.xml:166(col)
 msgid "int iItemIndex, object pMenuObject"
 msgstr "int iItemIndex, object pMenuObject"
 
-#: sdk/definition/script.xml:165(col)
+#: sdk/definition/script.xml:167(col)
 msgid "Wenn ein Menueintrag ausgewählt wurde."
 msgstr "When an object menu entry is selected."
 
-#: sdk/definition/script.xml:166(col)
+#: sdk/definition/script.xml:168(col)
 msgid "CalcValue"
 msgstr "CalcValue"
 
-#: sdk/definition/script.xml:166(col)
 #: sdk/definition/script.xml:168(col)
+#: sdk/definition/script.xml:170(col)
 msgid "object pInBase, int iForPlayer"
 msgstr "object pInBase, int iForPlayer"
 
-#: sdk/definition/script.xml:167(col)
+#: sdk/definition/script.xml:169(col)
 msgid "Ermittelt den Wert eines Objekts. Siehe auch <emlink href=\"script/fn/GetValue.html\">GetValue</emlink>()."
 msgstr "Calculates the value of an object. Also see <emlink href=\"script/fn/GetValue.html\">GetValue</emlink>()."
 
-#: sdk/definition/script.xml:168(col)
+#: sdk/definition/script.xml:170(col)
 msgid "CalcDefValue"
 msgstr "CalcDefValue"
 
-#: sdk/definition/script.xml:169(col)
+#: sdk/definition/script.xml:171(col)
 msgid "Ermittelt den Wert eines (noch nicht gekauften) Objekttyps. Siehe auch <emlink href=\"script/fn/GetValue.html\">GetValue</emlink>()."
 msgstr "Calculates the value of an object type available to buy. Also see <emlink href=\"script/fn/GetValue.html\">GetValue</emlink>()."
 
-#: sdk/definition/script.xml:170(col)
+#: sdk/definition/script.xml:172(col)
 msgid "CalcBuyValue"
 msgstr "CalcBuyValue"
 
-#: sdk/definition/script.xml:170(col)
+#: sdk/definition/script.xml:172(col)
 msgid "id idItem, int iDefValue"
 msgstr "id idItem, int iDefValue"
 
-#: sdk/definition/script.xml:171(col)
+#: sdk/definition/script.xml:173(col)
 msgid "Rückgabewert ist Einkaufspreis des Objekttyps."
 msgstr "Returns the buying price of the object type."
 
-#: sdk/definition/script.xml:172(col)
+#: sdk/definition/script.xml:174(col)
 msgid "CalcSellValue"
 msgstr "CalcSellValue"
 
-#: sdk/definition/script.xml:172(col)
+#: sdk/definition/script.xml:174(col)
 msgid "object pObj, int iObjValue"
 msgstr "object pObj, int iObjValue"
 
-#: sdk/definition/script.xml:173(col)
+#: sdk/definition/script.xml:175(col)
 msgid "Rückgabewert ist Verkaufspreis des Objekttyps."
 msgstr "Returns the selling price of the object type."
 
-#: sdk/definition/script.xml:174(col)
+#: sdk/definition/script.xml:176(col)
 #: sdk/definition/defcore.xml:194(col)
 msgid "LiftTop"
 msgstr "LiftTop"
 
-#: sdk/definition/script.xml:175(col)
+#: sdk/definition/script.xml:177(col)
 msgid "Wenn das Objekt bei einer LIFT-Aktivität ein anderes Objekt höher angehoben hat als in der DefCore angegeben."
 msgstr "When an object with LIFT action lifts its action target to the height specified in its DefCore or above."
 
-#: sdk/definition/script.xml:176(col)
+#: sdk/definition/script.xml:178(col)
 msgid "Stuck"
 msgstr "Stuck"
 
-#: sdk/definition/script.xml:177(col)
+#: sdk/definition/script.xml:179(col)
 msgid "Wird aufgerufen, wenn das Ziel einer PUSH- oder LIFT-Aktivität festhängt."
 msgstr "When the action target of the object's PUSH or LIFT action is stuck."
 
-#: sdk/definition/script.xml:178(col)
+#: sdk/definition/script.xml:180(col)
 msgid "GrabLost"
 msgstr "GrabLost"
 
-#: sdk/definition/script.xml:179(col)
+#: sdk/definition/script.xml:181(col)
 msgid "Wenn das Ziel einer PUSH- oder PULL-Aktion verloren geht."
 msgstr "When the action target of the object's PUSH or PULL action is lost."
 
-#: sdk/definition/script.xml:180(col)
+#: sdk/definition/script.xml:182(col)
 #: sdk/definition/defcore.xml:75(col)
 msgid "Collection"
 msgstr "Collection"
 
-#: sdk/definition/script.xml:180(col)
+#: sdk/definition/script.xml:182(col)
 msgid "object pObj, bool fPut"
 msgstr "object pObj, bool fPut"
 
-#: sdk/definition/script.xml:181(col)
+#: sdk/definition/script.xml:183(col)
 msgid "Wenn das Objekt ein anderes Objekt (pObj) aufgenommen hat (nur durch einsammeln oder anfassen und ablegen)."
 msgstr "When the object has collected another object (by ingame collection or grabbing and getting)."
 
-#: sdk/definition/script.xml:182(col)
+#: sdk/definition/script.xml:184(col)
 msgid "Collection2"
 msgstr "Collection2"
 
-#: sdk/definition/script.xml:182(col)
-#: sdk/definition/script.xml:187(col)
-#: sdk/definition/script.xml:215(col)
+#: sdk/definition/script.xml:184(col)
+#: sdk/definition/script.xml:189(col)
+#: sdk/definition/script.xml:217(col)
 msgid "object pObj"
 msgstr "object pObj"
 
-#: sdk/definition/script.xml:183(col)
+#: sdk/definition/script.xml:185(col)
 msgid "Wenn das Objekt ein anderes Objekt (pObj) aufgenommen hat (immer, auch durch Scriptbefehl Enter)"
 msgstr "When the object has collected another object (in all cases, even in script controlled collection or entering)."
 
-#: sdk/definition/script.xml:185(col)
+#: sdk/definition/script.xml:187(col)
 msgid "Departure"
 msgstr "Departure"
 
-#: sdk/definition/script.xml:186(col)
+#: sdk/definition/script.xml:188(col)
 msgid "Wenn das Objekt ein anderes Objekt (pContainer) verlassen hat."
 msgstr "When this object has left another object (pContainer)."
 
-#: sdk/definition/script.xml:187(col)
+#: sdk/definition/script.xml:189(col)
 msgid "Ejection"
 msgstr "Ejection"
 
-#: sdk/definition/script.xml:188(col)
+#: sdk/definition/script.xml:190(col)
 msgid "Wenn ein Objekt (pObj) dieses Objekt verlassen hat (auch durch Scriptbefehl Exit)."
 msgstr "When another object has left the contents of this object (also see script command Exit)."
 
-#: sdk/definition/script.xml:190(col)
+#: sdk/definition/script.xml:192(col)
 #: sdk/definition/defcore.xml:73(col)
 msgid "Entrance"
 msgstr "Entrance"
 
-#: sdk/definition/script.xml:191(col)
+#: sdk/definition/script.xml:193(col)
 msgid "Wenn das Objekt ein anderes Objekt (pContainer) betreten hat."
 msgstr "When the object has enteres another object (pContainer)."
 
-#: sdk/definition/script.xml:192(col)
+#: sdk/definition/script.xml:194(col)
 msgid "ActivateEntrance"
 msgstr "ActivateEntrance"
 
-#: sdk/definition/script.xml:193(col)
+#: sdk/definition/script.xml:195(col)
 msgid "Wenn ein anderes Objekt versucht, das Objekt durch Entrance zu betreten."
 msgstr "When another object is trying to enter this object through the entrance."
 
-#: sdk/definition/script.xml:194(col)
+#: sdk/definition/script.xml:196(col)
 msgid "RejectCollect"
 msgstr "RejectCollect"
 
-#: sdk/definition/script.xml:194(col)
+#: sdk/definition/script.xml:196(col)
 msgid "id idObj, object pObj"
 msgstr "id idObj, object pObj"
 
-#: sdk/definition/script.xml:195(col)
-msgid "Wird vor Collection aufgerufen. Wenn RejectCollect TRUE zurückgibt, kann damit die Aufnahme des anderen Objekts verhindert werden."
+#: sdk/definition/script.xml:197(col)
+msgid "Wird vor Collection aufgerufen. Wenn RejectCollect true zurückgibt, kann damit die Aufnahme des anderen Objekts verhindert werden."
 msgstr "Called before Collection. If RejectCollect returns true, the collection of the other object is prevented."
 
-#: sdk/definition/script.xml:197(col)
+#: sdk/definition/script.xml:199(col)
 msgid "RejectEntrance"
 msgstr "RejectEntrance"
 
-#: sdk/definition/script.xml:197(col)
+#: sdk/definition/script.xml:199(col)
 msgid "object pIntoObj"
 msgstr "object pIntoObj"
 
-#: sdk/definition/script.xml:198(col)
-msgid "Wird vor Entrance aufgerufen. Wenn RejectEntrance TRUE zurückgibt, kann damit das Hineinversetzen in das andere Objekt verhindert werden."
+#: sdk/definition/script.xml:200(col)
+msgid "Wird vor Entrance aufgerufen. Wenn RejectEntrance true zurückgibt, kann damit das Hineinversetzen in das andere Objekt verhindert werden."
 msgstr "Called before Entrance. If RejectEntrance returns true, then entrance of the other object is prevented."
 
-#: sdk/definition/script.xml:200(col)
+#: sdk/definition/script.xml:202(col)
 msgid "InitializePlayer"
 msgstr "InitializePlayer"
 
-#: sdk/definition/script.xml:200(col)
+#: sdk/definition/script.xml:202(col)
 msgid "int iPlr, int iX, int iY, object pBase, int iTeam, id idExtra"
 msgstr "int iPlr, int iX, int iY, object pBase, int iTeam, id idExtra"
 
-#: sdk/definition/script.xml:201(col)
+#: sdk/definition/script.xml:203(col)
 msgid "Aufruf in Spielziel, -regel und Umweltobjekten nach der Platzierung eines beitretenden Spielers, und vor dem entsprechenden Aufruf im Szenarioscript. Durch Angabe einer ID lassen sich Scriptspieler-Typen unterscheiden. Beispielsweise könnte ein Szenario dynamisch Alien- oder Clonkgegner anbieten."
 msgstr "Callback in goals, rules and environment objects after placing a joined player and before calling the callback in the scenario script. By specifying an ID it is possible to distinguish different types of script players. For example a scenario could dynamically provide alien or clonk enemies."
 
-#: sdk/definition/script.xml:204(col)
+#: sdk/definition/script.xml:206(col)
 msgid "SellTo"
 msgstr "SellTo"
 
-#: sdk/definition/script.xml:204(col)
-#: sdk/definition/script.xml:207(col)
+#: sdk/definition/script.xml:206(col)
+#: sdk/definition/script.xml:209(col)
 msgid "int iByPlr"
 msgstr "int iByPlr"
 
-#: sdk/definition/script.xml:205(col)
+#: sdk/definition/script.xml:207(col)
 msgid "Wenn das Objekt verkauft wird. Rückgabewert 0 oder die ID des Objekts, welches dem Heimatbasismaterial hinzugefügt wird."
 msgstr "When the object is sold. Should return 0 or the id of the object type which is actually added to the player's homebase material."
 
-#: sdk/definition/script.xml:207(col)
+#: sdk/definition/script.xml:209(col)
 msgid "Sale"
 msgstr "Sale"
 
-#: sdk/definition/script.xml:208(col)
+#: sdk/definition/script.xml:210(col)
 msgid "Wenn das Objekt verkauft wird. Ab CE."
 msgstr "When the object is sold."
 
-#: sdk/definition/script.xml:209(col)
+#: sdk/definition/script.xml:211(col)
 msgid "Purchase"
 msgstr "Purchase"
 
-#: sdk/definition/script.xml:209(col)
+#: sdk/definition/script.xml:211(col)
 msgid "int iByPlr, object BuyObject"
 msgstr "int iByPlr, object BuyObject"
 
-#: sdk/definition/script.xml:210(col)
+#: sdk/definition/script.xml:212(col)
 msgid "Wenn das Objekt gekauft wird. Ab CE."
 msgstr "When the object is bought."
 
-#: sdk/definition/script.xml:211(col)
+#: sdk/definition/script.xml:213(col)
 msgid "Recruitment"
 msgstr "Recruitment"
 
-#: sdk/definition/script.xml:211(col)
+#: sdk/definition/script.xml:213(col)
 #: sdk/definition/script.xml:223(col)
 #: sdk/definition/script.xml:225(col)
 msgid "int iPlr"
 msgstr "int iPlr"
 
-#: sdk/definition/script.xml:212(col)
+#: sdk/definition/script.xml:214(col)
 msgid "Wenn das Objekt der Crew eines Spielers hinzugefügt wird. Ab CE 4.95.2."
 msgstr "When the objet is added to the crew of a player."
 
-#: sdk/definition/script.xml:213(col)
+#: sdk/definition/script.xml:215(col)
 msgid "RejectTeamSwitch"
 msgstr "RejectTeamSwitch"
 
-#: sdk/definition/script.xml:213(col)
+#: sdk/definition/script.xml:215(col)
 msgid "int iPlr, int iNewTeam"
 msgstr "int iPlr, int iNewTeam"
 
-#: sdk/definition/script.xml:214(col)
-msgid "Aufruf in Spielziel, -regel und Umweltobjekten und dem Szenarioscript. Wenn RejectTeamSwitch TRUE zurückgibt, kann der Teamwechsel eines Spielers (durch <placeholder-1/>) verhindert werden. Ab 4.9.6.0 CR."
+#: sdk/definition/script.xml:216(col)
+msgid "Aufruf in Spielziel, -regel und Umweltobjekten und dem Szenarioscript. Wenn RejectTeamSwitch true zurückgibt, kann der Teamwechsel eines Spielers (durch <placeholder-1/>) verhindert werden. Ab 4.9.6.0 CR."
 msgstr "Callback in game goal, rule, and environment objects and in the scenario script. If RejectTeamSwitch returns true, the team switch of a player can be prevented (see <placeholder-1/>). From 4.9.6.0 CR."
 
-#: sdk/definition/script.xml:215(col)
+#: sdk/definition/script.xml:217(col)
 msgid "ContentsDestruction"
 msgstr "ContentsDestruction"
 
-#: sdk/definition/script.xml:216(col)
+#: sdk/definition/script.xml:218(col)
 msgid "Die Funktion wird im Container von pObj aufgerufen, wenn dieses gelöscht wird."
 msgstr "This function is called in the container of pObj when pObj is removed."
 
-#: sdk/definition/script.xml:217(col)
+#: sdk/definition/script.xml:219(col)
 msgid "DoMagicEnergy"
 msgstr "DoMagicEnergy"
 
-#: sdk/definition/script.xml:217(col)
+#: sdk/definition/script.xml:219(col)
 msgid "int iChange, object pObj, bool fAllowPartial"
 msgstr "int iChange, object pObj, bool fAllowPartial"
 
-#: sdk/definition/script.xml:218(col)
+#: sdk/definition/script.xml:220(col)
 msgid "Wird bei jeder Veränderung der Mana aufgerufen."
 msgstr "Is called whenever the magic energy changes."
 
-#: sdk/definition/script.xml:219(col)
+#: sdk/definition/script.xml:221(col)
 msgid "array GetCustomComponents"
 msgstr "array GetCustomComponents"
 
-#: sdk/definition/script.xml:219(col)
+#: sdk/definition/script.xml:221(col)
 msgid "object pBuilder"
 msgstr "object pBuilder"
 
-#: sdk/definition/script.xml:220(col)
+#: sdk/definition/script.xml:222(col)
 msgid "Callback um Komponenten eines Objektes zu setzen. Wird in jedem Menü aufgerufen, dass das Objekt bzw. ID hat. Wird auch beim Bauen eines Objektes aufgerufen. pBuilder ist das Menü-aufrufende-Objekt bzw. der Erbauer. Rückgabewert muss ein Array mit ID/IDs sein. Siehe auch GetComponent, SetComponent, Split2Components."
 msgstr "Callback for setting components of an object. It is called by menus containing menu entries with this ID, as well as when constructing an object. pBuilder is the menu object or builder. The function must return an array of IDs. See also GetComponent, SetComponent, Split2Components."
-
-#: sdk/definition/script.xml:221(col)
-msgid "Hit / Hit2 / Hit 3"
-msgstr "Hit / Hit2 / Hit 3"
-
-#: sdk/definition/script.xml:221(col)
-msgid "int xdir, int ydir"
-msgstr "int xdir, int ydir"
-
-#: sdk/definition/script.xml:222(col)
-msgid "Wird aufgerufen, wenn das Objekt auf etwas Solides aufschlägt. Die Parameter werden bei Collection nicht übergeben."
-msgstr "Being called when an object hits something solid. The parameters are not passed on Collection."
 
 #: sdk/definition/script.xml:223(col)
 msgid "IsFullfilledforPlr"
 msgstr "IsFullfilledforPlr"
 
 #: sdk/definition/script.xml:224(col)
-msgid "Wenn die Regel \"Wettstreit\" (EN=Rivalry; ID=RVLR) aktiviert ist, wird IsFulfilledforPlr aufgerufen, ansonsten IsFulfilled. Nur bei Spielziel-Objekten. Bei Rückgabewert TRUE ist das Spielziel für ir erfüllt."
+msgid "Wenn die Regel \"Wettstreit\" (EN=Rivalry; ID=RVLR) aktiviert ist, wird IsFulfilledforPlr aufgerufen, ansonsten IsFulfilled. Nur bei Spielziel-Objekten. Bei Rückgabewert true ist das Spielziel für iPlr erfüllt."
 msgstr "If the rule \"Rivalry\" (RVLR) is enabled, IsFulfilledforPlr is being called, otherwise IsFulfilled. Only for goal objects. The function should return true if the goal is fulfilled for iPlr."
 
 #: sdk/definition/script.xml:225(col)
@@ -20018,7 +20031,7 @@ msgid "0 oder 1. Legt fest, ob das Objekt gefällt werden kann."
 msgstr "0 or 1. Determines whether the object can be chopped."
 
 #: sdk/definition/defcore.xml:123(col)
-#: sdk/definition/defcore.xml:237(col)
+#: sdk/definition/defcore.xml:238(col)
 msgid "Float"
 msgstr "Float"
 
@@ -20315,143 +20328,151 @@ msgstr "HideHUDElements"
 msgid "Blendet die angegebenen HUD-Elemente des Objekts aus wenn es als Cursor angewählt ist. Mögliche kombinierbare Werte: Portrait, Captain (der Kapitänsstern), Name, Rank, RankImage, All; Ab LC [346]."
 msgstr "Hides the specified object's HUD elements that are visible while the object is the player's cursor. Possible combinable values: Portrait, Captain (the captain's star), Name, Rank, RankImage, All; Since LC [346]."
 
-#: sdk/definition/defcore.xml:211(caption)
+#: sdk/definition/defcore.xml:207(col)
+msgid "BaseAutoSell"
+msgstr "BaseAutoSell"
+
+#: sdk/definition/defcore.xml:207(col)
+msgid "Falls true werden Objekte dieser Definition automatisch verkauft sobald sie eine Basis betreten (auch indirekt über das Inventar anderer Objekte), wie es bei Goldklumpen üblich. Standardwert ist false (true falls die id GOLD ist). Ab LC [346]."
+msgstr "If true, objects of this definition are sold automatically upon entering a home base (also indirectly within the inventory of other objects), as is the case for gold chunks. Default is false (true if the id is GOLD). Since LC [346]."
+
+#: sdk/definition/defcore.xml:212(caption)
 msgid "Sektion [Physical]"
 msgstr "Section [Physical]"
 
-#: sdk/definition/defcore.xml:214(col)
+#: sdk/definition/defcore.xml:215(col)
 msgid "0-100000. Maximale Energie bzw. Lebensenergie."
 msgstr "0-100000. Maximum energy (electric or life)."
 
-#: sdk/definition/defcore.xml:215(col)
+#: sdk/definition/defcore.xml:216(col)
 msgid "Breath"
 msgstr "Breath"
 
-#: sdk/definition/defcore.xml:216(col)
+#: sdk/definition/defcore.xml:217(col)
 msgid "0-100000. Maximaler Atem."
 msgstr "0-100000. Maximum breath."
 
-#: sdk/definition/defcore.xml:217(col)
+#: sdk/definition/defcore.xml:218(col)
 msgid "Walk"
 msgstr "Walk"
 
-#: sdk/definition/defcore.xml:218(col)
+#: sdk/definition/defcore.xml:219(col)
 msgid "0-100000. Laufgeschwindigkeit."
 msgstr "0-100000. Walking speed."
 
-#: sdk/definition/defcore.xml:220(col)
+#: sdk/definition/defcore.xml:221(col)
 msgid "0-100000. Sprungkraft."
 msgstr "0-100000. Jump force."
 
-#: sdk/definition/defcore.xml:221(col)
+#: sdk/definition/defcore.xml:222(col)
 msgid "Scale"
 msgstr "Scale"
 
-#: sdk/definition/defcore.xml:222(col)
+#: sdk/definition/defcore.xml:223(col)
 msgid "0-100000. Klettergeschwindigkeit."
 msgstr "0-100000. Scaling speed."
 
-#: sdk/definition/defcore.xml:223(col)
+#: sdk/definition/defcore.xml:224(col)
 msgid "Hangle"
 msgstr "Hangle"
 
-#: sdk/definition/defcore.xml:224(col)
+#: sdk/definition/defcore.xml:225(col)
 msgid "0-100000. Hangelgeschwindigkeit."
 msgstr "0-100000. Hangling speed."
 
-#: sdk/definition/defcore.xml:226(col)
+#: sdk/definition/defcore.xml:227(col)
 msgid "0-100000. Grabgeschwindigkeit."
 msgstr "0-100000. Digging speed."
 
-#: sdk/definition/defcore.xml:227(col)
+#: sdk/definition/defcore.xml:228(col)
 msgid "Swim"
 msgstr "Swim"
 
-#: sdk/definition/defcore.xml:228(col)
+#: sdk/definition/defcore.xml:229(col)
 msgid "0-100000. Schwimmgeschwindigkeit."
 msgstr "0-100000. Swimming speed."
 
-#: sdk/definition/defcore.xml:230(col)
+#: sdk/definition/defcore.xml:231(col)
 msgid "0-100000. Wurfkraft."
 msgstr "0-100000. Throwing force."
 
-#: sdk/definition/defcore.xml:231(col)
+#: sdk/definition/defcore.xml:232(col)
 msgid "Push"
 msgstr "Push"
 
-#: sdk/definition/defcore.xml:232(col)
+#: sdk/definition/defcore.xml:233(col)
 msgid "0-100000. Schiebekraft."
 msgstr "0-100000. Push power."
 
-#: sdk/definition/defcore.xml:233(col)
+#: sdk/definition/defcore.xml:234(col)
 msgid "Fight"
 msgstr "Fight"
 
-#: sdk/definition/defcore.xml:234(col)
+#: sdk/definition/defcore.xml:235(col)
 msgid "0-100000. Kampfkraft."
 msgstr "0-100000. Fight power."
 
-#: sdk/definition/defcore.xml:236(col)
+#: sdk/definition/defcore.xml:237(col)
 msgid "0-100000. Maximale Zauberenergie."
 msgstr "0-100000. Maximal magic energy."
 
-#: sdk/definition/defcore.xml:238(col)
+#: sdk/definition/defcore.xml:239(col)
 msgid "0-100. Fluggeschwindigkeit."
 msgstr "0-100. Flight speed."
 
-#: sdk/definition/defcore.xml:239(col)
+#: sdk/definition/defcore.xml:240(col)
 msgid "CanScale"
 msgstr "CanScale"
 
-#: sdk/definition/defcore.xml:240(col)
+#: sdk/definition/defcore.xml:241(col)
 msgid "0 oder 1. Klettern."
 msgstr "0 or 1. Scale."
 
-#: sdk/definition/defcore.xml:241(col)
+#: sdk/definition/defcore.xml:242(col)
 msgid "CanHangle"
 msgstr "CanHangle"
 
-#: sdk/definition/defcore.xml:242(col)
+#: sdk/definition/defcore.xml:243(col)
 msgid "0 oder 1. Hangeln."
 msgstr "0 or 1. Brachiation."
 
-#: sdk/definition/defcore.xml:243(col)
+#: sdk/definition/defcore.xml:244(col)
 msgid "CanDig"
 msgstr "CanDig"
 
-#: sdk/definition/defcore.xml:244(col)
+#: sdk/definition/defcore.xml:245(col)
 msgid "0 oder 1. Graben."
 msgstr "0 or 1. Dig."
 
-#: sdk/definition/defcore.xml:245(col)
+#: sdk/definition/defcore.xml:246(col)
 msgid "CanConstruct"
 msgstr "CanConstruct"
 
-#: sdk/definition/defcore.xml:246(col)
+#: sdk/definition/defcore.xml:247(col)
 msgid "0 oder 1. Bauen. Bei Werten größer 1: Prozentuale Baugeschwindigkeit (100 entspricht dem Standard; 50 ist halbe Standardgeschwindigkeit). Erweitert"
 msgstr "0 or 1. Construct. If greater than 1, percentage construction speed. (100 normal, 50 half, etc.)"
 
-#: sdk/definition/defcore.xml:248(col)
+#: sdk/definition/defcore.xml:249(col)
 msgid "CorrosionResist"
 msgstr "CorrosionResist"
 
-#: sdk/definition/defcore.xml:249(col)
+#: sdk/definition/defcore.xml:250(col)
 msgid "0 oder 1. Legt fest, ob das Objekt Säure widersteht."
 msgstr "0 or 1. Determines wether the object resists acid."
 
-#: sdk/definition/defcore.xml:250(col)
+#: sdk/definition/defcore.xml:251(col)
 msgid "BreatheWater"
 msgstr "BreatheWater"
 
-#: sdk/definition/defcore.xml:251(col)
+#: sdk/definition/defcore.xml:252(col)
 msgid "0 Objekt atmet Luft, 1 Objekt atmet Wasser."
 msgstr "0 object breathes air, 1 object breathes water."
 
-#: sdk/definition/defcore.xml:254(h)
+#: sdk/definition/defcore.xml:255(h)
 msgid "Hinweis:"
 msgstr "Note:"
 
-#: sdk/definition/defcore.xml:255(text)
+#: sdk/definition/defcore.xml:256(text)
 msgid "Sobald ein Mannschaftsmitglied erschaffen wird, wird für dieses eine eigenständige Physical-Sektion erschaffen, die zusammen mit dem Mannschaftsmitglied in der Objektinfo (c4i) gespeichert wird. Jedes Mannschaftsmitglied behält seine eigene Physical-Sektion, da hier alle individuellen Veränderungen (z.B. erweiterte Fähigkeiten durch Beförderung) vorgenommen werden. Die Physical-Sektion der Objektdefinition wird also nur bei der Erschaffung des Objekts verwendet und nicht etwa bei ChangeDef."
 msgstr "When a crew member is created, it gets an own physical section in it's Objectinfo (c4i). In there, the individual changes to the physicals (for example because of training) are saved and restored when an object enters a player's crew. The physical section of the defcore is only used for new crew members and normal objects."
 
@@ -21361,6 +21382,42 @@ msgstr "c4group.exe (Windows) c4group (Linux) c4group (Mac)"
 #: sdk/cmdline.xml:73(text)
 msgid "Dieses Kommandozeilen-Programm dient zum Bearbeiten von Gruppendateien. Es kann nicht per Doppelklick, sondern nur per Kommandozeile (Eingabeaufforderung) gestartet werden. Auskunft über alle verfügbaren Kommandozeilenparameter erhält man, indem man das Programm ohne weitere Parameter über die Kommandozeile startet."
 msgstr "This command line program is used for processing group files. A list of command line options is available by starting the program without parameters via command line (<i>not</i> by double clicking)."
+
+#~ msgid "GetObjectInfoCoreVal(string strEntry, string strSection, object pObj);"
+#~ msgstr "GetObjectInfoCoreVal(string strEntry, string strSection, object pObj);"
+
+#~ msgid "GetPlayerInfoCoreVal(string strEntry, string strSection, int iPlr);"
+#~ msgstr "GetPlayerInfoCoreVal(string strEntry, string strSection, int iPlr);"
+
+#~ msgid "GetDefCoreVal"
+#~ msgstr "GetDefCoreVal"
+
+#~ msgid "GetActMapVal"
+#~ msgstr "GetActMapVal"
+
+#~ msgid "GetObjectVal"
+#~ msgstr "GetObjectVal"
+
+#~ msgid "GetObjectInfoCoreVal"
+#~ msgstr "GetObjectInfoCoreVal"
+
+#~ msgid "*.c4i (in Spielerdateien)"
+#~ msgstr "*.c4i (in player files)"
+
+#~ msgid "GetScenarioVal"
+#~ msgstr "GetScenarioVal"
+
+#~ msgid "GetPlayerVal"
+#~ msgstr "GetPlayerVal"
+
+#~ msgid "scenario.txt"
+#~ msgstr "scenario.txt"
+
+#~ msgid "GetPlayerInfoCoreVal"
+#~ msgstr "GetPlayerInfoCoreVal"
+
+#~ msgid "player.txt"
+#~ msgstr "Player.txt"
 
 #~ msgid "Objekte, egal ob direkt oder verschachtelt in Maps und Arrays, sollten nur mit äußerster Vorsicht als Schlüssel verwendet werden. Prinzipiell funktioniert das zwar genau gleich gut wie andere Schlüsseltypen, allerdings kann auf die gespeicherten Werte nicht mehr zugegriffen werden, wenn das entsprechende Objekt gelöscht wird, da beim Löschen alle darauf verweisenden Variablen auf nil gesetzt werden. Löschen dieser Werte ist ebenfalls nicht mehr möglich."
 #~ msgstr "Objects, regardless if used directly or nested inside maps and arrays, should be used as keys only with much caution. Basically this works as well as using other key-types, but after the according object has been deleted it is no longer possible to access the associated values, nor deleting them from the map. This is because on removal all variables referencing an object are set to nil."

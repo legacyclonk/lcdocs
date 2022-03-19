@@ -520,8 +520,12 @@ global func FxExplodeOnDeathCurseStop(pTarget, iEffectNumber, iReason)
 		<text>Wird -1 zurückgegeben, wird auch der übernehmende Effekt entfernt. Logischerweise gibt die erzeugende AddEffect-Funktion dann -2 zurück.</text>
 		
 		<h>Fx*Damage</h>
-		<text><code>int Fx*Damage (object pTarget, int iEffectNumber, int iDmgEngy, int iCause);</code></text>
+		<text><code>int Fx*Damage (object pTarget, int iEffectNumber, int iDmgEngy, int iCause, int iCausePlr);</code></text>
 		<text>Jeder Effekt erhält diesen Callback, wann immer sich der Energie- oder Schadenswert des Zielobjektes ändert. Falls die Funktion definiert wird, sollte der Rückgabewert dabei die erlaubte Änderung angeben.</text>
+		<text>iDmgEngy gibt die Änderung an. Negative Werte geben Schaden an, Positive Werte Heilung (im Falle von Lebewesen).</text>
+		<text>Werte für die Energie sind dabei exakt, das heißt 100.000 entspricht der vollen Energie eines normalen Clonks mit Rang 10 (C4MaxPhysical).
+		Der Umrechnungsfaktor zwischen GetEnergy und diesem Wert ist 1.000.
+		</text>
 		<text>Der Callback wird bei Energiewertänderungen bei Lebewesen, sowie bei Schadenswertänderungen bei nicht-Lebewesen durchgeführt - nicht aber umgekehrt. iCause gibt den geänderten Wert und den Grund an:</text>
 		
 		<text><table>
@@ -540,8 +544,9 @@ global func FxExplodeOnDeathCurseStop(pTarget, iEffectNumber, iReason)
 			<row><col>FX_Call_EngStruct</col><col>39</col><col>Energieverlust von Gebäuden (Nur lebende Gebäude)</col></row>
 			<row><col>FX_Call_EngGetPunched</col><col>40</col><col>Energieverlust im Clonk-zu-Clonk-Kampf</col></row>
 		</table></text>
-		
-		<text>Allgemein kann der Ausdruck "iCause &amp; 32" verwendet werden, um festzustellen, ob Energie oder Schadenswert verändert wurden. Werte für die Energie sind dabei exakt, das heißt 100.000 entspricht der vollen Energie eines normalen Clonks mit Rang 10 (C4MaxPhysical).</text>
+
+		<text>Allgemein kann der Ausdruck "iCause &amp; 32" verwendet werden, um festzustellen, ob Energie oder Schadenswert verändert wurden.</text>
+		<text>iCausePlr gibt die Spielernummer des verursachenden Spielers.</text>
 		<text>Über diesen Callback kann zum Beispiel Schaden an einem Objekt verhindert, abgeschwächt oder verstärkt werden; man kann Lebensschaden zunächst nur von der Zauberenergie abziehen, gleichmäßig auf verbundene Clonks verteilen und so weiter.</text>
 		
 		<h>Fx*Info</h>

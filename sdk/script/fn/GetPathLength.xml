@@ -3,7 +3,8 @@
 <?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
 <funcs>
   <func>
-    <title>GetPathLength (veraltet)</title>
+    <title>GetPathLength</title>
+    <deprecated />
     <category>Landschaft</category>
     <version>4.9.1.0 GWE</version>
     <syntax>
@@ -35,7 +36,7 @@
     <desc>Sucht mittels des auch für die Clonk-Wegfindung benutzten Algorithmus
           einen Weg zwischen zwei Punkten der Landschaft und gibt dessen Länge
           zurück. Wurde kein Weg gefunden, gibt die Funktion 0 zurück.</desc>
-    
+
       <remark>Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <funclink>GetPath</funclink> verwendet werden.</remark>
     <examples>
       <example>

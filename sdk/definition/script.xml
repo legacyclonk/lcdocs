@@ -74,13 +74,15 @@ und ist damit immer auf der sicheren Seite.</text>
   <col>Wenn das Objekt erzeugt wird. Als Parameter wird das Objekt übergeben, in dem das erzeugende Script steht. Siehe auch <emlink href="script/fn/Construction.html">Construction</emlink></col></row>
 <row id="Destruction"><col>Destruction</col><col></col>
   <col>Wenn das Objekt gelöscht wird.</col></row>
-<row id="Hit"><col>Hit</col><col></col>
-  <col>Wenn das Objekt bei hoher Geschwindigkeit (>= 15) mit der Landschaft kollidiert oder
-  aufgenommen wird (Collection)</col></row>
-<row id="Hit2"><col>Hit2</col><col></col>
+<row id="Hit"><col>Hit</col><col>int xdir, int ydir</col>
+  <col>Wenn das Objekt bei hoher Geschwindigkeit (>= 15; siehe
+  <emlink href="script/fn/OCF_HitSpeed1.html">OCF_HitSpeed1</emlink>) mit der Landschaft kollidiert oder
+  aufgenommen wird (Collection).<br/>
+  xdir und ydir geben die Aufprallgeschwindigkeit mit Precision 100 (siehe <emlink href="script/fn/GetXDir.html">GetXDir</emlink>) an. Die Parameter werden bei Collection nicht übergeben.</col></row>
+<row id="Hit2"><col>Hit2</col><col>int xdir, int ydir</col>
   <col>Wie Hit, bei Geschwindigkeiten >= 20 (siehe
   <emlink href="script/fn/OCF_HitSpeed2.html">OCF_HitSpeed2</emlink>).</col></row>
-<row id="Hit3"><col>Hit3</col><col></col>
+<row id="Hit3"><col>Hit3</col><col>int xdir, int ydir</col>
   <col>Wie Hit, bei Geschwindigkeiten >= 60 (siehe
   <emlink href="script/fn/OCF_HitSpeed3.html">OCF_HitSpeed3</emlink>).</col></row>
 <row id="Grab"><col>Grab</col><col>object pTarget, bool fGrab</col>
@@ -125,7 +127,7 @@ Ausführung des Befehls fehlgeschlagen ist.</col></row>
 <row id="ControlTransfer"><col>ControlTransfer</col><col>object pObj, int iTx, int iTy</col>
   <col>Wenn ein durch die Wegfindungsroutine gesteuertes Objekt (pObj) die Transferzone dieses
 Objekts zum Zielpunkt iTx/iTy passieren möchte. Die Transferfunktion kann dem Objekt
-entsprechende Kommandos geben und sollte bei erfolgreicher Bearbeitung TRUE zurückliefern.
+entsprechende Kommandos geben und sollte bei erfolgreicher Bearbeitung true zurückliefern.
 Siehe auch <emlink href="script/fn/SetTransferZone.html">SetTransferZone</emlink>().</col></row>
 <row id="UpdateTransferZone"><col>UpdateTransferZone</col><col></col>
   <col>Wenn ein Objekt geladen oder synchronisiert wird. Objekte mit einer TransferZone sollten
@@ -133,9 +135,9 @@ diese bei jedem Aufruf von UpdateTransferZone neu setzen. Siehe auch <emlink
 href="script/fn/SetTransferZone.html">SetTransferZone</emlink>().</col></row>
 <row id="MenuQueryCancel"><col>MenuQueryCancel</col><col>int iSelection, object pMenuObj</col>
   <col>Wird in einem Objekt aufgerufen, wenn der Spieler ein benutzerdefiniertes Menu
-schließen will. Bei Rückgabewert TRUE bleibt das Menu geöffnet.</col></row>
+schließen will. Bei Rückgabewert true bleibt das Menu geöffnet.</col></row>
 <row id="IsFulfilled"><col>IsFulfilled</col><col></col>
-  <col>Nur bei Spielziel-Objekten. Bei Rückgabewert TRUE ist das Spielziel erfüllt.</col></row>
+  <col>Nur bei Spielziel-Objekten. Bei Rückgabewert true ist das Spielziel erfüllt.</col></row>
 <row id="ControlContents"><col>ControlContents</col><col>id idTarget</col>
   <col>Wenn ein neues Inhaltsobjekt angewählt wird. Siehe <a href="#Control-Funktionen">Control-Funktionen</a>.</col></row>
 <row id="Selection"><col>Selection</col><col>object pContainer</col>
@@ -145,12 +147,12 @@ abgefangen wird, sollte ein eigener Auswahlsound abgespielt werden.</col></row>
   <col>Wenn das Objekt von einem anderen Objekt geschlagen oder getroffen wird.</col></row>
 <row id="QueryCatchBlow"><col>QueryCatchBlow</col><col>object pBy</col>
   <col>Bevor das Objekt von einem anderen Objekt geschlagen oder getroffen wird. Wenn QueryCatchBlow
-TRUE zurückgibt, können damit physikalische Treffer abgefangen werden.</col></row>
+true zurückgibt, können damit physikalische Treffer abgefangen werden.</col></row>
 <row id="LineBreak"><col>LineBreak</col><col>int iCause</col>
   <col>Wenn ein Leitungsobjekt unterbrochen wird. iCause: 0 durch Bewegung, 1 durch fehlendes oder unvollständiges Zielobjekt.</col></row>
 <row id="BuildNeedsMaterial"><col>BuildNeedsMaterial</col><col>id idMaterial, int iAmount</col>
   <col>Wenn das Objekt ein anderes Objekt baut und noch Baumaterial benötigt wird. Parameter
-sind Typ und Menge des ersten noch benötigten Baustoffs. Durch Rückgabewert TRUE kann die
+sind Typ und Menge des ersten noch benötigten Baustoffs. Durch Rückgabewert true kann die
 Textmeldung über fehlendes Material abgefangen werden.</col></row>
 <row id="AttachTargetLost"><col>AttachTargetLost</col><col></col>
   <col>Wenn das Objekt eine ATTACH-Aktivität besessen hatte, aber das Actiontarget verloren
@@ -192,10 +194,10 @@ Exit).</col></row>
 <row id="ActivateEntrance"><col>ActivateEntrance</col><col>object pByObj</col>
   <col>Wenn ein anderes Objekt versucht, das Objekt durch Entrance zu betreten.</col></row>
 <row id="RejectCollect"><col>RejectCollect</col><col>id idObj, object pObj</col>
-  <col>Wird vor Collection aufgerufen. Wenn RejectCollect TRUE zurückgibt, kann damit die
+  <col>Wird vor Collection aufgerufen. Wenn RejectCollect true zurückgibt, kann damit die
 Aufnahme des anderen Objekts verhindert werden.</col></row>
 <row id="RejectEntrance"><col>RejectEntrance</col><col>object pIntoObj</col>
-  <col>Wird vor Entrance aufgerufen. Wenn RejectEntrance TRUE zurückgibt, kann damit das
+  <col>Wird vor Entrance aufgerufen. Wenn RejectEntrance true zurückgibt, kann damit das
 Hineinversetzen in das andere Objekt verhindert werden.</col></row>
 <row id="InitializePlayer"><col>InitializePlayer</col><col>int iPlr, int iX, int iY, object pBase, int iTeam, id idExtra</col>
   <col>Aufruf in Spielziel, -regel und Umweltobjekten nach der Platzierung eines beitretenden
@@ -211,17 +213,15 @@ Heimatbasismaterial hinzugefügt wird.</col></row>
 <row id="Recruitment"><col>Recruitment</col><col>int iPlr</col>
   <col>Wenn das Objekt der Crew eines Spielers hinzugefügt wird. Ab CE 4.95.2.</col></row>
 <row id="RejectTeamSwitch"><col>RejectTeamSwitch</col><col>int iPlr, int iNewTeam</col>
-  <col>Aufruf in Spielziel, -regel und Umweltobjekten und dem Szenarioscript. Wenn RejectTeamSwitch TRUE zurückgibt, kann der Teamwechsel eines Spielers (durch <funclink>SetPlayerTeam</funclink>) verhindert werden. Ab 4.9.6.0 CR.</col></row>
+  <col>Aufruf in Spielziel, -regel und Umweltobjekten und dem Szenarioscript. Wenn RejectTeamSwitch true zurückgibt, kann der Teamwechsel eines Spielers (durch <funclink>SetPlayerTeam</funclink>) verhindert werden. Ab 4.9.6.0 CR.</col></row>
 <row id="ContentsDestruction"><col>ContentsDestruction</col><col>object pObj</col>
   <col>Die Funktion wird im Container von pObj aufgerufen, wenn dieses gelöscht wird.</col></row>
 <row id="DoMagicEnergy"><col>DoMagicEnergy</col><col>int iChange, object pObj, bool fAllowPartial</col>
   <col>Wird bei jeder Veränderung der Mana aufgerufen.</col></row>
 <row id="GetCustomComponents"><col>array GetCustomComponents</col><col>object pBuilder</col>
   <col>Callback um Komponenten eines Objektes zu setzen. Wird in jedem Menü aufgerufen, dass das Objekt bzw. ID hat. Wird auch beim Bauen eines Objektes aufgerufen. pBuilder ist das Menü-aufrufende-Objekt bzw. der Erbauer. Rückgabewert muss ein Array mit ID/IDs sein. Siehe auch GetComponent, SetComponent, Split2Components.</col></row>
-<row id="Hit*"><col>Hit / Hit2 / Hit 3</col><col>int xdir, int ydir</col>
-  <col>Wird aufgerufen, wenn das Objekt auf etwas Solides aufschlägt. Die Parameter werden bei Collection nicht übergeben.</col></row>
 <row id="IsFullfilledforPlr"><col>IsFullfilledforPlr</col><col>int iPlr</col>
-  <col>Wenn die Regel "Wettstreit" (EN=Rivalry; ID=RVLR) aktiviert ist, wird IsFulfilledforPlr aufgerufen, ansonsten IsFulfilled. Nur bei Spielziel-Objekten. Bei Rückgabewert TRUE ist das Spielziel für ir erfüllt.</col></row>
+  <col>Wenn die Regel "Wettstreit" (EN=Rivalry; ID=RVLR) aktiviert ist, wird IsFulfilledforPlr aufgerufen, ansonsten IsFulfilled. Nur bei Spielziel-Objekten. Bei Rückgabewert true ist das Spielziel für iPlr erfüllt.</col></row>
 <row id="MouseSelection"><col>MouseSelection</col><col>int iPlr</col>
   <col>Wenn das Objekt per Maus angeklickt wurde. Objekt muss die Category C4D_MouseSelect haben.</col></row>
 <row id="OnActionJump"><col>OnActionJump</col><col>int iXDir100, int iYDir100, bool fByCom</col>

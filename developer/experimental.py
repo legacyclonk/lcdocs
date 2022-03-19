@@ -79,5 +79,5 @@ def Result():
     print codeparents
     a = allcode.keys()
     a.sort()
-    print '"' + ''.join(a) + '"'
+    # print '"' + ''.join(a) + '"'
     c4scripter.close()
