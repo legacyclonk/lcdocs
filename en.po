@@ -20333,7 +20333,7 @@ msgid "BaseAutoSell"
 msgstr "BaseAutoSell"
 
 #: sdk/definition/defcore.xml:207(col)
-msgid "Falls true werden Objekte dieser Definition automatisch verkauft sobald sie eine Basis betreten (auch indirekt über das Inventar anderer Objekte), wie es bei Goldklumpen üblich. Standardwert ist false (true falls die id GOLD ist). Ab LC [346]."
+msgid "Falls true werden Objekte dieser Definition automatisch verkauft sobald sie eine Basis betreten (auch indirekt über das Inventar anderer Objekte), wie bei Goldklumpen üblich. Standardwert ist false (true falls die id GOLD ist). Ab LC [346]."
 msgstr "If true, objects of this definition are sold automatically upon entering a home base (also indirectly within the inventory of other objects), as is the case for gold chunks. Default is false (true if the id is GOLD). Since LC [346]."
 
 #: sdk/definition/defcore.xml:212(caption)
