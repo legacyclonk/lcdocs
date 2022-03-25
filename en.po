@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-19 02:31+0100\n"
+"POT-Creation-Date: 2022-03-25 15:54+0100\n"
 "PO-Revision-Date: 2021-04-04 18:46+0200\n"
 "Last-Translator: Markus Mittendrein <maxmitti@gmx.at>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -14431,46 +14431,46 @@ msgid "Fx*Info"
 msgstr "Fx*Info"
 
 #: sdk/script/Effects.xml:554(text)
-msgid "Wird aufgerufen, wenn via Kontextmenü die Infos eines Objektes, das das Ziel dieses Effektes ist, abgefragt werden."
-msgstr "Is being called when the info of an object is shown via the context menu of the object target."
+msgid "Wird aufgerufen, wenn via Kontextmenü die Infos eines Objektes, das das Ziel dieses Effektes ist, abgefragt werden. Der zurückgegebene String wird als eigene Zeile an die Beschreibung angehängt. Dies wird zum Beispiel vom Feuer-Effekt verwendet um in der Beschreibung anzuzeigen, dass ein Objekt brennt."
+msgstr "Is being called when the info of an object is shown via the context menu of the object target. The returned string is appended to the description as a separate line. This is used for example by the fire effect to show that an object is on fire."
 
-#: sdk/script/Effects.xml:557(h)
+#: sdk/script/Effects.xml:561(h)
 msgid "Funktions-Referenz"
 msgstr "Function Reference"
 
-#: sdk/script/Effects.xml:558(text)
+#: sdk/script/Effects.xml:562(text)
 msgid "Es gibt folgende Funktionen sind zum Manipulieren und Abfragen von Effekten:"
 msgstr "There are the following functions for manipulation of effects:"
 
-#: sdk/script/Effects.xml:561(li)
+#: sdk/script/Effects.xml:565(li)
 msgid "<placeholder-1/>() - zum Erzeugen von Effekten"
 msgstr "<placeholder-1/>() - for effect creation"
 
-#: sdk/script/Effects.xml:562(li)
+#: sdk/script/Effects.xml:566(li)
 msgid "<placeholder-1/>() - zum Entfernen von Effekten"
 msgstr "<placeholder-1/>() - for effect removal"
 
-#: sdk/script/Effects.xml:563(li)
+#: sdk/script/Effects.xml:567(li)
 msgid "<placeholder-1/>() - zum Abfragen von Effekten und Parametern"
 msgstr "<placeholder-1/>() - to request effect parameters"
 
-#: sdk/script/Effects.xml:564(li)
+#: sdk/script/Effects.xml:568(li)
 msgid "<placeholder-1/>() - um Effekte zu zählen"
 msgstr "<placeholder-1/>() - for effect counting"
 
-#: sdk/script/Effects.xml:565(li)
+#: sdk/script/Effects.xml:569(li)
 msgid "<placeholder-1/>() - für Benutzeraufrufe in Effekten"
 msgstr "<placeholder-1/>() - for user defined calls in effects"
 
-#: sdk/script/Effects.xml:566(li)
+#: sdk/script/Effects.xml:570(li)
 msgid "<placeholder-1/>() - zum Abfragen von Effektvariablen"
 msgstr "<placeholder-1/>() - to request effect variables"
 
-#: sdk/script/Effects.xml:567(li)
+#: sdk/script/Effects.xml:571(li)
 msgid "<placeholder-1/>() - zum Ändern von Effektnamen und -timern (beispielsweise für mehrstufige Effekte)"
 msgstr "<placeholder-1/>() - to modify effect names and timers (e.g. for multi-stage effects)"
 
-#: sdk/script/Effects.xml:568(li)
+#: sdk/script/Effects.xml:572(li)
 msgid "<placeholder-1/>() - um Effekt-Callbacks auszuführen, ohne den Effekt selber zu erstellen"
 msgstr "<placeholder-1/>() - to cause effects callbacks without actually creating an effect"
 

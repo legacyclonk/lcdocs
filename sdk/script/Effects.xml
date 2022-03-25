@@ -550,8 +550,12 @@ global func FxExplodeOnDeathCurseStop(pTarget, iEffectNumber, iReason)
 		<text>Über diesen Callback kann zum Beispiel Schaden an einem Objekt verhindert, abgeschwächt oder verstärkt werden; man kann Lebensschaden zunächst nur von der Zauberenergie abziehen, gleichmäßig auf verbundene Clonks verteilen und so weiter.</text>
 		
 		<h>Fx*Info</h>
-		<text><code>int Fx*Info(object pTarget, int iEffectNumber)</code></text>
-		<text>Wird aufgerufen, wenn via Kontextmenü die Infos eines Objektes, das das Ziel dieses Effektes ist, abgefragt werden.</text>
+		<text><code>string Fx*Info(object pTarget, int iEffectNumber)</code></text>
+		<text>
+			Wird aufgerufen, wenn via Kontextmenü die Infos eines Objektes, das das Ziel dieses Effektes ist, abgefragt werden.
+			Der zurückgegebene String wird als eigene Zeile an die Beschreibung angehängt.
+			Dies wird zum Beispiel vom Feuer-Effekt verwendet um in der Beschreibung anzuzeigen, dass ein Objekt brennt.
+		</text>
 	</part>
 	
 	<h id="FnRef">Funktions-Referenz</h>
