@@ -1485,6 +1485,7 @@ msgstr "Removes all objects."
 #: sdk/script/fn/SetBridgeActionData.xml:7(category)
 #: sdk/script/fn/SetAlive.xml:7(category)
 #: sdk/script/fn/SetActionTargets.xml:7(category)
+#: sdk/script/fn/SetActionKeepPhase.xml:7(category)
 #: sdk/script/fn/SetActionData.xml:7(category)
 #: sdk/script/fn/SetAction.xml:7(category)
 #: sdk/script/fn/Sell.xml:7(category)
@@ -4134,6 +4135,7 @@ msgstr "Script of an effect named JumpBoost: If created on a Clonk, it can jump 
 #: sdk/script/fn/SetDir.xml:7(subcat)
 #: sdk/script/fn/SetBridgeActionData.xml:7(subcat)
 #: sdk/script/fn/SetActionTargets.xml:7(subcat)
+#: sdk/script/fn/SetActionKeepPhase.xml:7(subcat)
 #: sdk/script/fn/SetActionData.xml:7(subcat)
 #: sdk/script/fn/SetAction.xml:7(subcat)
 #: sdk/script/fn/ObjectSetAction.xml:7(subcat)
@@ -5737,6 +5739,45 @@ msgstr "Sets the activity targets of an object. The result depends on the <emlin
 msgid "Scriptteil für einen Schildzauber, der gerade eine ATTACH-Aktivität ausführt: Wenn der tragende Clonk ein Gebäude betritt, klebt er sich an dieses Gebäude. Das Script sorgt allerdings nicht dafür, dass sich der Zauber wieder an den Clonk klebt, wenn dieser das Gebäude verlässt."
 msgstr "Script for a shield spell using an ATTACH action: when the carrying clonk enters a building, the spell will attach itself to the building. This script will not, however, reattach the spell to the clonk when he leaves the building."
 
+#: sdk/script/fn/SetActionKeepPhase.xml:12(desc)
+#: sdk/script/fn/SetAction.xml:12(desc)
+#: sdk/script/fn/ObjectSetAction.xml:13(desc)
+msgid "Neue Aktivität. \"ActIdle\" oder \"Idle\" löscht die Aktivität."
+msgstr "New action to be set. \"ActIdle\" or \"Idle\" will clear any action."
+
+#: sdk/script/fn/SetActionKeepPhase.xml:13(desc)
+#: sdk/script/fn/SetAction.xml:13(desc)
+#: sdk/script/fn/ObjectSetAction.xml:14(desc)
+msgid "Erstes Zielobjekt für die Aktivität"
+msgstr "First target object for the action"
+
+#: sdk/script/fn/SetActionKeepPhase.xml:14(desc)
+#: sdk/script/fn/SetAction.xml:14(desc)
+#: sdk/script/fn/ObjectSetAction.xml:15(desc)
+msgid "Zweites Zielobjekt für die Aktivität"
+msgstr "Second target object for the action"
+
+#: sdk/script/fn/SetActionKeepPhase.xml:15(desc)
+#: sdk/script/fn/SetAction.xml:15(desc)
+msgid "Wenn true, werden Start-/AbortCalls umgangen, und die Aktivität wird trotz NoOtherAction gesetzt."
+msgstr "If true, Start- and AbortCalls aren't made and the action will be set even if the current action is specified as NoOtherAction."
+
+#: sdk/script/fn/SetActionKeepPhase.xml:18(desc)
+msgid "Setzt die Aktivität des aufrufenden Objekts, gleich wie <placeholder-1/>, behält aber die aktuelle Aktivitätsphase bei. Dies erlaubt das nahtlose Wechseln zwischen unterschiedlichen Animationen für die gleiche Aktivität, zum Beispiel wenn es eigene Animationen mit getragener Waffe gibt."
+msgstr "Sets the activity of the calling object, in the same way as <placeholder-1/>, but keeps the animation phase of the object. This allows seamless switching between different animations for the same activity, for example if there are separate animations with a carried weapon."
+
+#: sdk/script/fn/SetActionKeepPhase.xml:19(remark)
+msgid "Diese Funktion ist ein Wrapper um <placeholder-1/>, <placeholder-2/> und <placeholder-3/>."
+msgstr "This function is a wrapper for <placeholder-1/>, <placeholder-2/> and <placeholder-3/>."
+
+#: sdk/script/fn/SetActionKeepPhase.xml:20(remark)
+msgid "Diese Funktionalität wird in unterschiedlichen Clonks in einer Funktion namens CheckArmed verwendet."
+msgstr "This functionality is used in various Clonks in a function called CheckArmed."
+
+#: sdk/script/fn/SetActionKeepPhase.xml:21(remark)
+msgid "Der Rückgabewert ist nur dann true, wenn die Aktion und die Phase erfolgreich gesetzt werden konnten, sonst false."
+msgstr "The return value is only true if both activity and phase can be set successffully, otherwise it is false."
+
 #: sdk/script/fn/SetActionData.xml:12(desc)
 msgid "Zusatzparameter für die Aktivität."
 msgstr "Additional parameter for the activity."
@@ -5756,25 +5797,6 @@ msgstr "Script for a special clonk: with key Special 2 he will build a vertical 
 #: sdk/script/fn/SetActionData.xml:29(text)
 msgid "Verschiebt den Aufhängepunkt eines Windrades so, dass der dritte Vertex vom Windrad am zweiten Vertex des Gerüstes klebt."
 msgstr "Adjusts the attaching vertex of the windmill wheel so that the wheel's third vertex will attach to the second vertex of the windmill scaffolding."
-
-#: sdk/script/fn/SetAction.xml:12(desc)
-#: sdk/script/fn/ObjectSetAction.xml:13(desc)
-msgid "Neue Aktivität. \"ActIdle\" oder \"Idle\" löscht die Aktivität."
-msgstr "New action to be set. \"ActIdle\" or \"Idle\" will clear any action."
-
-#: sdk/script/fn/SetAction.xml:13(desc)
-#: sdk/script/fn/ObjectSetAction.xml:14(desc)
-msgid "Erstes Zielobjekt für die Aktivität"
-msgstr "First target object for the action"
-
-#: sdk/script/fn/SetAction.xml:14(desc)
-#: sdk/script/fn/ObjectSetAction.xml:15(desc)
-msgid "Zweites Zielobjekt für die Aktivität"
-msgstr "Second target object for the action"
-
-#: sdk/script/fn/SetAction.xml:15(desc)
-msgid "Wenn true, werden Start-/AbortCalls umgangen, und die Aktivität wird trotz NoOtherAction gesetzt."
-msgstr "If true, Start- and AbortCalls aren't made and the action will be set even if the current action is specified as NoOtherAction."
 
 #: sdk/script/fn/SetAction.xml:18(desc)
 msgid "Setzt die Aktivität des aufrufenden Objekts. Siehe auch <emlink href=\"definition/actmap.html\">ActMap.txt</emlink>."

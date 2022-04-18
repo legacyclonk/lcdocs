@@ -29,6 +29,7 @@
 			<funclink>ObjectSetAction</funclink>
 			<funclink>GetAction</funclink>
 			<funclink>GetActionTarget</funclink>
+			<funclink>SetActionKeepPhase</funclink>
 			<funclink>SetPhase</funclink>
 			<funclink>SetDir</funclink>
 		</related>
