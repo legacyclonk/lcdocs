@@ -15,6 +15,7 @@
 		</syntax>
 		<desc>Liefert die Anzahl der Objekte vom Typ id, die in pObj enthalten sind.</desc>
 		<related>
+			<funclink>Contents</funclink>
 			<funclink>FindContents</funclink>
 			<funclink>ObjectCount</funclink>
 		</related>

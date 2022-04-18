@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-25 15:54+0100\n"
+"POT-Creation-Date: 2022-04-18 21:54+0200\n"
 "PO-Revision-Date: 2021-04-04 18:46+0200\n"
 "Last-Translator: Markus Mittendrein <maxmitti@gmx.at>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -11499,9 +11499,17 @@ msgstr "Index of the object in the container, starting with 0"
 msgid "Objekt, in welchem gesucht werden soll; null für lokale Aufrufe"
 msgstr "Object in which to search. Can be 0 in local calls"
 
-#: sdk/script/fn/Contents.xml:16(desc)
+#: sdk/script/fn/Contents.xml:14(desc)
+msgid "Falls true werden auch Objekte mit <emlink href=\"definition/procedures.html\">Prozedur</emlink> ATTACH zurück gegeben. Seit 4.9.10.14 LC [353]"
+msgstr "If true objects with <emlink href=\"definition/procedures.html\">procedure</emlink> ATTACH are returned as well. Since 4.9.10.14 LC [353]"
+
+#: sdk/script/fn/Contents.xml:17(desc)
 msgid "Liefert das indizierte Objekt, das in pObj enthalten ist."
 msgstr "Returns the indicated object contained in pObj."
+
+#: sdk/script/fn/Contents.xml:18(remark)
+msgid "Achtung: Ohne Angabe von true für returnAttached werden Objekte mit <emlink href=\"definition/procedures.html\">Prozedur</emlink> ATTACH übersprungen. Dadurch stimmt das Ergebnis von <placeholder-1/> (ohne Angabe von ID) nicht mit der Anzahl der über Contents() abfragbaren Objekte überein."
+msgstr "Warning: Without specifying returnAttached as true objects with <emlink href=\"definition/procedures.html\">procedure</emlink> ATTACH are skipped. Thus, the result of <placeholder-1/> (without specifying an ID) does not match the number of objects retrievable via Contents()."
 
 #: sdk/script/fn/Contained.xml:12(desc)
 msgid "Objekt, für welches die Überprüfung durchgeführt werden soll; Null für lokale Aufrufe"
