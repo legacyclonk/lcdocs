@@ -89,6 +89,8 @@ und ist damit immer auf der sicheren Seite.</text>
   <col>Wenn das Objekt ein anderes Objekt anfasst oder loslässt.</col></row>
 <row id="Grabbed"><col>Grabbed</col><col>object pByObject, bool fGrab</col>
   <col>Wenn das Objekt durch ein anderes Objekt angefasst oder losgelassen wird. Ab 4.9.8.4.</col></row>
+<row id="RejectGrabbed"><col>RejectGrabbed</col><col>object byObject</col>
+  <col>Wenn das Objekt durch ein anderes Objekt angefasst werden soll. Falls true zurückgegeben wird, wird das Anfassen verhindert und der Grab-Befehl von byObject schlägt fehl. Ab 4.9.10.14 LC [353].</col></row>
 <row id="Get"><col>Get</col><col>object pTarget</col>
   <col>Wenn das Objekt ein Objekt aus einem anderen Objekt herausnimmt.</col></row>
 <row id="Put"><col>Put</col><col></col>
@@ -331,4 +333,5 @@ Condition-Funktion übergeben.</text>
 <author>Sven2</author><date>Februar 2004</date>
 <author>matthes</author><date>Juli 2004</date>
 <author>Clonkonaut</author><date>April 2008</date>
+<author>Der Tod</author><date>April 2022</date>
 </doc>

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-18 21:54+0200\n"
+"POT-Creation-Date: 2022-04-18 22:36+0200\n"
 "PO-Revision-Date: 2021-04-04 18:46+0200\n"
 "Last-Translator: Markus Mittendrein <maxmitti@gmx.at>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -5175,7 +5175,7 @@ msgstr "Type of object to be acquired. May be bought at the home base if necessa
 #: sdk/script/fn/SetCommand.xml:71(col)
 #: sdk/script/fn/SetCommand.xml:72(col)
 #: sdk/script/fn/SetCommand.xml:73(col)
-#: sdk/definition/script.xml:109(col)
+#: sdk/definition/script.xml:111(col)
 msgid "Activate"
 msgstr "Activate"
 
@@ -5387,7 +5387,7 @@ msgstr "Follow the target object (permanently)."
 
 #: sdk/script/fn/SetCommand.xml:94(col)
 #: sdk/script/fn/SetCommand.xml:95(col)
-#: sdk/definition/script.xml:92(col)
+#: sdk/definition/script.xml:94(col)
 msgid "Get"
 msgstr "Get"
 
@@ -5480,7 +5480,7 @@ msgstr "Push the target object into the secondary target object."
 #: sdk/script/fn/SetCommand.xml:107(col)
 #: sdk/script/fn/SetCommand.xml:108(col)
 #: sdk/script/fn/SetCommand.xml:109(col)
-#: sdk/definition/script.xml:94(col)
+#: sdk/definition/script.xml:96(col)
 msgid "Put"
 msgstr "Put"
 
@@ -17882,8 +17882,8 @@ msgid "Der Verweis im Script besteht aus einem Namen für den zu verwendenden St
 msgstr "The reference in the script is composed of a name for the string (string-ID), surrounded by dollar signs (\"$\"). <br/> For example:"
 
 #: sdk/lang.xml:67(emlink)
-#: sdk/definition/script.xml:278(emlink)
-#: sdk/definition/script.xml:281(emlink)
+#: sdk/definition/script.xml:280(emlink)
+#: sdk/definition/script.xml:283(emlink)
 msgid "Message"
 msgstr "Message"
 
@@ -18356,9 +18356,9 @@ msgid "CreateContents"
 msgstr "CreateContents"
 
 #: sdk/definition/script.xml:19(emlink)
-#: sdk/definition/script.xml:248(emlink)
-#: sdk/definition/script.xml:249(emlink)
-#: sdk/definition/script.xml:283(emlink)
+#: sdk/definition/script.xml:250(emlink)
+#: sdk/definition/script.xml:251(emlink)
+#: sdk/definition/script.xml:285(emlink)
 msgid "return"
 msgstr "return"
 
@@ -18459,10 +18459,10 @@ msgid "Construction"
 msgstr "Construction"
 
 #: sdk/definition/script.xml:73(col)
-#: sdk/definition/script.xml:109(col)
-#: sdk/definition/script.xml:116(col)
-#: sdk/definition/script.xml:119(col)
-#: sdk/definition/script.xml:194(col)
+#: sdk/definition/script.xml:111(col)
+#: sdk/definition/script.xml:118(col)
+#: sdk/definition/script.xml:121(col)
+#: sdk/definition/script.xml:196(col)
 msgid "object pByObj"
 msgstr "object pByObj"
 
@@ -18529,590 +18529,602 @@ msgid "Wenn das Objekt durch ein anderes Objekt angefasst oder losgelassen wird.
 msgstr "When the object is grabbed or let go by another object. Since 4.9.8.4."
 
 #: sdk/definition/script.xml:92(col)
+msgid "RejectGrabbed"
+msgstr "RejectGrabbed"
+
+#: sdk/definition/script.xml:92(col)
+msgid "object byObject"
+msgstr "object byObject"
+
+#: sdk/definition/script.xml:93(col)
+msgid "Wenn das Objekt durch ein anderes Objekt angefasst werden soll. Falls true zurückgegeben wird, wird das Anfassen verhindert und der Grab-Befehl von byObject schlägt fehl. Ab 4.9.10.14 LC [353]."
+msgstr "When the object should be grabbed by another object. If the function returns true the grabbing is prevented and byObject's Grab-command fails. Since 4.9.10.14 LC [353]."
+
+#: sdk/definition/script.xml:94(col)
 msgid "object pTarget"
 msgstr "object pTarget"
 
-#: sdk/definition/script.xml:93(col)
+#: sdk/definition/script.xml:95(col)
 msgid "Wenn das Objekt ein Objekt aus einem anderen Objekt herausnimmt."
 msgstr "When the object takes another object from a container."
 
-#: sdk/definition/script.xml:95(col)
+#: sdk/definition/script.xml:97(col)
 msgid "Wenn das Objekt ein Objekt in einem anderen Objekt ablegt."
 msgstr "When the object puts another object into a container."
 
-#: sdk/definition/script.xml:96(col)
+#: sdk/definition/script.xml:98(col)
 msgid "Damage"
 msgstr "Damage"
 
-#: sdk/definition/script.xml:96(col)
+#: sdk/definition/script.xml:98(col)
 msgid "int iChange, int iByPlayer"
 msgstr "int iChange, int iByPlayer"
 
-#: sdk/definition/script.xml:97(col)
+#: sdk/definition/script.xml:99(col)
 msgid "Wenn das Objekt beschädigt wird."
 msgstr "When the object is damage."
 
-#: sdk/definition/script.xml:98(col)
+#: sdk/definition/script.xml:100(col)
 msgid "DeepBreath"
 msgstr "DeepBreath"
 
-#: sdk/definition/script.xml:99(col)
+#: sdk/definition/script.xml:101(col)
 msgid "Wenn das Lebewesen nach dem Auftauchen mehr als die Hälfte seiner Atemkapazität auffüllt."
 msgstr "When a living being surfaces after having used up more than half of its breath."
 
-#: sdk/definition/script.xml:101(col)
+#: sdk/definition/script.xml:103(col)
 msgid "Incineration"
 msgstr "Incineration"
 
-#: sdk/definition/script.xml:101(col)
-#: sdk/definition/script.xml:104(col)
+#: sdk/definition/script.xml:103(col)
+#: sdk/definition/script.xml:106(col)
 msgid "int iByPlayer"
 msgstr "int iByPlayer"
 
-#: sdk/definition/script.xml:102(col)
+#: sdk/definition/script.xml:104(col)
 msgid "Wenn das Objekt entzündet wird. Achtung: Bei Objekten, die ihre Definition mit BurnTo ändern, findet der Aufruf im verbrannten Objekt statt!"
 msgstr "When the object is incinerated. Notice: with objects changing their definition via BurnTo, this call is made to the burned version!"
 
-#: sdk/definition/script.xml:104(col)
+#: sdk/definition/script.xml:106(col)
 msgid "IncinerationEx"
 msgstr "IncinerationEx"
 
-#: sdk/definition/script.xml:105(col)
+#: sdk/definition/script.xml:107(col)
 msgid "Wenn das Objekt in einer löschenden Flüssigkeit gesprengt, und damit nicht angezündet wird. Aufruf analog zu Incineration. Ab CE."
 msgstr "When the object is incinerated in and immediately extinguished by a surrounding liquid. Otherwise as Incineration. From CE."
 
-#: sdk/definition/script.xml:107(col)
+#: sdk/definition/script.xml:109(col)
 msgid "Death"
 msgstr "Death"
 
-#: sdk/definition/script.xml:108(col)
+#: sdk/definition/script.xml:110(col)
 msgid "Wenn ein Lebwesen stirbt."
 msgstr "When a living being dies."
 
-#: sdk/definition/script.xml:110(col)
+#: sdk/definition/script.xml:112(col)
 msgid "Aktivierung durch einen Doppelklick auf Graben. Nur getragene Objekte und direkt spielergesteuerte Objekte. Wird aufgerufen, nachdem die interne Befehlskette (z.B. Bäume fällen) abgearbeitet wurde."
 msgstr "Activation by double dig. Only applies to collected items or directly controlled crew objects. Called after internal handling of the double dig command has been completed (e.g. chopping of trees etc.)"
 
-#: sdk/definition/script.xml:113(col)
+#: sdk/definition/script.xml:115(col)
 msgid "Contact_"
 msgstr "Contact_"
 
-#: sdk/definition/script.xml:114(col)
+#: sdk/definition/script.xml:116(col)
 msgid "Wenn das Objekt die Landschaft berührt. Siehe <emlink href=\"definition/cnat.html\">CNAT - Contact Attachment</emlink>."
 msgstr "When the object collides with the landscape. See <emlink href=\"definition/cnat.html\">CNAT - Contact Attachment</emlink>."
 
-#: sdk/definition/script.xml:116(col)
+#: sdk/definition/script.xml:118(col)
 msgid "Control_"
 msgstr "Control_"
 
-#: sdk/definition/script.xml:117(col)
+#: sdk/definition/script.xml:119(col)
 msgid "Wenn das Objekt von außen gesteuert wird. Siehe <a href=\"#Control-Funktionen\">Control-Funktionen</a>."
 msgstr "When the object is controlled from the outside. See <a href=\"#Control-Funktionen\">Control Functions</a>."
 
-#: sdk/definition/script.xml:119(col)
+#: sdk/definition/script.xml:121(col)
 msgid "Contained_"
 msgstr "Contained_"
 
-#: sdk/definition/script.xml:120(col)
+#: sdk/definition/script.xml:122(col)
 msgid "Wenn das Objekt von innen gesteuert wird. Siehe <a href=\"#Control-Funktionen\">Control-Funktionen</a>."
 msgstr "When the object is controlled from the inside. See <a href=\"#Control-Funktionen\">Control Functions</a>."
 
-#: sdk/definition/script.xml:121(col)
+#: sdk/definition/script.xml:123(col)
 msgid "ControlCommand"
 msgstr "ControlCommand"
 
-#: sdk/definition/script.xml:121(col)
+#: sdk/definition/script.xml:123(col)
 msgid "string strCommand, object pTarget, int iTx, int iTy, object pTarget2, int iData, object pCmdObj"
 msgstr "string strCommand, object pTarget, int iTx, int iTy, object pTarget2, int iData, object pCmdObj"
 
-#: sdk/definition/script.xml:122(col)
+#: sdk/definition/script.xml:124(col)
 msgid "Wenn dem Objekt durch den Spieler ein selbständig auszuführender Befehl gegeben wurde. Siehe <a href=\"#Control-Funktionen\">Control-Funktionen</a>."
 msgstr "When the object has received a command to be independently executed. See <a href=\"#Control-Funktionen\">Control functions</a>."
 
-#: sdk/definition/script.xml:124(col)
+#: sdk/definition/script.xml:126(col)
 msgid "ControlCommandFinished"
 msgstr "ControlCommandFinished"
 
-#: sdk/definition/script.xml:124(col)
+#: sdk/definition/script.xml:126(col)
 msgid "string strCommand, object pTarget, int iTx, int iTy, object pTarget2, C4Value Data"
 msgstr "string strCommand, object pTarget, int iTx, int iTy, object pTarget2, C4Value Data"
 
-#: sdk/definition/script.xml:125(col)
+#: sdk/definition/script.xml:127(col)
 msgid "Wenn das Objekt einen selbständigen auszuführenden Befehl vollendet hat oder die Ausführung des Befehls fehlgeschlagen ist."
 msgstr "When the object has completed a command or execution of a command has failed."
 
-#: sdk/definition/script.xml:127(col)
+#: sdk/definition/script.xml:129(col)
 msgid "ControlTransfer"
 msgstr "ControlTransfer"
 
-#: sdk/definition/script.xml:127(col)
+#: sdk/definition/script.xml:129(col)
 msgid "object pObj, int iTx, int iTy"
 msgstr "object pObj, int iTx, int iTy"
 
-#: sdk/definition/script.xml:128(col)
+#: sdk/definition/script.xml:130(col)
 msgid "Wenn ein durch die Wegfindungsroutine gesteuertes Objekt (pObj) die Transferzone dieses Objekts zum Zielpunkt iTx/iTy passieren möchte. Die Transferfunktion kann dem Objekt entsprechende Kommandos geben und sollte bei erfolgreicher Bearbeitung true zurückliefern. Siehe auch <emlink href=\"script/fn/SetTransferZone.html\">SetTransferZone</emlink>()."
 msgstr "When an object (pObj) using the internal pathfinding algorithm is trying to pass the transfer zone of this object on its way to point iTx/iTy. The transfer function can then help the object along by giving special script commands and returning true. Also see <emlink href=\"script/fn/SetTransferZone.html\">SetTransferZone</emlink>()."
 
-#: sdk/definition/script.xml:132(col)
+#: sdk/definition/script.xml:134(col)
 msgid "UpdateTransferZone"
 msgstr "UpdateTransferZone"
 
-#: sdk/definition/script.xml:133(col)
+#: sdk/definition/script.xml:135(col)
 msgid "Wenn ein Objekt geladen oder synchronisiert wird. Objekte mit einer TransferZone sollten diese bei jedem Aufruf von UpdateTransferZone neu setzen. Siehe auch <emlink href=\"script/fn/SetTransferZone.html\">SetTransferZone</emlink>()."
 msgstr "When an object is loaded from a savegame or network synchronization is performed. Objects with a transfer zone should reset the zone in this call. Also see <emlink href=\"script/fn/SetTransferZone.html\">SetTransferZone</emlink>()."
 
-#: sdk/definition/script.xml:136(col)
+#: sdk/definition/script.xml:138(col)
 msgid "MenuQueryCancel"
 msgstr "MenuQueryCancel"
 
-#: sdk/definition/script.xml:136(col)
+#: sdk/definition/script.xml:138(col)
 msgid "int iSelection, object pMenuObj"
 msgstr "int iSelection, object pMenuObj"
 
-#: sdk/definition/script.xml:137(col)
+#: sdk/definition/script.xml:139(col)
 msgid "Wird in einem Objekt aufgerufen, wenn der Spieler ein benutzerdefiniertes Menu schließen will. Bei Rückgabewert true bleibt das Menu geöffnet."
 msgstr "When the player wants to close a user defined object menu. Return value true will keep the menu open."
 
-#: sdk/definition/script.xml:139(col)
+#: sdk/definition/script.xml:141(col)
 msgid "IsFulfilled"
 msgstr "IsFulfilled"
 
-#: sdk/definition/script.xml:140(col)
+#: sdk/definition/script.xml:142(col)
 msgid "Nur bei Spielziel-Objekten. Bei Rückgabewert true ist das Spielziel erfüllt."
 msgstr "Only in game goal objects. A return value true indicates that this goal is fulfilled."
 
-#: sdk/definition/script.xml:141(col)
+#: sdk/definition/script.xml:143(col)
 msgid "ControlContents"
 msgstr "ControlContents"
 
-#: sdk/definition/script.xml:141(col)
+#: sdk/definition/script.xml:143(col)
 msgid "id idTarget"
 msgstr "id idTarget"
 
-#: sdk/definition/script.xml:142(col)
+#: sdk/definition/script.xml:144(col)
 msgid "Wenn ein neues Inhaltsobjekt angewählt wird. Siehe <a href=\"#Control-Funktionen\">Control-Funktionen</a>."
 msgstr "When a new inventory object is selected. See <a href=\"#Control-Funktionen\">Control Functions</a>."
 
-#: sdk/definition/script.xml:143(col)
+#: sdk/definition/script.xml:145(col)
 msgid "Selection"
 msgstr "Selection"
 
-#: sdk/definition/script.xml:143(col)
-#: sdk/definition/script.xml:187(col)
-#: sdk/definition/script.xml:192(col)
+#: sdk/definition/script.xml:145(col)
+#: sdk/definition/script.xml:189(col)
+#: sdk/definition/script.xml:194(col)
 msgid "object pContainer"
 msgstr "object pContainer"
 
-#: sdk/definition/script.xml:144(col)
+#: sdk/definition/script.xml:146(col)
 msgid "Wenn das Objekt durch einen Inventarwechsel ausgewählt wird. Wenn die Funktion abgefangen wird, sollte ein eigener Auswahlsound abgespielt werden."
 msgstr "When the object is selected in an inventory change. If you are processing this event, the function should play its own selection sound."
 
-#: sdk/definition/script.xml:146(col)
+#: sdk/definition/script.xml:148(col)
 msgid "CatchBlow"
 msgstr "CatchBlow"
 
-#: sdk/definition/script.xml:146(col)
+#: sdk/definition/script.xml:148(col)
 msgid "int iLevel, object pBy"
 msgstr "int iLevel, object pBy"
 
-#: sdk/definition/script.xml:147(col)
+#: sdk/definition/script.xml:149(col)
 msgid "Wenn das Objekt von einem anderen Objekt geschlagen oder getroffen wird."
 msgstr "When the object is hit or punched by another object."
 
-#: sdk/definition/script.xml:148(col)
+#: sdk/definition/script.xml:150(col)
 msgid "QueryCatchBlow"
 msgstr "QueryCatchBlow"
 
-#: sdk/definition/script.xml:148(col)
+#: sdk/definition/script.xml:150(col)
 msgid "object pBy"
 msgstr "object pBy"
 
-#: sdk/definition/script.xml:149(col)
+#: sdk/definition/script.xml:151(col)
 msgid "Bevor das Objekt von einem anderen Objekt geschlagen oder getroffen wird. Wenn QueryCatchBlow true zurückgibt, können damit physikalische Treffer abgefangen werden."
 msgstr "Called before the object is hit or punched by another object. By returning true, QueryCatchBlow can reject physical blows."
 
-#: sdk/definition/script.xml:151(col)
+#: sdk/definition/script.xml:153(col)
 msgid "LineBreak"
 msgstr "LineBreak"
 
-#: sdk/definition/script.xml:151(col)
+#: sdk/definition/script.xml:153(col)
 msgid "int iCause"
 msgstr "int iCause"
 
-#: sdk/definition/script.xml:152(col)
+#: sdk/definition/script.xml:154(col)
 msgid "Wenn ein Leitungsobjekt unterbrochen wird. iCause: 0 durch Bewegung, 1 durch fehlendes oder unvollständiges Zielobjekt."
 msgstr "When a line object is broken. iCause: 0 by movement, 1 because of a damaged or destroyed target object."
 
-#: sdk/definition/script.xml:153(col)
+#: sdk/definition/script.xml:155(col)
 msgid "BuildNeedsMaterial"
 msgstr "BuildNeedsMaterial"
 
-#: sdk/definition/script.xml:153(col)
+#: sdk/definition/script.xml:155(col)
 msgid "id idMaterial, int iAmount"
 msgstr "id idMaterial, int iAmount"
 
-#: sdk/definition/script.xml:154(col)
+#: sdk/definition/script.xml:156(col)
 msgid "Wenn das Objekt ein anderes Objekt baut und noch Baumaterial benötigt wird. Parameter sind Typ und Menge des ersten noch benötigten Baustoffs. Durch Rückgabewert true kann die Textmeldung über fehlendes Material abgefangen werden."
 msgstr "When the object is building another object and building material is required. The parameters are the type and amount of the first needed material. If this function returns true, no material message is displayed above the object."
 
-#: sdk/definition/script.xml:157(col)
+#: sdk/definition/script.xml:159(col)
 msgid "AttachTargetLost"
 msgstr "AttachTargetLost"
 
-#: sdk/definition/script.xml:158(col)
+#: sdk/definition/script.xml:160(col)
 msgid "Wenn das Objekt eine ATTACH-Aktivität besessen hatte, aber das Actiontarget verloren hat. Die Aktivität ist beim Aufruf bereits zurückgesetzt."
 msgstr "When the object is in an ATTACH action and has lost its action target. At this time, the object's action has already been reset."
 
-#: sdk/definition/script.xml:160(col)
+#: sdk/definition/script.xml:162(col)
 msgid "CrewSelection"
 msgstr "CrewSelection"
 
-#: sdk/definition/script.xml:160(col)
+#: sdk/definition/script.xml:162(col)
 msgid "bool fDeselect, bool fCursorOnly"
 msgstr "bool fDeselect, bool fCursorOnly"
 
-#: sdk/definition/script.xml:161(col)
+#: sdk/definition/script.xml:163(col)
 msgid "Bei Änderung der Crewauswahl. fCursorOnly gibt an, ob nur das Mannschaftsmitglied angewählt wurde, welches den Cursor hat."
 msgstr "When crew selection is changed. fCursorOnly specifies whether only that crew member has been selected which is also the cursor."
 
-#: sdk/definition/script.xml:162(col)
+#: sdk/definition/script.xml:164(col)
 msgid "GetObject2Drop"
 msgstr "GetObject2Drop"
 
-#: sdk/definition/script.xml:162(col)
+#: sdk/definition/script.xml:164(col)
 msgid "object pForCollectionOfObj"
 msgstr "object pForCollectionOfObj"
 
-#: sdk/definition/script.xml:163(col)
+#: sdk/definition/script.xml:165(col)
 msgid "Zur Ermittlung des am wenigsten gebrauchten Objekts, wenn der Clonk versucht, ein neues aufzunehmen. Die Funktion sollte das abzulegende Objekt zurückliefern, oder 0 für keins."
 msgstr "Called to determine the least needed inventory object when a clonk tries to collect a new object and his inventory is full. The function should return the object to be dropped to gain space, or 0 if none."
 
-#: sdk/definition/script.xml:166(col)
+#: sdk/definition/script.xml:168(col)
 msgid "OnMenuSelection"
 msgstr "OnMenuSelection"
 
-#: sdk/definition/script.xml:166(col)
+#: sdk/definition/script.xml:168(col)
 msgid "int iItemIndex, object pMenuObject"
 msgstr "int iItemIndex, object pMenuObject"
 
-#: sdk/definition/script.xml:167(col)
+#: sdk/definition/script.xml:169(col)
 msgid "Wenn ein Menueintrag ausgewählt wurde."
 msgstr "When an object menu entry is selected."
 
-#: sdk/definition/script.xml:168(col)
+#: sdk/definition/script.xml:170(col)
 msgid "CalcValue"
 msgstr "CalcValue"
 
-#: sdk/definition/script.xml:168(col)
 #: sdk/definition/script.xml:170(col)
+#: sdk/definition/script.xml:172(col)
 msgid "object pInBase, int iForPlayer"
 msgstr "object pInBase, int iForPlayer"
 
-#: sdk/definition/script.xml:169(col)
+#: sdk/definition/script.xml:171(col)
 msgid "Ermittelt den Wert eines Objekts. Siehe auch <emlink href=\"script/fn/GetValue.html\">GetValue</emlink>()."
 msgstr "Calculates the value of an object. Also see <emlink href=\"script/fn/GetValue.html\">GetValue</emlink>()."
 
-#: sdk/definition/script.xml:170(col)
+#: sdk/definition/script.xml:172(col)
 msgid "CalcDefValue"
 msgstr "CalcDefValue"
 
-#: sdk/definition/script.xml:171(col)
+#: sdk/definition/script.xml:173(col)
 msgid "Ermittelt den Wert eines (noch nicht gekauften) Objekttyps. Siehe auch <emlink href=\"script/fn/GetValue.html\">GetValue</emlink>()."
 msgstr "Calculates the value of an object type available to buy. Also see <emlink href=\"script/fn/GetValue.html\">GetValue</emlink>()."
 
-#: sdk/definition/script.xml:172(col)
+#: sdk/definition/script.xml:174(col)
 msgid "CalcBuyValue"
 msgstr "CalcBuyValue"
 
-#: sdk/definition/script.xml:172(col)
+#: sdk/definition/script.xml:174(col)
 msgid "id idItem, int iDefValue"
 msgstr "id idItem, int iDefValue"
 
-#: sdk/definition/script.xml:173(col)
+#: sdk/definition/script.xml:175(col)
 msgid "Rückgabewert ist Einkaufspreis des Objekttyps."
 msgstr "Returns the buying price of the object type."
 
-#: sdk/definition/script.xml:174(col)
+#: sdk/definition/script.xml:176(col)
 msgid "CalcSellValue"
 msgstr "CalcSellValue"
 
-#: sdk/definition/script.xml:174(col)
+#: sdk/definition/script.xml:176(col)
 msgid "object pObj, int iObjValue"
 msgstr "object pObj, int iObjValue"
 
-#: sdk/definition/script.xml:175(col)
+#: sdk/definition/script.xml:177(col)
 msgid "Rückgabewert ist Verkaufspreis des Objekttyps."
 msgstr "Returns the selling price of the object type."
 
-#: sdk/definition/script.xml:176(col)
+#: sdk/definition/script.xml:178(col)
 #: sdk/definition/defcore.xml:194(col)
 msgid "LiftTop"
 msgstr "LiftTop"
 
-#: sdk/definition/script.xml:177(col)
+#: sdk/definition/script.xml:179(col)
 msgid "Wenn das Objekt bei einer LIFT-Aktivität ein anderes Objekt höher angehoben hat als in der DefCore angegeben."
 msgstr "When an object with LIFT action lifts its action target to the height specified in its DefCore or above."
 
-#: sdk/definition/script.xml:178(col)
+#: sdk/definition/script.xml:180(col)
 msgid "Stuck"
 msgstr "Stuck"
 
-#: sdk/definition/script.xml:179(col)
+#: sdk/definition/script.xml:181(col)
 msgid "Wird aufgerufen, wenn das Ziel einer PUSH- oder LIFT-Aktivität festhängt."
 msgstr "When the action target of the object's PUSH or LIFT action is stuck."
 
-#: sdk/definition/script.xml:180(col)
+#: sdk/definition/script.xml:182(col)
 msgid "GrabLost"
 msgstr "GrabLost"
 
-#: sdk/definition/script.xml:181(col)
+#: sdk/definition/script.xml:183(col)
 msgid "Wenn das Ziel einer PUSH- oder PULL-Aktion verloren geht."
 msgstr "When the action target of the object's PUSH or PULL action is lost."
 
-#: sdk/definition/script.xml:182(col)
+#: sdk/definition/script.xml:184(col)
 #: sdk/definition/defcore.xml:75(col)
 msgid "Collection"
 msgstr "Collection"
 
-#: sdk/definition/script.xml:182(col)
+#: sdk/definition/script.xml:184(col)
 msgid "object pObj, bool fPut"
 msgstr "object pObj, bool fPut"
 
-#: sdk/definition/script.xml:183(col)
+#: sdk/definition/script.xml:185(col)
 msgid "Wenn das Objekt ein anderes Objekt (pObj) aufgenommen hat (nur durch einsammeln oder anfassen und ablegen)."
 msgstr "When the object has collected another object (by ingame collection or grabbing and getting)."
 
-#: sdk/definition/script.xml:184(col)
+#: sdk/definition/script.xml:186(col)
 msgid "Collection2"
 msgstr "Collection2"
 
-#: sdk/definition/script.xml:184(col)
-#: sdk/definition/script.xml:189(col)
-#: sdk/definition/script.xml:217(col)
+#: sdk/definition/script.xml:186(col)
+#: sdk/definition/script.xml:191(col)
+#: sdk/definition/script.xml:219(col)
 msgid "object pObj"
 msgstr "object pObj"
 
-#: sdk/definition/script.xml:185(col)
+#: sdk/definition/script.xml:187(col)
 msgid "Wenn das Objekt ein anderes Objekt (pObj) aufgenommen hat (immer, auch durch Scriptbefehl Enter)"
 msgstr "When the object has collected another object (in all cases, even in script controlled collection or entering)."
 
-#: sdk/definition/script.xml:187(col)
+#: sdk/definition/script.xml:189(col)
 msgid "Departure"
 msgstr "Departure"
 
-#: sdk/definition/script.xml:188(col)
+#: sdk/definition/script.xml:190(col)
 msgid "Wenn das Objekt ein anderes Objekt (pContainer) verlassen hat."
 msgstr "When this object has left another object (pContainer)."
 
-#: sdk/definition/script.xml:189(col)
+#: sdk/definition/script.xml:191(col)
 msgid "Ejection"
 msgstr "Ejection"
 
-#: sdk/definition/script.xml:190(col)
+#: sdk/definition/script.xml:192(col)
 msgid "Wenn ein Objekt (pObj) dieses Objekt verlassen hat (auch durch Scriptbefehl Exit)."
 msgstr "When another object has left the contents of this object (also see script command Exit)."
 
-#: sdk/definition/script.xml:192(col)
+#: sdk/definition/script.xml:194(col)
 #: sdk/definition/defcore.xml:73(col)
 msgid "Entrance"
 msgstr "Entrance"
 
-#: sdk/definition/script.xml:193(col)
+#: sdk/definition/script.xml:195(col)
 msgid "Wenn das Objekt ein anderes Objekt (pContainer) betreten hat."
 msgstr "When the object has enteres another object (pContainer)."
 
-#: sdk/definition/script.xml:194(col)
+#: sdk/definition/script.xml:196(col)
 msgid "ActivateEntrance"
 msgstr "ActivateEntrance"
 
-#: sdk/definition/script.xml:195(col)
+#: sdk/definition/script.xml:197(col)
 msgid "Wenn ein anderes Objekt versucht, das Objekt durch Entrance zu betreten."
 msgstr "When another object is trying to enter this object through the entrance."
 
-#: sdk/definition/script.xml:196(col)
+#: sdk/definition/script.xml:198(col)
 msgid "RejectCollect"
 msgstr "RejectCollect"
 
-#: sdk/definition/script.xml:196(col)
+#: sdk/definition/script.xml:198(col)
 msgid "id idObj, object pObj"
 msgstr "id idObj, object pObj"
 
-#: sdk/definition/script.xml:197(col)
+#: sdk/definition/script.xml:199(col)
 msgid "Wird vor Collection aufgerufen. Wenn RejectCollect true zurückgibt, kann damit die Aufnahme des anderen Objekts verhindert werden."
 msgstr "Called before Collection. If RejectCollect returns true, the collection of the other object is prevented."
 
-#: sdk/definition/script.xml:199(col)
+#: sdk/definition/script.xml:201(col)
 msgid "RejectEntrance"
 msgstr "RejectEntrance"
 
-#: sdk/definition/script.xml:199(col)
+#: sdk/definition/script.xml:201(col)
 msgid "object pIntoObj"
 msgstr "object pIntoObj"
 
-#: sdk/definition/script.xml:200(col)
+#: sdk/definition/script.xml:202(col)
 msgid "Wird vor Entrance aufgerufen. Wenn RejectEntrance true zurückgibt, kann damit das Hineinversetzen in das andere Objekt verhindert werden."
 msgstr "Called before Entrance. If RejectEntrance returns true, then entrance of the other object is prevented."
 
-#: sdk/definition/script.xml:202(col)
+#: sdk/definition/script.xml:204(col)
 msgid "InitializePlayer"
 msgstr "InitializePlayer"
 
-#: sdk/definition/script.xml:202(col)
+#: sdk/definition/script.xml:204(col)
 msgid "int iPlr, int iX, int iY, object pBase, int iTeam, id idExtra"
 msgstr "int iPlr, int iX, int iY, object pBase, int iTeam, id idExtra"
 
-#: sdk/definition/script.xml:203(col)
+#: sdk/definition/script.xml:205(col)
 msgid "Aufruf in Spielziel, -regel und Umweltobjekten nach der Platzierung eines beitretenden Spielers, und vor dem entsprechenden Aufruf im Szenarioscript. Durch Angabe einer ID lassen sich Scriptspieler-Typen unterscheiden. Beispielsweise könnte ein Szenario dynamisch Alien- oder Clonkgegner anbieten."
 msgstr "Callback in goals, rules and environment objects after placing a joined player and before calling the callback in the scenario script. By specifying an ID it is possible to distinguish different types of script players. For example a scenario could dynamically provide alien or clonk enemies."
 
-#: sdk/definition/script.xml:206(col)
+#: sdk/definition/script.xml:208(col)
 msgid "SellTo"
 msgstr "SellTo"
 
-#: sdk/definition/script.xml:206(col)
-#: sdk/definition/script.xml:209(col)
+#: sdk/definition/script.xml:208(col)
+#: sdk/definition/script.xml:211(col)
 msgid "int iByPlr"
 msgstr "int iByPlr"
 
-#: sdk/definition/script.xml:207(col)
+#: sdk/definition/script.xml:209(col)
 msgid "Wenn das Objekt verkauft wird. Rückgabewert 0 oder die ID des Objekts, welches dem Heimatbasismaterial hinzugefügt wird."
 msgstr "When the object is sold. Should return 0 or the id of the object type which is actually added to the player's homebase material."
 
-#: sdk/definition/script.xml:209(col)
+#: sdk/definition/script.xml:211(col)
 msgid "Sale"
 msgstr "Sale"
 
-#: sdk/definition/script.xml:210(col)
+#: sdk/definition/script.xml:212(col)
 msgid "Wenn das Objekt verkauft wird. Ab CE."
 msgstr "When the object is sold."
 
-#: sdk/definition/script.xml:211(col)
+#: sdk/definition/script.xml:213(col)
 msgid "Purchase"
 msgstr "Purchase"
 
-#: sdk/definition/script.xml:211(col)
+#: sdk/definition/script.xml:213(col)
 msgid "int iByPlr, object BuyObject"
 msgstr "int iByPlr, object BuyObject"
 
-#: sdk/definition/script.xml:212(col)
+#: sdk/definition/script.xml:214(col)
 msgid "Wenn das Objekt gekauft wird. Ab CE."
 msgstr "When the object is bought."
 
-#: sdk/definition/script.xml:213(col)
+#: sdk/definition/script.xml:215(col)
 msgid "Recruitment"
 msgstr "Recruitment"
 
-#: sdk/definition/script.xml:213(col)
-#: sdk/definition/script.xml:223(col)
+#: sdk/definition/script.xml:215(col)
 #: sdk/definition/script.xml:225(col)
+#: sdk/definition/script.xml:227(col)
 msgid "int iPlr"
 msgstr "int iPlr"
 
-#: sdk/definition/script.xml:214(col)
+#: sdk/definition/script.xml:216(col)
 msgid "Wenn das Objekt der Crew eines Spielers hinzugefügt wird. Ab CE 4.95.2."
 msgstr "When the objet is added to the crew of a player."
 
-#: sdk/definition/script.xml:215(col)
+#: sdk/definition/script.xml:217(col)
 msgid "RejectTeamSwitch"
 msgstr "RejectTeamSwitch"
 
-#: sdk/definition/script.xml:215(col)
+#: sdk/definition/script.xml:217(col)
 msgid "int iPlr, int iNewTeam"
 msgstr "int iPlr, int iNewTeam"
 
-#: sdk/definition/script.xml:216(col)
+#: sdk/definition/script.xml:218(col)
 msgid "Aufruf in Spielziel, -regel und Umweltobjekten und dem Szenarioscript. Wenn RejectTeamSwitch true zurückgibt, kann der Teamwechsel eines Spielers (durch <placeholder-1/>) verhindert werden. Ab 4.9.6.0 CR."
 msgstr "Callback in game goal, rule, and environment objects and in the scenario script. If RejectTeamSwitch returns true, the team switch of a player can be prevented (see <placeholder-1/>). From 4.9.6.0 CR."
 
-#: sdk/definition/script.xml:217(col)
+#: sdk/definition/script.xml:219(col)
 msgid "ContentsDestruction"
 msgstr "ContentsDestruction"
 
-#: sdk/definition/script.xml:218(col)
+#: sdk/definition/script.xml:220(col)
 msgid "Die Funktion wird im Container von pObj aufgerufen, wenn dieses gelöscht wird."
 msgstr "This function is called in the container of pObj when pObj is removed."
 
-#: sdk/definition/script.xml:219(col)
+#: sdk/definition/script.xml:221(col)
 msgid "DoMagicEnergy"
 msgstr "DoMagicEnergy"
 
-#: sdk/definition/script.xml:219(col)
+#: sdk/definition/script.xml:221(col)
 msgid "int iChange, object pObj, bool fAllowPartial"
 msgstr "int iChange, object pObj, bool fAllowPartial"
 
-#: sdk/definition/script.xml:220(col)
+#: sdk/definition/script.xml:222(col)
 msgid "Wird bei jeder Veränderung der Mana aufgerufen."
 msgstr "Is called whenever the magic energy changes."
 
-#: sdk/definition/script.xml:221(col)
+#: sdk/definition/script.xml:223(col)
 msgid "array GetCustomComponents"
 msgstr "array GetCustomComponents"
 
-#: sdk/definition/script.xml:221(col)
+#: sdk/definition/script.xml:223(col)
 msgid "object pBuilder"
 msgstr "object pBuilder"
 
-#: sdk/definition/script.xml:222(col)
+#: sdk/definition/script.xml:224(col)
 msgid "Callback um Komponenten eines Objektes zu setzen. Wird in jedem Menü aufgerufen, dass das Objekt bzw. ID hat. Wird auch beim Bauen eines Objektes aufgerufen. pBuilder ist das Menü-aufrufende-Objekt bzw. der Erbauer. Rückgabewert muss ein Array mit ID/IDs sein. Siehe auch GetComponent, SetComponent, Split2Components."
 msgstr "Callback for setting components of an object. It is called by menus containing menu entries with this ID, as well as when constructing an object. pBuilder is the menu object or builder. The function must return an array of IDs. See also GetComponent, SetComponent, Split2Components."
 
-#: sdk/definition/script.xml:223(col)
+#: sdk/definition/script.xml:225(col)
 msgid "IsFullfilledforPlr"
 msgstr "IsFullfilledforPlr"
 
-#: sdk/definition/script.xml:224(col)
+#: sdk/definition/script.xml:226(col)
 msgid "Wenn die Regel \"Wettstreit\" (EN=Rivalry; ID=RVLR) aktiviert ist, wird IsFulfilledforPlr aufgerufen, ansonsten IsFulfilled. Nur bei Spielziel-Objekten. Bei Rückgabewert true ist das Spielziel für iPlr erfüllt."
 msgstr "If the rule \"Rivalry\" (RVLR) is enabled, IsFulfilledforPlr is being called, otherwise IsFulfilled. Only for goal objects. The function should return true if the goal is fulfilled for iPlr."
 
-#: sdk/definition/script.xml:225(col)
+#: sdk/definition/script.xml:227(col)
 msgid "MouseSelection"
 msgstr "MouseSelection"
 
-#: sdk/definition/script.xml:226(col)
+#: sdk/definition/script.xml:228(col)
 msgid "Wenn das Objekt per Maus angeklickt wurde. Objekt muss die Category C4D_MouseSelect haben."
 msgstr "Called when the object is being clicked on with the mouse. The object must be of the category C4D_MouseSelect."
 
-#: sdk/definition/script.xml:227(col)
+#: sdk/definition/script.xml:229(col)
 msgid "OnActionJump"
 msgstr "OnActionJump"
 
-#: sdk/definition/script.xml:227(col)
+#: sdk/definition/script.xml:229(col)
 msgid "int iXDir100, int iYDir100, bool fByCom"
 msgstr "int iXDir100, int iYDir100, bool fByCom"
 
-#: sdk/definition/script.xml:228(col)
+#: sdk/definition/script.xml:230(col)
 msgid "Wird immer aufgerufen wenn das Objekt in die Aktion \"Jump\" wechselt. Als iXDir100 und iYDir100 werden die X- bzw. Y-Geschwindigkeit mit einer Präzision von 100 übergeben. fByCom ist true bei echtem Sprung; also wenn man per Sprungtaste, per Command (Maus oder Script-Commands) oder per Jump() springt; oder wenn man beim Hangeln/Klettern loslässt; ansonsten false. Wenn OnActionJump true zurückgibt, wird der Engine-Sprung unterbunden."
 msgstr "Is being called whenever the object changes into the action \"Jump\". The x- and y-speed are passed as iXDir100 and iYDir100 with a precision of 100. fByCom is true for real jumps, i.e. by pressing [Up], by Command (Mouse control or SetCommand and similar), by calling Jump() or when releasing while scaling or hangling, otherwise false. If OnActionJump returns true, the engine jump is being suppressed."
 
-#: sdk/definition/script.xml:231(col)
+#: sdk/definition/script.xml:233(col)
 msgid "OnOwnerChanged"
 msgstr "OnOwnerChanged"
 
-#: sdk/definition/script.xml:231(col)
+#: sdk/definition/script.xml:233(col)
 msgid "int iNewOwner, int iOldOwner"
 msgstr "int iNewOwner, int iOldOwner"
 
-#: sdk/definition/script.xml:232(col)
+#: sdk/definition/script.xml:234(col)
 msgid "Wird aufgerufen, wenn das Objekt seinen Besitzer wechselt."
 msgstr "Is called when the object's owner changes."
 
-#: sdk/definition/script.xml:233(col)
+#: sdk/definition/script.xml:235(col)
 msgid "RejectContents"
 msgstr "RejectContents"
 
-#: sdk/definition/script.xml:234(col)
+#: sdk/definition/script.xml:236(col)
 msgid "Wenn true zurückgegeben wird, lässt sich kein Inhaltsmenü öffnen."
 msgstr "If returning true, the contents menu can't be opened."
 
-#: sdk/definition/script.xml:235(col)
+#: sdk/definition/script.xml:237(col)
 msgid "RejectFight"
 msgstr "RejectFight"
 
-#: sdk/definition/script.xml:235(col)
+#: sdk/definition/script.xml:237(col)
 msgid "object pEnemy"
 msgstr "object pEnemy"
 
-#: sdk/definition/script.xml:236(col)
+#: sdk/definition/script.xml:238(col)
 msgid "Wird vor jedem Kampf aufgerufen. Wenn true zurückgegeben wird, findet kein Kampf statt."
 msgstr "Is being called before clonks start fighting. Returning true suppresses the fight."
 
@@ -19120,77 +19132,77 @@ msgstr "Is being called before clonks start fighting. Returning true suppresses 
 msgid "Die Engine ruft zu Zeiten die folgenden Funktionen in Objektscripten auf. <placeholder-1/>"
 msgstr "The engine calls the following functions is objects at the given time. <placeholder-1/>"
 
-#: sdk/definition/script.xml:239(h)
+#: sdk/definition/script.xml:241(h)
 msgid "Control-Funktionen"
 msgstr "Control Functions"
 
-#: sdk/definition/script.xml:240(text)
+#: sdk/definition/script.xml:242(text)
 msgid "Die Engine ruft bei jedem Spielerkommando (Left, Up, Right, Down, Dig, Throw, Special, Special2, CursorLeft, CursorToggle, CursorRight) im Script eines spielergesteuerten Objekts die entsprechende Control-Funktion auf, wenn diese vorhanden ist. Gibt die aufgerufene Control-Funktion 1 zurück, so wird die interne Bearbeitung des Spielerkommandos übersprungen. Ist die Funktion nicht vorhanden oder gibt 0 zurück, findet die interne Bearbeitung des Spielerkommandos statt."
 msgstr "At every player command (Left, Up, Right, Down, Dig, Throw, Special, Special2, CursorLeft, CursorToggle, CursorRight) the engine calls the corresponding control function in the script of the currently controlled object of the player. If the function is defined and returns true, the internal handling of the player command is skipped. If the function is not defined or returns false, internal processing is done."
 
-#: sdk/definition/script.xml:247(emlink)
-#: sdk/definition/script.xml:277(emlink)
+#: sdk/definition/script.xml:249(emlink)
+#: sdk/definition/script.xml:279(emlink)
 msgid "if"
 msgstr "if"
 
-#: sdk/definition/script.xml:247(emlink)
+#: sdk/definition/script.xml:249(emlink)
 msgid "FindContents"
 msgstr "FindContents"
 
-#: sdk/definition/script.xml:248(emlink)
+#: sdk/definition/script.xml:250(emlink)
 msgid "SetAction"
 msgstr "SetAction"
 
-#: sdk/definition/script.xml:252(text)
+#: sdk/definition/script.xml:254(text)
 msgid "Trägt ein Clonk mit diesem Script einen Speer, so führt er seine eigene spezielle Wurf-Aktion aus, sobald der Spieler das Werfen-Kommando gibt (in diesem Fall wird das Werfen-Kommando jedoch nicht wie üblich an alle weiteren ausgewählten Mannschaftsmitglieder weitergegeben). Trägt er keinen Speer, gibt die Funktion 0 zurück und die normale interne Wurf-Aktion wird ausgeführt."
 msgstr "If a clonk with this script is carrying a spear and the player hits the throw button, the clonk performs a special throw action. In this case, however, the command is not passed to the other selected clonks as usual. If the clonk does not carry a spear, the function returns 0 and the regular throwing action is performed."
 
-#: sdk/definition/script.xml:257(text)
+#: sdk/definition/script.xml:259(text)
 msgid "Control-Funktionen werden außerdem an angefasste (indirekt gesteuerte) Objekte weitergeleitet."
 msgstr "Control functions are also transferred to grabbed (indirectly controlled) objects."
 
-#: sdk/definition/script.xml:259(text)
+#: sdk/definition/script.xml:261(text)
 msgid "Einzelklicks und Doppelklicks: Die Engine ruft bei jedem Spielerkommando zunächst die einfache Variante der Control-Funktion auf (z.B. ControlDown) und anschließend die spezifizierte Variante (also ControlDownSingle bzw. ControlDownDouble). Beim Überladen von Control-Funktionen ist dementsprechend darauf zu achten, dass auch die richtige Variante abgefangen wird."
 msgstr "Single and double clicks: for each player command the engine will first call the simple variant of the control function (e.g. ControlDown) and then the more specific variant (i.e. ControlDownSingle or ControlDownDouble). When overloading control functions you should pay attention to catch the correct variant to overload."
 
-#: sdk/definition/script.xml:264(text)
+#: sdk/definition/script.xml:266(text)
 msgid "ContainedControl: Befindet sich das direkt spielergesteuerte Objekt in einem anderen Objekt (Behälter), so werden zunächst die Standardkommandos Down (Verlassen), Throw (Ablegen), Up (Kaufen, in Basisgebäude) und Dig (Verkaufen, in Basisgebäude) ausgewertet. Anschließend wird die Steuerung als Contained-Funktion an den Behälter weitergegeben. Ausnahme: die Spezialkommandos ControlSpecial, ControlSpecial2, ControlCursorLeft, ControlCursorToggle, ControlCursorRight und ControlWheelUp/Down sind nur für die direkte Steuerung gedacht und werden nicht an den Behälter umgeleitet."
 msgstr "ContainedControl: if a directly controlled object is contained in another object (container) the basic commands down (exit), throw (put), up (buy at base), dig (sell at base) are evaluated internally first. Then the command is passed to the container for special handling there. Exception: the commands ControlSpecial, ControlSpecial2, ControlCursorLeft, ControlCursorToggle, ControlCursorRight, and ControlWheelUp/Down are only direct commands and are not passed to the container."
 
-#: sdk/definition/script.xml:270(text)
+#: sdk/definition/script.xml:272(text)
 msgid "ControlCommand: die Engine führt auch <a href=\"#ObjektCallsderEngine\">Objekt-Calls</a> für selbständig auszuführende Befehle (Commands) aus, die direkt durch den Spieler gegeben wurden (z.B. durch Maussteuerung)."
 msgstr "ControlCommand: the engine also performs <a href=\"#ObjektCallsderEngine\">object calls</a> for independently executed commands which have been given directly by the player (i.e. by mouse control)."
 
-#: sdk/definition/script.xml:278(emlink)
-#: sdk/definition/script.xml:281(emlink)
+#: sdk/definition/script.xml:280(emlink)
+#: sdk/definition/script.xml:283(emlink)
 msgid "this"
 msgstr "this"
 
-#: sdk/definition/script.xml:287(text)
+#: sdk/definition/script.xml:289(text)
 msgid "Durch Rückgabe des Werts 1 kann der Befehl abgefangen und die interne Verarbeitung verhindert werden. \"pCmdObj\" ist in jedem Fall das Objekt, für das das Kommando gesetzt werden soll, auch wenn der Aufruf von einem enthaltenen Objekt kommt (siehe VehicleControl in der <emlink href=\"definition/defcore.html\">DefCore</emlink>). Der Script-Befehl <emlink href=\"script/fn/SetCommand.html\">SetCommand</emlink> verursacht keinen ControlCommand-Aufruf."
 msgstr "By returning true the command can be intercepted and internal handling can be prevented. \"pCmdObj\" is always the object receiving the command, even if the call was transferred by a contained object (see VehicleControl in <emlink href=\"definition/defcore.html\">DefCore</emlink>). The script command <emlink href=\"script/fn/SetCommand.html\">SetCommand</emlink> does not cause ControlCommand calls."
 
-#: sdk/definition/script.xml:292(text)
+#: sdk/definition/script.xml:294(text)
 msgid "ControlCommand-Aufrufe werden an angefasste oder von innen gesteuerte Fahrzeuge weitergeleitet, wenn diese ein entsprechendes VehicleControl-Flag besitzen. Diese Weiterleitung wird nach dem ControlCommand-Aufruf des Clonk-Scripts durchgeführt, aber noch vor der internen Verarbeitung, so dass auch das gesteuerte Fahrzeug bei Bedarf den Befehl auswerten und abfangen (überladen) kann."
 msgstr "ControlCommand calls are also transferred to grabbed objects or objects controlled from the inside if these have the VehicleControl flag set. This transferred call is made after the ControlCommand call to the clonk, but before internal handling. So the vehicle, too, has the opportunity to intercept and overload the command."
 
-#: sdk/definition/script.xml:297(text)
+#: sdk/definition/script.xml:299(text)
 msgid "ControlWheelUp und ControlWheelDown werden durch Mausraddrehungen außerhalb von Menüs aufgerufen. Wenn sie nicht überladen sind, führen sie einen ShiftContents-Befehl durch. Dessen Auswirkungen können wiederum durch ControlContents abgefangen werden."
 msgstr "ControlWheelUp and ControlWheelDown are generated by the mouse wheel (and only when not in an object menu). If they are not overloaded, they will cause ShiftContents commands. That in return could be intercepted in ControlContents."
 
-#: sdk/definition/script.xml:301(text)
+#: sdk/definition/script.xml:303(text)
 msgid "ControlContents wird aufgerufen, wenn durch das Mausrad, direktes Anklicken mit der Maus oder einen ShiftContents-Befehl im Script (zum Beispiel bei ControlSpecial oder ControlSpecial2) ein Inventarwechsel stattgefunden hat. Hier können zum Beispiel Aktionen wie das Ablegen von Waffen bei entsprechenden Clonks, oder eigene Inventarwechseldsounds, ausgeführt werden. Wird die Funktion mit einem Rückgabewert ungleich 0 abgefangen, wird der Inventarwechsel unterdrückt. Ansonsten rückt das Objekt mit dem entsprechenden, im ersten Parameter übergebenen ID nach vorne und es wird ein Selection-Call an das neue, erste Inhaltsobjekt ausgeführt. Wird dieser nicht abgefangen, wird der Soundeffekt \"Grab\" beim inventarwechselnden Objekt abgespielt."
 msgstr "ControlContents is called when an inventory change is made by direct mouse click, mouse wheel rotation, or a ShiftContents script command (e.g. in ControlSpecial or ControlSpecial2). Here you can perform special actions such as the arming of weapons or custom inventory sounds. If the function is intercepted with a return value true, the inventory change is prevented. Otherwise, the first object with the given id moves to the front of the inventory and a Selection call is made to the newly selected object. If the latter call is not overloaded, the sound effect \"Grab\" is played for the container object."
 
-#: sdk/definition/script.xml:311(h)
+#: sdk/definition/script.xml:313(h)
 msgid "Context-Funktionen"
 msgstr "Context Functions"
 
-#: sdk/definition/script.xml:312(text)
+#: sdk/definition/script.xml:314(text)
 msgid "Context-Funktionen in Objektscripten (Context_) erscheinen im Spiel im Kontextmenü des Objekts. Die Engine übergibt beim Aufruf einen Zeiger auf das aufrufende Objekt als ersten Parameter (bei Mannschaftsmitgliedern immer das Objekt selbst). Context-Funktionen sollten immer eine gültige Funktionsbeschreibung haben und müssen public sein."
 msgstr "Context functions (Context_ in object scripts) are displayed as entries in the context menu of the object. When calling a context function, the engine will pass a pointer to the calling object as the first parameter (with crew members this is always the object itself). Context functions should always have a valid function description and be declared pubic."
 
-#: sdk/definition/script.xml:325(text)
+#: sdk/definition/script.xml:327(text)
 msgid "Über das Condition-Feld kann bestimmt werden, dass die Funktion nur dann im Kontextmenü auftaucht, wenn die entsprechende Funktion (hier HasKnowledge) im Objektscript vorhanden ist und einen positiven Wert zurückliefert. Das Menüobjekt wird als erster Parameter an die Condition-Funktion übergeben."
 msgstr "If the condition field is used, the context function is only displayed as a menu entry if the script function defined by the condition field (in this case HasKnowledge) is found in the object's script and returns true. The menu object is passed as the first parameter to the condition function."
 
