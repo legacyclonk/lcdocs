@@ -204,7 +204,7 @@ Entwickleridentifikation</emlink>.</text>
   <col>0 oder 1. Bei 1 wird für dieses Gebäude beim Betreten automatisch das Kontextmenü geöffnet. Ab 4.9.7.7.</col></row>
 <row><col>HideHUDBars</col><col>Bitmaske</col><col>Blendet die angegebenen Statusleisten des Objekts aus wenn es als Cursor angewählt ist. Mögliche kombinierbare Werte: Energy, MagicEnergy, Breath, All; Ab LC [336].</col></row>
 <row><col>HideHUDElements</col><col>Bitmaske</col><col>Blendet die angegebenen HUD-Elemente des Objekts aus wenn es als Cursor angewählt ist. Mögliche kombinierbare Werte: Portrait, Captain (der Kapitänsstern), Name, Rank, RankImage, All; Ab LC [346].</col></row>
-<row><col>BaseAutoSell</col><col>Boolean</col><col>Falls true werden Objekte dieser Definition automatisch verkauft sobald sie eine Basis betreten (auch indirekt über das Inventar anderer Objekte), wie es bei Goldklumpen üblich. Standardwert ist false (true falls die id GOLD ist). Ab LC [346].</col></row>
+<row><col>BaseAutoSell</col><col>Boolean</col><col>Falls true werden Objekte dieser Definition automatisch verkauft sobald sie eine Basis betreten (auch indirekt über das Inventar anderer Objekte), wie bei Goldklumpen üblich. Standardwert ist false (true falls die id GOLD ist). Ab LC [346].</col></row>
 </table>
 </text>
 <text>

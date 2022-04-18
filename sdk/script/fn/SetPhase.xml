@@ -15,8 +15,9 @@
     </syntax>
     <desc>Setzt die Aktivitätsphase eines Objekts.</desc>
     <related>
-      <funclink>SetAction</funclink>
       <funclink>GetPhase</funclink>
+      <funclink>SetAction</funclink>
+      <funclink>SetActionKeepPhase</funclink>
     </related>
   </func>
   <author>jwk</author><date>August 2002</date>
