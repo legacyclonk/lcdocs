@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-18 22:36+0200\n"
+"POT-Creation-Date: 2022-06-05 18:33+0200\n"
 "PO-Revision-Date: 2021-04-04 18:46+0200\n"
 "Last-Translator: Markus Mittendrein <maxmitti@gmx.at>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -89,8 +89,8 @@ msgstr "Operator"
 #: sdk/scenario/MapCreatorS2.xml:35(col)
 #: sdk/particle/index.xml:32(col)
 #: sdk/material/c4m.xml:16(col)
-#: sdk/material/c4m.xml:241(col)
-#: sdk/material/c4m.xml:329(col)
+#: sdk/material/c4m.xml:236(col)
+#: sdk/material/c4m.xml:324(col)
 #: sdk/folder/foldermap.xml:16(col)
 #: sdk/folder/foldermap.xml:49(col)
 #: sdk/folder/foldermap.xml:72(col)
@@ -1017,7 +1017,7 @@ msgstr "With the AND operator, the resulting bit will only be 1 if both incoming
 #: sdk/scenario/Teams.xml:98(col)
 #: sdk/scenario/Teams.xml:104(col)
 #: sdk/scenario/Teams.xml:116(col)
-#: sdk/material/c4m.xml:297(col)
+#: sdk/material/c4m.xml:292(col)
 #: sdk/definition/lineconnect.xml:13(col)
 #: sdk/definition/cnat.xml:17(col)
 #: sdk/definition/category.xml:14(col)
@@ -1065,7 +1065,7 @@ msgstr "0"
 #: sdk/scenario/basefunc.xml:12(col)
 #: sdk/scenario/basefunc.xml:14(col)
 #: sdk/scenario/Teams.xml:22(col)
-#: sdk/material/c4m.xml:298(col)
+#: sdk/material/c4m.xml:293(col)
 #: sdk/definition/lineconnect.xml:13(col)
 #: sdk/definition/lineconnect.xml:15(col)
 #: sdk/definition/cnat.xml:17(col)
@@ -1209,7 +1209,7 @@ msgstr "Using these operators you can put together masks (1 &lt;&lt; bit-no.) an
 #: sdk/script/fn/ClearScheduleCall.xml:7(category)
 #: sdk/script/fn/Call.xml:8(category)
 #: sdk/script/fn/C4Id.xml:7(category)
-#: sdk/material/c4m.xml:304(col)
+#: sdk/material/c4m.xml:299(col)
 msgid "Script"
 msgstr "Script"
 
@@ -2459,9 +2459,9 @@ msgstr "The Sort_* functions are used to sort the results of <placeholder-1/>."
 #: sdk/scenario/Teams.xml:89(col)
 #: sdk/particle/index.xml:35(col)
 #: sdk/material/c4m.xml:19(col)
-#: sdk/material/c4m.xml:296(col)
-#: sdk/material/c4m.xml:303(col)
-#: sdk/material/c4m.xml:314(col)
+#: sdk/material/c4m.xml:291(col)
+#: sdk/material/c4m.xml:298(col)
+#: sdk/material/c4m.xml:309(col)
 #: sdk/definition/lineconnect.xml:11(col)
 #: sdk/definition/defcore.xml:25(col)
 #: sdk/definition/actmap.xml:26(col)
@@ -3407,7 +3407,7 @@ msgstr "Red value"
 #: sdk/script/Effects.xml:535(col)
 #: sdk/scenario/basefunc.xml:14(col)
 #: sdk/scenario/basefunc.xml:16(col)
-#: sdk/material/c4m.xml:299(col)
+#: sdk/material/c4m.xml:294(col)
 #: sdk/definition/lineconnect.xml:15(col)
 #: sdk/definition/lineconnect.xml:17(col)
 #: sdk/definition/cnat.xml:19(col)
@@ -3555,8 +3555,8 @@ msgstr "Display"
 #: sdk/scenario/Teams.xml:77(col)
 #: sdk/particle/index.xml:32(col)
 #: sdk/material/c4m.xml:14(col)
-#: sdk/material/c4m.xml:239(col)
-#: sdk/material/c4m.xml:296(col)
+#: sdk/material/c4m.xml:234(col)
+#: sdk/material/c4m.xml:291(col)
 #: sdk/folder/foldermap.xml:14(col)
 #: sdk/folder/foldermap.xml:47(col)
 #: sdk/folder/foldermap.xml:70(col)
@@ -3804,7 +3804,7 @@ msgstr "Left"
 #: sdk/script/fn/GetPlrControlName.xml:23(col)
 #: sdk/script/fn/CustomMessage.xml:30(col)
 #: sdk/script/fn/CreateMenu.xml:25(col)
-#: sdk/material/c4m.xml:333(col)
+#: sdk/material/c4m.xml:328(col)
 #: sdk/definition/lineconnect.xml:27(col)
 #: sdk/definition/category.xml:42(col)
 msgid "7"
@@ -3821,7 +3821,7 @@ msgstr "Stop"
 #: sdk/script/fn/GetPlrControlName.xml:24(col)
 #: sdk/script/fn/CustomMessage.xml:31(col)
 #: sdk/scenario/basefunc.xml:18(col)
-#: sdk/material/c4m.xml:334(col)
+#: sdk/material/c4m.xml:329(col)
 #: sdk/definition/lineconnect.xml:19(col)
 #: sdk/definition/lineconnect.xml:29(col)
 #: sdk/definition/cnat.xml:23(col)
@@ -3838,7 +3838,7 @@ msgstr "Right"
 #: sdk/script/fn/SetPlrShowControl.xml:29(col)
 #: sdk/script/fn/GetPlrControlName.xml:25(col)
 #: sdk/script/fn/CustomMessage.xml:32(col)
-#: sdk/material/c4m.xml:335(col)
+#: sdk/material/c4m.xml:330(col)
 #: sdk/definition/category.xml:50(col)
 msgid "9"
 msgstr "9"
@@ -8549,8 +8549,8 @@ msgstr "Key"
 #: sdk/scenario/Teams.xml:78(col)
 #: sdk/particle/index.xml:32(col)
 #: sdk/material/c4m.xml:15(col)
-#: sdk/material/c4m.xml:240(col)
-#: sdk/material/c4m.xml:329(col)
+#: sdk/material/c4m.xml:235(col)
+#: sdk/material/c4m.xml:324(col)
 #: sdk/folder/foldermap.xml:15(col)
 #: sdk/folder/foldermap.xml:48(col)
 #: sdk/folder/foldermap.xml:71(col)
@@ -11804,7 +11804,7 @@ msgstr "Creates some sparks."
 
 #: sdk/script/fn/CastPXSX.xml:12(desc)
 #: sdk/script/fn/CastPXS.xml:12(desc)
-#: sdk/material/c4m.xml:315(col)
+#: sdk/material/c4m.xml:310(col)
 msgid "Materialname"
 msgstr "Material name"
 
@@ -12792,7 +12792,7 @@ msgstr "Example"
 #: sdk/material/c4m.xml:50(col)
 #: sdk/material/c4m.xml:55(col)
 #: sdk/material/c4m.xml:60(col)
-#: sdk/material/c4m.xml:65(col)
+#: sdk/material/c4m.xml:75(col)
 #: sdk/material/c4m.xml:80(col)
 #: sdk/material/c4m.xml:85(col)
 #: sdk/material/c4m.xml:90(col)
@@ -12807,23 +12807,22 @@ msgstr "Example"
 #: sdk/material/c4m.xml:135(col)
 #: sdk/material/c4m.xml:140(col)
 #: sdk/material/c4m.xml:145(col)
-#: sdk/material/c4m.xml:150(col)
+#: sdk/material/c4m.xml:165(col)
 #: sdk/material/c4m.xml:170(col)
-#: sdk/material/c4m.xml:175(col)
+#: sdk/material/c4m.xml:180(col)
 #: sdk/material/c4m.xml:185(col)
-#: sdk/material/c4m.xml:190(col)
-#: sdk/material/c4m.xml:200(col)
-#: sdk/material/c4m.xml:210(col)
-#: sdk/material/c4m.xml:220(col)
-#: sdk/material/c4m.xml:260(col)
-#: sdk/material/c4m.xml:280(col)
-#: sdk/material/c4m.xml:290(col)
+#: sdk/material/c4m.xml:195(col)
+#: sdk/material/c4m.xml:205(col)
+#: sdk/material/c4m.xml:215(col)
+#: sdk/material/c4m.xml:255(col)
+#: sdk/material/c4m.xml:275(col)
+#: sdk/material/c4m.xml:285(col)
+#: sdk/material/c4m.xml:325(col)
+#: sdk/material/c4m.xml:326(col)
+#: sdk/material/c4m.xml:327(col)
+#: sdk/material/c4m.xml:328(col)
+#: sdk/material/c4m.xml:329(col)
 #: sdk/material/c4m.xml:330(col)
-#: sdk/material/c4m.xml:331(col)
-#: sdk/material/c4m.xml:332(col)
-#: sdk/material/c4m.xml:333(col)
-#: sdk/material/c4m.xml:334(col)
-#: sdk/material/c4m.xml:335(col)
 #: sdk/folder/foldermap.xml:25(col)
 #: sdk/folder/foldermap.xml:30(col)
 #: sdk/folder/foldermap.xml:35(col)
@@ -12941,9 +12940,9 @@ msgstr "A whole number from -2.147.483.648 to +2.147.483.647."
 #: sdk/scenario/MapCreatorS2.xml:94(col)
 #: sdk/scenario/MapCreatorS2.xml:99(col)
 #: sdk/scenario/MapCreatorS2.xml:109(col)
+#: sdk/material/c4m.xml:260(col)
 #: sdk/material/c4m.xml:265(col)
 #: sdk/material/c4m.xml:270(col)
-#: sdk/material/c4m.xml:275(col)
 #: sdk/folder/foldermap.xml:40(col)
 #: sdk/folder/foldermap.xml:131(col)
 #: sdk/folder/foldermap.xml:136(col)
@@ -12957,8 +12956,8 @@ msgid "\"wahr\" (Wert <code>true</code>) oder \"falsch\" (Wert <code>false</code
 msgstr "\"true\" (value <code>true</code>) or \"false\" (value <code>false</code>). Expected as parameter by many structures such as <placeholder-1/> and <placeholder-2/>."
 
 #: sdk/script/Typechecks.xml:33(col)
+#: sdk/material/c4m.xml:65(col)
 #: sdk/material/c4m.xml:70(col)
-#: sdk/material/c4m.xml:75(col)
 #: sdk/definition/defcore.xml:20(col)
 #: sdk/definition/defcore.xml:31(col)
 msgid "Definitions-ID"
@@ -14661,7 +14660,7 @@ msgstr "Version"
 #: sdk/scenario/scenario.xml:506(col)
 #: sdk/scenario/scenario.xml:511(col)
 #: sdk/scenario/scenario.xml:516(col)
-#: sdk/material/c4m.xml:230(col)
+#: sdk/material/c4m.xml:225(col)
 #: sdk/folder/foldermap.xml:20(col)
 #: sdk/folder/foldermap.xml:63(col)
 #: sdk/folder/foldermap.xml:91(col)
@@ -14741,9 +14740,9 @@ msgstr "MissionAccess"
 #: sdk/scenario/scenario.xml:374(col)
 #: sdk/scenario/scenario.xml:379(col)
 #: sdk/scenario/scenario.xml:487(col)
+#: sdk/material/c4m.xml:240(col)
 #: sdk/material/c4m.xml:245(col)
 #: sdk/material/c4m.xml:250(col)
-#: sdk/material/c4m.xml:255(col)
 #: sdk/folder/foldermap.xml:53(col)
 #: sdk/folder/foldermap.xml:58(col)
 #: sdk/folder/foldermap.xml:76(col)
@@ -15114,7 +15113,7 @@ msgid "0-100. Menge Erdreich-Objekte."
 msgstr "0-100. Amount of buried objects."
 
 #: sdk/scenario/scenario.xml:303(col)
-#: sdk/material/c4m.xml:320(col)
+#: sdk/material/c4m.xml:315(col)
 msgid "Sky"
 msgstr "Sky"
 
@@ -15128,7 +15127,7 @@ msgstr "SkyFade"
 
 #: sdk/scenario/scenario.xml:309(col)
 #: sdk/particle/index.xml:75(col)
-#: sdk/material/c4m.xml:205(col)
+#: sdk/material/c4m.xml:200(col)
 #: sdk/definition/defcore.xml:53(col)
 #: sdk/definition/defcore.xml:55(col)
 #: sdk/definition/actmap.xml:78(col)
@@ -15904,7 +15903,7 @@ msgstr "ScriptPlayerNames"
 
 #: sdk/scenario/Teams.xml:62(col)
 #: sdk/scenario/Teams.xml:108(col)
-#: sdk/material/c4m.xml:285(col)
+#: sdk/material/c4m.xml:280(col)
 msgid "String"
 msgstr "String"
 
@@ -16723,7 +16722,7 @@ msgstr "Section [Particle]"
 #: sdk/particle/index.xml:60(col)
 #: sdk/particle/index.xml:65(col)
 #: sdk/particle/index.xml:70(col)
-#: sdk/material/c4m.xml:225(col)
+#: sdk/material/c4m.xml:220(col)
 #: sdk/definition/defcore.xml:25(col)
 #: sdk/definition/defcore.xml:33(col)
 #: sdk/definition/actmap.xml:27(col)
@@ -16833,7 +16832,7 @@ msgid "Anzahl der Animationswiederholungen, bis sich das Partikel zerstört."
 msgstr "Number of animation runs until the particle is destroyed."
 
 #: sdk/particle/index.xml:94(col)
-#: sdk/material/c4m.xml:264(col)
+#: sdk/material/c4m.xml:259(col)
 #: sdk/definition/actmap.xml:56(col)
 msgid "Reverse"
 msgstr "Reverse"
@@ -16875,7 +16874,7 @@ msgid "Gravitationsauswirkung. Bei 0 wird das Partikel gar nicht von der Gravita
 msgstr "Effects of gravity. At 0 the particle is not affected by gravity, at 100 it is fully affected. Negative values are also possible."
 
 #: sdk/particle/index.xml:119(col)
-#: sdk/material/c4m.xml:114(col)
+#: sdk/material/c4m.xml:109(col)
 msgid "WindDrift"
 msgstr "WindDrift"
 
@@ -17163,12 +17162,12 @@ msgid "Sektion [Material]"
 msgstr "Section [Material]"
 
 #: sdk/material/c4m.xml:20(col)
+#: sdk/material/c4m.xml:150(col)
 #: sdk/material/c4m.xml:155(col)
 #: sdk/material/c4m.xml:160(col)
-#: sdk/material/c4m.xml:165(col)
-#: sdk/material/c4m.xml:180(col)
-#: sdk/material/c4m.xml:195(col)
-#: sdk/material/c4m.xml:215(col)
+#: sdk/material/c4m.xml:175(col)
+#: sdk/material/c4m.xml:190(col)
+#: sdk/material/c4m.xml:210(col)
 #: sdk/definition/defcore.xml:129(col)
 msgid "Zeichenfolge (max. 15)"
 msgstr "String (max. 15)"
@@ -17186,633 +17185,625 @@ msgid "Die drei Farben des Materials als R,G,B, R,G,B, R,G,B (jeweils 0-255)."
 msgstr "The three component colors of the material as RGB RGB RGB (each 0-255)."
 
 #: sdk/material/c4m.xml:29(col)
-msgid "ColorAnimation"
-msgstr "ColorAnimation"
-
-#: sdk/material/c4m.xml:31(col)
-msgid "0 oder 1. Farbanimation."
-msgstr "0 oder 1. Color animation."
-
-#: sdk/material/c4m.xml:34(col)
 msgid "Shape"
 msgstr "Shape"
 
-#: sdk/material/c4m.xml:36(col)
+#: sdk/material/c4m.xml:31(col)
 msgid "Landschaftsform: 0 glatt, 1 oben glatt, 2 halbrauh, 3 komplett rauh."
 msgstr "Shape of surface: 0 smooth, 1 smooth on top, 2 semi rough, 3 rough."
 
-#: sdk/material/c4m.xml:39(col)
+#: sdk/material/c4m.xml:34(col)
 msgid "Density"
 msgstr "Density"
 
-#: sdk/material/c4m.xml:41(col)
+#: sdk/material/c4m.xml:36(col)
 msgid "Dichte: 50 fest, 25 flüssig (andere Werte nicht zulässig)."
 msgstr "Density: 50 solid, 25 liquid (other values not allowed)."
 
-#: sdk/material/c4m.xml:44(col)
+#: sdk/material/c4m.xml:39(col)
 msgid "Friction"
 msgstr "Friction"
 
-#: sdk/material/c4m.xml:46(col)
+#: sdk/material/c4m.xml:41(col)
 msgid "0-100. Reibung."
 msgstr "0-100. Friction."
 
-#: sdk/material/c4m.xml:49(col)
+#: sdk/material/c4m.xml:44(col)
 msgid "MinHeightCount"
 msgstr "MinHeightCount"
 
-#: sdk/material/c4m.xml:51(col)
+#: sdk/material/c4m.xml:46(col)
 msgid "<emlink href=\"script/fn/GetMaterialCount.html\">GetMaterialCount</emlink> zählt die Materialpixel erst ab der angegebenen Höhe."
 msgstr "<emlink href=\"script/fn/GetMaterialCount.html\">GetMaterialCount</emlink> only counts material pixels above the specified height."
 
-#: sdk/material/c4m.xml:54(col)
+#: sdk/material/c4m.xml:49(col)
 msgid "SplashRate"
 msgstr "SplashRate"
 
-#: sdk/material/c4m.xml:56(col)
+#: sdk/material/c4m.xml:51(col)
 msgid "Zufallswert im Sinne von !Random(&lt;Wert&gt;) : In 1 von &lt;Wert&gt; Fällen wird der Materialpixel (PXS) nach Aufprall mit dem Boden (Boden hat höhere Density als PXS) aufspringen. Standardwert 10."
 msgstr "Random value computed like !Random(&lt;value&gt;): In 1 out of &lt;value&gt; cases the material pixel (PXS) will bounce after hitting the ground (ground has higher density than the PXS). Default 10."
 
-#: sdk/material/c4m.xml:59(col)
+#: sdk/material/c4m.xml:54(col)
 #: sdk/definition/actmap.xml:148(col)
 msgid "DigFree"
 msgstr "DigFree"
 
-#: sdk/material/c4m.xml:61(col)
+#: sdk/material/c4m.xml:56(col)
 msgid "0 oder 1. Bestimmt, ob das Material freigegraben werden kann."
 msgstr "0 oder 1. Determines wether the material can be dug into."
 
-#: sdk/material/c4m.xml:64(col)
+#: sdk/material/c4m.xml:59(col)
 msgid "BlastFree"
 msgstr "BlastFree"
 
-#: sdk/material/c4m.xml:66(col)
+#: sdk/material/c4m.xml:61(col)
 msgid "0 oder 1. Bestimmt, ob das Material freigesprengt werden kann."
 msgstr "0 oder 1. Determines whether the material can be blasted away."
 
-#: sdk/material/c4m.xml:69(col)
+#: sdk/material/c4m.xml:64(col)
 msgid "Blast2Object"
 msgstr "Blast2Object"
 
-#: sdk/material/c4m.xml:71(col)
+#: sdk/material/c4m.xml:66(col)
 msgid "Freigesprengte Objekte."
 msgstr "Type of objects created by blasting this material."
 
-#: sdk/material/c4m.xml:74(col)
+#: sdk/material/c4m.xml:69(col)
 msgid "Dig2Object"
 msgstr "Dig2Object"
 
-#: sdk/material/c4m.xml:76(col)
+#: sdk/material/c4m.xml:71(col)
 msgid "Freigegrabene Objekte."
 msgstr "Type of objects dug out from this material."
 
-#: sdk/material/c4m.xml:79(col)
+#: sdk/material/c4m.xml:74(col)
 msgid "Dig2ObjectRatio"
 msgstr "Dig2ObjectRatio"
 
-#: sdk/material/c4m.xml:81(col)
+#: sdk/material/c4m.xml:76(col)
 msgid "ca. 100-500. Massenverhältnis beim Freigraben."
 msgstr "ca. 100-500. Mass ratio when digging out objects."
 
-#: sdk/material/c4m.xml:84(col)
+#: sdk/material/c4m.xml:79(col)
 msgid "Dig2ObjectRequest"
 msgstr "Dig2ObjectRequest"
 
-#: sdk/material/c4m.xml:86(col)
+#: sdk/material/c4m.xml:81(col)
 msgid "0 oder 1. Wenn 1, werden Objekte nur auf Wunsch freigegraben."
 msgstr "0 or 1. If 1, objects are only dug out on request."
 
-#: sdk/material/c4m.xml:89(col)
+#: sdk/material/c4m.xml:84(col)
 msgid "Blast2ObjectRatio"
 msgstr "Blast2ObjectRatio"
 
-#: sdk/material/c4m.xml:91(col)
+#: sdk/material/c4m.xml:86(col)
 msgid "ca. 100-500. Massenverhältnis beim Freisprengen."
 msgstr "ca. 100-500. Mass ratio when blasting free objects."
 
-#: sdk/material/c4m.xml:94(col)
+#: sdk/material/c4m.xml:89(col)
 msgid "Blast2PXSRatio"
 msgstr "Blast2PXSRatio"
 
-#: sdk/material/c4m.xml:96(col)
+#: sdk/material/c4m.xml:91(col)
 msgid "Massenverhältnis beim Freisprengen von Kleinmaterial."
 msgstr "Mass ratio when material pixels are blasted free."
 
-#: sdk/material/c4m.xml:99(col)
+#: sdk/material/c4m.xml:94(col)
 msgid "Instable"
 msgstr "Instable"
 
-#: sdk/material/c4m.xml:101(col)
+#: sdk/material/c4m.xml:96(col)
 msgid "0 oder 1. Stabilität."
 msgstr "0 oder 1. Stability."
 
-#: sdk/material/c4m.xml:104(col)
+#: sdk/material/c4m.xml:99(col)
 msgid "MaxAirSpeed"
 msgstr "MaxAirSpeed"
 
-#: sdk/material/c4m.xml:106(col)
+#: sdk/material/c4m.xml:101(col)
 msgid "ca. 10-100. Fallgeschwindigkeit."
 msgstr "ca. 10-100. Maximum falling speed."
 
-#: sdk/material/c4m.xml:109(col)
+#: sdk/material/c4m.xml:104(col)
 msgid "MaxSlide"
 msgstr "MaxSlide"
 
-#: sdk/material/c4m.xml:111(col)
+#: sdk/material/c4m.xml:106(col)
 msgid "Rutschreichweite."
 msgstr "Maximum side offset when sliding."
 
-#: sdk/material/c4m.xml:116(col)
+#: sdk/material/c4m.xml:111(col)
 msgid "Abtrieb durch Wind."
 msgstr "Horizontal drift by wind."
 
-#: sdk/material/c4m.xml:119(col)
-#: sdk/material/c4m.xml:323(col)
+#: sdk/material/c4m.xml:114(col)
+#: sdk/material/c4m.xml:318(col)
 msgid "Inflammable"
 msgstr "Inflammable"
 
-#: sdk/material/c4m.xml:121(col)
+#: sdk/material/c4m.xml:116(col)
 msgid "Entzündbarkeit."
 msgstr "Inflammability."
 
-#: sdk/material/c4m.xml:124(col)
-#: sdk/material/c4m.xml:321(col)
+#: sdk/material/c4m.xml:119(col)
+#: sdk/material/c4m.xml:316(col)
 msgid "Incindiary"
 msgstr "Incindiary"
 
-#: sdk/material/c4m.xml:126(col)
+#: sdk/material/c4m.xml:121(col)
 msgid "Entzündung durch dieses Material."
 msgstr "This material incinerates objects."
 
-#: sdk/material/c4m.xml:129(col)
-#: sdk/material/c4m.xml:309(col)
-#: sdk/material/c4m.xml:325(col)
+#: sdk/material/c4m.xml:124(col)
+#: sdk/material/c4m.xml:304(col)
+#: sdk/material/c4m.xml:320(col)
 msgid "Corrode"
 msgstr "Corrode"
 
-#: sdk/material/c4m.xml:131(col)
+#: sdk/material/c4m.xml:126(col)
 msgid "Verätzung durch dieses Material."
 msgstr "This material corrodes other materials."
 
-#: sdk/material/c4m.xml:134(col)
-#: sdk/material/c4m.xml:324(col)
+#: sdk/material/c4m.xml:129(col)
+#: sdk/material/c4m.xml:319(col)
 msgid "Corrosive"
 msgstr "Corrosive"
 
-#: sdk/material/c4m.xml:136(col)
+#: sdk/material/c4m.xml:131(col)
 msgid "Ätzbarkeit."
 msgstr "This material can be corroded."
 
-#: sdk/material/c4m.xml:139(col)
-#: sdk/material/c4m.xml:322(col)
+#: sdk/material/c4m.xml:134(col)
+#: sdk/material/c4m.xml:317(col)
 msgid "Extinguisher"
 msgstr "Extinguisher"
 
-#: sdk/material/c4m.xml:141(col)
+#: sdk/material/c4m.xml:136(col)
 msgid "Feuerlöschkraft."
 msgstr "This material will extinguish burning objects."
 
-#: sdk/material/c4m.xml:144(col)
+#: sdk/material/c4m.xml:139(col)
 msgid "Soil"
 msgstr "Soil"
 
-#: sdk/material/c4m.xml:146(col)
+#: sdk/material/c4m.xml:141(col)
 msgid "Nährboden für Pflanzen."
 msgstr "Plants grow on this material."
 
-#: sdk/material/c4m.xml:149(col)
+#: sdk/material/c4m.xml:144(col)
 msgid "TempConvStrength"
 msgstr "TempConvStrength"
 
-#: sdk/material/c4m.xml:151(col)
+#: sdk/material/c4m.xml:146(col)
 msgid "Stärke der Temperaturumwandlung."
 msgstr "Strength of temperature conversion."
 
-#: sdk/material/c4m.xml:154(col)
+#: sdk/material/c4m.xml:149(col)
 msgid "BlastShiftTo"
 msgstr "BlastShiftTo"
 
-#: sdk/material/c4m.xml:156(col)
+#: sdk/material/c4m.xml:151(col)
 msgid "Materialverwandlung bei Sprengung."
 msgstr "Material changes into another material when blasted."
 
-#: sdk/material/c4m.xml:159(col)
+#: sdk/material/c4m.xml:154(col)
 msgid "InMatConvert"
 msgstr "InMatConvert"
 
-#: sdk/material/c4m.xml:161(col)
+#: sdk/material/c4m.xml:156(col)
 msgid "In diesem Material verwandelt sich das Material..."
 msgstr "Entering this material the material will change into..."
 
-#: sdk/material/c4m.xml:164(col)
+#: sdk/material/c4m.xml:159(col)
 msgid "InMatConvertTo"
 msgstr "InMatConvertTo"
 
-#: sdk/material/c4m.xml:166(col)
+#: sdk/material/c4m.xml:161(col)
 msgid "...in dieses Material..."
 msgstr "...this material..."
 
-#: sdk/material/c4m.xml:169(col)
+#: sdk/material/c4m.xml:164(col)
 msgid "InMatConvertDepth"
 msgstr "InMatConvertDepth"
 
-#: sdk/material/c4m.xml:171(col)
+#: sdk/material/c4m.xml:166(col)
 msgid "...wenn das Materialpixel zur angegebenen Tiefe im angegebenen Material ist. Ab CE."
 msgstr "...when at the given depth."
 
-#: sdk/material/c4m.xml:174(col)
+#: sdk/material/c4m.xml:169(col)
 msgid "AboveTempConvert"
 msgstr "AboveTempConvert"
 
-#: sdk/material/c4m.xml:176(col)
+#: sdk/material/c4m.xml:171(col)
 msgid "Oberhalb dieser Temperatur verwandelt sich das Material..."
 msgstr "Above this temperature the material will change into..."
 
-#: sdk/material/c4m.xml:179(col)
+#: sdk/material/c4m.xml:174(col)
 msgid "AboveTempConvertTo"
 msgstr "AboveTempConvertTo"
 
-#: sdk/material/c4m.xml:181(col)
-#: sdk/material/c4m.xml:196(col)
+#: sdk/material/c4m.xml:176(col)
+#: sdk/material/c4m.xml:191(col)
 msgid "...in dieses Material."
 msgstr "...this material."
 
-#: sdk/material/c4m.xml:184(col)
+#: sdk/material/c4m.xml:179(col)
 msgid "AboveTempConvertDir"
 msgstr "AboveTempConvertDir"
 
-#: sdk/material/c4m.xml:186(col)
-#: sdk/material/c4m.xml:201(col)
+#: sdk/material/c4m.xml:181(col)
+#: sdk/material/c4m.xml:196(col)
 msgid "Richtung der Umwandlung: von oben nach unten (0), von unten nach oben (1)"
 msgstr "Direction of temperature conversion: 0 bottom up, 1 top down"
 
-#: sdk/material/c4m.xml:189(col)
+#: sdk/material/c4m.xml:184(col)
 msgid "BelowTempConvert"
 msgstr "BelowTempConvert"
 
-#: sdk/material/c4m.xml:191(col)
+#: sdk/material/c4m.xml:186(col)
 msgid "Unterhalb dieser Temperatur verwandelt sich das Material..."
 msgstr "Below this temperature the material will change into..."
 
-#: sdk/material/c4m.xml:194(col)
+#: sdk/material/c4m.xml:189(col)
 msgid "BelowTempConvertTo"
 msgstr "BelowTempConvertTo"
 
-#: sdk/material/c4m.xml:199(col)
+#: sdk/material/c4m.xml:194(col)
 msgid "BelowTempConvertDir"
 msgstr "BelowTempConvertDir"
 
-#: sdk/material/c4m.xml:204(col)
+#: sdk/material/c4m.xml:199(col)
 msgid "Alpha"
 msgstr "Alpha"
 
-#: sdk/material/c4m.xml:206(col)
+#: sdk/material/c4m.xml:201(col)
 msgid "Durchsichtigkeit für die drei Materialfarben ober- und unterirdisch."
 msgstr "Transparency of the three material colors."
 
-#: sdk/material/c4m.xml:209(col)
+#: sdk/material/c4m.xml:204(col)
 #: sdk/definition/defcore.xml:81(col)
 msgid "Placement"
 msgstr "Placement"
 
-#: sdk/material/c4m.xml:211(col)
+#: sdk/material/c4m.xml:206(col)
 msgid "0-100. Dieser Wert wird für die Nachbeleuchtung der Landschaft verwendet, und wird normalerweise automatisch aus den anderen Materialwerten berechnet."
 msgstr "0-100. This Value is used for lighting of the landscape and is usually determined automatically from the other material values."
 
-#: sdk/material/c4m.xml:214(col)
+#: sdk/material/c4m.xml:209(col)
 msgid "TextureOverlay"
 msgstr "TextureOverlay"
 
-#: sdk/material/c4m.xml:216(col)
+#: sdk/material/c4m.xml:211(col)
 msgid "Standardtextur für dieses Material, die vom Landschaftsgenerator zusätzlich benutzt wird."
 msgstr "Standard texture for this material used by the landscape generator."
 
-#: sdk/material/c4m.xml:219(col)
+#: sdk/material/c4m.xml:214(col)
 msgid "OverlayType"
 msgstr "OverlayType"
 
-#: sdk/material/c4m.xml:221(col)
+#: sdk/material/c4m.xml:216(col)
 msgid "Bitmaske für die Berechnung der Textur auf dem Material. Bit 0 (1): Exakt (kein Zoom), Bit 1 (2): Keine Textur, Bit 2 (4): Extragroß gezoomt, Bit 3 (8): Textur auf Graustufen aufrechnen."
 msgstr "Bit mask for texture calculation on this material. Bit 0 (1): exact (no zoom), bit 1 (2): no texture, bit 2 (4): extra large zoom, bit 3 (8): calculate texture based on gray scale."
 
-#: sdk/material/c4m.xml:224(col)
+#: sdk/material/c4m.xml:219(col)
 msgid "PXSGfx"
 msgstr "PXSGfx"
 
-#: sdk/material/c4m.xml:226(col)
+#: sdk/material/c4m.xml:221(col)
 msgid "Grafik für lose Materialpixel. Die Grafik sollte als Materialtextur geladen sein."
 msgstr "Graphics used for loose material pixels. This graphic should be available as material texture."
 
-#: sdk/material/c4m.xml:229(col)
+#: sdk/material/c4m.xml:224(col)
 msgid "PXSGfxRt"
 msgstr "PXSGfxRt"
 
-#: sdk/material/c4m.xml:231(col)
+#: sdk/material/c4m.xml:226(col)
 msgid "Zielrechteck auf die Grafik für lose Materialpixel. Es werden weitere Phasen rechts und unterhalb der angegebenen Grafik benutzt. Die Grafik sollte immer oben links beginnen, und die gesamte Texturgröße einnehmen."
 msgstr "Target rectangle for the graphics of loose material pixels. Additional phases on the right and below the specified rectangle will be used. The rectangle should always start in the top left corner and use the complete texture size."
 
-#: sdk/material/c4m.xml:234(h)
+#: sdk/material/c4m.xml:229(h)
 msgid "Benutzerdefinierte Reaktionen"
 msgstr "User defined reaction"
 
-#: sdk/material/c4m.xml:235(text)
+#: sdk/material/c4m.xml:230(text)
 msgid "Zusätzlich zu den Standardroutinen kann jedes Material ab CR weitere Reaktionen definieren, die ausgeführt werden, wenn das Material durch lose Pixel (z.B. Regen oder Explosionsstreuung) oder Materialbewegung (z.B. beim Angraben eines Sees) auf ein anderes Material trifft:"
 msgstr "In addition to default reactions, every material can define custom reactions which are executed when the material passes another material as a free pixel (e.g. precipitation or particles after explosios) or by material movement (e.g. when a lake floods a tunnel)."
 
-#: sdk/material/c4m.xml:237(caption)
+#: sdk/material/c4m.xml:232(caption)
 msgid "In der .c4m-Datei: Beliebig viele Sektionen [Reaction]"
 msgstr "In the .c4m-file: Any number of sections [Reaction]"
 
-#: sdk/material/c4m.xml:244(col)
+#: sdk/material/c4m.xml:239(col)
 msgid "Type"
 msgstr "Type"
 
-#: sdk/material/c4m.xml:246(col)
+#: sdk/material/c4m.xml:241(col)
 msgid "Art der Reaktion, die stattfinden soll. Siehe <emlink href=\"material/c4m.html#ReactTypes\">Tabelle</emlink>."
 msgstr "Type of reaction that should happen. See <emlink href=\"material/c4m.html#ReactTypes\">Table</emlink>."
 
-#: sdk/material/c4m.xml:249(col)
+#: sdk/material/c4m.xml:244(col)
 msgid "TargetSpec"
 msgstr "TargetSpec"
 
-#: sdk/material/c4m.xml:251(col)
+#: sdk/material/c4m.xml:246(col)
 msgid "Zielmaterial, mit dem das lose Material reagiert. Siehe <emlink href=\"material/c4m.html#TargetSpecs\">Materialspezifikationen</emlink>."
 msgstr "Target material, with which the loose material reacts. See <emlink href=\"material/c4m.html#TargetSpecs\">material specifications</emlink>."
 
-#: sdk/material/c4m.xml:254(col)
+#: sdk/material/c4m.xml:249(col)
 msgid "ScriptFunc"
 msgstr "ScriptFunc"
 
-#: sdk/material/c4m.xml:256(col)
+#: sdk/material/c4m.xml:251(col)
 msgid "Nur für Reaktionstyp Script: Name der Scriptfunktion, die das Verhalten bestimmt."
 msgstr "Reaction type script only: Name of the script function, which determines the behaviour."
 
-#: sdk/material/c4m.xml:259(col)
+#: sdk/material/c4m.xml:254(col)
 msgid "ExecMask"
 msgstr "ExecMask"
 
-#: sdk/material/c4m.xml:261(col)
+#: sdk/material/c4m.xml:256(col)
 msgid "Bitmaske, die angibt, in welcher Situation die Reaktion stattfindet. Bitindizes sind die <emlink href=\"material/c4m.html#ReactEvents\">Reaktionsereignisse</emlink>. Standardwert -1 für alle Ereignisse."
 msgstr "Bitmask, determining in which situation the reaction is to be executed. Bit indices are the <emlink href=\"material/c4m.html#ReactEvents\">reaction events</emlink>. Default value -1 for all events."
 
-#: sdk/material/c4m.xml:266(col)
+#: sdk/material/c4m.xml:261(col)
 msgid "Normalerweise gibt die Reaktion an, was mit losem Material der Definition, in der die Reaktion definiert ist, passiert, wenn es auf festes Material vom in TargetSpec angegebenen Typ trifft. Ist Reverse gesetzt, so wird die Definition umgekehrt."
 msgstr "Usually, the reaction defines what happens when loose material of the definition, in which the reaction is defined, hits solid material of the type specified in TargetSpec. If Reverse is set, this definition is swapped."
 
-#: sdk/material/c4m.xml:269(col)
+#: sdk/material/c4m.xml:264(col)
 msgid "InverseSpec"
 msgstr "InverseSpec"
 
-#: sdk/material/c4m.xml:271(col)
+#: sdk/material/c4m.xml:266(col)
 msgid "Wenn wahr, wird die Reaktion für alle anderen Materialien (inklusive \"Sky\"), die die Bedingung in TargetSpec nicht erfüllen, verwendet."
 msgstr "If true, the reaction will be defined for all other materials (including \"Sky\"), which do not fulfill the condition in TargetSpec."
 
-#: sdk/material/c4m.xml:274(col)
+#: sdk/material/c4m.xml:269(col)
 msgid "CheckSlide"
 msgstr "CheckSlide"
 
-#: sdk/material/c4m.xml:276(col)
+#: sdk/material/c4m.xml:271(col)
 msgid "Wenn wahr, wird vor dem Aufruf der Reaktion das Standardverhalten (Sprenkeln am Boden und Abrutschen nach MaxSlide) ausgeführt."
 msgstr "If true, the standard behaviour (Bouncing off the ground and sliding according to MaxSlide) will be executed before the call is done."
 
-#: sdk/material/c4m.xml:279(col)
+#: sdk/material/c4m.xml:274(col)
 msgid "Depth"
 msgstr "Depth"
 
-#: sdk/material/c4m.xml:281(col)
+#: sdk/material/c4m.xml:276(col)
 msgid "Nur für Reaktionstyp Convert: Tiefe im Zielmaterial, ab der Material umgewandelt wird."
 msgstr "Reaction type Convert only: Depth in target material required for conversion."
 
-#: sdk/material/c4m.xml:284(col)
+#: sdk/material/c4m.xml:279(col)
 msgid "ConvertMat"
 msgstr "ConvertMat"
 
-#: sdk/material/c4m.xml:286(col)
+#: sdk/material/c4m.xml:281(col)
 msgid "Nur für Reaktionstyp Convert: Material, in das umgewandelt wird. Bei Angabe von Sky wird das Material vernichtet."
 msgstr "Reaction type Convert only: Material, into which the loose material is converted. If sky is specified, the material will vanish."
 
-#: sdk/material/c4m.xml:289(col)
+#: sdk/material/c4m.xml:284(col)
 msgid "CorrosionRate"
 msgstr "CorrosionRate"
 
-#: sdk/material/c4m.xml:291(col)
+#: sdk/material/c4m.xml:286(col)
 msgid "Nur für Reaktionstyp Corrode: Chance darauf, dass verätzt wird."
 msgstr "Reaction type Corrode only: Chance of corrosion."
 
-#: sdk/material/c4m.xml:295(caption)
+#: sdk/material/c4m.xml:290(caption)
 msgid "Reaktionsereignisse"
 msgstr "Reaction events"
 
-#: sdk/material/c4m.xml:296(col)
+#: sdk/material/c4m.xml:291(col)
 msgid "Ereignis"
 msgstr "Event"
 
-#: sdk/material/c4m.xml:297(col)
+#: sdk/material/c4m.xml:292(col)
 msgid "MEE_PXSPos"
 msgstr "MEE_PXSPos"
 
-#: sdk/material/c4m.xml:297(col)
+#: sdk/material/c4m.xml:292(col)
 msgid "Check vor jedem Bewegungsframe eines losen Materialpixels gegen das Hintergrundmaterial"
 msgstr "Check before each movement frame of a loose material pixel against its background material"
 
-#: sdk/material/c4m.xml:298(col)
+#: sdk/material/c4m.xml:293(col)
 msgid "MEE_PXSMove"
 msgstr "MEE_PXSMove"
 
-#: sdk/material/c4m.xml:298(col)
+#: sdk/material/c4m.xml:293(col)
 msgid "Check gegen jedes Pixel, das ein loses Materialpixel in seiner Bewegung berührt"
 msgstr "Check against each pixel that a loose material pixel passes during its movemvent"
 
-#: sdk/material/c4m.xml:299(col)
+#: sdk/material/c4m.xml:294(col)
 msgid "MEE_MassMove"
 msgstr "MEE_MassMove"
 
-#: sdk/material/c4m.xml:299(col)
+#: sdk/material/c4m.xml:294(col)
 msgid "Bei größeren Materialbewegungen (z.B. angegrabener See):Check des bewegten Materials gegen das Material, über das es sich bewegt"
 msgstr "During larger material movements (e.g. when a lake is flooded into a tunnel): Check of the moving material against the material over which it's moving"
 
-#: sdk/material/c4m.xml:302(caption)
+#: sdk/material/c4m.xml:297(caption)
 msgid "Reaktionstypen"
 msgstr "Reaction types"
 
-#: sdk/material/c4m.xml:303(col)
+#: sdk/material/c4m.xml:298(col)
 #: sdk/definition/procedures.xml:16(col)
 msgid "Verhalten"
 msgstr "Behaviour"
 
-#: sdk/material/c4m.xml:305(col)
+#: sdk/material/c4m.xml:300(col)
 msgid "Für jedes Aufeinandertreffen wird die in ScriptFunc angegebene Scriptfunktion aufgerufen."
 msgstr "For each collision, the script function specified in ScriptFunc is called."
 
-#: sdk/material/c4m.xml:307(col)
+#: sdk/material/c4m.xml:302(col)
 msgid "Convert"
 msgstr "Convert"
 
-#: sdk/material/c4m.xml:307(col)
+#: sdk/material/c4m.xml:302(col)
 msgid "Das Material wird in ein anderes umgewandelt. Vergleichbar mit dem Verhalten von Schnee in Wasser."
 msgstr "The material is converted into another. Comparable to the behaviour of snow in water."
 
-#: sdk/material/c4m.xml:308(col)
+#: sdk/material/c4m.xml:303(col)
 msgid "Poof"
 msgstr "Poof"
 
-#: sdk/material/c4m.xml:308(col)
+#: sdk/material/c4m.xml:303(col)
 msgid "Sowohl das lose als auch das feste Material werden entfernt. Außerdem werden wird mit Chance 1:3 eine kleine Rauchwolke erzeugt und mit Chance 1:3 der Sound \"Pshshsh\" abgespielt. Vergleichbar mit dem Verhalten von Wasser in Lava."
 msgstr "Both the loose and the solid material are removed. Additionally, there's a 1:3 chance of creating a small smoke cloud, and a 1:3 chance that the sound \"Pshshsh\" is played. Comparable to the behaviour of water in lava."
 
-#: sdk/material/c4m.xml:309(col)
+#: sdk/material/c4m.xml:304(col)
 msgid "Das lose Material ätzt das Zielmaterial mit Chance CorrosionRate weg und entfernt sich dabei selber. Wenn geätzt wird, wird mit Chance 1:5 eine kleine Rauchwolke erzeugt und mit Chance 1:20 der Sound \"Corrode\" abgespielt. Vergleichbar mit dem Verhalten von Säure auf Erde."
 msgstr "The loose material corrodes the target material at the chance CorrosionRate, and vanishes itself if it does so. If corrosion is performed, a small smoke cloud is created at a chance of 1:5, and the sound \"Corrode\" is played at a chance of 1:20. Comparable with the behaviour of acid on earth."
 
-#: sdk/material/c4m.xml:310(col)
+#: sdk/material/c4m.xml:305(col)
 msgid "Insert"
 msgstr "Insert"
 
-#: sdk/material/c4m.xml:310(col)
+#: sdk/material/c4m.xml:305(col)
 msgid "Das lose Material wird als festes Material eingefügt. Vergleichbar mit dem Verhalten aller Materialien, wenn sie auf ein Material gleicher oder höherer Dichte treffen."
 msgstr "The loose material is inserted as solid material. Comparable to the behaviour of any material that hits a material of equal or higher density."
 
-#: sdk/material/c4m.xml:313(caption)
+#: sdk/material/c4m.xml:308(caption)
 msgid "Materialspezifikationen"
 msgstr "Material specifications"
 
-#: sdk/material/c4m.xml:314(col)
+#: sdk/material/c4m.xml:309(col)
 msgid "Materialien"
 msgstr "Materials"
 
-#: sdk/material/c4m.xml:315(col)
+#: sdk/material/c4m.xml:310(col)
 msgid "Entsprcht die Spezifikation direkt dem Namen eines anderen Materials, wird dieses benutzt."
 msgstr "If the specification equals the name of an existing material, this material will be used."
 
-#: sdk/material/c4m.xml:316(col)
+#: sdk/material/c4m.xml:311(col)
 msgid "All"
 msgstr "All"
 
-#: sdk/material/c4m.xml:316(col)
+#: sdk/material/c4m.xml:311(col)
 msgid "Alle Materialien inklusive \"Sky\""
 msgstr "All materials, including \"Sky\""
 
-#: sdk/material/c4m.xml:317(col)
+#: sdk/material/c4m.xml:312(col)
 msgid "Solid"
 msgstr "Solid"
 
-#: sdk/material/c4m.xml:317(col)
+#: sdk/material/c4m.xml:312(col)
 msgid "Alle festen Materialien"
 msgstr "All solid materials"
 
-#: sdk/material/c4m.xml:318(col)
+#: sdk/material/c4m.xml:313(col)
 msgid "SemiSolid"
 msgstr "SemiSolid"
 
-#: sdk/material/c4m.xml:318(col)
+#: sdk/material/c4m.xml:313(col)
 msgid "Alle festen und flüssigen Materialien"
 msgstr "All solid and liquid materials"
 
-#: sdk/material/c4m.xml:319(col)
+#: sdk/material/c4m.xml:314(col)
 msgid "Background"
 msgstr "Background"
 
-#: sdk/material/c4m.xml:319(col)
+#: sdk/material/c4m.xml:314(col)
 msgid "Alle Hintergrundmaterialien, inklusive \"Sky\""
 msgstr "All background materials, including \"Sky\""
 
-#: sdk/material/c4m.xml:320(col)
+#: sdk/material/c4m.xml:315(col)
 msgid "Das Hintergrundmaterial."
 msgstr "The background material."
 
-#: sdk/material/c4m.xml:321(col)
+#: sdk/material/c4m.xml:316(col)
 msgid "Alle anzündenden Materialien."
 msgstr "All materials to be incinerated."
 
-#: sdk/material/c4m.xml:322(col)
+#: sdk/material/c4m.xml:317(col)
 msgid "Alle feuerlöschenden Materialien."
 msgstr "All extinguishing materials."
 
-#: sdk/material/c4m.xml:323(col)
+#: sdk/material/c4m.xml:318(col)
 msgid "Alle entzündbaren Materialien."
 msgstr "All flammable materials."
 
-#: sdk/material/c4m.xml:324(col)
+#: sdk/material/c4m.xml:319(col)
 msgid "Alle verätzbaren Materialien."
 msgstr "All materials which can be corroded."
 
-#: sdk/material/c4m.xml:325(col)
+#: sdk/material/c4m.xml:320(col)
 msgid "Alle ätzenden Materialien."
 msgstr "All corrosive materials."
 
-#: sdk/material/c4m.xml:327(h)
+#: sdk/material/c4m.xml:322(h)
 msgid "Reaktionstyp 'Script'"
 msgstr "Reaction type 'Script'"
 
-#: sdk/material/c4m.xml:329(col)
+#: sdk/material/c4m.xml:324(col)
 msgid "Parameternummer(n)"
 msgstr "Parameter number(s)"
 
-#: sdk/material/c4m.xml:329(col)
+#: sdk/material/c4m.xml:324(col)
 msgid "Name(n)"
 msgstr "Name(s)"
 
-#: sdk/material/c4m.xml:330(col)
+#: sdk/material/c4m.xml:325(col)
 msgid "1,2"
 msgstr "1,2"
 
-#: sdk/material/c4m.xml:330(col)
+#: sdk/material/c4m.xml:325(col)
 msgid "iX, iY"
 msgstr "iX, iY"
 
-#: sdk/material/c4m.xml:330(col)
+#: sdk/material/c4m.xml:325(col)
 msgid "Position des losen Materials. Die Parameter können verändert werden, um das Materialpixel zu verschieben."
 msgstr "Position of the loose material. The parameters may be modified in order to move the material pixel."
 
-#: sdk/material/c4m.xml:331(col)
+#: sdk/material/c4m.xml:326(col)
 msgid "3,4"
 msgstr "3,4"
 
-#: sdk/material/c4m.xml:331(col)
+#: sdk/material/c4m.xml:326(col)
 msgid "iLSPosX, iLSPosY"
 msgstr "iLSPosX, iLSPosY"
 
-#: sdk/material/c4m.xml:331(col)
+#: sdk/material/c4m.xml:326(col)
 msgid "Position in der Landschaft, auf die das Material trifft."
 msgstr "Position in the landscape, on which the material hits."
 
-#: sdk/material/c4m.xml:332(col)
+#: sdk/material/c4m.xml:327(col)
 msgid "5,6"
 msgstr "5,6"
 
-#: sdk/material/c4m.xml:332(col)
+#: sdk/material/c4m.xml:327(col)
 msgid "iXDir, iYDir"
 msgstr "iXDir, iYDir"
 
-#: sdk/material/c4m.xml:332(col)
+#: sdk/material/c4m.xml:327(col)
 msgid "Geschwindigkeit (in 1/100px) der Bewegung des Materials. Kann geändert werden, um die Geschwindigkeit des Materialpixels zu beeinflussen. Nicht für MassMover."
 msgstr "Speed (in 1/100px) of the movement of the material. May be modified in order to change the material speed. Not for MassMover."
 
-#: sdk/material/c4m.xml:333(col)
+#: sdk/material/c4m.xml:328(col)
 msgid "iPxsMat"
 msgstr "iPxsMat"
 
-#: sdk/material/c4m.xml:333(col)
+#: sdk/material/c4m.xml:328(col)
 msgid "Materialnummer des losen Materials. Nützlich, wenn die gleiche Funktion für Reaktionen mehrerer Materialen verwendet wird"
 msgstr "Material number of the loose material. Useful if the same reaction function is used for multiple materials"
 
-#: sdk/material/c4m.xml:334(col)
+#: sdk/material/c4m.xml:329(col)
 msgid "iLsMat"
 msgstr "iLsMat"
 
-#: sdk/material/c4m.xml:334(col)
+#: sdk/material/c4m.xml:329(col)
 msgid "Materialnummer des festen Materials."
 msgstr "Material number of the solid material."
 
-#: sdk/material/c4m.xml:335(col)
+#: sdk/material/c4m.xml:330(col)
 msgid "iEvent"
 msgstr "iEvent"
 
-#: sdk/material/c4m.xml:335(col)
+#: sdk/material/c4m.xml:330(col)
 msgid "Siehe <emlink href=\"material/c4m.html#ReactEvents\">Reaktionsereignisse</emlink>."
 msgstr "See <emlink href=\"material/c4m.html#ReactEvents\">Reaction events</emlink>."
 
-#: sdk/material/c4m.xml:327(text)
+#: sdk/material/c4m.xml:322(text)
 msgid "Mit dieser sehr rechenintensiven Methode kann das Materialveralten frei bestimmt werden. Die Scriptfunktion sollte global deklariert haben und folgende Parameter besitzen: <placeholder-1/> Der Rückgabewert der Funktion sollte entweder 1 für Entfernen oder 0 für Erhalten des losen Materials sein."
 msgstr "This resource-intensive method can be used to define the material behaviour freely. The script function should be defined globally and have the following parameters: <placeholder-1/> The return value of the function should be either 1 for removal or 0 for keeping the loose material."
 

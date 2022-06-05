@@ -15,7 +15,7 @@
 			<col>Datentyp</col>
 			<col>Beschreibung</col>
 		 </rowh>
-		<row>  
+		<row>
 			<col>Name</col>
 			<col>Zeichenfolge (max. 15)</col>
 			<col>Name des Materials.</col>
@@ -24,11 +24,6 @@
 			<col>Color</col>
 			<col>3 x 3 Integer</col>
 			<col>Die drei Farben des Materials als R,G,B, R,G,B, R,G,B (jeweils 0-255).</col>
-		</row>
-		<row>
-			<col>ColorAnimation</col>
-			<col>Integer</col>
-			<col>0 oder 1. Farbanimation.</col>
 		</row>
 		<row>
 			<col>Shape</col>
