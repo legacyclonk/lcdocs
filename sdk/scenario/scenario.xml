@@ -98,7 +98,7 @@ bestimmt.</text>
 		<col>0 oder 1. Bei 1 kann man keine Maus verwenden.</col>
 	</row>
 	<row>
-		<col>FairCrewStrength</col>
+		<col>DefCrewStrength</col>
 		<col>Integer</col>
 		<col>Stärke der fairen Crew.</col>
 	</row>
@@ -118,7 +118,7 @@ bestimmt.</text>
 		<col>-1 - 1. -1: Keine Einstellung. 0: Erzwingt Klassische Steuerung. 1: Erzwingt Jump'n'Run-Steuerung.</col>
 	</row>
 	<row>
-		<col>ForcedFairCrew</col>
+		<col>ForcedNoCrew</col>
 		<col>Integer</col>
 		<col>0 - 2. 0: Freie Einstellung. 1: Erzwingt faire Crew. 2: Erzwingt trainierte Crew.</col> 
 	</row>

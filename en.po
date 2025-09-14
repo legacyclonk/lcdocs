@@ -14789,8 +14789,8 @@ msgid "0 oder 1. Bei 1 kann man keine Maus verwenden."
 msgstr "0 or 1. If 1 the mouse can't be used."
 
 #: sdk/scenario/scenario.xml:101(col)
-msgid "FairCrewStrength"
-msgstr "FairCrewStrength"
+msgid "DefCrewStrength"
+msgstr "DefCrewStrength"
 
 #: sdk/scenario/scenario.xml:103(col)
 msgid "Stärke der fairen Crew."
@@ -14821,8 +14821,8 @@ msgid "-1 - 1. -1: Keine Einstellung. 0: Erzwingt Klassische Steuerung. 1: Erzwi
 msgstr "-1 - 1. -1: No setting. 0: Forced classic control. 1: Forced Jump'n'Run control."
 
 #: sdk/scenario/scenario.xml:121(col)
-msgid "ForcedFairCrew"
-msgstr "ForcedFairCrew"
+msgid "ForcedNoCrew"
+msgstr "ForcedNoCrew"
 
 #: sdk/scenario/scenario.xml:123(col)
 msgid "0 - 2. 0: Freie Einstellung. 1: Erzwingt faire Crew. 2: Erzwingt trainierte Crew."
